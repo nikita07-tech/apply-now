@@ -28,8 +28,9 @@ export default {
           "navy-dark": "#152b44",
           "navy-light": "#2d4a6f",
           blue: "#3b82f6",
-          orange: "#f97316",
-          "orange-light": "#fb923c",
+          yellow: "#fbbf24",
+          "yellow-light": "#fcd34d",
+          "yellow-dark": "#f59e0b",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
