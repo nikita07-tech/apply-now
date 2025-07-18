@@ -154,20 +154,13 @@ export default function Index() {
             <div className="text-center lg:text-left animate-slide-in-left">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 animate-fade-in-up">
                 Shape Your Future with
-                <span className="text-sunstone-yellow block mt-2 animate-bounce-gentle">
+                <span className="text-sunstone-yellow block mt-2 animate-bounce-gentle animate-pulse">
                   Sunstone
                 </span>
               </h1>
-              <p className="text-base sm:text-lg lg:text-xl mb-4 text-blue-100 animate-fade-in-up delay-300">
-                Transform your career with industry-focused education, expert
-                faculty, and unmatched placement support. Join thousands of
-                successful professionals who started their journey with us.
-              </p>
-              <p className="text-sm sm:text-base lg:text-lg mb-8 text-blue-200 animate-fade-in-up delay-500">
-                Don't miss out on the opportunity to secure your dream job. Our
-                proven track record speaks for itself - with the highest
-                packages, extensive industry partnerships, and personalized
-                career guidance.
+              <p className="text-base sm:text-lg lg:text-xl mb-6 text-blue-100 animate-fade-in-up delay-300 animate-slide-up">
+                Transform your career with industry-focused education and
+                unmatched placement support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-up delay-700">
                 <Button
@@ -189,7 +182,7 @@ export default function Index() {
 
             {/* Right Column - Application Form */}
             <div className="lg:flex lg:justify-end animate-slide-in-right">
-              <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 w-full max-w-md mx-auto lg:mx-0 transform transition-all duration-500 hover:shadow-3xl">
+              <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 w-full max-w-md mx-auto lg:mx-0 transform transition-all duration-500 hover:shadow-3xl animate-float hover:scale-105">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-xl sm:text-2xl font-bold text-sunstone-navy">
                     Apply Now
@@ -212,7 +205,7 @@ export default function Index() {
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none transition-all duration-300 transform focus:scale-105"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl"
                       required
                     />
                   </div>
@@ -247,7 +240,7 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none transition-all duration-300 transform focus:scale-105"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl"
                       required
                     />
                   </div>
@@ -279,7 +272,7 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-slate-500 hover:bg-slate-600 text-white py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-fade-in-up delay-500"
+                    className="w-full bg-slate-500 hover:bg-slate-600 text-white py-3 text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-110 hover:shadow-xl animate-fade-in-up delay-500 animate-pulse hover:animate-wiggle"
                   >
                     Send OTP
                   </Button>
@@ -372,9 +365,11 @@ export default function Index() {
               >
                 <CardContent className="pt-6">
                   <div
-                    className={`w-16 h-16 bg-${feature.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 hover:rotate-12`}
+                    className={`w-16 h-16 bg-${feature.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-500 hover:rotate-12 animate-wiggle`}
                   >
-                    <feature.icon className={`h-8 w-8 text-${feature.color}`} />
+                    <feature.icon
+                      className={`h-8 w-8 text-${feature.color} animate-pulse`}
+                    />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-sunstone-navy mb-3">
                     {feature.title}
@@ -420,9 +415,9 @@ export default function Index() {
           </div>
           <div className="relative overflow-hidden rounded-2xl shadow-xl animate-fade-in-up delay-300">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fad583a5f26404dab80ad4d33bb599317?format=webp&width=1200"
-              alt="Bright Minds Scholarship - Scholarships worth up to 90 lacs available"
-              className="w-full h-auto object-cover max-w-full transition-all duration-300 hover:scale-105"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F9c289d6793094909b8b7f3550585aebd?format=webp&width=800"
+              alt="Bright Minds Scholarship - Scholarships worth up to 90 lacs for global"
+              className="w-full h-auto object-cover max-w-full transition-all duration-500 hover:scale-110 animate-float"
               style={{ imageRendering: "crisp-edges" }}
             />
           </div>
@@ -489,7 +484,8 @@ export default function Index() {
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-all duration-300 hover:scale-125"
+                          className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-all duration-500 hover:scale-150 animate-pulse"
+                          style={{ animationDelay: `${i * 0.1}s` }}
                         />
                       ))}
                     </div>
@@ -679,6 +675,62 @@ export default function Index() {
           }
         }
 
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+
+        @keyframes slide-up {
+          from {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes rotate-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes wiggle {
+          0%,
+          7% {
+            transform: rotateZ(0);
+          }
+          15% {
+            transform: rotateZ(-15deg);
+          }
+          20% {
+            transform: rotateZ(10deg);
+          }
+          25% {
+            transform: rotateZ(-10deg);
+          }
+          30% {
+            transform: rotateZ(6deg);
+          }
+          35% {
+            transform: rotateZ(-4deg);
+          }
+          40%,
+          100% {
+            transform: rotateZ(0);
+          }
+        }
+
         .animate-fade-in {
           animation: fade-in 1s ease-out;
         }
@@ -701,6 +753,26 @@ export default function Index() {
 
         .animate-scale-in {
           animation: scale-in 0.8s ease-out;
+        }
+
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+
+        .animate-slide-up {
+          animation: slide-up 1s ease-out;
+        }
+
+        .animate-rotate-slow {
+          animation: rotate-slow 20s linear infinite;
+        }
+
+        .animate-wiggle {
+          animation: wiggle 2s ease-in-out infinite;
+        }
+
+        .animate-pulse {
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
 
         .delay-100 {
