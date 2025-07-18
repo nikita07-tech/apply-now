@@ -148,36 +148,120 @@ export default function Index() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Shape Your Future with
-              <span className="text-sunstone-orange block mt-2">Sunstone</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-4 text-blue-100 max-w-3xl mx-auto">
-              Transform your career with industry-focused education, expert
-              faculty, and unmatched placement support. Join thousands of
-              successful professionals who started their journey with us.
-            </p>
-            <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
-              Don't miss out on the opportunity to secure your dream job. Our
-              proven track record speaks for itself - with the highest packages,
-              extensive industry partnerships, and personalized career guidance.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                className="bg-sunstone-orange hover:bg-sunstone-orange/90 text-white px-8 py-4 text-lg font-semibold"
-              >
-                Apply Now - Limited Seats Available
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-sunstone-navy px-8 py-4 text-lg"
-              >
-                Download Brochure
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Hero Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6">
+                Shape Your Future with
+                <span className="text-sunstone-orange block mt-2">
+                  Sunstone
+                </span>
+              </h1>
+              <p className="text-lg lg:text-xl mb-4 text-blue-100">
+                Transform your career with industry-focused education, expert
+                faculty, and unmatched placement support. Join thousands of
+                successful professionals who started their journey with us.
+              </p>
+              <p className="text-base lg:text-lg mb-8 text-blue-200">
+                Don't miss out on the opportunity to secure your dream job. Our
+                proven track record speaks for itself - with the highest
+                packages, extensive industry partnerships, and personalized
+                career guidance.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                <Button
+                  size="lg"
+                  className="bg-sunstone-orange hover:bg-sunstone-orange/90 text-white px-8 py-4 text-lg font-semibold"
+                >
+                  Apply Now - Limited Seats Available
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-sunstone-navy px-8 py-4 text-lg"
+                >
+                  Download Brochure
+                </Button>
+              </div>
+            </div>
+
+            {/* Right Column - Application Form */}
+            <div className="lg:flex lg:justify-end">
+              <div className="bg-white rounded-xl shadow-2xl p-8 w-full max-w-md mx-auto lg:mx-0">
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-2xl font-bold text-sunstone-navy">
+                    Apply Now
+                  </h3>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    Help 📞
+                  </Button>
+                </div>
+
+                <form className="space-y-6">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-orange focus:border-transparent outline-none"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      I want to pursue
+                    </label>
+                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-orange focus:border-transparent outline-none bg-white">
+                      <option value="">Select Program</option>
+                      <option value="mba">MBA/PGDM</option>
+                      <option value="bba">BBA</option>
+                      <option value="btech">B.Tech</option>
+                      <option value="bcom">B.Com</option>
+                      <option value="other">Other Programs</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Mobile Number
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="Enter 10-digit mobile number"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-orange focus:border-transparent outline-none"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Select State
+                    </label>
+                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-orange focus:border-transparent outline-none bg-white">
+                      <option value="">Select State</option>
+                      <option value="delhi">Delhi</option>
+                      <option value="mumbai">Mumbai</option>
+                      <option value="bangalore">Bangalore</option>
+                      <option value="pune">Pune</option>
+                      <option value="hyderabad">Hyderabad</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <Button
+                    type="submit"
+                    className="w-full bg-slate-400 hover:bg-slate-500 text-white py-3 text-lg font-semibold rounded-lg"
+                  >
+                    Send OTP
+                  </Button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
