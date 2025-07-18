@@ -23,6 +23,14 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        sunstone: {
+          navy: "#1e3a5f",
+          "navy-dark": "#152b44",
+          "navy-light": "#2d4a6f",
+          blue: "#3b82f6",
+          orange: "#f97316",
+          "orange-light": "#fb923c",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
