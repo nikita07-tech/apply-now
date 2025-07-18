@@ -274,6 +274,27 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Company Partners Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-sunstone-navy mb-4">
+              Our Industry Partners
+            </h2>
+            <p className="text-lg text-gray-600">
+              Trusted by leading companies across industries
+            </p>
+          </div>
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F0ed648de05c74644b6212e6b9a125b4b?format=webp&width=800"
+              alt="Industry Partners - Zepto, Amazon, Shoppers Stop, IndusInd Bank, NobroKer, DHL, Axis Bank, PhonePe, Jaro Education, Dhanguard, SAI General, Kotak Life, PropertyPistol, VII, HDFC Ergo, Nivarti, DeHaat and many more"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Scholarship Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
