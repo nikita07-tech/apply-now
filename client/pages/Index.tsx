@@ -103,14 +103,14 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b sticky top-0 z-50 animate-fade-in">
+      <header className="bg-white shadow-lg border-b sticky top-0 z-50 animate-fade-in backdrop-blur-sm bg-white/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-18">
             <div className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/sunstonelogo2x-1-92104e?format=webp&width=800"
                 alt="Sunstone"
-                className="h-8 w-auto"
+                className="h-12 w-auto animate-pulse transition-all duration-500 hover:scale-110"
               />
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -139,7 +139,7 @@ export default function Index() {
                 About
               </a>
             </nav>
-            <Button className="bg-sunstone-yellow hover:bg-sunstone-yellow-dark text-sunstone-navy font-semibold transition-all duration-300 transform hover:scale-105">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl animate-pulse">
               Apply Now
             </Button>
           </div>
@@ -147,33 +147,53 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-white py-12 md:py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <section className="bg-gradient-to-br from-sunstone-navy via-sunstone-navy-dark to-slate-900 text-white py-16 md:py-24 overflow-hidden relative">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-sunstone-yellow/10 rounded-full animate-float"></div>
+          <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-blue-500/10 rounded-full animate-bounce-gentle"></div>
+          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-r from-sunstone-yellow/5 to-blue-500/5 rounded-full animate-rotate-slow"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 animate-fade-in-up">
-                Shape Your Future with
-                <span className="text-sunstone-yellow block mt-2 animate-bounce-gentle animate-pulse">
-                  Sunstone
+              <div className="mb-8">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 animate-fade-in-up leading-tight">
+                  <span className="block text-white animate-slide-up">
+                    Big Dreams Need
+                  </span>
+                  <span className="block text-sunstone-yellow animate-bounce-gentle animate-pulse bg-gradient-to-r from-sunstone-yellow to-sunstone-yellow-light bg-clip-text text-transparent">
+                    the Right Start
+                  </span>
+                </h1>
+                <div className="h-1 w-24 bg-gradient-to-r from-sunstone-yellow to-blue-500 rounded-full mx-auto lg:mx-0 animate-pulse"></div>
+              </div>
+
+              <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-blue-100 animate-fade-in-up delay-300 font-medium leading-relaxed">
+                Get{" "}
+                <span className="text-sunstone-yellow font-bold animate-pulse">
+                  200+ assured placement opportunities
+                </span>{" "}
+                with
+                <span className="text-white font-semibold">
+                  Placement Opportunity Program
                 </span>
-              </h1>
-              <p className="text-base sm:text-lg lg:text-xl mb-6 text-blue-100 animate-fade-in-up delay-300 animate-slide-up">
-                Transform your career with industry-focused education and
-                unmatched placement support.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-up delay-700">
+
+              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center animate-fade-in-up delay-700">
                 <Button
                   size="lg"
-                  className="bg-sunstone-yellow hover:bg-sunstone-yellow-dark text-sunstone-navy px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-full sm:w-auto"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl w-full sm:w-auto rounded-xl animate-pulse shadow-xl border-2 border-blue-400 hover:border-blue-300"
                 >
                   Apply Now - Limited Seats Available
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <ArrowRight className="ml-3 h-5 w-5 sm:h-6 sm:w-6 animate-bounce" />
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-sunstone-navy px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 w-full sm:w-auto"
+                  className="border-2 border-sunstone-yellow text-sunstone-yellow hover:bg-sunstone-yellow hover:text-sunstone-navy px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl transition-all duration-500 w-full sm:w-auto rounded-xl font-semibold transform hover:scale-105 hover:shadow-xl"
                 >
                   Download Brochure
                 </Button>
@@ -182,15 +202,15 @@ export default function Index() {
 
             {/* Right Column - Application Form */}
             <div className="lg:flex lg:justify-end animate-slide-in-right">
-              <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 w-full max-w-md mx-auto lg:mx-0 transform transition-all duration-500 hover:shadow-3xl animate-float hover:scale-105">
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-sunstone-navy">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 sm:p-10 w-full max-w-lg mx-auto lg:mx-0 transform transition-all duration-500 hover:shadow-3xl animate-float hover:scale-105 border border-sunstone-yellow/20">
+                <div className="flex items-center justify-between mb-8">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-sunstone-navy animate-pulse">
                     Apply Now
                   </h3>
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors duration-300"
+                    className="text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors duration-300 animate-wiggle"
                   >
                     <Phone className="h-4 w-4 mr-1" />
                     Help
@@ -272,7 +292,7 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-slate-500 hover:bg-slate-600 text-white py-3 text-lg font-semibold rounded-lg transition-all duration-500 transform hover:scale-110 hover:shadow-xl animate-fade-in-up delay-500 animate-pulse hover:animate-wiggle"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-xl font-bold rounded-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl animate-fade-in-up delay-500 animate-pulse hover:animate-wiggle shadow-lg border-2 border-blue-400 hover:border-blue-300"
                   >
                     Send OTP
                   </Button>
