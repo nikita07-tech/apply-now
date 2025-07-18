@@ -277,11 +277,17 @@ export default function Index() {
       {/* Scholarship Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-2xl">
+          <div className="text-center mb-8">
+            <p className="text-xl text-sunstone-navy font-semibold">
+              Unlock Your Potential with Financial Support
+            </p>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fad583a5f26404dab80ad4d33bb599317?format=webp&width=800"
-              alt="Bright Minds Scholarship"
-              className="w-full h-auto object-cover"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fad583a5f26404dab80ad4d33bb599317?format=webp&width=1200"
+              alt="Bright Minds Scholarship - Scholarships worth up to 90 lacs available"
+              className="w-full h-auto object-cover max-w-full"
+              style={{ imageRendering: "crisp-edges" }}
             />
           </div>
         </div>
