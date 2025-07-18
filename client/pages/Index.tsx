@@ -274,6 +274,19 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Scholarship Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-2xl">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fad583a5f26404dab80ad4d33bb599317?format=webp&width=800"
+              alt="Bright Minds Scholarship"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Success Stories Section */}
       <section id="success-stories" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
