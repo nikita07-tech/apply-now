@@ -692,7 +692,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-12 w-auto mb-6 filter brightness-0 invert"
+                className="h-10 w-auto mb-6 transition-all duration-300 hover:scale-110"
               />
               <p className="text-gray-200 max-w-md text-sm sm:text-base mb-6">
                 Transforming careers through industry-focused education and
