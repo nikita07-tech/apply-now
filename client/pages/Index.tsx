@@ -58,7 +58,7 @@ const successStories = [
   {
     id: 4,
     name: "Akash Das",
-    package: "",
+    package: "Manforce Group 6.5 LPA",
     campus: "ADYPU",
     year: "2022-2024",
     course: "MBA",
