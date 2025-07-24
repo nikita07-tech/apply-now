@@ -16,7 +16,10 @@ import {
   MapPin,
   CheckCircle,
   XCircle,
+  Menu,
+  X,
 } from "lucide-react";
+import { useState } from "react";
 
 const successStories = [
   {
@@ -140,6 +143,8 @@ const comparisonData = [
 ];
 
 export default function Index() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const handleApplyNow = () => {
     alert('Thank you for your interest! Our team will contact you soon.');
   };
@@ -149,14 +154,16 @@ export default function Index() {
       {/* Header */}
       <header className="bg-sunstone-white shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-16 md:h-20">
             <div className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-6 w-auto transition-all duration-500 hover:scale-110"
+                className="h-5 md:h-6 w-auto transition-all duration-500 hover:scale-110"
               />
             </div>
+
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
               <a
                 href="#programs"
@@ -187,13 +194,72 @@ export default function Index() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-gold transition-all duration-300 group-hover:w-full"></span>
               </a>
             </nav>
-            <Button 
+
+            {/* Desktop Apply Button */}
+            <Button
               onClick={handleApplyNow}
-              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="hidden md:block bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Apply Now
             </Button>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6 text-sunstone-navy" />
+              ) : (
+                <Menu className="h-6 w-6 text-sunstone-navy" />
+              )}
+            </button>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-t border-gray-200 bg-white">
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                <a
+                  href="#programs"
+                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Programs
+                </a>
+                <a
+                  href="#placements"
+                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Placements
+                </a>
+                <a
+                  href="#success-stories"
+                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Success Stories
+                </a>
+                <a
+                  href="#about"
+                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  About
+                </a>
+                <Button
+                  onClick={() => {
+                    handleApplyNow();
+                    setMobileMenuOpen(false);
+                  }}
+                  className="w-full mt-4 bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 shadow-lg"
+                >
+                  Apply Now
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       </header>
 
@@ -204,8 +270,8 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left">
-              <div className="mb-8">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 animate-fade-in-up leading-tight">
+              <div className="mb-6 md:mb-8">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white animate-slide-up">
                     Big Dreams Need
                   </span>
@@ -213,10 +279,10 @@ export default function Index() {
                     the Right Start
                   </span>
                 </h1>
-                <div className="h-1 w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
+                <div className="h-1 w-16 sm:w-20 md:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
               </div>
 
-              <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-4 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -227,32 +293,33 @@ export default function Index() {
                 </span>
               </p>
 
-              <div className="flex justify-center lg:justify-start animate-fade-in-up delay-700">
+              <div className="flex justify-center lg:justify-start animate-fade-in-up delay-700 px-4 lg:px-0">
                 <Button
                   onClick={handleApplyNow}
                   size="lg"
-                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl"
+                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-5 text-base sm:text-lg md:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl w-full sm:w-auto"
                 >
-                  Apply Now - Limited Seats Available
-                  <ArrowRight className="ml-3 h-5 w-5 sm:h-6 sm:w-6" />
+                  <span className="hidden sm:inline">Apply Now - Limited Seats Available</span>
+                  <span className="sm:hidden">Apply Now</span>
+                  <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                 </Button>
               </div>
             </div>
 
             {/* Right Column - Application Form */}
-            <div className="lg:flex lg:justify-end">
-              <div className="bg-sunstone-white rounded-2xl shadow-2xl p-8 sm:p-10 w-full max-w-lg mx-auto lg:mx-0 border border-sunstone-gold/20">
-                <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-sunstone-navy">
+            <div className="lg:flex lg:justify-end mt-8 lg:mt-0">
+              <div className="bg-sunstone-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 w-full max-w-lg mx-auto lg:mx-0 border border-sunstone-gold/20">
+                <div className="flex items-center justify-between mb-6 sm:mb-8">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300"
+                    className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    <Phone className="h-4 w-4 mr-1" />
-                    Help
+                    <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
+                    <span className="hidden sm:inline">Help</span>
                   </Button>
                 </div>
 
@@ -439,12 +506,12 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-4 text-xl font-bold rounded-xl shadow-lg"
+                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-3 sm:py-4 text-lg sm:text-xl font-bold rounded-xl shadow-lg"
                   >
                     Send OTP
                   </Button>
 
-                  <p className="text-xs text-gray-500 text-center">
+                  <p className="text-xs sm:text-sm text-gray-500 text-center px-2">
                     By clicking "Send OTP", you agree to our Terms & Conditions
                     and Privacy Policy
                   </p>
