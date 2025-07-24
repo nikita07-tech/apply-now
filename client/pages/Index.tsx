@@ -159,7 +159,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-10 w-auto transition-all duration-500 hover:scale-110"
+                className="h-6 w-auto transition-all duration-500 hover:scale-110"
               />
             </div>
             <nav className="hidden md:flex space-x-8">
