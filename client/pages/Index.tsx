@@ -240,8 +240,8 @@ export default function Index() {
             </div>
 
             {/* Right Column - Application Form */}
-            <div className="lg:flex lg:justify-end animate-slide-in-right">
-              <div className="bg-sunstone-white rounded-2xl shadow-2xl p-8 sm:p-10 w-full max-w-lg mx-auto lg:mx-0 transform transition-all duration-500 animate-float border border-sunstone-gold/20">
+            <div className="lg:flex lg:justify-end">
+              <div className="bg-sunstone-white rounded-2xl shadow-2xl p-8 sm:p-10 w-full max-w-lg mx-auto lg:mx-0 border border-sunstone-gold/20">
                 <div className="flex items-center justify-between mb-8">
                   <h3 className="text-2xl sm:text-3xl font-bold text-sunstone-navy">
                     Apply Now
@@ -257,60 +257,39 @@ export default function Index() {
                 </div>
 
                 <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
-                  <div className="animate-fade-in-up delay-100">
+                  <div>
                     <label className="block text-sm font-medium text-sunstone-black mb-2">
                       Full Name*
                     </label>
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none transition-all duration-500 text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
 
-                  <div className="animate-fade-in-up delay-200">
+                  <div>
                     <label className="block text-sm font-medium text-sunstone-black mb-2">
                       I want to pursue*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white transition-all duration-500 text-sunstone-black font-medium"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sunstone-black font-medium"
                       required
                     >
                       <option value="" className="text-gray-500">
                         Select Program
                       </option>
-                      <option value="mba" className="text-sunstone-black">
-                        MBA
-                      </option>
-                      <option value="pgdm" className="text-sunstone-black">
-                        PGDM
-                      </option>
-                      <option value="bba" className="text-sunstone-black">
-                        BBA
-                      </option>
                       <option value="btech" className="text-sunstone-black">
                         B.Tech
                       </option>
-                      <option value="bcom" className="text-sunstone-black">
-                        B.Com
-                      </option>
-                      <option value="bca" className="text-sunstone-black">
-                        BCA
-                      </option>
-                      <option value="mca" className="text-sunstone-black">
-                        MCA
-                      </option>
-                      <option value="bsc" className="text-sunstone-black">
-                        B.Sc
-                      </option>
-                      <option value="msc" className="text-sunstone-black">
-                        M.Sc
+                      <option value="mba" className="text-sunstone-black">
+                        MBA
                       </option>
                     </select>
                   </div>
 
-                  <div className="animate-fade-in-up delay-300">
+                  <div>
                     <label className="block text-sm font-medium text-sunstone-black mb-2">
                       Mobile Number*
                     </label>
@@ -319,17 +298,17 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none transition-all duration-500 text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
 
-                  <div className="animate-fade-in-up delay-400">
+                  <div>
                     <label className="block text-sm font-medium text-sunstone-black mb-2">
                       Select State*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white transition-all duration-500 text-sunstone-black font-medium"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sunstone-black font-medium"
                       required
                     >
                       <option value="" className="text-gray-500">
@@ -439,7 +418,7 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-4 text-xl font-bold rounded-xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg"
+                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-4 text-xl font-bold rounded-xl shadow-lg"
                   >
                     Send OTP
                   </Button>
