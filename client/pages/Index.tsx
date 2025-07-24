@@ -1219,13 +1219,12 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-6 sm:h-8 md:h-10 w-auto mb-3 sm:mb-4 md:mb-6 transition-all duration-300 hover:scale-110"
+                className="h-5 sm:h-6 md:h-8 lg:h-10 w-auto mb-2 sm:mb-3 md:mb-4 lg:mb-6 transition-all duration-300 hover:scale-110"
               />
-              <p className="text-gray-200 max-w-md text-xs sm:text-sm md:text-base mb-3 sm:mb-4 md:mb-6 leading-relaxed">
-                Transforming careers through industry-focused education and
-                unmatched placement support.
+              <p className="text-gray-200 max-w-md text-xs leading-tight mb-2 sm:mb-3 md:mb-4 lg:mb-6">
+                Transforming careers through industry-focused education.
               </p>
-              <div className="flex space-x-2 sm:space-x-3 md:space-x-4">
+              <div className="flex space-x-1.5 sm:space-x-2 md:space-x-3 lg:space-x-4">
                 <a
                   href="https://www.youtube.com/@SunstoneIND"
                   target="_blank"
