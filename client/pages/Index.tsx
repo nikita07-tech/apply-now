@@ -58,14 +58,14 @@ const successStories = [
   {
     id: 4,
     name: "Akash Das",
-    package: "Manforce Group 6.5 LPA",
+    package: "",
     campus: "ADYPU",
     year: "2022-2024",
     course: "MBA",
     testimonial:
       "Sunstone equipped me with in-demand industry skills, and I'm grateful for the guidance from Dr. Omkar Dange and the dedicated faculty. The paid internships and live projects greatly boosted my resume.",
     image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/1684043070051-670752?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb0f8c68af5ba46a2bd76dedd450e2c0d",
   },
   {
     id: 5,
