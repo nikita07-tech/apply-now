@@ -526,17 +526,7 @@ export default function Index() {
               </div>
             </div>
             
-            <div className="mt-12">
-              <Button
-                onClick={handleApplyNow}
-                size="lg"
-                className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white px-4 sm:px-6 md:px-8 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl sm:rounded-2xl shadow-xl border-2 border-sunstone-gold/30 w-full sm:w-auto"
-              >
-                <span className="hidden sm:inline">Join 5000+ Success Stories</span>
-                <span className="sm:hidden">Join Success Stories</span>
-                <ArrowRight className="ml-1.5 sm:ml-2 md:ml-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
@@ -1148,31 +1138,30 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light py-8 sm:py-12 md:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto text-center px-3 sm:px-4 lg:px-6 xl:px-8 animate-fade-in-up">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-black mb-3 sm:mb-4 md:mb-6">
+      <section className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light py-4 md:py-16">
+        <div className="max-w-4xl mx-auto text-center px-3 md:px-8 animate-fade-in-up">
+          <h2 className="text-base md:text-3xl font-bold text-sunstone-black mb-2 md:mb-6">
             Ready to Transform Your Career?
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-sunstone-black/80 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto">
+          <p className="text-xs md:text-lg text-sunstone-black/80 mb-3 md:mb-8 max-w-2xl mx-auto">
             Join thousands of successful professionals. Take the first step
             towards your dream career today.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center">
+          <div className="flex justify-center">
             <Button
               onClick={handleApplyNow}
-              size="lg"
-              className="bg-sunstone-navy text-sunstone-white hover:bg-sunstone-navy-dark px-4 sm:px-6 md:px-8 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl w-full sm:w-auto"
+              className="bg-sunstone-navy text-sunstone-white hover:bg-sunstone-navy-dark px-3 md:px-12 py-2 md:py-5 text-xs md:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-lg md:rounded-xl shadow-xl w-full max-w-xs md:w-auto"
             >
-              <span className="hidden sm:inline">Apply Now - Secure Your Seat</span>
-              <span className="sm:hidden">Apply Now</span>
-              <ArrowRight className="ml-1.5 sm:ml-2 md:ml-3 h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" />
+              <span className="hidden md:inline">Apply Now - Secure Your Seat</span>
+              <span className="md:hidden">Apply Now</span>
+              <ArrowRight className="ml-1 md:ml-3 h-3 w-3 md:h-6 md:w-6" />
             </Button>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-sunstone-navy text-sunstone-white py-2 md:py-8">
+      <footer className="bg-sunstone-navy text-sunstone-white py-1 md:py-8">
         <div className="max-w-7xl mx-auto px-3 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6">
             <div className="md:col-span-1">
