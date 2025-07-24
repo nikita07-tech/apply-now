@@ -171,12 +171,13 @@ export default function Index() {
 
 
 
-            {/* Desktop Apply Button */}
+            {/* Apply Button - Responsive */}
             <Button
               onClick={handleApplyNow}
-              className="hidden md:block bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base px-3 py-2 md:px-4 md:py-2"
             >
-              Apply Now
+              <span className="hidden sm:inline">Apply Now</span>
+              <span className="sm:hidden">Apply</span>
             </Button>
 
 
