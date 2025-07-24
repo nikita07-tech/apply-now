@@ -968,9 +968,9 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-12 items-center">
             {/* Left - Scholarship Image */}
-            <div className="order-2 lg:order-1 animate-slide-in-left">
+            <div className="order-1 animate-slide-in-left">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
