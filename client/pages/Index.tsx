@@ -1140,7 +1140,7 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light py-16 md:py-20">
+      <section className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light py-8 sm:py-12 md:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center px-3 sm:px-4 lg:px-6 xl:px-8 animate-fade-in-up">
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-black mb-3 sm:mb-4 md:mb-6">
             Ready to Transform Your Career?
