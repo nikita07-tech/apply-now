@@ -918,6 +918,14 @@ export default function Index() {
           animation: slide-up 1s ease-out;
         }
 
+        .animate-wiggle {
+          animation: wiggle 2s ease-in-out infinite;
+        }
+
+        .animate-scroll-x {
+          animation: scroll-x 30s linear infinite;
+        }
+
         .delay-100 { animation-delay: 0.1s; }
         .delay-200 { animation-delay: 0.2s; }
         .delay-300 { animation-delay: 0.3s; }
