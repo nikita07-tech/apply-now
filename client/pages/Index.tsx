@@ -698,192 +698,23 @@ export default function Index() {
       </section>
 
       {/* Company Partners Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold/10 via-transparent to-sunstone-navy/10 opacity-30"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-sunstone-white/80 backdrop-blur-sm px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30 shadow-lg">
-              <svg className="h-6 w-6 text-sunstone-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-              <span className="text-sunstone-navy font-bold text-lg">Global Industry Network</span>
-            </div>
-
-            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
-              <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
-                1200+ Industry Partners
-              </span>
+      <section className="py-16 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
+              Our Industry Partners
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-              From startups to Fortune 500 companies, our graduates are placed across diverse industries worldwide
+            <p className="text-lg sm:text-xl text-gray-600">
+              Trusted by leading companies across industries
             </p>
-            <div className="h-2 w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4"></div>
           </div>
-
-          {/* Partner Categories Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-sunstone-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 text-center transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Technology</h3>
-              <p className="text-gray-600 text-sm">Google, Microsoft, Amazon, IBM, TCS, Infosys</p>
-              <div className="text-2xl font-black text-blue-600 mt-2">450+</div>
-            </div>
-
-            <div className="bg-sunstone-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 text-center transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Finance</h3>
-              <p className="text-gray-600 text-sm">HDFC, ICICI, Axis Bank, JP Morgan, Deloitte</p>
-              <div className="text-2xl font-black text-green-600 mt-2">320+</div>
-            </div>
-
-            <div className="bg-sunstone-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 text-center transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Consulting</h3>
-              <p className="text-gray-600 text-sm">McKinsey, BCG, Bain, Accenture, PwC</p>
-              <div className="text-2xl font-black text-purple-600 mt-2">280+</div>
-            </div>
-
-            <div className="bg-sunstone-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 text-center transform hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Startups</h3>
-              <p className="text-gray-600 text-sm">Unicorns & High-growth Companies</p>
-              <div className="text-2xl font-black text-orange-600 mt-2">150+</div>
-            </div>
-          </div>
-
-          {/* Featured Company Logos - Interactive Carousel */}
-          <div className="bg-sunstone-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-sunstone-gold/20">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-sunstone-navy mb-2">Featured Hiring Partners</h3>
-              <p className="text-gray-600">Companies that actively recruit our graduates</p>
-            </div>
-
-            {/* Company Logos Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Google</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Microsoft</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Amazon</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Wipro</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">TCS</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Infosys</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Accenture</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Deloitte</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">Flipkart</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">IBM</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-lg">HDFC</span>
-                </div>
-              </div>
-
-              <div className="group cursor-pointer transform transition-all duration-300 hover:scale-110">
-                <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl">
-                  <span className="text-white font-bold text-sm">Cognizant</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Stats Row */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center p-6 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-xl border border-sunstone-gold/30">
-                <div className="text-3xl font-black text-sunstone-navy mb-2">95%</div>
-                <div className="text-gray-700 font-semibold">Placement Success Rate</div>
-                <div className="text-sm text-gray-600 mt-1">Industry-leading outcomes</div>
-              </div>
-
-              <div className="text-center p-6 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-navy/20 rounded-xl border border-sunstone-navy/30">
-                <div className="text-3xl font-black text-sunstone-navy mb-2">72hrs</div>
-                <div className="text-gray-700 font-semibold">Average Hiring Time</div>
-                <div className="text-sm text-gray-600 mt-1">Fast-track recruitment</div>
-              </div>
-
-              <div className="text-center p-6 bg-gradient-to-br from-green-500/10 to-green-500/20 rounded-xl border border-green-500/30">
-                <div className="text-3xl font-black text-sunstone-navy mb-2">2.8</div>
-                <div className="text-gray-700 font-semibold">Average Offers Per Student</div>
-                <div className="text-sm text-gray-600 mt-1">Multiple opportunities</div>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="text-center mt-12">
-              <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-2xl p-8">
-                <h4 className="text-2xl font-bold text-sunstone-white mb-3">Join Our Alumni Network</h4>
-                <p className="text-gray-300 mb-6">Connect with 5000+ successful professionals across top companies worldwide</p>
-                <Button
-                  onClick={handleApplyNow}
-                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 rounded-xl shadow-xl"
-                >
-                  Start Your Journey
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
-            </div>
+          <div className="bg-sunstone-white rounded-2xl shadow-2xl p-8 sm:p-12 animate-fade-in-up delay-300 transform hover:scale-105 transition-all duration-500">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F0ed648de05c74644b6212e6b9a125b4b?format=webp&width=800"
+              alt="Industry Partners - Leading companies that hire our graduates"
+              className="w-full h-auto object-contain transition-all duration-500 hover:scale-105"
+            />
           </div>
         </div>
       </section>
