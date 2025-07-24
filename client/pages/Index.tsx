@@ -1077,7 +1077,7 @@ export default function Index() {
             <div className="flex space-x-8 animate-scroll-x" style={{ width: 'calc(100% + 400px)' }}>
               {[...successStories, ...successStories].map((story, index) => (
                 <div
-                  key={story.id}
+                  key={`${story.id}-${index}`}
                   className="flex-shrink-0 w-60 sm:w-72 md:w-80 animate-slide-in-right"
                   style={{ 
                     animationDelay: `${index * 200}ms`,
