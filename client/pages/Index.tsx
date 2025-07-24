@@ -313,20 +313,30 @@ export default function Index() {
             </div>
 
             {/* Right Column - Application Form */}
-            <div className="flex justify-end">
+            <div className={`flex justify-end ${!showApplyForm ? 'hidden md:flex' : ''}`}>
               <div className="bg-sunstone-white rounded-xl sm:rounded-2xl shadow-2xl p-2 sm:p-4 md:p-6 lg:p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg border border-sunstone-gold/20">
                 <div className="flex items-center justify-between mb-4 sm:mb-6 md:mb-8">
                   <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
-                  >
-                    <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
-                    <span className="hidden sm:inline">Help</span>
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
+                    >
+                      <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
+                      <span className="hidden sm:inline">Help</span>
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setShowApplyForm(false)}
+                      className="md:hidden text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-red-100 transition-colors duration-300 p-1 sm:p-2"
+                    >
+                      <X className="h-4 w-4" />
+                    </Button>
+                  </div>
                 </div>
 
                 <form className="space-y-1.5 sm:space-y-2 md:space-y-3" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
