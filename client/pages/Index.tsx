@@ -144,9 +144,15 @@ const comparisonData = [
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showApplyForm, setShowApplyForm] = useState(false);
 
   const handleApplyNow = () => {
-    alert('Thank you for your interest! Our team will contact you soon.');
+    // On mobile, show the form instead of alert
+    if (window.innerWidth < 768) {
+      setShowApplyForm(true);
+    } else {
+      alert('Thank you for your interest! Our team will contact you soon.');
+    }
   };
 
   return (
