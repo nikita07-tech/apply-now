@@ -264,14 +264,14 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-16 md:py-24 overflow-hidden relative">
+      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-8 sm:py-12 md:py-16 lg:py-24 overflow-hidden relative">
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left">
-              <div className="mb-6 md:mb-8">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 md:mb-6 animate-fade-in-up leading-tight">
+              <div className="mb-4 sm:mb-6 md:mb-8">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white animate-slide-up">
                     Big Dreams Need
                   </span>
@@ -279,10 +279,10 @@ export default function Index() {
                     the Right Start
                   </span>
                 </h1>
-                <div className="h-1 w-16 sm:w-20 md:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
+                <div className="h-0.5 sm:h-1 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
               </div>
 
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-4 lg:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -293,55 +293,55 @@ export default function Index() {
                 </span>
               </p>
 
-              <div className="flex justify-center lg:justify-start animate-fade-in-up delay-700 px-4 lg:px-0">
+              <div className="flex justify-center lg:justify-start animate-fade-in-up delay-700 px-2 sm:px-4 lg:px-0">
                 <Button
                   onClick={handleApplyNow}
                   size="lg"
-                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-5 text-base sm:text-lg md:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl w-full sm:w-auto"
+                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black px-4 sm:px-6 md:px-8 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl w-full sm:w-auto"
                 >
                   <span className="hidden sm:inline">Apply Now - Limited Seats Available</span>
                   <span className="sm:hidden">Apply Now</span>
-                  <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                  <ArrowRight className="ml-1.5 sm:ml-2 md:ml-3 h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" />
                 </Button>
               </div>
             </div>
 
             {/* Right Column - Application Form */}
-            <div className="lg:flex lg:justify-end mt-8 lg:mt-0">
-              <div className="bg-sunstone-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 w-full max-w-lg mx-auto lg:mx-0 border border-sunstone-gold/20">
-                <div className="flex items-center justify-between mb-6 sm:mb-8">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy">
+            <div className="lg:flex lg:justify-end mt-6 lg:mt-0">
+              <div className="bg-sunstone-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-10 w-full max-w-lg mx-auto lg:mx-0 border border-sunstone-gold/20">
+                <div className="flex items-center justify-between mb-4 sm:mb-6 md:mb-8">
+                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm"
+                    className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
                   >
-                    <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
+                    <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                     <span className="hidden sm:inline">Help</span>
                   </Button>
                 </div>
 
-                <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
+                <form className="space-y-3 sm:space-y-4 md:space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
                   <div>
-                    <label className="block text-sm font-medium text-sunstone-black mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1 sm:mb-2">
                       Full Name*
                     </label>
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-sunstone-black mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1 sm:mb-2">
                       I want to pursue*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sunstone-black font-medium"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sm sm:text-base text-sunstone-black font-medium"
                       required
                     >
                       <option value="" className="text-gray-500">
@@ -378,7 +378,7 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-sunstone-black mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1 sm:mb-2">
                       Mobile Number*
                     </label>
                     <input
@@ -386,17 +386,17 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-sunstone-black mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1 sm:mb-2">
                       Select State*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sunstone-black font-medium"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sm sm:text-base text-sunstone-black font-medium"
                       required
                     >
                       <option value="" className="text-gray-500">
@@ -506,12 +506,12 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-3 sm:py-4 text-lg sm:text-xl font-bold rounded-xl shadow-lg"
+                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-2.5 sm:py-3 md:py-4 text-sm sm:text-lg md:text-xl font-bold rounded-xl shadow-lg"
                   >
                     Send OTP
                   </Button>
 
-                  <p className="text-xs sm:text-sm text-gray-500 text-center px-2">
+                  <p className="text-xs text-gray-500 text-center px-1 sm:px-2 leading-tight">
                     By clicking "Send OTP", you agree to our Terms & Conditions
                     and Privacy Policy
                   </p>
