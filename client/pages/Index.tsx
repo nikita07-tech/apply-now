@@ -96,10 +96,9 @@ const successStories = [
 const stats = [
   { value: "₹26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
   { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
-  { value: "1400+", label: "Total Offers", color: "text-sunstone-navy" },
-  { value: "306", label: "Students with 2+ Offers", color: "text-sunstone-gold" },
-  { value: "5000+", label: "Students Placed", color: "text-sunstone-navy" },
-  { value: "1200+", label: "Total Recruiters", color: "text-sunstone-gold" },
+  { value: "306", label: "Students with 2+ Offers", color: "text-sunstone-navy" },
+  { value: "5000+", label: "Students Placed", color: "text-sunstone-gold" },
+  { value: "1200+", label: "Total Recruiters", color: "text-sunstone-navy" },
 ];
 
 const comparisonData = [
