@@ -200,7 +200,6 @@ export default function Index() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-16 md:py-24 overflow-hidden relative">
 
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
@@ -369,7 +368,7 @@ export default function Index() {
               <GraduationCap className="h-6 w-6 text-sunstone-gold" />
               <span className="text-sunstone-navy font-bold text-lg">Trusted by 5000++ Successful Students</span>
             </div>
-
+            
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-sunstone-navy mb-8 leading-tight">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Pursue Your Dream Degree
@@ -383,27 +382,27 @@ export default function Index() {
                 at 25+ Premier Colleges Across India
               </span>
             </h2>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-sunstone-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-black text-sunstone-navy mb-2">5000+</div>
                 <div className="text-sunstone-gold font-semibold">Students Successfully Placed</div>
                 <div className="text-gray-600 text-sm mt-2">Across top companies nationwide</div>
               </div>
-
+              
               <div className="bg-sunstone-navy rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-black text-sunstone-gold mb-2">₹26 LPA</div>
                 <div className="text-sunstone-white font-semibold">Highest Package Achieved</div>
                 <div className="text-gray-300 text-sm mt-2">Dreams turned into reality</div>
               </div>
-
+              
               <div className="bg-sunstone-gold rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-black text-sunstone-black mb-2">306</div>
                 <div className="text-sunstone-black font-semibold">Multiple Offer Winners</div>
                 <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ job offers</div>
               </div>
             </div>
-
+            
             <div className="mt-12">
               <Button
                 onClick={handleApplyNow}
@@ -507,14 +506,13 @@ export default function Index() {
 
       {/* Our Impact in Numbers Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-8 border border-sunstone-navy/20">
               <TrendingUp className="h-5 w-5 text-sunstone-navy" />
               <span className="text-sunstone-navy font-semibold text-base">Proven Track Record</span>
             </div>
-
+            
             <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
               Our Impact Speaks for Itself
             </h2>
@@ -524,60 +522,78 @@ export default function Index() {
             <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
           </div>
 
-          {/* Interactive Stats Grid */}
+          {/* Professional Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {/* Career Success Card */}
-            <div className="group bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:rotate-3 animate-fade-in-up shadow-2xl cursor-pointer">
-              <div className="text-6xl mb-4">🎯</div>
-              <div className="text-5xl font-black text-sunstone-black mb-3 animate-float">₹26</div>
-              <div className="text-sunstone-black font-bold text-xl">LPA Record Package</div>
-              <div className="text-sunstone-black/70 text-sm mt-2">Dreams turned into reality</div>
-              <div className="mt-4 h-1 bg-sunstone-black/20 rounded-full"></div>
+            {/* Highest Package Card */}
+            <div className="bg-sunstone-white rounded-2xl p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-sunstone-black" />
+              </div>
+              <div className="text-4xl font-black text-sunstone-navy mb-3">₹26 LPA</div>
+              <div className="text-sunstone-black font-bold text-lg mb-2">Highest Package</div>
+              <div className="text-gray-600 text-sm">Record-breaking achievement</div>
             </div>
 
-            {/* Growth Card */}
-            <div className="group bg-gradient-to-br from-sunstone-white to-gray-100 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:-rotate-2 animate-fade-in-up delay-200 shadow-2xl cursor-pointer border-2 border-sunstone-gold/30">
-              <div className="text-6xl mb-4">���</div>
-              <div className="text-5xl font-black text-sunstone-navy mb-3 animate-bounce-gentle">63%</div>
-              <div className="text-sunstone-navy font-bold text-xl">Higher ROI</div>
-              <div className="text-gray-600 text-sm mt-2">Investment that pays back</div>
-              <div className="mt-4 h-1 bg-sunstone-navy/20 rounded-full"></div>
+            {/* ROI Card */}
+            <div className="bg-sunstone-navy rounded-2xl p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-16 h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-sunstone-black" />
+              </div>
+              <div className="text-4xl font-black text-sunstone-gold mb-3">63%</div>
+              <div className="text-sunstone-white font-bold text-lg mb-2">Higher ROI</div>
+              <div className="text-gray-300 text-sm">Better return on investment</div>
             </div>
 
-            {/* Success Rate Card */}
-            <div className="group bg-gradient-to-br from-sunstone-navy-dark to-sunstone-black rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:rotate-2 animate-fade-in-up delay-400 shadow-2xl cursor-pointer border border-sunstone-gold/30">
-              <div className="text-6xl mb-4">🏆</div>
-              <div className="text-5xl font-black text-sunstone-gold mb-3 animate-pulse">5000+</div>
-              <div className="text-sunstone-white font-bold text-xl">Placed Successfully</div>
-              <div className="text-gray-300 text-sm mt-2">Careers launched nationwide</div>
-              <div className="mt-4 h-1 bg-sunstone-gold/40 rounded-full"></div>
+            {/* Students Placed Card */}
+            <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-2xl p-8 text-center shadow-xl border-2 border-sunstone-gold/30 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-16 h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-sunstone-white" />
+              </div>
+              <div className="text-4xl font-black text-sunstone-navy mb-3">5000+</div>
+              <div className="text-sunstone-black font-bold text-lg mb-2">Students Placed</div>
+              <div className="text-gray-700 text-sm">Successful career launches</div>
             </div>
 
             {/* Multiple Offers Card */}
-            <div className="group bg-gradient-to-br from-sunstone-gold-light via-sunstone-gold to-sunstone-gold-dark rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:-rotate-3 animate-fade-in-up delay-600 shadow-2xl cursor-pointer">
-              <div className="text-6xl mb-4">🎉</div>
-              <div className="text-5xl font-black text-sunstone-black mb-3 animate-wiggle">306</div>
-              <div className="text-sunstone-black font-bold text-xl">Multiple Winners</div>
-              <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ offers</div>
-              <div className="mt-4 h-1 bg-sunstone-black/20 rounded-full"></div>
+            <div className="bg-sunstone-white rounded-2xl p-8 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-8 w-8 text-sunstone-white" />
+              </div>
+              <div className="text-4xl font-black text-sunstone-navy mb-3">306</div>
+              <div className="text-sunstone-black font-bold text-lg mb-2">Students with 2+ Offers</div>
+              <div className="text-gray-600 text-sm">Multiple job offers secured</div>
+            </div>
+          </div>
+
+          {/* Additional Stats Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-2xl p-8 text-center shadow-xl">
+              <div className="text-3xl font-black text-sunstone-gold mb-2">1200+</div>
+              <div className="text-sunstone-white font-bold text-lg mb-1">Total Recruiters</div>
+              <div className="text-gray-300 text-sm">Industry partners hiring our graduates</div>
+            </div>
+            <div className="bg-sunstone-gold rounded-2xl p-8 text-center shadow-xl">
+              <div className="text-3xl font-black text-sunstone-black mb-2">4.6 LPA</div>
+              <div className="text-sunstone-black font-bold text-lg mb-1">Average Package</div>
+              <div className="text-sunstone-black/70 text-sm">Consistent placement success</div>
             </div>
           </div>
 
           {/* Bottom CTA */}
           <div className="text-center">
-            <div className="bg-sunstone-white/10 backdrop-blur-sm rounded-3xl p-8 max-w-2xl mx-auto border border-sunstone-gold/20">
-              <h3 className="text-2xl font-bold text-sunstone-white mb-4">
-                Ready to Be Part of These Numbers?
+            <div className="bg-sunstone-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-sunstone-gold/20">
+              <h3 className="text-2xl font-bold text-sunstone-navy mb-4">
+                Ready to Join These Success Stories?
               </h3>
-              <p className="text-gray-300 mb-6">
-                Your success story is waiting to be written. Join thousands who transformed their futures.
+              <p className="text-gray-600 mb-6">
+                Take the first step towards your dream career and become part of our growing community of successful professionals.
               </p>
-              <Button
+              <Button 
                 onClick={handleApplyNow}
-                size="lg"
-                className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-10 py-4 text-lg transition-all duration-300 transform hover:scale-105 shadow-xl rounded-2xl"
+                size="lg" 
+                className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-bold px-10 py-4 text-lg transition-all duration-300 transform hover:scale-105 shadow-lg rounded-xl"
               >
-                Start Your Success Journey
+                Begin Your Journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -608,113 +624,100 @@ export default function Index() {
       </section>
 
       {/* Bright Minds Scholarship Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-white via-sunstone-gold/5 to-sunstone-navy/10 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold to-sunstone-navy"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-16 md:py-20 bg-sunstone-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-gold to-sunstone-navy p-1 rounded-full mb-8">
-              <div className="bg-sunstone-white rounded-full px-6 py-3 flex items-center gap-2">
-                <Award className="h-6 w-6 text-sunstone-gold" />
-                <span className="text-sunstone-navy font-bold text-lg">Scholarship Alert</span>
-              </div>
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+              <Award className="h-5 w-5 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-semibold text-base">Financial Support Available</span>
             </div>
-
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6">
-              <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy bg-clip-text text-transparent">
-                Bright Minds
-              </span>
-              <br />
-              <span className="text-sunstone-gold text-4xl sm:text-5xl lg:text-6xl">
-                Scholarship Program
-              </span>
+            
+            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+              Bright Minds Scholarship Program
             </h2>
-
-            <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="h-1 w-20 bg-sunstone-gold rounded-full"></div>
-              <div className="text-3xl">💰</div>
-              <div className="h-1 w-20 bg-sunstone-navy rounded-full"></div>
-            </div>
-
-            <p className="text-xl sm:text-2xl text-gray-700 font-medium max-w-4xl mx-auto">
-              Turn your academic excellence into financial freedom. Up to <span className="text-sunstone-gold font-bold">₹6 Lacs</span> waiting for deserving minds!
+            
+            <p className="text-lg sm:text-xl text-gray-600 font-medium max-w-3xl mx-auto">
+              Recognizing academic excellence with financial support up to <span className="text-sunstone-gold font-bold">₹6 Lacs</span> for deserving students
             </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
           </div>
 
-          {/* Interactive Scholarship Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* Gold Tier */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-3xl p-8 text-center transform transition-all duration-500 hover:scale-105 border-4 border-yellow-400">
-                <div className="text-6xl mb-4">🥇</div>
-                <h3 className="text-2xl font-black text-yellow-800 mb-2">GOLD TIER</h3>
-                <div className="text-4xl font-black text-yellow-700 mb-4">₹6,00,000</div>
-                <p className="text-yellow-800 font-semibold mb-4">Top 10% Academic Performers</p>
-                <div className="bg-yellow-400 text-yellow-900 px-4 py-2 rounded-full text-sm font-bold">
-                  Premium Recognition
-                </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Scholarship Image */}
+            <div className="order-2 lg:order-1 animate-slide-in-left">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
+                  alt="Bright Minds Scholarship - Financial support for academic excellence"
+                  className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105"
+                />
               </div>
             </div>
-
-            {/* Silver Tier */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-400 to-gray-600 rounded-3xl transform -rotate-2 group-hover:-rotate-4 transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 text-center transform transition-all duration-500 hover:scale-105 border-4 border-gray-400">
-                <div className="text-6xl mb-4">🥈</div>
-                <h3 className="text-2xl font-black text-gray-800 mb-2">SILVER TIER</h3>
-                <div className="text-4xl font-black text-gray-700 mb-4">₹4,00,000</div>
-                <p className="text-gray-800 font-semibold mb-4">Top 25% Academic Performers</p>
-                <div className="bg-gray-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">
-                  Excellent Achievement
+            
+            {/* Right - Scholarship Info */}
+            <div className="order-1 lg:order-2 animate-slide-in-right">
+              <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-8 lg:p-10 shadow-xl border border-gray-200">
+                <div className="mb-8">
+                  <h3 className="text-3xl font-bold text-sunstone-navy mb-4">Merit-Based Financial Awards</h3>
+                  <p className="text-gray-600 text-lg">Scholarships awarded based on academic performance and potential</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Bronze Tier */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 rounded-3xl transform rotate-1 group-hover:rotate-3 transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 text-center transform transition-all duration-500 hover:scale-105 border-4 border-orange-400">
-                <div className="text-6xl mb-4">🥉</div>
-                <h3 className="text-2xl font-black text-orange-800 mb-2">BRONZE TIER</h3>
-                <div className="text-4xl font-black text-orange-700 mb-4">₹2,00,000</div>
-                <p className="text-orange-800 font-semibold mb-4">Top 50% Academic Performers</p>
-                <div className="bg-orange-400 text-orange-900 px-4 py-2 rounded-full text-sm font-bold">
-                  Great Start
+                
+                <div className="space-y-6">
+                  {/* Top 10% */}
+                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-sunstone-gold">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-xl font-bold text-sunstone-navy">Elite Performance Tier</h4>
+                        <p className="text-gray-600">Top 10% Academic Performers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-sunstone-gold">₹6,00,000</div>
+                        <div className="text-sm text-gray-500">Maximum Award</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Top 25% */}
+                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-sunstone-navy">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-xl font-bold text-sunstone-navy">Excellence Tier</h4>
+                        <p className="text-gray-600">Top 25% Academic Performers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-sunstone-navy">₹4,00,000</div>
+                        <div className="text-sm text-gray-500">Substantial Support</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Top 50% */}
+                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-xl font-bold text-sunstone-navy">Achievement Tier</h4>
+                        <p className="text-gray-600">Top 50% Academic Performers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-gray-700">₹2,00,000</div>
+                        <div className="text-sm text-gray-500">Foundation Support</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Action Section */}
-          <div className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy-dark to-sunstone-black rounded-3xl p-12 text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/10 to-transparent opacity-20"></div>
-
-            <div className="relative z-10">
-              <div className="text-6xl mb-6">🎯</div>
-              <h3 className="text-3xl sm:text-4xl font-black text-sunstone-white mb-4">
-                Your Academic Excellence = Your Financial Freedom
-              </h3>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Limited scholarships available! Apply now and let your performance speak for your potential.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button
-                  onClick={handleApplyNow}
-                  size="lg"
-                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-black px-12 py-6 text-xl transition-all duration-300 transform hover:scale-110 shadow-xl rounded-2xl"
-                >
-                  Claim Your Scholarship Now
-                  <Award className="ml-3 h-6 w-6" />
-                </Button>
-
-                <div className="text-sunstone-gold font-bold text-lg">
-                  ⏰ First Come, First Served Basis
+                
+                <div className="mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-6 text-center">
+                  <h4 className="text-xl font-bold text-sunstone-white mb-2">Apply Today & Secure Your Future</h4>
+                  <p className="text-gray-300 text-sm mb-4">Limited scholarships available on first-come, first-served basis</p>
+                  <Button 
+                    onClick={handleApplyNow}
+                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 rounded-lg"
+                  >
+                    Apply for Scholarship
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
                 </div>
               </div>
             </div>
