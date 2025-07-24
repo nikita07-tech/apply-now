@@ -750,19 +750,19 @@ export default function Index() {
       {/* Top Recruiters Section */}
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
+          <div className="text-center mb-8 md:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-sunstone-navy mb-4 px-4">
               Top Recruiters
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
               Leading companies that trust our graduates
             </p>
-            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4"></div>
+            <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4"></div>
           </div>
 
           {/* First Row - Right to Left */}
-          <div className="relative overflow-hidden mb-8">
-            <div className="flex animate-scroll-right space-x-8" style={{ width: 'calc(200% + 64px)' }}>
+          <div className="relative overflow-hidden mb-6 md:mb-8">
+            <div className="flex animate-scroll-right space-x-4 md:space-x-8" style={{ width: 'calc(200% + 64px)' }}>
               {/* First set */}
               <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -855,7 +855,7 @@ export default function Index() {
 
           {/* Second Row - Left to Right */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-left space-x-8" style={{ width: 'calc(200% + 64px)' }}>
+            <div className="flex animate-scroll-left space-x-4 md:space-x-8" style={{ width: 'calc(200% + 64px)' }}>
               {/* First set */}
               <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -958,14 +958,14 @@ export default function Index() {
               <span className="text-sunstone-navy font-semibold text-base">Financial Support Available</span>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Bright Minds Scholarship Program
             </h2>
 
-            <p className="text-lg sm:text-xl text-gray-600 font-medium max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
               Recognizing academic excellence with financial support up to <span className="text-sunstone-gold font-bold">₹6 Lacs</span> for deserving students
             </p>
-            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
+            <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -983,10 +983,10 @@ export default function Index() {
 
             {/* Right - Scholarship Info */}
             <div className="order-1 lg:order-2 animate-slide-in-right">
-              <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-8 lg:p-10 shadow-xl border border-gray-200">
-                <div className="mb-8">
-                  <h3 className="text-3xl font-bold text-sunstone-navy mb-4">Merit-Based Financial Awards</h3>
-                  <p className="text-gray-600 text-lg">Scholarships awarded based on academic performance and potential</p>
+              <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
+                <div className="mb-6 md:mb-8">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">Merit-Based Financial Awards</h3>
+                  <p className="text-gray-600 text-base md:text-lg">Scholarships awarded based on academic performance and potential</p>
                 </div>
 
                 <div className="space-y-6">
