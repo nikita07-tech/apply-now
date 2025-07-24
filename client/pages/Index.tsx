@@ -982,7 +982,7 @@ export default function Index() {
             </div>
 
             {/* Right - Scholarship Info */}
-            <div className="order-1 lg:order-2 animate-slide-in-right">
+            <div className="order-2 animate-slide-in-right">
               <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
                 <div className="mb-6 md:mb-8">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">Merit-Based Financial Awards</h3>
