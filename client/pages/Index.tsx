@@ -1217,27 +1217,27 @@ export default function Index() {
               <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Programs</h4>
               <ul className="space-y-0.5 md:space-y-2 text-xs">
                 <li>
-                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/mba" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     MBA/PGDM
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/bba" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     BBA
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/btech" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     B.Tech
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/bca" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     BCA
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/mca" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     MCA
                   </a>
                 </li>
