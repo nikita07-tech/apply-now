@@ -168,9 +168,9 @@ export default function Index() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <img
-                src="https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/sunstonelogo2x-1-92104e?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-14 w-auto animate-pulse transition-all duration-500 hover:scale-110"
+                className="h-10 w-auto transition-all duration-500 hover:scale-110"
               />
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -282,7 +282,7 @@ export default function Index() {
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl"
+                      className="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-3 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl text-gray-900 font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -292,34 +292,35 @@ export default function Index() {
                       I want to pursue*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none bg-white transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl appearance-none cursor-pointer"
+                      className="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-3 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl appearance-none cursor-pointer text-gray-900 font-medium"
                       required
+                      style={{ color: '#1f2937' }}
                     >
-                      <option value="" className="text-gray-500">
+                      <option value="" style={{ color: '#6b7280' }}>
                         Select Program
                       </option>
-                      <option value="mba" className="text-gray-900">
+                      <option value="mba" style={{ color: '#1f2937' }}>
                         MBA/PGDM
                       </option>
-                      <option value="bba" className="text-gray-900">
+                      <option value="bba" style={{ color: '#1f2937' }}>
                         BBA
                       </option>
-                      <option value="btech" className="text-gray-900">
+                      <option value="btech" style={{ color: '#1f2937' }}>
                         B.Tech
                       </option>
-                      <option value="bcom" className="text-gray-900">
+                      <option value="bcom" style={{ color: '#1f2937' }}>
                         B.Com
                       </option>
-                      <option value="bca" className="text-gray-900">
+                      <option value="bca" style={{ color: '#1f2937' }}>
                         BCA
                       </option>
-                      <option value="diploma" className="text-gray-900">
+                      <option value="diploma" style={{ color: '#1f2937' }}>
                         Diploma Programs
                       </option>
-                      <option value="certification" className="text-gray-900">
+                      <option value="certification" style={{ color: '#1f2937' }}>
                         Certification Courses
                       </option>
-                      <option value="other" className="text-gray-900">
+                      <option value="other" style={{ color: '#1f2937' }}>
                         Other Programs
                       </option>
                     </select>
@@ -334,7 +335,7 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl"
+                      className="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-3 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl text-gray-900 font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -344,49 +345,50 @@ export default function Index() {
                       Select State*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none bg-white transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl appearance-none cursor-pointer"
+                      className="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-3 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl appearance-none cursor-pointer text-gray-900 font-medium"
                       required
+                      style={{ color: '#1f2937' }}
                     >
-                      <option value="" className="text-gray-500">
+                      <option value="" style={{ color: '#6b7280' }}>
                         Select State
                       </option>
-                      <option value="andhra-pradesh" className="text-gray-900">
+                      <option value="andhra-pradesh" style={{ color: '#1f2937' }}>
                         Andhra Pradesh
                       </option>
-                      <option value="delhi" className="text-gray-900">
+                      <option value="delhi" style={{ color: '#1f2937' }}>
                         Delhi
                       </option>
-                      <option value="gujarat" className="text-gray-900">
+                      <option value="gujarat" style={{ color: '#1f2937' }}>
                         Gujarat
                       </option>
-                      <option value="haryana" className="text-gray-900">
+                      <option value="haryana" style={{ color: '#1f2937' }}>
                         Haryana
                       </option>
-                      <option value="karnataka" className="text-gray-900">
+                      <option value="karnataka" style={{ color: '#1f2937' }}>
                         Karnataka
                       </option>
-                      <option value="maharashtra" className="text-gray-900">
+                      <option value="maharashtra" style={{ color: '#1f2937' }}>
                         Maharashtra
                       </option>
-                      <option value="punjab" className="text-gray-900">
+                      <option value="punjab" style={{ color: '#1f2937' }}>
                         Punjab
                       </option>
-                      <option value="rajasthan" className="text-gray-900">
+                      <option value="rajasthan" style={{ color: '#1f2937' }}>
                         Rajasthan
                       </option>
-                      <option value="tamil-nadu" className="text-gray-900">
+                      <option value="tamil-nadu" style={{ color: '#1f2937' }}>
                         Tamil Nadu
                       </option>
-                      <option value="telangana" className="text-gray-900">
+                      <option value="telangana" style={{ color: '#1f2937' }}>
                         Telangana
                       </option>
-                      <option value="uttar-pradesh" className="text-gray-900">
+                      <option value="uttar-pradesh" style={{ color: '#1f2937' }}>
                         Uttar Pradesh
                       </option>
-                      <option value="west-bengal" className="text-gray-900">
+                      <option value="west-bengal" style={{ color: '#1f2937' }}>
                         West Bengal
                       </option>
-                      <option value="other" className="text-gray-900">
+                      <option value="other" style={{ color: '#1f2937' }}>
                         Other
                       </option>
                     </select>
@@ -497,6 +499,29 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Achievement Stats Section */}
+      <section className="py-16 md:py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-sunstone-yellow/10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
+              Our Track Record Speaks
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600">
+              Delivering exceptional results for our students
+            </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-yellow to-blue-500 rounded-full mx-auto mt-4"></div>
+          </div>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 sm:p-12 animate-fade-in-up delay-300 transform hover:scale-105 transition-all duration-700 border border-sunstone-yellow/20">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fb49ca3f03fa642bf9f774520135023f6?format=webp&width=800"
+              alt="Achievement Stats - 25 LPA Highest Salary, 1400+ Total Offers, 1020+ Unique Job Opportunities, 93% Higher ROI, 50% Students with 2+ Offers, 7x More Companies"
+              className="w-full h-auto object-contain transition-all duration-700 hover:scale-110 animate-float"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Company Partners Section */}
       <section className="py-16 md:py-20 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-sunstone-yellow/10"></div>
@@ -540,83 +565,129 @@ export default function Index() {
       </section>
 
       {/* Success Stories Section */}
-      <section id="success-stories" className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="success-stories" className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-sunstone-yellow/5 to-blue-500/5"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
-              Success Stories
+            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+              🌟 Success Stories That Inspire
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from our alumni who have transformed their careers with
-              Sunstone
+            <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto font-medium">
+              Real students, Real achievements, Real transformations
             </p>
-            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-yellow to-blue-500 rounded-full mx-auto mt-4"></div>
+            <div className="h-2 w-40 bg-gradient-to-r from-sunstone-yellow via-blue-500 to-green-500 rounded-full mx-auto mt-6 animate-pulse"></div>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {/* Enhanced Grid Layout */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
             {successStories.map((story, index) => (
-              <Card
+              <div
                 key={story.id}
-                className="border-0 shadow-xl hover:shadow-2xl transition-all duration-700 overflow-hidden transform hover:scale-110 animate-fade-in-up group relative"
-                style={{ animationDelay: `${index * 200}ms` }}
+                className="group relative animate-fade-in-up"
+                style={{ animationDelay: `${index * 150}ms` }}
               >
-                <CardContent className="p-0 relative">
-                  <div className="h-52 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-sunstone-yellow/30 to-transparent animate-pulse"></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                {/* Background Card */}
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-yellow/20 to-blue-500/20 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-all duration-500"></div>
+
+                {/* Main Card */}
+                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:shadow-3xl border border-gray-200 group-hover:border-sunstone-yellow">
+                  {/* Header with Image and Badge */}
+                  <div className="relative h-40 bg-gradient-to-br from-sunstone-navy via-blue-800 to-slate-900 flex items-center justify-center overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-sunstone-yellow/20 to-transparent animate-pulse"></div>
+                    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMSIgZmlsbD0iIzM3NDE1MSIgZmlsbC1vcGFjaXR5PSIwLjEiLz4KPC9zdmc+')] opacity-30"></div>
+
                     <img
                       src={story.image}
                       alt={story.name}
-                      className="w-28 h-28 rounded-full object-cover border-4 border-white z-10 transition-all duration-500 hover:scale-125 animate-bounce-gentle shadow-xl"
+                      className="w-20 h-20 rounded-full object-cover border-4 border-white z-10 transition-all duration-500 group-hover:scale-110 shadow-xl"
                     />
+
+                    {/* Floating Badge */}
                     <div className="absolute top-4 right-4 z-20">
-                      <Badge className="bg-sunstone-yellow text-sunstone-navy font-bold animate-pulse shadow-lg">
-                        {story.package.split(" ").slice(-2).join(" ")}
-                      </Badge>
+                      <div className="bg-gradient-to-r from-green-400 to-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
+                        💰 {story.package.split(" ").slice(-2).join(" ")}
+                      </div>
+                    </div>
+
+                    {/* Verified Badge */}
+                    <div className="absolute bottom-4 left-4 z-20">
+                      <div className="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1 shadow-lg">
+                        ✅ Verified
+                      </div>
                     </div>
                   </div>
-                  <div className="p-6 bg-gradient-to-b from-white to-gray-50">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-bold text-sunstone-navy group-hover:text-sunstone-yellow transition-colors duration-300">
+
+                  {/* Content */}
+                  <div className="p-6">
+                    {/* Name and Details */}
+                    <div className="mb-4">
+                      <h3 className="text-xl font-bold text-sunstone-navy mb-2 group-hover:text-sunstone-yellow transition-colors duration-300">
                         {story.name}
                       </h3>
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                          🏫 {story.campus}
+                        </span>
+                        <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">
+                          📅 {story.year}
+                        </span>
+                        <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">
+                          🎓 {story.course}
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <Badge variant="outline" className="text-xs bg-blue-50 animate-fade-in">
-                        {story.campus}
-                      </Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 animate-fade-in delay-100">
-                        {story.year}
-                      </Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 animate-fade-in delay-200">
-                        {story.course}
-                      </Badge>
-                    </div>
-                    <div className="mb-4">
-                      <p className="font-bold text-sunstone-navy text-sm mb-2 animate-slide-in-left">
-                        📍 {story.package}
+
+                    {/* Company */}
+                    <div className="mb-4 p-3 bg-gradient-to-r from-sunstone-yellow/10 to-blue-500/10 rounded-xl border-l-4 border-sunstone-yellow">
+                      <p className="font-bold text-sunstone-navy text-sm flex items-center gap-2">
+                        🏢 <span>{story.package}</span>
                       </p>
                     </div>
-                    <p className="text-gray-600 text-sm line-clamp-4 leading-relaxed mb-4 group-hover:text-gray-800 transition-colors duration-300">
-                      {story.testimonial}
+
+                    {/* Testimonial */}
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3 group-hover:text-gray-800 transition-colors duration-300">
+                      "{story.testimonial}"
                     </p>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center">
+
+                    {/* Rating and CTA */}
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-all duration-500 hover:scale-150 animate-pulse"
-                            style={{ animationDelay: `${i * 0.1}s` }}
+                            className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-all duration-300 hover:scale-125"
                           />
                         ))}
                       </div>
-                      <div className="text-xs text-gray-500 animate-fade-in delay-500">
-                        ⭐ Verified Success Story
-                      </div>
+                      <Button
+                        size="sm"
+                        className="bg-sunstone-yellow hover:bg-sunstone-yellow-dark text-sunstone-navy font-semibold text-xs transition-all duration-300 transform hover:scale-105"
+                      >
+                        Read More
+                      </Button>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16 animate-fade-in-up delay-1000">
+            <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-sunstone-yellow/20">
+              <h3 className="text-2xl font-bold text-sunstone-navy mb-4">
+                Ready to Write Your Success Story?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Join thousands of successful professionals who transformed their careers with Sunstone
+              </p>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-sunstone-yellow to-sunstone-yellow-light hover:from-sunstone-yellow-dark hover:to-sunstone-yellow text-sunstone-navy font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+              >
+                Start Your Journey Today 🚀
+              </Button>
+            </div>
           </div>
         </div>
       </section>
