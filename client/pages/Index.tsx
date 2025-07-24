@@ -323,7 +323,7 @@ export default function Index() {
                   </Button>
                 </div>
 
-                <form className="space-y-3 sm:space-y-4 md:space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
+                <form className="space-y-1.5 sm:space-y-2 md:space-y-3" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1 sm:mb-2">
                       Full Name*
