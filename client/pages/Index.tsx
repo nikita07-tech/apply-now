@@ -1119,7 +1119,7 @@ export default function Index() {
               {[...successStories, ...successStories].map((story, index) => (
                 <div
                   key={story.id}
-                  className="flex-shrink-0 w-72 sm:w-80 animate-slide-in-right"
+                  className="flex-shrink-0 w-60 sm:w-72 md:w-80 animate-slide-in-right"
                   style={{ 
                     animationDelay: `${index * 200}ms`,
                     scrollSnapAlign: 'start'
