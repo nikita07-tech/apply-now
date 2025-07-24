@@ -523,7 +523,7 @@ export default function Index() {
       </section>
 
       {/* Program Overview Banner */}
-      <section className="bg-gradient-to-br from-sunstone-gold/5 via-sunstone-white to-sunstone-navy/5 py-16 md:py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-sunstone-gold/5 via-sunstone-white to-sunstone-navy/5 py-8 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sunstone-gold/5 to-transparent opacity-40"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in-up">
