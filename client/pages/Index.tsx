@@ -1056,13 +1056,13 @@ export default function Index() {
       <section id="success-stories" className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Success Stories That Inspire
             </h2>
-            <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto font-medium">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto font-medium px-4">
               Real students, Real achievements, Real transformations
             </p>
-            <div className="h-2 w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
+            <div className="h-1 md:h-2 w-32 md:w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
           
           {/* Auto-Scrolling Container */}
