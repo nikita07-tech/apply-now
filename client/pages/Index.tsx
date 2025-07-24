@@ -141,7 +141,7 @@ const comparisonData = [
 
 export default function Index() {
   const handleApplyNow = () => {
-    window.open('https://sunstone.in', '_blank');
+    alert('Thank you for your interest! Our team will contact you soon.');
   };
 
   return (
