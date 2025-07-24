@@ -1230,9 +1230,9 @@ export default function Index() {
                   href="https://www.youtube.com/@SunstoneIND"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-red-600 p-2 rounded-full hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-red-600 p-1.5 sm:p-2 rounded-full hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Youtube className="h-5 w-5 text-white" />
+                  <Youtube className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://www.instagram.com/sunstone.in/?hl=en"
