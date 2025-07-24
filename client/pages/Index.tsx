@@ -532,37 +532,37 @@ export default function Index() {
               <span className="text-sunstone-navy font-bold text-lg">Trusted by 5000++ Successful Students</span>
             </div>
             
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-sunstone-navy mb-6 md:mb-8 leading-tight px-4 lg:px-0">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Pursue Your Dream Degree
               </span>
               <br />
-              <span className="text-sunstone-black text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
+              <span className="text-sunstone-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
-              <span className="text-sunstone-gold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium">
+              <span className="text-sunstone-gold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
                 at 25+ Premier Colleges Across India
               </span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto px-4">
-              <div className="bg-sunstone-white rounded-2xl p-4 md:p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
-                <div className="text-2xl md:text-3xl font-black text-sunstone-navy mb-2">5000+</div>
-                <div className="text-sunstone-gold font-semibold text-sm md:text-base">Students Successfully Placed</div>
-                <div className="text-gray-600 text-xs md:text-sm mt-2">Across top companies nationwide</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 max-w-4xl mx-auto px-3 sm:px-4">
+              <div className="bg-sunstone-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">5000+</div>
+                <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">Students Successfully Placed</div>
+                <div className="text-gray-600 text-xs mt-1 sm:mt-2">Across top companies nationwide</div>
               </div>
 
-              <div className="bg-sunstone-navy rounded-2xl p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-2xl md:text-3xl font-black text-sunstone-gold mb-2">₹26 LPA</div>
-                <div className="text-sunstone-white font-semibold text-sm md:text-base">Highest Package Achieved</div>
-                <div className="text-gray-300 text-xs md:text-sm mt-2">Dreams turned into reality</div>
+              <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">₹26 LPA</div>
+                <div className="text-sunstone-white font-semibold text-xs sm:text-sm md:text-base">Highest Package Achieved</div>
+                <div className="text-gray-300 text-xs mt-1 sm:mt-2">Dreams turned into reality</div>
               </div>
 
-              <div className="bg-sunstone-gold rounded-2xl p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-2xl md:text-3xl font-black text-sunstone-black mb-2">306</div>
-                <div className="text-sunstone-black font-semibold text-sm md:text-base">Multiple Offer Winners</div>
-                <div className="text-sunstone-black/70 text-xs md:text-sm mt-2">Students with 2+ job offers</div>
+              <div className="bg-sunstone-gold rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">306</div>
+                <div className="text-sunstone-black font-semibold text-xs sm:text-sm md:text-base">Multiple Offer Winners</div>
+                <div className="text-sunstone-black/70 text-xs mt-1 sm:mt-2">Students with 2+ job offers</div>
               </div>
             </div>
             
@@ -570,11 +570,11 @@ export default function Index() {
               <Button
                 onClick={handleApplyNow}
                 size="lg"
-                className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white px-8 md:px-12 py-4 md:py-6 text-lg md:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-2xl shadow-xl border-2 border-sunstone-gold/30 w-full sm:w-auto"
+                className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white px-4 sm:px-6 md:px-8 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl sm:rounded-2xl shadow-xl border-2 border-sunstone-gold/30 w-full sm:w-auto"
               >
                 <span className="hidden sm:inline">Join 5000+ Success Stories</span>
                 <span className="sm:hidden">Join Success Stories</span>
-                <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6" />
+                <ArrowRight className="ml-1.5 sm:ml-2 md:ml-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
               </Button>
             </div>
           </div>
@@ -584,19 +584,19 @@ export default function Index() {
       {/* Stats Section */}
       <section className="bg-sunstone-navy py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 px-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 px-3 sm:px-4">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="text-center animate-scale-in bg-sunstone-navy/20 rounded-xl p-3 md:p-4"
+                className="text-center animate-scale-in bg-sunstone-navy/20 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div
-                  className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold ${stat.color} mb-1 md:mb-2 transition-all duration-300 hover:scale-110`}
+                  className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${stat.color} mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110`}
                 >
                   {stat.value}
                 </div>
-                <div className="text-sunstone-white text-xs sm:text-sm md:text-base opacity-90 leading-tight">
+                <div className="text-sunstone-white text-xs leading-tight opacity-90">
                   {stat.label}
                 </div>
               </div>
@@ -609,10 +609,10 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-sunstone-navy mb-4 px-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
               See how our programs compare with traditional colleges
             </p>
           </div>
