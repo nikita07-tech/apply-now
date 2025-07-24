@@ -362,19 +362,59 @@ export default function Index() {
       </section>
 
       {/* Program Overview Banner */}
-      <section className="bg-sunstone-white py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 animate-fade-in-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
-              Pursue MBA, BBA, MCA, BCA, & B.Tech at 25+ Colleges Across India
+      <section className="bg-gradient-to-br from-sunstone-gold/5 via-sunstone-white to-sunstone-navy/5 py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sunstone-gold/5 to-transparent opacity-40"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/20">
+              <GraduationCap className="h-6 w-6 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-bold text-lg">Trusted by 5000++ Successful Students</span>
+            </div>
+
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-sunstone-navy mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
+                Pursue Your Dream Degree
+              </span>
+              <br />
+              <span className="text-sunstone-black text-2xl sm:text-3xl lg:text-4xl font-semibold">
+                MBA • BBA • MCA • BCA • B.Tech
+              </span>
+              <br />
+              <span className="text-sunstone-gold text-xl sm:text-2xl lg:text-3xl font-medium">
+                at 25+ Premier Colleges Across India
+              </span>
             </h2>
-          </div>
-          <div className="bg-sunstone-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fc5f0c18cca2a45cfb84340661afc3dd1?format=webp&width=800"
-              alt="Program Statistics - 5000+ Students Placed, 26 LPA Highest Package, 4.6 LPA Average Package, 1200+ Total Recruiters"
-              className="w-full h-auto object-contain transition-all duration-500 hover:scale-105"
-            />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-sunstone-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
+                <div className="text-3xl font-black text-sunstone-navy mb-2">5000+</div>
+                <div className="text-sunstone-gold font-semibold">Students Successfully Placed</div>
+                <div className="text-gray-600 text-sm mt-2">Across top companies nationwide</div>
+              </div>
+
+              <div className="bg-sunstone-navy rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+                <div className="text-3xl font-black text-sunstone-gold mb-2">₹26 LPA</div>
+                <div className="text-sunstone-white font-semibold">Highest Package Achieved</div>
+                <div className="text-gray-300 text-sm mt-2">Dreams turned into reality</div>
+              </div>
+
+              <div className="bg-sunstone-gold rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+                <div className="text-3xl font-black text-sunstone-black mb-2">306</div>
+                <div className="text-sunstone-black font-semibold">Multiple Offer Winners</div>
+                <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ job offers</div>
+              </div>
+            </div>
+
+            <div className="mt-12">
+              <Button
+                onClick={handleApplyNow}
+                size="lg"
+                className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white px-12 py-6 text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-2xl shadow-xl border-2 border-sunstone-gold/30"
+              >
+                Join 5000+ Success Stories
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </Button>
+            </div>
           </div>
         </div>
       </section>
