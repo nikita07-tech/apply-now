@@ -1161,14 +1161,14 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-sunstone-navy text-sunstone-white py-1 md:py-8">
-        <div className="max-w-7xl mx-auto px-3 md:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6">
+      <footer className="bg-sunstone-navy text-sunstone-white py-0.5 md:py-8">
+        <div className="max-w-7xl mx-auto px-2 md:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
             <div className="md:col-span-1">
-              <p className="text-gray-200 text-xs mb-2 md:mb-4">
+              <p className="text-gray-200 text-xs mb-1 md:mb-4 leading-tight">
                 Transforming careers through industry-focused education.
               </p>
-              <div className="flex space-x-1 md:space-x-3">
+              <div className="flex space-x-0.5 md:space-x-3">
                 <a
                   href="https://www.youtube.com/@SunstoneIND"
                   target="_blank"
@@ -1204,8 +1204,8 @@ export default function Index() {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Programs</h4>
-              <ul className="space-y-0.5 md:space-y-2 text-xs">
+              <h4 className="font-semibold text-xs md:text-base mb-0.5 md:mb-4 text-sunstone-gold">Programs</h4>
+              <ul className="space-y-0 md:space-y-2 text-xs">
                 <li>
                   <a href="https://sunstone.in/mba" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     MBA/PGDM
@@ -1234,8 +1234,8 @@ export default function Index() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Top Colleges</h4>
-              <ul className="space-y-0.5 md:space-y-2 text-xs">
+              <h4 className="font-semibold text-xs md:text-base mb-0.5 md:mb-4 text-sunstone-gold">Top Colleges</h4>
+              <ul className="space-y-0 md:space-y-2 text-xs">
                 <li>
                   <a href="https://sunstone.in/campuses/sage" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     SAGE University
@@ -1264,8 +1264,8 @@ export default function Index() {
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
-              <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Contact</h4>
-              <div className="space-y-1 md:space-y-3 text-xs md:text-base">
+              <h4 className="font-semibold text-xs md:text-base mb-0.5 md:mb-4 text-sunstone-gold">Contact</h4>
+              <div className="space-y-0.5 md:space-y-3 text-xs md:text-base">
                 <div className="flex items-center text-gray-200">
                   <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   +91 70653 03030
@@ -1276,14 +1276,14 @@ export default function Index() {
                 </div>
                 <Button
                   onClick={handleApplyNow}
-                  className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 font-bold text-xs md:text-sm py-1 px-2 md:py-2 md:px-4 mt-2"
+                  className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 font-bold text-xs md:text-sm py-0.5 px-1.5 md:py-2 md:px-4 mt-1 md:mt-2"
                 >
                   Apply Now
                 </Button>
               </div>
             </div>
           </div>
-          <div className="border-t border-sunstone-navy-light mt-2 md:mt-8 pt-2 md:pt-8 text-center text-gray-200 text-xs">
+          <div className="border-t border-sunstone-navy-light mt-1 md:mt-8 pt-1 md:pt-8 text-center text-gray-200 text-xs">
             <p>&copy; 2025 Sunstone. All rights reserved.</p>
           </div>
         </div>
