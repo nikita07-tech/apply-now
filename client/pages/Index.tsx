@@ -94,14 +94,12 @@ const successStories = [
 ];
 
 const stats = [
-  { value: "₹26 LPA", label: "Highest Salary", color: "text-sunstone-gold" },
-  {
-    value: "1020+",
-    label: "Unique Job Opportunities",
-    color: "text-sunstone-gold",
-  },
-  { value: "63%", label: "Higher ROI", color: "text-sunstone-navy" },
-  { value: "50%", label: "Students with 2+ Offers", color: "text-sunstone-gold" },
+  { value: "₹26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
+  { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
+  { value: "1400+", label: "Total Offers", color: "text-sunstone-navy" },
+  { value: "306", label: "Students with 2+ Offers", color: "text-sunstone-gold" },
+  { value: "5000+", label: "Students Placed", color: "text-sunstone-navy" },
+  { value: "1200+", label: "Total Recruiters", color: "text-sunstone-gold" },
 ];
 
 const comparisonData = [
@@ -363,6 +361,24 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Program Overview Banner */}
+      <section className="bg-sunstone-white py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
+              Pursue MBA, BBA, MCA, BCA, & B.Tech at 25+ Colleges Across India
+            </h2>
+          </div>
+          <div className="bg-sunstone-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Fc5f0c18cca2a45cfb84340661afc3dd1?format=webp&width=800"
+              alt="Program Statistics - 5000+ Students Placed, 26 LPA Highest Package, 4.6 LPA Average Package, 1200+ Total Recruiters"
+              className="w-full h-auto object-contain transition-all duration-500 hover:scale-105"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="bg-sunstone-navy py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -480,16 +496,16 @@ export default function Index() {
               <div className="text-gray-300 text-sm mt-2">Better Returns</div>
             </div>
 
-            {/* Unique Job Opportunities Card */}
+            {/* Total Offers Card */}
             <div className="bg-gradient-to-br from-sunstone-black to-gray-800 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-400 shadow-2xl border border-sunstone-gold/30">
-              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-pulse">1020+</div>
-              <div className="text-sunstone-white font-semibold">Job Opportunities</div>
-              <div className="text-gray-300 text-sm mt-2">Career Options</div>
+              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-pulse">1400+</div>
+              <div className="text-sunstone-white font-semibold">Total Offers</div>
+              <div className="text-gray-300 text-sm mt-2">Placement Success</div>
             </div>
 
             {/* Students with 2+ Offers Card */}
             <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-600 shadow-2xl">
-              <div className="text-5xl font-black text-sunstone-black mb-3 animate-wiggle">50%</div>
+              <div className="text-5xl font-black text-sunstone-black mb-3 animate-wiggle">306</div>
               <div className="text-sunstone-black font-semibold text-lg">Multiple Offers</div>
               <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ Offers</div>
             </div>
@@ -521,20 +537,68 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Scholarship Section */}
-      <section className="py-16 md:py-20 bg-sunstone-white">
+      {/* Bright Minds Scholarship Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
-            <p className="text-xl sm:text-2xl text-sunstone-navy font-bold">
-              Unlock Your Potential with Financial Support
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+              🎓 Bright Minds Scholarship
+            </h2>
+            <p className="text-xl sm:text-2xl text-gray-700 font-medium max-w-3xl mx-auto">
+              Unlock Your Potential with Financial Support Worth Up to ₹6 Lacs
             </p>
+            <div className="h-2 w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6 animate-pulse"></div>
           </div>
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl animate-fade-in-up delay-300 transform hover:scale-105 transition-all duration-500">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
-              alt="Bright Minds Scholarship - Scholarships worth up to ₹6 lacs for grabs!"
-              className="w-full h-auto object-cover"
-            />
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Scholarship Info */}
+            <div className="animate-slide-in-left">
+              <div className="bg-sunstone-white rounded-3xl shadow-2xl p-8 lg:p-10 border border-sunstone-gold/20">
+                <div className="mb-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="bg-sunstone-gold rounded-full p-3">
+                      <Award className="h-8 w-8 text-sunstone-black" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-sunstone-navy">Merit-Based Awards</h3>
+                      <p className="text-gray-600">For exceptional academic performance</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between p-4 bg-sunstone-gold/10 rounded-xl">
+                      <span className="text-sunstone-navy font-semibold">Top 10% Performers</span>
+                      <span className="text-sunstone-navy font-bold text-lg">₹6,00,000</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-sunstone-navy/10 rounded-xl">
+                      <span className="text-sunstone-navy font-semibold">Top 25% Performers</span>
+                      <span className="text-sunstone-navy font-bold text-lg">₹4,00,000</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-gray-100 rounded-xl">
+                      <span className="text-sunstone-navy font-semibold">Top 50% Performers</span>
+                      <span className="text-sunstone-navy font-bold text-lg">₹2,00,000</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-sunstone-gold to-sunstone-navy p-6 rounded-2xl text-center">
+                  <h4 className="text-white font-bold text-lg mb-2">Apply Today & Secure Your Future</h4>
+                  <p className="text-white/90 text-sm">Limited scholarships available - First come, first served</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Scholarship Image */}
+            <div className="animate-slide-in-right">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-3xl transform rotate-3"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
+                  alt="Bright Minds Scholarship - Transform your dreams into reality with financial support"
+                  className="relative w-full h-auto object-cover rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
