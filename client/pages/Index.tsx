@@ -169,37 +169,7 @@ export default function Index() {
               />
             </div>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              <a
-                href="#programs"
-                className="text-sunstone-black hover:text-sunstone-navy transition-colors duration-300 relative group font-medium"
-              >
-                Programs
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-gold transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#placements"
-                className="text-sunstone-black hover:text-sunstone-navy transition-colors duration-300 relative group font-medium"
-              >
-                Placements
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-gold transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#success-stories"
-                className="text-sunstone-black hover:text-sunstone-navy transition-colors duration-300 relative group font-medium"
-              >
-                Success Stories
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-gold transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#about"
-                className="text-sunstone-black hover:text-sunstone-navy transition-colors duration-300 relative group font-medium"
-              >
-                About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-gold transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </nav>
+
 
             {/* Desktop Apply Button */}
             <Button
