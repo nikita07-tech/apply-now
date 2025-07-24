@@ -991,57 +991,57 @@ export default function Index() {
 
                 <div className="space-y-6">
                   {/* Top 10% */}
-                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-sunstone-gold">
-                    <div className="flex items-center justify-between">
+                  <div className="bg-sunstone-white rounded-xl p-4 md:p-6 shadow-lg border-l-4 border-sunstone-gold">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                       <div>
-                        <h4 className="text-xl font-bold text-sunstone-navy">Elite Performance Tier</h4>
-                        <p className="text-gray-600">Top 10% Academic Performers</p>
+                        <h4 className="text-lg md:text-xl font-bold text-sunstone-navy">Elite Performance Tier</h4>
+                        <p className="text-gray-600 text-sm md:text-base">Top 10% Academic Performers</p>
                       </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-black text-sunstone-gold">₹6,00,000</div>
-                        <div className="text-sm text-gray-500">Maximum Award</div>
+                      <div className="text-left sm:text-right">
+                        <div className="text-xl md:text-2xl font-black text-sunstone-gold">₹6,00,000</div>
+                        <div className="text-xs md:text-sm text-gray-500">Maximum Award</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Top 25% */}
-                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-sunstone-navy">
-                    <div className="flex items-center justify-between">
+                  <div className="bg-sunstone-white rounded-xl p-4 md:p-6 shadow-lg border-l-4 border-sunstone-navy">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                       <div>
-                        <h4 className="text-xl font-bold text-sunstone-navy">Excellence Tier</h4>
-                        <p className="text-gray-600">Top 25% Academic Performers</p>
+                        <h4 className="text-lg md:text-xl font-bold text-sunstone-navy">Excellence Tier</h4>
+                        <p className="text-gray-600 text-sm md:text-base">Top 25% Academic Performers</p>
                       </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-black text-sunstone-navy">₹4,00,000</div>
-                        <div className="text-sm text-gray-500">Substantial Support</div>
+                      <div className="text-left sm:text-right">
+                        <div className="text-xl md:text-2xl font-black text-sunstone-navy">₹4,00,000</div>
+                        <div className="text-xs md:text-sm text-gray-500">Substantial Support</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Top 50% */}
-                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400">
-                    <div className="flex items-center justify-between">
+                  <div className="bg-sunstone-white rounded-xl p-4 md:p-6 shadow-lg border-l-4 border-gray-400">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
                       <div>
-                        <h4 className="text-xl font-bold text-sunstone-navy">Achievement Tier</h4>
-                        <p className="text-gray-600">Top 50% Academic Performers</p>
+                        <h4 className="text-lg md:text-xl font-bold text-sunstone-navy">Achievement Tier</h4>
+                        <p className="text-gray-600 text-sm md:text-base">Top 50% Academic Performers</p>
                       </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-black text-gray-700">₹2,00,000</div>
-                        <div className="text-sm text-gray-500">Foundation Support</div>
+                      <div className="text-left sm:text-right">
+                        <div className="text-xl md:text-2xl font-black text-gray-700">₹2,00,000</div>
+                        <div className="text-xs md:text-sm text-gray-500">Foundation Support</div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-6 text-center">
-                  <h4 className="text-xl font-bold text-sunstone-white mb-2">Apply Today & Secure Your Future</h4>
-                  <p className="text-gray-300 text-sm mb-4">Limited scholarships available on first-come, first-served basis</p>
+                <div className="mt-6 md:mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-4 md:p-6 text-center">
+                  <h4 className="text-lg md:text-xl font-bold text-sunstone-white mb-2">Apply Today & Secure Your Future</h4>
+                  <p className="text-gray-300 text-xs md:text-sm mb-4">Limited scholarships available on first-come, first-served basis</p>
                   <Button
                     onClick={handleApplyNow}
-                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 rounded-lg"
+                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-6 md:px-8 py-2 md:py-3 text-base md:text-lg transition-all duration-300 transform hover:scale-105 rounded-lg w-full sm:w-auto"
                   >
                     Apply for Scholarship
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                   </Button>
                 </div>
               </div>
