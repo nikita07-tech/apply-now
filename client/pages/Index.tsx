@@ -1019,7 +1019,7 @@ export default function Index() {
                         <p className="text-gray-600 text-xs">Top 25%</p>
                       </div>
                       <div className="text-right">
-                        <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">₹4L</div>
+                        <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">��4L</div>
                         <div className="text-xs text-gray-500">Support</div>
                       </div>
                     </div>
@@ -1257,7 +1257,7 @@ export default function Index() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://sunstone.in/campuses/gdgoenka" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/campuses/gd-goenka" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     GD Goenka University
                   </a>
                 </li>
