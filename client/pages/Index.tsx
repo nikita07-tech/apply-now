@@ -455,47 +455,63 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Achievement Stats Content Section */}
-      <section className="py-16 md:py-20 bg-sunstone-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 animate-fade-in-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
-              Our Excellence in Numbers
+      {/* Our Impact in Numbers Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-sunstone-gold/10 rounded-full animate-float"></div>
+          <div className="absolute bottom-10 right-10 w-24 h-24 bg-sunstone-navy/10 rounded-full animate-bounce-gentle"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+              📊 Our Impact in Numbers
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600">
-              Delivering exceptional results for our students
+            <p className="text-xl sm:text-2xl text-gray-700 font-medium">
+              Proven track record of transforming careers
             </p>
-            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4"></div>
+            <div className="h-2 w-40 bg-gradient-to-r from-sunstone-gold via-sunstone-navy to-sunstone-gold rounded-full mx-auto mt-6 animate-pulse"></div>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up delay-300">
-            <div className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-2xl p-8 text-center transform transition-all duration-500 hover:scale-105">
-              <div className="text-4xl font-bold text-sunstone-gold mb-2">₹25 LPA</div>
-              <div className="text-sunstone-white">Highest Salary</div>
+
+          {/* Animated Stats Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
+            {/* ROI Card */}
+            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up shadow-2xl border border-sunstone-gold/30">
+              <div className="text-5xl font-black text-sunstone-gold mb-3 animate-bounce-gentle">93%</div>
+              <div className="text-sunstone-white font-semibold text-lg">Higher ROI</div>
+              <div className="text-gray-300 text-sm mt-2">Better Returns on Investment</div>
             </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-sunstone-gold rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-sunstone-black mb-1">1400+</div>
-                <div className="text-sunstone-black text-sm">Total Offers</div>
-              </div>
-              <div className="bg-sunstone-navy rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-sunstone-gold mb-1">1020+</div>
-                <div className="text-sunstone-white text-sm">Unique Job Opportunities</div>
-              </div>
-              <div className="bg-sunstone-black rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-sunstone-gold mb-1">93%</div>
-                <div className="text-sunstone-white text-sm">Higher ROI</div>
-              </div>
-              <div className="bg-sunstone-gold-light rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-sunstone-black mb-1">50%</div>
-                <div className="text-sunstone-black text-sm">Students with 2+ Offers</div>
-              </div>
+
+            {/* Total Offers Card */}
+            <div className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-200 shadow-2xl">
+              <div className="text-4xl font-black text-sunstone-black mb-3 animate-pulse">1400+</div>
+              <div className="text-sunstone-black font-semibold">Total Offers</div>
+              <div className="text-sunstone-black/70 text-sm mt-2">Placement Success</div>
             </div>
-            
-            <div className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-2xl p-8 text-center transform transition-all duration-500 hover:scale-105">
-              <div className="text-4xl font-bold text-sunstone-black mb-2">7x</div>
-              <div className="text-sunstone-black">More Companies</div>
+
+            {/* More Companies Card */}
+            <div className="bg-gradient-to-br from-sunstone-black to-gray-800 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-400 shadow-2xl border border-sunstone-gold/30">
+              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-wiggle">7x</div>
+              <div className="text-sunstone-white font-semibold">More Companies</div>
+              <div className="text-gray-300 text-sm mt-2">Industry Partnerships</div>
+            </div>
+
+            {/* Highest Salary Card */}
+            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold-light to-sunstone-gold rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-600 shadow-2xl">
+              <div className="text-5xl font-black text-sunstone-black mb-3 animate-float">₹28</div>
+              <div className="text-sunstone-black font-semibold text-lg">LPA Highest</div>
+              <div className="text-sunstone-black/70 text-sm mt-2">Salary Package</div>
+            </div>
+          </div>
+
+          {/* Additional Stats Row */}
+          <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="bg-sunstone-white rounded-2xl p-6 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-800">
+              <div className="text-3xl font-bold text-sunstone-navy mb-2">1020+</div>
+              <div className="text-gray-700 font-medium">Unique Job Opportunities</div>
+            </div>
+            <div className="bg-sunstone-white rounded-2xl p-6 text-center shadow-xl border-2 border-sunstone-gold/40 transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-1000">
+              <div className="text-3xl font-bold text-sunstone-gold mb-2">50%</div>
+              <div className="text-gray-700 font-medium">Students with 2+ Offers</div>
             </div>
           </div>
         </div>
