@@ -751,13 +751,13 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-sunstone-navy mb-4 px-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Top Recruiters
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
               Leading companies that trust our graduates
             </p>
-            <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4"></div>
+            <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
           </div>
 
           {/* First Row - Right to Left */}
