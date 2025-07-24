@@ -9,6 +9,14 @@ import {
   TrendingUp,
   Award,
   Phone,
+  Facebook,
+  Instagram,
+  Youtube,
+  Linkedin,
+  Mail,
+  MapPin,
+  CheckCircle,
+  XCircle,
 } from "lucide-react";
 
 const successStories = [
@@ -99,44 +107,100 @@ const stats = [
   { value: "7+", label: "More Companies", color: "text-purple-400" },
 ];
 
+const comparisonData = [
+  {
+    feature: "Specializations",
+    sunstone: "5 Advanced New-Age Specializations",
+    others: "Limited Or No Specialization Choices",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+  {
+    feature: "Industry Exposure",
+    sunstone: "8+ Months Of Industry Internships",
+    others: "Minimal Or No Internship Opportunities",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+  {
+    feature: "Hands-On Learning",
+    sunstone: "3 Capstone Projects (1 Every Year)",
+    others: "Projects With Minimal Industry Use",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+  {
+    feature: "Expert Sessions",
+    sunstone: "70+ Sessions By Industry Leaders & Top Faculty",
+    others: "Few Or No Sessions With Industry Experts",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+  {
+    feature: "Certifications",
+    sunstone: "10 In-Demand Advanced Certifications",
+    others: "Limited Or No Certification Options",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+  {
+    feature: "Placement Readiness",
+    sunstone: "180+ Hours Of Mock GD/PI Training",
+    others: "Basic Or No Placement Preparation",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+  {
+    feature: "Career Boost",
+    sunstone: "Build A Job-Ready Portfolio",
+    others: "No Structured Portfolio Development",
+    sunstoneIcon: <CheckCircle className="h-5 w-5 text-green-500" />,
+    othersIcon: <XCircle className="h-5 w-5 text-red-500" />,
+  },
+];
+
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-lg border-b sticky top-0 z-50 animate-fade-in backdrop-blur-sm bg-white/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-18">
+          <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/sunstonelogo2x-1-92104e?format=webp&width=800"
                 alt="Sunstone"
-                className="h-12 w-auto animate-pulse transition-all duration-500 hover:scale-110"
+                className="h-14 w-auto animate-pulse transition-all duration-500 hover:scale-110"
               />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
                 href="#programs"
-                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300"
+                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300 relative group"
               >
                 Programs
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-yellow transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#placements"
-                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300"
+                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300 relative group"
               >
                 Placements
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-yellow transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#success-stories"
-                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300"
+                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300 relative group"
               >
                 Success Stories
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-yellow transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#about"
-                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300"
+                className="text-gray-700 hover:text-sunstone-navy transition-colors duration-300 relative group"
               >
                 About
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunstone-yellow transition-all duration-300 group-hover:w-full"></span>
               </a>
             </nav>
             <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl animate-pulse">
@@ -160,7 +224,7 @@ export default function Index() {
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left">
               <div className="mb-8">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 animate-fade-in-up leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-white animate-slide-up">
                     Big Dreams Need
                   </span>
@@ -176,7 +240,7 @@ export default function Index() {
                 <span className="text-sunstone-yellow font-bold animate-pulse">
                   200+ assured placement opportunities
                 </span>{" "}
-                with
+                with{" "}
                 <span className="text-white font-semibold">
                   Placement Opportunity Program
                 </span>
@@ -189,13 +253,6 @@ export default function Index() {
                 >
                   Apply Now - Limited Seats Available
                   <ArrowRight className="ml-3 h-5 w-5 sm:h-6 sm:w-6 animate-bounce" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-sunstone-yellow text-sunstone-yellow hover:bg-sunstone-yellow hover:text-sunstone-navy px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl transition-all duration-500 w-full sm:w-auto rounded-xl font-semibold transform hover:scale-105 hover:shadow-xl"
-                >
-                  Download Brochure
                 </Button>
               </div>
             </div>
@@ -217,7 +274,7 @@ export default function Index() {
                   </Button>
                 </div>
 
-                <form className="space-y-4 sm:space-y-6">
+                <form className="space-y-6">
                   <div className="animate-fade-in-up delay-100">
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Full Name*
@@ -235,19 +292,36 @@ export default function Index() {
                       I want to pursue*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none bg-white transition-all duration-300 transform focus:scale-105"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none bg-white transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl appearance-none cursor-pointer"
                       required
                     >
-                      <option value="">Select Program</option>
-                      <option value="mba">MBA/PGDM</option>
-                      <option value="bba">BBA</option>
-                      <option value="btech">B.Tech</option>
-                      <option value="bcom">B.Com</option>
-                      <option value="diploma">Diploma Programs</option>
-                      <option value="certification">
+                      <option value="" className="text-gray-500">
+                        Select Program
+                      </option>
+                      <option value="mba" className="text-gray-900">
+                        MBA/PGDM
+                      </option>
+                      <option value="bba" className="text-gray-900">
+                        BBA
+                      </option>
+                      <option value="btech" className="text-gray-900">
+                        B.Tech
+                      </option>
+                      <option value="bcom" className="text-gray-900">
+                        B.Com
+                      </option>
+                      <option value="bca" className="text-gray-900">
+                        BCA
+                      </option>
+                      <option value="diploma" className="text-gray-900">
+                        Diploma Programs
+                      </option>
+                      <option value="certification" className="text-gray-900">
                         Certification Courses
                       </option>
-                      <option value="other">Other Programs</option>
+                      <option value="other" className="text-gray-900">
+                        Other Programs
+                      </option>
                     </select>
                   </div>
 
@@ -270,23 +344,51 @@ export default function Index() {
                       Select State*
                     </label>
                     <select
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none bg-white transition-all duration-300 transform focus:scale-105"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sunstone-yellow focus:border-sunstone-yellow outline-none bg-white transition-all duration-500 transform focus:scale-105 hover:shadow-lg focus:shadow-xl appearance-none cursor-pointer"
                       required
                     >
-                      <option value="">Select State</option>
-                      <option value="andhra-pradesh">Andhra Pradesh</option>
-                      <option value="delhi">Delhi</option>
-                      <option value="gujarat">Gujarat</option>
-                      <option value="haryana">Haryana</option>
-                      <option value="karnataka">Karnataka</option>
-                      <option value="maharashtra">Maharashtra</option>
-                      <option value="punjab">Punjab</option>
-                      <option value="rajasthan">Rajasthan</option>
-                      <option value="tamil-nadu">Tamil Nadu</option>
-                      <option value="telangana">Telangana</option>
-                      <option value="uttar-pradesh">Uttar Pradesh</option>
-                      <option value="west-bengal">West Bengal</option>
-                      <option value="other">Other</option>
+                      <option value="" className="text-gray-500">
+                        Select State
+                      </option>
+                      <option value="andhra-pradesh" className="text-gray-900">
+                        Andhra Pradesh
+                      </option>
+                      <option value="delhi" className="text-gray-900">
+                        Delhi
+                      </option>
+                      <option value="gujarat" className="text-gray-900">
+                        Gujarat
+                      </option>
+                      <option value="haryana" className="text-gray-900">
+                        Haryana
+                      </option>
+                      <option value="karnataka" className="text-gray-900">
+                        Karnataka
+                      </option>
+                      <option value="maharashtra" className="text-gray-900">
+                        Maharashtra
+                      </option>
+                      <option value="punjab" className="text-gray-900">
+                        Punjab
+                      </option>
+                      <option value="rajasthan" className="text-gray-900">
+                        Rajasthan
+                      </option>
+                      <option value="tamil-nadu" className="text-gray-900">
+                        Tamil Nadu
+                      </option>
+                      <option value="telangana" className="text-gray-900">
+                        Telangana
+                      </option>
+                      <option value="uttar-pradesh" className="text-gray-900">
+                        Uttar Pradesh
+                      </option>
+                      <option value="west-bengal" className="text-gray-900">
+                        West Bengal
+                      </option>
+                      <option value="other" className="text-gray-900">
+                        Other
+                      </option>
                     </select>
                   </div>
 
@@ -332,108 +434,101 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Comparison Table Section */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
-              Why Choose Sunstone?
+              Why Sunstone Powered Programs Stand Out?
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience education that transforms careers and lives
+              See how our programs compare with traditional colleges
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {[
-              {
-                icon: GraduationCap,
-                title: "Industry-Focused Curriculum",
-                description:
-                  "Modern curriculum designed with industry experts to meet current market demands",
-                color: "sunstone-yellow",
-                bgColor: "sunstone-yellow/10",
-              },
-              {
-                icon: Users,
-                title: "Expert Faculty",
-                description:
-                  "Learn from experienced professionals and industry leaders",
-                color: "blue-600",
-                bgColor: "blue-100",
-              },
-              {
-                icon: TrendingUp,
-                title: "Proven Placements",
-                description:
-                  "Outstanding placement record with top companies and high packages",
-                color: "green-600",
-                bgColor: "green-100",
-              },
-              {
-                icon: Award,
-                title: "Holistic Development",
-                description:
-                  "Complete personality development and skill enhancement programs",
-                color: "purple-600",
-                bgColor: "purple-100",
-              },
-            ].map((feature, index) => (
-              <Card
-                key={index}
-                className="text-center p-4 sm:p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in-up"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <CardContent className="pt-6">
-                  <div
-                    className={`w-16 h-16 bg-${feature.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-500 hover:rotate-12 animate-wiggle`}
-                  >
-                    <feature.icon
-                      className={`h-8 w-8 text-${feature.color} animate-pulse`}
-                    />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-sunstone-navy mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark text-white">
+                    <th className="px-6 py-6 text-left text-lg font-bold">
+                      Key Offerings
+                    </th>
+                    <th className="px-6 py-6 text-center text-lg font-bold bg-sunstone-yellow/20">
+                      Sunstone-Powered Programs
+                    </th>
+                    <th className="px-6 py-6 text-center text-lg font-bold">
+                      Other Colleges
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonData.map((row, index) => (
+                    <tr
+                      key={index}
+                      className={`border-b border-gray-200 hover:bg-gray-50 transition-all duration-300 animate-fade-in-up`}
+                      style={{ animationDelay: `${(index + 1) * 100}ms` }}
+                    >
+                      <td className="px-6 py-6 font-semibold text-gray-800 bg-gray-50">
+                        {row.feature}
+                      </td>
+                      <td className="px-6 py-6 text-center bg-green-50 border-l-4 border-green-500">
+                        <div className="flex items-center justify-center space-x-2 animate-slide-in-left">
+                          {row.sunstoneIcon}
+                          <span className="text-gray-800 font-medium">
+                            {row.sunstone}
+                          </span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-6 text-center bg-red-50 border-l-4 border-red-500">
+                        <div className="flex items-center justify-center space-x-2 animate-slide-in-right">
+                          {row.othersIcon}
+                          <span className="text-gray-800 font-medium">
+                            {row.others}
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Company Partners Section */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
-            <h2 className="text-2xl sm:text-3xl font-bold text-sunstone-navy mb-4">
+      <section className="py-16 md:py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-sunstone-yellow/10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
               Our Industry Partners
             </h2>
-            <p className="text-base sm:text-lg text-gray-600">
+            <p className="text-lg sm:text-xl text-gray-600">
               Trusted by leading companies across industries
             </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-yellow to-blue-500 rounded-full mx-auto mt-4"></div>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 animate-fade-in-up delay-300">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 animate-fade-in-up delay-300 transform hover:scale-105 transition-all duration-500 border border-sunstone-yellow/20">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F0ed648de05c74644b6212e6b9a125b4b?format=webp&width=800"
               alt="Industry Partners - Zepto, Amazon, Shoppers Stop, IndusInd Bank, NobroKer, DHL, Axis Bank, PhonePe, Jaro Education, Dhanguard, SAI General, Kotak Life, PropertyPistol, VII, HDFC Ergo, Nivarti, DeHaat and many more"
-              className="w-full h-auto object-contain transition-all duration-300 hover:scale-105"
+              className="w-full h-auto object-contain transition-all duration-500 hover:scale-110 animate-float"
             />
           </div>
         </div>
       </section>
 
       {/* Scholarship Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6 md:mb-8 animate-fade-in-up">
-            <p className="text-lg sm:text-xl text-sunstone-navy font-semibold">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
+            <p className="text-xl sm:text-2xl text-sunstone-navy font-bold">
               Unlock Your Potential with Financial Support
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-2xl shadow-xl animate-fade-in-up delay-300">
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl animate-fade-in-up delay-300 transform hover:scale-105 transition-all duration-500">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F9c289d6793094909b8b7f3550585aebd?format=webp&width=800"
               alt="Bright Minds Scholarship - Scholarships worth up to 90 lacs for global"
@@ -455,59 +550,68 @@ export default function Index() {
               Hear from our alumni who have transformed their careers with
               Sunstone
             </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-yellow to-blue-500 rounded-full mx-auto mt-4"></div>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {successStories.map((story, index) => (
               <Card
                 key={story.id}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:scale-105 animate-fade-in-up"
-                style={{ animationDelay: `${index * 150}ms` }}
+                className="border-0 shadow-xl hover:shadow-2xl transition-all duration-700 overflow-hidden transform hover:scale-110 animate-fade-in-up group relative"
+                style={{ animationDelay: `${index * 200}ms` }}
               >
-                <CardContent className="p-0">
-                  <div className="h-48 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-sunstone-yellow/20 to-transparent"></div>
+                <CardContent className="p-0 relative">
+                  <div className="h-52 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-sunstone-yellow/30 to-transparent animate-pulse"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <img
                       src={story.image}
                       alt={story.name}
-                      className="w-24 h-24 rounded-full object-cover border-4 border-white z-10 transition-all duration-300 hover:scale-110"
+                      className="w-28 h-28 rounded-full object-cover border-4 border-white z-10 transition-all duration-500 hover:scale-125 animate-bounce-gentle shadow-xl"
                     />
-                  </div>
-                  <div className="p-4 sm:p-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-lg sm:text-xl font-semibold text-sunstone-navy">
-                        {story.name}
-                      </h3>
-                      <Badge className="bg-sunstone-yellow text-sunstone-navy font-semibold">
+                    <div className="absolute top-4 right-4 z-20">
+                      <Badge className="bg-sunstone-yellow text-sunstone-navy font-bold animate-pulse shadow-lg">
                         {story.package.split(" ").slice(-2).join(" ")}
                       </Badge>
                     </div>
+                  </div>
+                  <div className="p-6 bg-gradient-to-b from-white to-gray-50">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-xl font-bold text-sunstone-navy group-hover:text-sunstone-yellow transition-colors duration-300">
+                        {story.name}
+                      </h3>
+                    </div>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <Badge variant="outline" className="text-xs">
+                      <Badge variant="outline" className="text-xs bg-blue-50 animate-fade-in">
                         {story.campus}
                       </Badge>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge variant="outline" className="text-xs bg-green-50 animate-fade-in delay-100">
                         {story.year}
                       </Badge>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge variant="outline" className="text-xs bg-purple-50 animate-fade-in delay-200">
                         {story.course}
                       </Badge>
                     </div>
                     <div className="mb-4">
-                      <p className="font-medium text-sunstone-navy text-sm mb-2">
-                        {story.package}
+                      <p className="font-bold text-sunstone-navy text-sm mb-2 animate-slide-in-left">
+                        📍 {story.package}
                       </p>
                     </div>
-                    <p className="text-gray-600 text-sm line-clamp-4 leading-relaxed">
+                    <p className="text-gray-600 text-sm line-clamp-4 leading-relaxed mb-4 group-hover:text-gray-800 transition-colors duration-300">
                       {story.testimonial}
                     </p>
-                    <div className="flex items-center mt-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-all duration-500 hover:scale-150 animate-pulse"
-                          style={{ animationDelay: `${i * 0.1}s` }}
-                        />
-                      ))}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className="h-4 w-4 fill-yellow-400 text-yellow-400 transition-all duration-500 hover:scale-150 animate-pulse"
+                            style={{ animationDelay: `${i * 0.1}s` }}
+                          />
+                        ))}
+                      </div>
+                      <div className="text-xs text-gray-500 animate-fade-in delay-500">
+                        ⭐ Verified Success Story
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -518,8 +622,9 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-sunstone-yellow to-sunstone-yellow-light py-16 md:py-20">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 animate-fade-in-up">
+      <section className="bg-gradient-to-br from-sunstone-yellow to-sunstone-yellow-light py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-sunstone-navy/10 to-transparent"></div>
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 animate-fade-in-up relative z-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-6">
             Ready to Transform Your Career?
           </h2>
@@ -527,18 +632,18 @@ export default function Index() {
             Join thousands of successful professionals. Take the first step
             towards your dream career today.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
               size="lg"
-              className="bg-sunstone-navy text-white hover:bg-sunstone-navy-dark px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+              className="bg-sunstone-navy text-white hover:bg-sunstone-navy-dark px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl"
             >
               Apply Now - Secure Your Seat
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <ArrowRight className="ml-3 h-5 w-5 sm:h-6 sm:w-6 animate-bounce" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-sunstone-navy text-sunstone-navy hover:bg-sunstone-navy hover:text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300"
+              className="border-2 border-sunstone-navy text-sunstone-navy hover:bg-sunstone-navy hover:text-white px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl transition-all duration-500 rounded-xl font-bold transform hover:scale-105 hover:shadow-xl"
             >
               Talk to Counselor
             </Button>
@@ -547,79 +652,119 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-sunstone-navy text-white py-8 md:py-12">
+      <footer className="bg-sunstone-navy text-white py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div className="col-span-full sm:col-span-2">
               <img
                 src="https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/sunstonelogo2x-1-92104e?format=webp&width=800"
                 alt="Sunstone"
-                className="h-8 w-auto mb-4 filter brightness-0 invert"
+                className="h-12 w-auto mb-6 filter brightness-0 invert"
               />
-              <p className="text-blue-200 max-w-md text-sm sm:text-base">
+              <p className="text-blue-200 max-w-md text-sm sm:text-base mb-6">
                 Transforming careers through industry-focused education and
                 unmatched placement support.
               </p>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.youtube.com/@SunstoneIND"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-colors duration-300 transform hover:scale-110"
+                >
+                  <Youtube className="h-6 w-6" />
+                </a>
+                <a
+                  href="https://www.instagram.com/sunstone.in/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-colors duration-300 transform hover:scale-110"
+                >
+                  <Instagram className="h-6 w-6" />
+                </a>
+                <a
+                  href="https://www.facebook.com/sunstoneedu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-colors duration-300 transform hover:scale-110"
+                >
+                  <Facebook className="h-6 w-6" />
+                </a>
+                <a
+                  href="https://in.linkedin.com/school/sunstone-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-colors duration-300 transform hover:scale-110"
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a>
+              </div>
             </div>
             <div>
-              <h4 className="font-semibold text-base sm:text-lg mb-4">
-                Quick Links
-              </h4>
-              <ul className="space-y-2 text-sm sm:text-base">
+              <h4 className="font-semibold text-lg mb-6">Quick Links</h4>
+              <ul className="space-y-3 text-sm sm:text-base">
                 <li>
                   <a
                     href="#programs"
-                    className="text-blue-200 hover:text-white transition-colors duration-300"
+                    className="text-blue-200 hover:text-white transition-colors duration-300 flex items-center group"
                   >
+                    <ArrowRight className="h-4 w-4 mr-2 transform group-hover:translate-x-1 transition-transform duration-300" />
                     Programs
                   </a>
                 </li>
                 <li>
                   <a
                     href="#placements"
-                    className="text-blue-200 hover:text-white transition-colors duration-300"
+                    className="text-blue-200 hover:text-white transition-colors duration-300 flex items-center group"
                   >
+                    <ArrowRight className="h-4 w-4 mr-2 transform group-hover:translate-x-1 transition-transform duration-300" />
                     Placements
                   </a>
                 </li>
                 <li>
                   <a
                     href="#success-stories"
-                    className="text-blue-200 hover:text-white transition-colors duration-300"
+                    className="text-blue-200 hover:text-white transition-colors duration-300 flex items-center group"
                   >
+                    <ArrowRight className="h-4 w-4 mr-2 transform group-hover:translate-x-1 transition-transform duration-300" />
                     Success Stories
                   </a>
                 </li>
                 <li>
                   <a
                     href="#about"
-                    className="text-blue-200 hover:text-white transition-colors duration-300"
+                    className="text-blue-200 hover:text-white transition-colors duration-300 flex items-center group"
                   >
+                    <ArrowRight className="h-4 w-4 mr-2 transform group-hover:translate-x-1 transition-transform duration-300" />
                     About Us
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-base sm:text-lg mb-4">
-                Contact
-              </h4>
-              <ul className="space-y-2 text-blue-200 text-sm sm:text-base">
-                <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-                  1800-XXX-XXXX
+              <h4 className="font-semibold text-lg mb-6">Contact Us</h4>
+              <ul className="space-y-3 text-blue-200 text-sm sm:text-base">
+                <li className="flex items-center hover:text-white transition-colors duration-300 cursor-pointer">
+                  <Phone className="h-4 w-4 mr-2" />
+                  +91 70653 03030
                 </li>
-                <li className="hover:text-white transition-colors duration-300 cursor-pointer">
+                <li className="flex items-center hover:text-white transition-colors duration-300 cursor-pointer">
+                  <Mail className="h-4 w-4 mr-2" />
                   info@sunstone.in
                 </li>
-                <li>
-                  <Button className="bg-sunstone-yellow text-sunstone-navy hover:bg-sunstone-yellow-dark mt-2 text-sm">
+                <li className="flex items-center hover:text-white transition-colors duration-300 cursor-pointer">
+                  <MapPin className="h-4 w-4 mr-2" />
+                  Multiple Locations
+                </li>
+                <li className="mt-4">
+                  <Button className="bg-sunstone-yellow text-sunstone-navy hover:bg-sunstone-yellow-dark transition-all duration-300 transform hover:scale-105 font-bold">
                     Apply Now
                   </Button>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-blue-800 mt-6 md:mt-8 pt-6 md:pt-8 text-center text-blue-200 text-sm">
+          <div className="border-t border-blue-800 mt-8 pt-8 text-center text-blue-200 text-sm">
             <p>&copy; 2024 Sunstone. All rights reserved.</p>
           </div>
         </div>
@@ -701,7 +846,7 @@ export default function Index() {
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
           }
         }
 
@@ -768,7 +913,7 @@ export default function Index() {
         }
 
         .animate-bounce-gentle {
-          animation: bounce-gentle 2s infinite;
+          animation: bounce-gentle 3s infinite;
         }
 
         .animate-scale-in {
@@ -776,7 +921,7 @@ export default function Index() {
         }
 
         .animate-float {
-          animation: float 3s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
         }
 
         .animate-slide-up {
