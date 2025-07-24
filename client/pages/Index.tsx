@@ -1141,22 +1141,23 @@ export default function Index() {
 
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light py-16 md:py-20">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-black mb-6">
+        <div className="max-w-4xl mx-auto text-center px-3 sm:px-4 lg:px-6 xl:px-8 animate-fade-in-up">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-black mb-3 sm:mb-4 md:mb-6">
             Ready to Transform Your Career?
           </h2>
-          <p className="text-lg sm:text-xl text-sunstone-black/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-sunstone-black/80 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto">
             Join thousands of successful professionals. Take the first step
             towards your dream career today.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center">
             <Button
               onClick={handleApplyNow}
               size="lg"
-              className="bg-sunstone-navy text-sunstone-white hover:bg-sunstone-navy-dark px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl"
+              className="bg-sunstone-navy text-sunstone-white hover:bg-sunstone-navy-dark px-4 sm:px-6 md:px-8 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl rounded-xl shadow-xl w-full sm:w-auto"
             >
-              Apply Now - Secure Your Seat
-              <ArrowRight className="ml-3 h-5 w-5 sm:h-6 sm:w-6" />
+              <span className="hidden sm:inline">Apply Now - Secure Your Seat</span>
+              <span className="sm:hidden">Apply Now</span>
+              <ArrowRight className="ml-1.5 sm:ml-2 md:ml-3 h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" />
             </Button>
           </div>
         </div>
