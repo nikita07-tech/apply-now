@@ -269,7 +269,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
-            <div className="text-center lg:text-left animate-slide-in-left">
+            <div className="text-left animate-slide-in-left">
               <div className="mb-4 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white animate-slide-up">
