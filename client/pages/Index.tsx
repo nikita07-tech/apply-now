@@ -1164,7 +1164,7 @@ export default function Index() {
                         </p>
                       </div>
                       
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                      <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
                         "{story.testimonial}"
                       </p>
                       
