@@ -452,10 +452,7 @@ export default function Index() {
 
       {/* Our Impact in Numbers Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-sunstone-gold/10 rounded-full animate-float"></div>
-          <div className="absolute bottom-10 right-10 w-24 h-24 bg-sunstone-navy/10 rounded-full animate-bounce-gentle"></div>
-        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
