@@ -1037,45 +1037,45 @@ export default function Index() {
                   <p className="text-gray-600 text-base md:text-lg">Scholarships awarded based on academic performance and potential</p>
                 </div>
 
-                <div className="space-y-2 sm:space-y-3 md:space-y-6">
+                <div className="space-y-1.5 sm:space-y-2 md:space-y-3 lg:space-y-6">
                   {/* Top 10% */}
-                  <div className="bg-sunstone-white rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2 md:gap-3">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-2 md:p-3 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
+                    <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
-                        <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">Elite Performance Tier</h4>
-                        <p className="text-gray-600 text-xs sm:text-sm">Top 10% Academic Performers</p>
+                        <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">Elite Tier</h4>
+                        <p className="text-gray-600 text-xs">Top 10%</p>
                       </div>
-                      <div className="text-left sm:text-right">
-                        <div className="text-sm sm:text-base md:text-lg lg:text-xl font-black text-sunstone-gold">₹6,00,000</div>
-                        <div className="text-xs text-gray-500">Maximum Award</div>
+                      <div className="text-right">
+                        <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-gold">₹6L</div>
+                        <div className="text-xs text-gray-500">Max Award</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Top 25% */}
-                  <div className="bg-sunstone-white rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2 md:gap-3">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-2 md:p-3 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
+                    <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
-                        <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">Excellence Tier</h4>
-                        <p className="text-gray-600 text-xs sm:text-sm">Top 25% Academic Performers</p>
+                        <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">Excellence</h4>
+                        <p className="text-gray-600 text-xs">Top 25%</p>
                       </div>
-                      <div className="text-left sm:text-right">
-                        <div className="text-sm sm:text-base md:text-lg lg:text-xl font-black text-sunstone-navy">₹4,00,000</div>
-                        <div className="text-xs text-gray-500">Substantial Support</div>
+                      <div className="text-right">
+                        <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">₹4L</div>
+                        <div className="text-xs text-gray-500">Support</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Top 50% */}
-                  <div className="bg-sunstone-white rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg border-l-2 sm:border-l-4 border-gray-400">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2 md:gap-3">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-2 md:p-3 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
+                    <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
-                        <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">Achievement Tier</h4>
-                        <p className="text-gray-600 text-xs sm:text-sm">Top 50% Academic Performers</p>
+                        <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">Achievement</h4>
+                        <p className="text-gray-600 text-xs">Top 50%</p>
                       </div>
-                      <div className="text-left sm:text-right">
-                        <div className="text-sm sm:text-base md:text-lg lg:text-xl font-black text-gray-700">₹2,00,000</div>
-                        <div className="text-xs text-gray-500">Foundation Support</div>
+                      <div className="text-right">
+                        <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-gray-700">₹2L</div>
+                        <div className="text-xs text-gray-500">Foundation</div>
                       </div>
                     </div>
                   </div>
