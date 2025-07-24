@@ -1142,8 +1142,8 @@ export default function Index() {
                     </div>
                     
                     {/* Content */}
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-sunstone-navy mb-2">
+                    <div className="p-3 sm:p-4 md:p-6">
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-sunstone-navy mb-1 sm:mb-2">
                         {story.name}
                       </h3>
                       <div className="flex flex-wrap gap-2 mb-3">
