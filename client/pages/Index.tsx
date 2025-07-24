@@ -640,21 +640,21 @@ export default function Index() {
                       className={`border-b border-gray-200 hover:bg-gray-50 transition-all duration-300 animate-fade-in-up`}
                       style={{ animationDelay: `${(index + 1) * 100}ms` }}
                     >
-                      <td className="px-6 py-6 font-semibold text-sunstone-black bg-gray-50">
+                      <td className="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 font-semibold text-xs sm:text-sm md:text-base text-sunstone-black bg-gray-50">
                         {row.feature}
                       </td>
-                      <td className="px-6 py-6 text-center bg-sunstone-gold/10 border-l-4 border-sunstone-gold">
-                        <div className="flex items-center justify-center space-x-2">
-                          <CheckCircle className="h-5 w-5 text-sunstone-gold" />
-                          <span className="text-sunstone-black font-medium">
+                      <td className="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-sunstone-gold/10 border-l-2 sm:border-l-4 border-sunstone-gold">
+                        <div className="flex items-center justify-center space-x-1 sm:space-x-2">
+                          <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-sunstone-gold flex-shrink-0" />
+                          <span className="text-sunstone-black font-medium text-xs sm:text-sm md:text-base leading-tight">
                             {row.sunstone}
                           </span>
                         </div>
                       </td>
-                      <td className="px-6 py-6 text-center bg-gray-100 border-l-4 border-gray-400">
-                        <div className="flex items-center justify-center space-x-2">
-                          <XCircle className="h-5 w-5 text-gray-500" />
-                          <span className="text-sunstone-black font-medium">
+                      <td className="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-gray-100 border-l-2 sm:border-l-4 border-gray-400">
+                        <div className="flex items-center justify-center space-x-1 sm:space-x-2">
+                          <XCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-gray-500 flex-shrink-0" />
+                          <span className="text-sunstone-black font-medium text-xs sm:text-sm md:text-base leading-tight">
                             {row.others}
                           </span>
                         </div>
