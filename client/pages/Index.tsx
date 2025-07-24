@@ -1261,8 +1261,8 @@ export default function Index() {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold text-lg mb-6 text-sunstone-gold">Programs</h4>
-              <ul className="space-y-3 text-sm sm:text-base">
+              <h4 className="font-semibold text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6 text-sunstone-gold">Programs</h4>
+              <ul className="space-y-1 sm:space-y-2 md:space-y-3 text-xs sm:text-sm md:text-base">
                 <li>
                   <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     MBA/PGDM
