@@ -703,33 +703,33 @@ export default function Index() {
                   href="https://www.youtube.com/@SunstoneIND"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 transform hover:scale-110"
+                  className="bg-red-600 p-2 rounded-full hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Youtube className="h-6 w-6" />
+                  <Youtube className="h-5 w-5 text-white" />
                 </a>
                 <a
                   href="https://www.instagram.com/sunstone.in/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 transform hover:scale-110"
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Instagram className="h-6 w-6" />
+                  <Instagram className="h-5 w-5 text-white" />
                 </a>
                 <a
                   href="https://www.facebook.com/sunstoneedu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 transform hover:scale-110"
+                  className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Facebook className="h-6 w-6" />
+                  <Facebook className="h-5 w-5 text-white" />
                 </a>
                 <a
                   href="https://in.linkedin.com/school/sunstone-/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 transform hover:scale-110"
+                  className="bg-blue-800 p-2 rounded-full hover:bg-blue-900 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Linkedin className="h-6 w-6" />
+                  <Linkedin className="h-5 w-5 text-white" />
                 </a>
               </div>
             </div>
