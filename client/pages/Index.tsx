@@ -1238,25 +1238,25 @@ export default function Index() {
                   href="https://www.instagram.com/sunstone.in/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 p-1.5 sm:p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Instagram className="h-5 w-5 text-white" />
+                  <Instagram className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://www.facebook.com/sunstoneedu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-blue-600 p-1.5 sm:p-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Facebook className="h-5 w-5 text-white" />
+                  <Facebook className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://in.linkedin.com/school/sunstone-/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-800 p-2 rounded-full hover:bg-blue-900 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-blue-800 p-1.5 sm:p-2 rounded-full hover:bg-blue-900 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <Linkedin className="h-5 w-5 text-white" />
+                  <Linkedin className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </a>
               </div>
             </div>
