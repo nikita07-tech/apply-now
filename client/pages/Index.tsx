@@ -1243,6 +1243,36 @@ export default function Index() {
                 </li>
               </ul>
             </div>
+            <div>
+              <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Top Colleges</h4>
+              <ul className="space-y-0.5 md:space-y-2 text-xs">
+                <li>
+                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                    SAGE University
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                    Malla Reddy University
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                    GD Goenka University
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                    Ajeenkya DY Patil University
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                    Rayat Bahra University
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div className="col-span-2 md:col-span-1">
               <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Contact</h4>
               <div className="space-y-1 md:space-y-3 text-xs md:text-base">
