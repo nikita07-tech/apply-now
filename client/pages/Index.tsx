@@ -570,10 +570,10 @@ export default function Index() {
             <div className="h-2 w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
           </div>
           
-          {/* Horizontal Scrolling Container */}
-          <div className="relative">
-            <div className="flex space-x-8 overflow-x-auto pb-6 scrollbar-hide" style={{ scrollSnapType: 'x mandatory' }}>
-              {successStories.map((story, index) => (
+          {/* Auto-Scrolling Container */}
+          <div className="relative overflow-hidden">
+            <div className="flex space-x-8 animate-scroll-x" style={{ width: 'calc(100% + 400px)' }}>
+              {[...successStories, ...successStories].map((story, index) => (
                 <div
                   key={story.id}
                   className="flex-shrink-0 w-80 animate-slide-in-right"
