@@ -94,16 +94,14 @@ const successStories = [
 ];
 
 const stats = [
-  { value: "₹28 LPA", label: "Highest Salary", color: "text-sunstone-gold" },
-  { value: "1400+", label: "Total Offers", color: "text-sunstone-navy" },
+  { value: "₹26 LPA", label: "Highest Salary", color: "text-sunstone-gold" },
   {
     value: "1020+",
     label: "Unique Job Opportunities",
     color: "text-sunstone-gold",
   },
-  { value: "93%", label: "Higher ROI", color: "text-sunstone-navy" },
+  { value: "63%", label: "Higher ROI", color: "text-sunstone-navy" },
   { value: "50%", label: "Students with 2+ Offers", color: "text-sunstone-gold" },
-  { value: "7x", label: "More Companies", color: "text-sunstone-navy" },
 ];
 
 const comparisonData = [
@@ -204,10 +202,7 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-16 md:py-24 overflow-hidden relative">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-sunstone-gold/10 rounded-full animate-float"></div>
-          <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-sunstone-gold/10 rounded-full animate-bounce-gentle"></div>
-        </div>
+
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -265,7 +260,7 @@ export default function Index() {
                   </Button>
                 </div>
 
-                <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); handleApplyNow(); }}>
+                <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Thank you for your interest! Our team will contact you soon.'); }}>
                   <div className="animate-fade-in-up delay-100">
                     <label className="block text-sm font-medium text-sunstone-black mb-2">
                       Full Name*
@@ -474,46 +469,36 @@ export default function Index() {
 
           {/* Animated Stats Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
-            {/* ROI Card */}
-            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up shadow-2xl border border-sunstone-gold/30">
-              <div className="text-5xl font-black text-sunstone-gold mb-3 animate-bounce-gentle">93%</div>
-              <div className="text-sunstone-white font-semibold text-lg">Higher ROI</div>
-              <div className="text-gray-300 text-sm mt-2">Better Returns on Investment</div>
-            </div>
-
-            {/* Total Offers Card */}
-            <div className="bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-200 shadow-2xl">
-              <div className="text-4xl font-black text-sunstone-black mb-3 animate-pulse">1400+</div>
-              <div className="text-sunstone-black font-semibold">Total Offers</div>
-              <div className="text-sunstone-black/70 text-sm mt-2">Placement Success</div>
-            </div>
-
-            {/* More Companies Card */}
-            <div className="bg-gradient-to-br from-sunstone-black to-gray-800 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-400 shadow-2xl border border-sunstone-gold/30">
-              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-wiggle">7x</div>
-              <div className="text-sunstone-white font-semibold">More Companies</div>
-              <div className="text-gray-300 text-sm mt-2">Industry Partnerships</div>
-            </div>
-
             {/* Highest Salary Card */}
-            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold-light to-sunstone-gold rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-600 shadow-2xl">
-              <div className="text-5xl font-black text-sunstone-black mb-3 animate-float">₹28</div>
+            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold-light to-sunstone-gold rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up shadow-2xl">
+              <div className="text-5xl font-black text-sunstone-black mb-3 animate-float">₹26</div>
               <div className="text-sunstone-black font-semibold text-lg">LPA Highest</div>
               <div className="text-sunstone-black/70 text-sm mt-2">Salary Package</div>
             </div>
+
+            {/* ROI Card */}
+            <div className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-200 shadow-2xl border border-sunstone-gold/30">
+              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-bounce-gentle">63%</div>
+              <div className="text-sunstone-white font-semibold">Higher ROI</div>
+              <div className="text-gray-300 text-sm mt-2">Better Returns</div>
+            </div>
+
+            {/* Unique Job Opportunities Card */}
+            <div className="bg-gradient-to-br from-sunstone-black to-gray-800 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-400 shadow-2xl border border-sunstone-gold/30">
+              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-pulse">1020+</div>
+              <div className="text-sunstone-white font-semibold">Job Opportunities</div>
+              <div className="text-gray-300 text-sm mt-2">Career Options</div>
+            </div>
+
+            {/* Students with 2+ Offers Card */}
+            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-600 shadow-2xl">
+              <div className="text-5xl font-black text-sunstone-black mb-3 animate-wiggle">50%</div>
+              <div className="text-sunstone-black font-semibold text-lg">Multiple Offers</div>
+              <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ Offers</div>
+            </div>
           </div>
 
-          {/* Additional Stats Row */}
-          <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <div className="bg-sunstone-white rounded-2xl p-6 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-800">
-              <div className="text-3xl font-bold text-sunstone-navy mb-2">1020+</div>
-              <div className="text-gray-700 font-medium">Unique Job Opportunities</div>
-            </div>
-            <div className="bg-sunstone-white rounded-2xl p-6 text-center shadow-xl border-2 border-sunstone-gold/40 transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-1000">
-              <div className="text-3xl font-bold text-sunstone-gold mb-2">50%</div>
-              <div className="text-gray-700 font-medium">Students with 2+ Offers</div>
-            </div>
-          </div>
+
         </div>
       </section>
 
