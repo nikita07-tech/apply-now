@@ -622,13 +622,13 @@ export default function Index() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark text-sunstone-white">
-                    <th className="px-6 py-6 text-left text-lg font-bold">
+                    <th className="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-left text-xs sm:text-sm md:text-base lg:text-lg font-bold">
                       Key Offerings
                     </th>
-                    <th className="px-6 py-6 text-center text-lg font-bold bg-sunstone-gold/20">
+                    <th className="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-center text-xs sm:text-sm md:text-base lg:text-lg font-bold bg-sunstone-gold/20">
                       Sunstone-Powered Programs
                     </th>
-                    <th className="px-6 py-6 text-center text-lg font-bold">
+                    <th className="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-center text-xs sm:text-sm md:text-base lg:text-lg font-bold">
                       Other Colleges
                     </th>
                   </tr>
