@@ -506,13 +506,7 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-navy via-sunstone-navy-dark to-sunstone-black relative overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-10 left-10 w-20 h-20 bg-sunstone-gold/10 rounded-full animate-float"></div>
-          <div className="absolute bottom-20 right-20 w-32 h-32 bg-sunstone-gold/5 rounded-full animate-bounce-gentle"></div>
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-sunstone-white/5 rounded-full animate-pulse"></div>
-        </div>
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
