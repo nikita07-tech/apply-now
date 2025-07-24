@@ -1212,9 +1212,9 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-sunstone-navy text-sunstone-white py-6 sm:py-8 md:py-12 lg:py-16">
+      <footer className="bg-sunstone-navy text-sunstone-white py-3 sm:py-4 md:py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 xl:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
             <div className="col-span-full sm:col-span-2 md:col-span-1">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
