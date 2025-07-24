@@ -677,69 +677,117 @@ export default function Index() {
               <span className="text-sunstone-navy font-semibold text-base">Proven Track Record</span>
             </div>
             
-            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 font-medium max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
               Real results from real students who chose to transform their careers with Sunstone
             </p>
-            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
+            <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Professional Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {/* Highest Package Card */}
-            <div className="bg-sunstone-white rounded-2xl p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-sunstone-black" />
+          {/* Professional Stats Grid - Carousel on Mobile */}
+          <div className="block md:hidden mb-8">
+            {/* Mobile Carousel */}
+            <div className="relative overflow-hidden px-3">
+              <div className="flex space-x-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                {/* Highest Package Card */}
+                <div className="flex-shrink-0 w-48 bg-sunstone-white rounded-xl p-4 text-center shadow-lg border border-gray-200 snap-start">
+                  <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-2">
+                    <Award className="h-5 w-5 text-sunstone-black" />
+                  </div>
+                  <div className="text-xl font-black text-sunstone-navy mb-1">₹26 LPA</div>
+                  <div className="text-sunstone-black font-bold text-sm mb-1">Highest Package</div>
+                  <div className="text-gray-600 text-xs">Record-breaking achievement</div>
+                </div>
+
+                {/* ROI Card */}
+                <div className="flex-shrink-0 w-48 bg-sunstone-navy rounded-xl p-4 text-center shadow-lg snap-start">
+                  <div className="w-10 h-10 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-2">
+                    <TrendingUp className="h-5 w-5 text-sunstone-black" />
+                  </div>
+                  <div className="text-xl font-black text-sunstone-gold mb-1">63%</div>
+                  <div className="text-sunstone-white font-bold text-sm mb-1">Higher ROI</div>
+                  <div className="text-gray-300 text-xs">Better return on investment</div>
+                </div>
+
+                {/* Students Placed Card */}
+                <div className="flex-shrink-0 w-48 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-xl p-4 text-center shadow-lg border border-sunstone-gold/30 snap-start">
+                  <div className="w-10 h-10 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-2">
+                    <Users className="h-5 w-5 text-sunstone-white" />
+                  </div>
+                  <div className="text-xl font-black text-sunstone-navy mb-1">5000+</div>
+                  <div className="text-sunstone-black font-bold text-sm mb-1">Students Placed</div>
+                  <div className="text-gray-700 text-xs">Successful career launches</div>
+                </div>
+
+                {/* Multiple Offers Card */}
+                <div className="flex-shrink-0 w-48 bg-sunstone-white rounded-xl p-4 text-center shadow-lg border border-sunstone-navy/20 snap-start">
+                  <div className="w-10 h-10 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-2">
+                    <CheckCircle className="h-5 w-5 text-sunstone-white" />
+                  </div>
+                  <div className="text-xl font-black text-sunstone-navy mb-1">306</div>
+                  <div className="text-sunstone-black font-bold text-sm mb-1">Students with 2+ Offers</div>
+                  <div className="text-gray-600 text-xs">Multiple job offers secured</div>
+                </div>
               </div>
-              <div className="text-4xl font-black text-sunstone-navy mb-3">₹26 LPA</div>
-              <div className="text-sunstone-black font-bold text-lg mb-2">Highest Package</div>
+            </div>
+          </div>
+
+          {/* Desktop Grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
+            {/* Highest Package Card */}
+            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+                <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
+              </div>
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">₹26 LPA</div>
+              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">Highest Package</div>
               <div className="text-gray-600 text-sm">Record-breaking achievement</div>
             </div>
 
             {/* ROI Card */}
-            <div className="bg-sunstone-navy rounded-2xl p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-16 h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-sunstone-black" />
+            <div className="bg-sunstone-navy rounded-2xl p-6 lg:p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+                <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
-              <div className="text-4xl font-black text-sunstone-gold mb-3">63%</div>
-              <div className="text-sunstone-white font-bold text-lg mb-2">Higher ROI</div>
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-gold mb-2 lg:mb-3">63%</div>
+              <div className="text-sunstone-white font-bold text-base lg:text-lg mb-1 lg:mb-2">Higher ROI</div>
               <div className="text-gray-300 text-sm">Better return on investment</div>
             </div>
 
             {/* Students Placed Card */}
-            <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-2xl p-8 text-center shadow-xl border-2 border-sunstone-gold/30 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-16 h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-sunstone-white" />
+            <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-sunstone-gold/30 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+                <Users className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
               </div>
-              <div className="text-4xl font-black text-sunstone-navy mb-3">5000+</div>
-              <div className="text-sunstone-black font-bold text-lg mb-2">Students Placed</div>
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">5000+</div>
+              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">Students Placed</div>
               <div className="text-gray-700 text-sm">Successful career launches</div>
             </div>
 
             {/* Multiple Offers Card */}
-            <div className="bg-sunstone-white rounded-2xl p-8 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-sunstone-white" />
+            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+                <CheckCircle className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
               </div>
-              <div className="text-4xl font-black text-sunstone-navy mb-3">306</div>
-              <div className="text-sunstone-black font-bold text-lg mb-2">Students with 2+ Offers</div>
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">306</div>
+              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">Students with 2+ Offers</div>
               <div className="text-gray-600 text-sm">Multiple job offers secured</div>
             </div>
           </div>
 
           {/* Additional Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-2xl p-8 text-center shadow-xl">
-              <div className="text-3xl font-black text-sunstone-gold mb-2">1200+</div>
-              <div className="text-sunstone-white font-bold text-lg mb-1">Total Recruiters</div>
-              <div className="text-gray-300 text-sm">Industry partners hiring our graduates</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">1200+</div>
+              <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">Total Recruiters</div>
+              <div className="text-gray-300 text-xs sm:text-sm">Industry partners hiring our graduates</div>
             </div>
-            <div className="bg-sunstone-gold rounded-2xl p-8 text-center shadow-xl">
-              <div className="text-3xl font-black text-sunstone-black mb-2">4.6 LPA</div>
-              <div className="text-sunstone-black font-bold text-lg mb-1">Average Package</div>
-              <div className="text-sunstone-black/70 text-sm">Consistent placement success</div>
+            <div className="bg-sunstone-gold rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">4.6 LPA</div>
+              <div className="text-sunstone-black font-bold text-sm sm:text-base md:text-lg mb-1">Average Package</div>
+              <div className="text-sunstone-black/70 text-xs sm:text-sm">Consistent placement success</div>
             </div>
           </div>
 
