@@ -1247,27 +1247,27 @@ export default function Index() {
               <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Top Colleges</h4>
               <ul className="space-y-0.5 md:space-y-2 text-xs">
                 <li>
-                  <a href="https://sunstone.in/colleges/sage-university" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/campuses/sage" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     SAGE University
                   </a>
                 </li>
                 <li>
-                  <a href="https://sunstone.in/colleges/malla-reddy-university" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/campuses/mru" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     Malla Reddy University
                   </a>
                 </li>
                 <li>
-                  <a href="https://sunstone.in/colleges/gd-goenka-university" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/campuses/gdgoenka" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     GD Goenka University
                   </a>
                 </li>
                 <li>
-                  <a href="https://sunstone.in/colleges/ajeenkya-dy-patil-university" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/campuses/adypu" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     Ajeenkya DY Patil University
                   </a>
                 </li>
                 <li>
-                  <a href="https://sunstone.in/colleges/rayat-bahra-university" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                  <a href="https://sunstone.in/campuses/rbu" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     Rayat Bahra University
                   </a>
                 </li>
