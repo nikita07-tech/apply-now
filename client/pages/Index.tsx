@@ -179,35 +179,10 @@ export default function Index() {
               Apply Now
             </Button>
 
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
-            >
-              {mobileMenuOpen ? (
-                <X className="h-6 w-6 text-sunstone-navy" />
-              ) : (
-                <Menu className="h-6 w-6 text-sunstone-navy" />
-              )}
-            </button>
+
           </div>
 
-          {/* Mobile Navigation Menu */}
-          {mobileMenuOpen && (
-            <div className="md:hidden border-t border-gray-200 bg-white">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                <Button
-                  onClick={() => {
-                    handleApplyNow();
-                    setMobileMenuOpen(false);
-                  }}
-                  className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 shadow-lg"
-                >
-                  Apply Now
-                </Button>
-              </div>
-            </div>
-          )}
+
         </div>
       </header>
 
@@ -731,13 +706,13 @@ export default function Index() {
             </div>
 
             {/* ROI Card */}
-            <div className="bg-sunstone-navy rounded-2xl p-6 lg:p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
               <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-gold mb-2 lg:mb-3">63%</div>
-              <div className="text-sunstone-white font-bold text-base lg:text-lg mb-1 lg:mb-2">Higher ROI</div>
-              <div className="text-gray-300 text-sm">Better return on investment</div>
+              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">Higher ROI</div>
+              <div className="text-sunstone-navy text-sm">Better return on investment</div>
             </div>
 
             {/* Students Placed Card */}
@@ -768,10 +743,10 @@ export default function Index() {
               <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">Total Recruiters</div>
               <div className="text-gray-300 text-xs sm:text-sm">Industry partners hiring our graduates</div>
             </div>
-            <div className="bg-sunstone-gold rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
-              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">4.6 LPA</div>
-              <div className="text-sunstone-black font-bold text-sm sm:text-base md:text-lg mb-1">Average Package</div>
-              <div className="text-sunstone-black/70 text-xs sm:text-sm">Consistent placement success</div>
+            <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">4.6 LPA</div>
+              <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">Average Package</div>
+              <div className="text-sunstone-white text-xs sm:text-sm">Consistent placement success</div>
             </div>
           </div>
 
