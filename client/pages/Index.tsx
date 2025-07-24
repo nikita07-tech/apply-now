@@ -196,40 +196,12 @@ export default function Index() {
           {mobileMenuOpen && (
             <div className="md:hidden border-t border-gray-200 bg-white">
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <a
-                  href="#programs"
-                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Programs
-                </a>
-                <a
-                  href="#placements"
-                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Placements
-                </a>
-                <a
-                  href="#success-stories"
-                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Success Stories
-                </a>
-                <a
-                  href="#about"
-                  className="block px-3 py-2 text-base font-medium text-sunstone-black hover:text-sunstone-navy hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  About
-                </a>
                 <Button
                   onClick={() => {
                     handleApplyNow();
                     setMobileMenuOpen(false);
                   }}
-                  className="w-full mt-4 bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 shadow-lg"
+                  className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 shadow-lg"
                 >
                   Apply Now
                 </Button>
