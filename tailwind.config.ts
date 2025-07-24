@@ -12,6 +12,9 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ['Public Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -19,18 +22,19 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
+                primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        sunstone: {
-          navy: "#1e3a5f",
-          "navy-dark": "#152b44",
-          "navy-light": "#2d4a6f",
-          blue: "#3b82f6",
-          yellow: "#c88c32",
-          "yellow-light": "#d4a147",
-          "yellow-dark": "#b37d2a",
+                        sunstone: {
+          navy: "#22336a",
+          "navy-dark": "#1a2851",
+          "navy-light": "#2d4a7f",
+          gold: "#c38935",
+          "gold-light": "#d4a147",
+          "gold-dark": "#b37d2a",
+          white: "#ffffff",
+          black: "#000000",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
