@@ -679,24 +679,305 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Company Partners Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      {/* Top Recruiters Section */}
+      <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-sunstone-navy mb-4">
-              Our Industry Partners
+              Top Recruiters
             </h2>
             <p className="text-lg sm:text-xl text-gray-600">
-              Trusted by leading companies across industries
+              Leading companies that trust our graduates
             </p>
             <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4"></div>
           </div>
-          <div className="bg-sunstone-white rounded-2xl shadow-2xl p-8 sm:p-12 animate-fade-in-up delay-300 transform hover:scale-105 transition-all duration-500">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F0ed648de05c74644b6212e6b9a125b4b?format=webp&width=800"
-              alt="Industry Partners - Leading companies that hire our graduates"
-              className="w-full h-auto object-contain transition-all duration-500 hover:scale-105"
-            />
+
+          {/* First Row - Right to Left */}
+          <div className="relative overflow-hidden mb-8">
+            <div className="flex animate-scroll-right space-x-8" style={{ width: 'calc(200% + 64px)' }}>
+              {/* First set */}
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                  alt="Kotak Mahindra Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                  alt="Bosch"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                  alt="HCL"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                  alt="TCS"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                  alt="Paytm"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                  alt="Genpact"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+
+              {/* Duplicate set for seamless loop */}
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                  alt="Kotak Mahindra Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                  alt="Bosch"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                  alt="HCL"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                  alt="TCS"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                  alt="Paytm"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                  alt="Genpact"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row - Left to Right */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-left space-x-8" style={{ width: 'calc(200% + 64px)' }}>
+              {/* First set */}
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F98e68749b7514575bcde3a52e7dcc9f4?format=webp&width=800"
+                  alt="Bajaj Finserv"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5f2464ab689d49b8bbbed84a4bbfbe52?format=webp&width=800"
+                  alt="ANZ"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F59d0017fa3d9416ab3ce0ee614d4fe71?format=webp&width=800"
+                  alt="Hero"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F210f3f50118b4d20be1ff7b265c9424c?format=webp&width=800"
+                  alt="Airtel"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F13cf02d6a8e6484fa30a7ecff760a9de?format=webp&width=800"
+                  alt="Axis Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
+                  alt="IBM"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+
+              {/* Duplicate set for seamless loop */}
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F98e68749b7514575bcde3a52e7dcc9f4?format=webp&width=800"
+                  alt="Bajaj Finserv"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5f2464ab689d49b8bbbed84a4bbfbe52?format=webp&width=800"
+                  alt="ANZ"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F59d0017fa3d9416ab3ce0ee614d4fe71?format=webp&width=800"
+                  alt="Hero"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F210f3f50118b4d20be1ff7b265c9424c?format=webp&width=800"
+                  alt="Airtel"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F13cf02d6a8e6484fa30a7ecff760a9de?format=webp&width=800"
+                  alt="Axis Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-32 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
+                  alt="IBM"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bright Minds Scholarship Section */}
+      <section className="py-16 md:py-20 bg-sunstone-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+              <Award className="h-5 w-5 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-semibold text-base">Financial Support Available</span>
+            </div>
+
+            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+              Bright Minds Scholarship Program
+            </h2>
+
+            <p className="text-lg sm:text-xl text-gray-600 font-medium max-w-3xl mx-auto">
+              Recognizing academic excellence with financial support up to <span className="text-sunstone-gold font-bold">₹6 Lacs</span> for deserving students
+            </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Scholarship Image */}
+            <div className="order-2 lg:order-1 animate-slide-in-left">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
+                  alt="Bright Minds Scholarship - Financial support for academic excellence"
+                  className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105"
+                />
+              </div>
+            </div>
+
+            {/* Right - Scholarship Info */}
+            <div className="order-1 lg:order-2 animate-slide-in-right">
+              <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-8 lg:p-10 shadow-xl border border-gray-200">
+                <div className="mb-8">
+                  <h3 className="text-3xl font-bold text-sunstone-navy mb-4">Merit-Based Financial Awards</h3>
+                  <p className="text-gray-600 text-lg">Scholarships awarded based on academic performance and potential</p>
+                </div>
+
+                <div className="space-y-6">
+                  {/* Top 10% */}
+                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-sunstone-gold">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-xl font-bold text-sunstone-navy">Elite Performance Tier</h4>
+                        <p className="text-gray-600">Top 10% Academic Performers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-sunstone-gold">₹6,00,000</div>
+                        <div className="text-sm text-gray-500">Maximum Award</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Top 25% */}
+                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-sunstone-navy">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-xl font-bold text-sunstone-navy">Excellence Tier</h4>
+                        <p className="text-gray-600">Top 25% Academic Performers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-sunstone-navy">₹4,00,000</div>
+                        <div className="text-sm text-gray-500">Substantial Support</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Top 50% */}
+                  <div className="bg-sunstone-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-xl font-bold text-sunstone-navy">Achievement Tier</h4>
+                        <p className="text-gray-600">Top 50% Academic Performers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-gray-700">₹2,00,000</div>
+                        <div className="text-sm text-gray-500">Foundation Support</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-6 text-center">
+                  <h4 className="text-xl font-bold text-sunstone-white mb-2">Apply Today & Secure Your Future</h4>
+                  <p className="text-gray-300 text-sm mb-4">Limited scholarships available on first-come, first-served basis</p>
+                  <Button
+                    onClick={handleApplyNow}
+                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 rounded-lg"
+                  >
+                    Apply for Scholarship
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1069,6 +1350,32 @@ export default function Index() {
 
         .animate-scroll-x {
           animation: scroll-x 30s linear infinite;
+        }
+
+        .animate-scroll-left {
+          animation: scroll-left 25s linear infinite;
+        }
+
+        .animate-scroll-right {
+          animation: scroll-right 25s linear infinite;
+        }
+
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        @keyframes scroll-right {
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
         }
 
         .delay-100 { animation-delay: 0.1s; }
