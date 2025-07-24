@@ -562,7 +562,8 @@ export default function Index() {
               </span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 max-w-4xl mx-auto px-3 sm:px-4">
+            {/* Desktop Grid */}
+            <div className="hidden md:grid md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 max-w-4xl mx-auto px-3 sm:px-4">
               <div className="bg-sunstone-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">5000+</div>
                 <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">Students Successfully Placed</div>
@@ -579,6 +580,31 @@ export default function Index() {
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">306</div>
                 <div className="text-sunstone-black font-semibold text-xs sm:text-sm md:text-base">Multiple Offer Winners</div>
                 <div className="text-sunstone-black/70 text-xs mt-1 sm:mt-2">Students with 2+ job offers</div>
+              </div>
+            </div>
+
+            {/* Mobile Carousel */}
+            <div className="block md:hidden">
+              <div className="relative overflow-hidden px-3">
+                <div className="flex space-x-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                  <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20 snap-start">
+                    <div className="text-2xl font-black text-sunstone-navy mb-2">5000+</div>
+                    <div className="text-sunstone-gold font-semibold text-sm mb-1">Students Successfully Placed</div>
+                    <div className="text-gray-600 text-xs">Across top companies nationwide</div>
+                  </div>
+
+                  <div className="flex-shrink-0 w-64 bg-sunstone-navy rounded-xl p-4 shadow-xl snap-start">
+                    <div className="text-2xl font-black text-sunstone-gold mb-2">₹26 LPA</div>
+                    <div className="text-sunstone-white font-semibold text-sm mb-1">Highest Package Achieved</div>
+                    <div className="text-gray-300 text-xs">Dreams turned into reality</div>
+                  </div>
+
+                  <div className="flex-shrink-0 w-64 bg-sunstone-gold rounded-xl p-4 shadow-xl snap-start">
+                    <div className="text-2xl font-black text-sunstone-black mb-2">306</div>
+                    <div className="text-sunstone-black font-semibold text-sm mb-1">Multiple Offer Winners</div>
+                    <div className="text-sunstone-black/70 text-xs">Students with 2+ job offers</div>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -1228,56 +1254,51 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-sunstone-navy text-sunstone-white py-3 sm:py-4 md:py-8 lg:py-12">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 xl:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
-            <div className="col-span-full sm:col-span-2 md:col-span-1">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
-                alt="Sunstone"
-                className="h-5 sm:h-6 md:h-8 lg:h-10 w-auto mb-2 sm:mb-3 md:mb-4 lg:mb-6 transition-all duration-300 hover:scale-110"
-              />
-              <p className="text-gray-200 max-w-md text-xs leading-tight mb-2 sm:mb-3 md:mb-4 lg:mb-6">
+      <footer className="bg-sunstone-navy text-sunstone-white py-2 md:py-8">
+        <div className="max-w-7xl mx-auto px-3 md:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8">
+            <div className="md:col-span-1">
+              <p className="text-gray-200 text-xs mb-2 md:mb-4">
                 Transforming careers through industry-focused education.
               </p>
-              <div className="flex space-x-1.5 sm:space-x-2 md:space-x-3 lg:space-x-4">
+              <div className="flex space-x-1 md:space-x-3">
                 <a
                   href="https://www.youtube.com/@SunstoneIND"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-red-600 p-1.5 sm:p-2 rounded-full hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-red-600 p-1 md:p-2 rounded-full hover:bg-red-700 transition-all duration-300"
                 >
-                  <Youtube className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                  <Youtube className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://www.instagram.com/sunstone.in/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-purple-500 to-pink-500 p-1.5 sm:p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 p-1 md:p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
                 >
-                  <Instagram className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                  <Instagram className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://www.facebook.com/sunstoneedu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 p-1.5 sm:p-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-blue-600 p-1 md:p-2 rounded-full hover:bg-blue-700 transition-all duration-300"
                 >
-                  <Facebook className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                  <Facebook className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://in.linkedin.com/school/sunstone-/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-800 p-1.5 sm:p-2 rounded-full hover:bg-blue-900 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  className="bg-blue-800 p-1 md:p-2 rounded-full hover:bg-blue-900 transition-all duration-300"
                 >
-                  <Linkedin className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                  <Linkedin className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
               </div>
             </div>
             <div>
-              <h4 className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-sunstone-gold">Programs</h4>
-              <ul className="space-y-0.5 sm:space-y-1 md:space-y-2 lg:space-y-3 text-xs leading-tight">
+              <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Programs</h4>
+              <ul className="space-y-0.5 md:space-y-2 text-xs">
                 <li>
                   <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
                     MBA/PGDM
@@ -1298,32 +1319,35 @@ export default function Index() {
                     BCA
                   </a>
                 </li>
+                <li>
+                  <a href="#" className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300">
+                    MCA
+                  </a>
+                </li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-6 text-sunstone-gold">Contact Us</h4>
-              <ul className="space-y-3 text-gray-200 text-sm sm:text-base">
-                <li className="flex items-center hover:text-sunstone-gold transition-colors duration-300">
-                  <Phone className="h-4 w-4 mr-2" />
+            <div className="col-span-2 md:col-span-1">
+              <h4 className="font-semibold text-xs md:text-base mb-1 md:mb-4 text-sunstone-gold">Contact</h4>
+              <div className="space-y-1 md:space-y-3 text-xs md:text-base">
+                <div className="flex items-center text-gray-200">
+                  <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   +91 70653 03030
-                </li>
-                <li className="flex items-center hover:text-sunstone-gold transition-colors duration-300">
-                  <MapPin className="h-4 w-4 mr-2" />
+                </div>
+                <div className="flex items-center text-gray-200">
+                  <MapPin className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   Multiple Locations
-                </li>
-                <li className="mt-4">
-                  <Button 
-                    onClick={handleApplyNow}
-                    className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 transform hover:scale-105 font-bold"
-                  >
-                    Apply Now
-                  </Button>
-                </li>
-              </ul>
+                </div>
+                <Button
+                  onClick={handleApplyNow}
+                  className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 font-bold text-xs md:text-sm py-1 px-2 md:py-2 md:px-4 mt-2"
+                >
+                  Apply Now
+                </Button>
+              </div>
             </div>
           </div>
-          <div className="border-t border-sunstone-navy-light mt-8 pt-8 text-center text-gray-200 text-sm">
-            <p>&copy; 2024 Sunstone. All rights reserved.</p>
+          <div className="border-t border-sunstone-navy-light mt-2 md:mt-8 pt-2 md:pt-8 text-center text-gray-200 text-xs">
+            <p>&copy; 2025 Sunstone. All rights reserved.</p>
           </div>
         </div>
       </footer>
