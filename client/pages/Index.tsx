@@ -510,19 +510,18 @@ export default function Index() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/20 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
-              <TrendingUp className="h-6 w-6 text-sunstone-gold" />
-              <span className="text-sunstone-white font-bold text-lg">Impact That Speaks Volumes</span>
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-8 border border-sunstone-navy/20">
+              <TrendingUp className="h-5 w-5 text-sunstone-navy" />
+              <span className="text-sunstone-navy font-semibold text-base">Proven Track Record</span>
             </div>
 
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black text-sunstone-white mb-6">
-              <span className="bg-gradient-to-r from-sunstone-gold to-sunstone-white bg-clip-text text-transparent">
-                Numbers Don't Lie
-              </span>
+            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
+              Our Impact Speaks for Itself
             </h2>
-            <p className="text-xl sm:text-2xl text-gray-300 font-medium max-w-3xl mx-auto">
-              Every statistic represents a life transformed, a dream realized, and a future secured
+            <p className="text-lg sm:text-xl text-gray-600 font-medium max-w-3xl mx-auto">
+              Real results from real students who chose to transform their careers with Sunstone
             </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
           </div>
 
           {/* Interactive Stats Grid */}
