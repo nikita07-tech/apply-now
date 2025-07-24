@@ -29,34 +29,10 @@ const successStories = [
     testimonial:
       "I am immensely grateful to Sunstone for the incredible international placement opportunity. The unwavering support, exceptional faculty, and comprehensive curriculum played a pivotal role in shaping my career.",
     image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F2be463e1c8b0473bb0fd5f659ac02eae?format=webp&width=800",
   },
   {
     id: 2,
-    name: "Harpreet Kaur",
-    package: "Zenoti 8.6 LPA",
-    campus: "RBU",
-    year: "21-23",
-    course: "MBA",
-    testimonial:
-      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a high package and an internship at FundsRoom.",
-    image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
-  },
-  {
-    id: 3,
-    name: "Samuel Jaya Abishek",
-    package: "Pivotal Associates 12 LPA",
-    campus: "MRU",
-    year: "2022-2024",
-    course: "MBA",
-    testimonial:
-      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life.",
-    image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/samuel-abhishek-mba-2022-24-3c3296?format=webp&width=800",
-  },
-  {
-    id: 4,
     name: "Akash Das",
     package: "",
     campus: "ADYPU",
@@ -68,7 +44,7 @@ const successStories = [
       "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb0f8c68af5ba46a2bd76dedd450e2c0d",
   },
   {
-    id: 5,
+    id: 3,
     name: "Bijan Biswas",
     package: "Piramal Capital 7 LPA",
     campus: "RGI",
@@ -80,7 +56,7 @@ const successStories = [
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/1684043070051-670752?format=webp&width=800",
   },
   {
-    id: 6,
+    id: 4,
     name: "Anushree Soni",
     package: "Hike Education 7 LPA",
     campus: "SAGE Bhopal",
