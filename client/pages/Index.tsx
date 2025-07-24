@@ -48,7 +48,7 @@ const successStories = [
     name: "Samuel Jaya Abishek",
     package: "Pivotal Associates 12 LPA",
     campus: "MRU",
-    year: "22-24",
+    year: "2022-2024",
     course: "MBA",
     testimonial:
       "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life.",
