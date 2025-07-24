@@ -506,51 +506,89 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-navy via-sunstone-navy-dark to-sunstone-black relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-20 h-20 bg-sunstone-gold/10 rounded-full animate-float"></div>
+          <div className="absolute bottom-20 right-20 w-32 h-32 bg-sunstone-gold/5 rounded-full animate-bounce-gentle"></div>
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-sunstone-white/5 rounded-full animate-pulse"></div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl sm:text-5xl font-black text-sunstone-navy mb-6">
-              📊 Our Impact in Numbers
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/20 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
+              <TrendingUp className="h-6 w-6 text-sunstone-gold" />
+              <span className="text-sunstone-white font-bold text-lg">Impact That Speaks Volumes</span>
+            </div>
+
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black text-sunstone-white mb-6">
+              <span className="bg-gradient-to-r from-sunstone-gold to-sunstone-white bg-clip-text text-transparent">
+                Numbers Don't Lie
+              </span>
             </h2>
-            <p className="text-xl sm:text-2xl text-gray-700 font-medium">
-              Proven track record of transforming careers
+            <p className="text-xl sm:text-2xl text-gray-300 font-medium max-w-3xl mx-auto">
+              Every statistic represents a life transformed, a dream realized, and a future secured
             </p>
-            <div className="h-2 w-40 bg-gradient-to-r from-sunstone-gold via-sunstone-navy to-sunstone-gold rounded-full mx-auto mt-6 animate-pulse"></div>
           </div>
 
-          {/* Animated Stats Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
-            {/* Highest Salary Card */}
-            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold-light to-sunstone-gold rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up shadow-2xl">
+          {/* Interactive Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {/* Career Success Card */}
+            <div className="group bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:rotate-3 animate-fade-in-up shadow-2xl cursor-pointer">
+              <div className="text-6xl mb-4">🎯</div>
               <div className="text-5xl font-black text-sunstone-black mb-3 animate-float">₹26</div>
-              <div className="text-sunstone-black font-semibold text-lg">LPA Highest</div>
-              <div className="text-sunstone-black/70 text-sm mt-2">Salary Package</div>
+              <div className="text-sunstone-black font-bold text-xl">LPA Record Package</div>
+              <div className="text-sunstone-black/70 text-sm mt-2">Dreams turned into reality</div>
+              <div className="mt-4 h-1 bg-sunstone-black/20 rounded-full"></div>
             </div>
 
-            {/* ROI Card */}
-            <div className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-200 shadow-2xl border border-sunstone-gold/30">
-              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-bounce-gentle">63%</div>
-              <div className="text-sunstone-white font-semibold">Higher ROI</div>
-              <div className="text-gray-300 text-sm mt-2">Better Returns</div>
+            {/* Growth Card */}
+            <div className="group bg-gradient-to-br from-sunstone-white to-gray-100 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:-rotate-2 animate-fade-in-up delay-200 shadow-2xl cursor-pointer border-2 border-sunstone-gold/30">
+              <div className="text-6xl mb-4">🚀</div>
+              <div className="text-5xl font-black text-sunstone-navy mb-3 animate-bounce-gentle">63%</div>
+              <div className="text-sunstone-navy font-bold text-xl">Higher ROI</div>
+              <div className="text-gray-600 text-sm mt-2">Investment that pays back</div>
+              <div className="mt-4 h-1 bg-sunstone-navy/20 rounded-full"></div>
             </div>
 
-            {/* Total Offers Card */}
-            <div className="bg-gradient-to-br from-sunstone-black to-gray-800 rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-400 shadow-2xl border border-sunstone-gold/30">
-              <div className="text-4xl font-black text-sunstone-gold mb-3 animate-pulse">1400+</div>
-              <div className="text-sunstone-white font-semibold">Total Offers</div>
-              <div className="text-gray-300 text-sm mt-2">Placement Success</div>
+            {/* Success Rate Card */}
+            <div className="group bg-gradient-to-br from-sunstone-navy-dark to-sunstone-black rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:rotate-2 animate-fade-in-up delay-400 shadow-2xl cursor-pointer border border-sunstone-gold/30">
+              <div className="text-6xl mb-4">🏆</div>
+              <div className="text-5xl font-black text-sunstone-gold mb-3 animate-pulse">5000+</div>
+              <div className="text-sunstone-white font-bold text-xl">Placed Successfully</div>
+              <div className="text-gray-300 text-sm mt-2">Careers launched nationwide</div>
+              <div className="mt-4 h-1 bg-sunstone-gold/40 rounded-full"></div>
             </div>
 
-            {/* Students with 2+ Offers Card */}
-            <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 animate-fade-in-up delay-600 shadow-2xl">
+            {/* Multiple Offers Card */}
+            <div className="group bg-gradient-to-br from-sunstone-gold-light via-sunstone-gold to-sunstone-gold-dark rounded-3xl p-8 text-center transform transition-all duration-700 hover:scale-110 hover:-rotate-3 animate-fade-in-up delay-600 shadow-2xl cursor-pointer">
+              <div className="text-6xl mb-4">🎉</div>
               <div className="text-5xl font-black text-sunstone-black mb-3 animate-wiggle">306</div>
-              <div className="text-sunstone-black font-semibold text-lg">Multiple Offers</div>
-              <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ Offers</div>
+              <div className="text-sunstone-black font-bold text-xl">Multiple Winners</div>
+              <div className="text-sunstone-black/70 text-sm mt-2">Students with 2+ offers</div>
+              <div className="mt-4 h-1 bg-sunstone-black/20 rounded-full"></div>
             </div>
           </div>
 
-
+          {/* Bottom CTA */}
+          <div className="text-center">
+            <div className="bg-sunstone-white/10 backdrop-blur-sm rounded-3xl p-8 max-w-2xl mx-auto border border-sunstone-gold/20">
+              <h3 className="text-2xl font-bold text-sunstone-white mb-4">
+                Ready to Be Part of These Numbers?
+              </h3>
+              <p className="text-gray-300 mb-6">
+                Your success story is waiting to be written. Join thousands who transformed their futures.
+              </p>
+              <Button
+                onClick={handleApplyNow}
+                size="lg"
+                className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-10 py-4 text-lg transition-all duration-300 transform hover:scale-105 shadow-xl rounded-2xl"
+              >
+                Start Your Success Journey
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
