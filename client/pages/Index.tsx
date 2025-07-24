@@ -857,6 +857,39 @@ export default function Index() {
           }
         }
 
+        @keyframes wiggle {
+          0%, 7% {
+            transform: rotateZ(0);
+          }
+          15% {
+            transform: rotateZ(-15deg);
+          }
+          20% {
+            transform: rotateZ(10deg);
+          }
+          25% {
+            transform: rotateZ(-10deg);
+          }
+          30% {
+            transform: rotateZ(6deg);
+          }
+          35% {
+            transform: rotateZ(-4deg);
+          }
+          40%, 100% {
+            transform: rotateZ(0);
+          }
+        }
+
+        @keyframes scroll-x {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
         .animate-fade-in-up {
           animation: fade-in-up 1s ease-out;
         }
