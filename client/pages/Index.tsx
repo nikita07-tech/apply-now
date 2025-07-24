@@ -281,7 +281,10 @@ export default function Index() {
                         Select Program
                       </option>
                       <option value="mba" className="text-sunstone-black">
-                        MBA/PGDM
+                        MBA
+                      </option>
+                      <option value="pgdm" className="text-sunstone-black">
+                        PGDM
                       </option>
                       <option value="bba" className="text-sunstone-black">
                         BBA
@@ -294,6 +297,15 @@ export default function Index() {
                       </option>
                       <option value="bca" className="text-sunstone-black">
                         BCA
+                      </option>
+                      <option value="mca" className="text-sunstone-black">
+                        MCA
+                      </option>
+                      <option value="bsc" className="text-sunstone-black">
+                        B.Sc
+                      </option>
+                      <option value="msc" className="text-sunstone-black">
+                        M.Sc
                       </option>
                     </select>
                   </div>
