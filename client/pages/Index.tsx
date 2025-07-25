@@ -258,7 +258,7 @@ export default function Index() {
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -313,7 +313,7 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
