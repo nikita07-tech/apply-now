@@ -154,30 +154,35 @@ export default function Index() {
 
   const awards = [
     {
-      id: 'edtech',
-      title: 'EdTech 100',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800'
+      id: "edtech",
+      title: "EdTech 100",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800",
     },
     {
-      id: 'gsv',
-      title: 'GSV 150',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800'
+      id: "gsv",
+      title: "GSV 150",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800",
     },
     {
-      id: 'innovation',
-      title: 'Innovation',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800'
+      id: "innovation",
+      title: "Innovation",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800",
     },
     {
-      id: 'assocham',
-      title: 'ASSOCHAM',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800'
+      id: "assocham",
+      title: "ASSOCHAM",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800",
     },
     {
-      id: 'indiglobal',
-      title: 'IndiGlobal',
-      image: 'https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800'
-    }
+      id: "indiglobal",
+      title: "IndiGlobal",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800",
+    },
   ];
 
   const handleApplyNow = () => {
@@ -1388,8 +1393,8 @@ export default function Index() {
                     onClick={() => setCurrentAwardIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === currentAwardIndex
-                        ? 'bg-sunstone-gold scale-125'
-                        : 'bg-gray-300 hover:bg-gray-400'
+                        ? "bg-sunstone-gold scale-125"
+                        : "bg-gray-300 hover:bg-gray-400"
                     }`}
                   />
                 ))}
@@ -1865,12 +1870,17 @@ export default function Index() {
 
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight animate-slide-in-left">
               Discover Your
-              <span className="block text-sunstone-gold animate-slide-in-right delay-300">Dream College</span>
+              <span className="block text-sunstone-gold animate-slide-in-right delay-300">
+                Dream College
+              </span>
             </h2>
 
             <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-500">
               Choose from India's top institutions with
-              <span className="text-sunstone-gold font-bold"> guaranteed placement opportunities</span>
+              <span className="text-sunstone-gold font-bold">
+                {" "}
+                guaranteed placement opportunities
+              </span>
             </p>
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-scale-in delay-700"></div>
           </div>
@@ -1878,7 +1888,10 @@ export default function Index() {
           {/* College Showcase - Horizontal Scrolling */}
           <div className="mb-8">
             <div className="relative overflow-hidden">
-              <div className="flex space-x-4 animate-horizontal-scroll" style={{ width: "calc(200% + 32px)" }}>
+              <div
+                className="flex space-x-4 animate-horizontal-scroll"
+                style={{ width: "calc(200% + 32px)" }}
+              >
                 {/* ADYPU Banner */}
                 <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 sm:h-36">
@@ -1892,8 +1905,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">ADYPU</h3>
-                    <p className="text-xs text-gray-600 mb-2">Pune • BCA • UGC</p>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      ADYPU
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Pune • BCA • UGC
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
@@ -1901,7 +1918,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/adypu",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -1922,8 +1944,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">SAGE University</h3>
-                    <p className="text-xs text-gray-600 mb-2">Indore • BCA • AICTE</p>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      SAGE University
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Indore • BCA • AICTE
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
@@ -1931,7 +1957,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/sage",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -1952,7 +1983,9 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">Hi-Tech Institute</h3>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Hi-Tech Institute
+                    </h3>
                     <p className="text-xs text-gray-600 mb-2">B.Tech • AICTE</p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -1961,7 +1994,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/hitech', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/hitech",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -1982,8 +2020,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">VGU Jaipur</h3>
-                    <p className="text-xs text-gray-600 mb-2">Jaipur • B.Tech • AICTE</p>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      VGU Jaipur
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Jaipur • B.Tech • AICTE
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ Computer Science</p>
@@ -1991,7 +2033,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/vgu', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/vgu",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -2012,7 +2059,9 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">Rathinam College</h3>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Rathinam College
+                    </h3>
                     <p className="text-xs text-gray-600 mb-2">BBA • AICTE</p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -2021,7 +2070,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/rathinam', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/rathinam",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -2042,8 +2096,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">ADYPU</h3>
-                    <p className="text-xs text-gray-600 mb-2">Pune • BCA • UGC</p>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      ADYPU
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Pune • BCA • UGC
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
@@ -2051,7 +2109,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/adypu",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -2072,8 +2135,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">SAGE University</h3>
-                    <p className="text-xs text-gray-600 mb-2">Indore • BCA • AICTE</p>
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      SAGE University
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Indore • BCA • AICTE
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
@@ -2081,7 +2148,12 @@ export default function Index() {
                       </div>
                     </div>
                     <button
-                      onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/sage",
+                          "_blank",
+                        )
+                      }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
@@ -2093,9 +2165,7 @@ export default function Index() {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center">
-
-          </div>
+          <div className="text-center"></div>
 
           {/* CTA Section */}
           <div className="text-center">
@@ -2104,11 +2174,14 @@ export default function Index() {
                 Ready to Start Your Journey?
               </h3>
               <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto">
-                Join thousands of successful students who chose the right college for their career
+                Join thousands of successful students who chose the right
+                college for their career
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
-                  onClick={() => window.open('https://sunstone.in/campuses', '_blank')}
+                  onClick={() =>
+                    window.open("https://sunstone.in/campuses", "_blank")
+                  }
                   className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
                 >
                   Explore All Colleges
@@ -2154,7 +2227,10 @@ export default function Index() {
                     />
                     <div className="absolute top-3 right-3 z-20">
                       <div className="bg-sunstone-gold text-sunstone-black px-2 py-1 rounded-full text-sm font-bold shadow-lg">
-                        {successStories[currentStoryIndex].package.split(" ").slice(-2).join(" ")}
+                        {successStories[currentStoryIndex].package
+                          .split(" ")
+                          .slice(-2)
+                          .join(" ")}
                       </div>
                     </div>
                   </div>
@@ -2206,8 +2282,8 @@ export default function Index() {
                     onClick={() => setCurrentStoryIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === currentStoryIndex
-                        ? 'bg-sunstone-gold scale-125'
-                        : 'bg-gray-300 hover:bg-gray-400'
+                        ? "bg-sunstone-gold scale-125"
+                        : "bg-gray-300 hover:bg-gray-400"
                     }`}
                   />
                 ))}
