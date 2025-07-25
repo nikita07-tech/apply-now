@@ -203,7 +203,7 @@ export default function Index() {
                 <div className="h-0.5 sm:h-1 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
               </div>
 
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
+              <p className="text-xs sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -258,7 +258,7 @@ export default function Index() {
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-xs sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -313,7 +313,7 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-xs sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -505,7 +505,7 @@ export default function Index() {
                 Pursue Your Dream Degree
               </span>
               <br />
-              <span className="text-sunstone-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+              <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
@@ -650,7 +650,7 @@ export default function Index() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div
-                  className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${stat.color} mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110`}
+                  className={`text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${stat.color} mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110`}
                 >
                   {stat.value}
                 </div>
@@ -670,7 +670,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
               See how our programs compare with traditional colleges
             </p>
           </div>
@@ -740,7 +740,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
               Real results from real students who chose to transform their
               careers with Sunstone
             </p>
@@ -940,7 +940,7 @@ export default function Index() {
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 1200+
               </div>
-              <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">
+              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
                 Total Recruiters
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
@@ -951,7 +951,7 @@ export default function Index() {
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 4.6 LPA
               </div>
-              <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">
+              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
                 Average Package
               </div>
               <div className="text-sunstone-white text-xs sm:text-sm">
@@ -969,7 +969,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Top Recruiters
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
               Leading companies that trust our graduates
             </p>
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
@@ -1662,7 +1662,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
               Real students, Real achievements, Real transformations
             </p>
             <div className="h-0.5 sm:h-1 md:h-2 w-20 sm:w-24 md:w-32 lg:w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
@@ -1701,7 +1701,7 @@ export default function Index() {
 
                     {/* Content */}
                     <div className="p-3 sm:p-4 md:p-6">
-                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-sunstone-navy mb-1 sm:mb-2">
+                      <h3 className="text-xs sm:text-base md:text-lg font-bold text-sunstone-navy mb-1 sm:mb-2">
                         {story.name}
                       </h3>
                       <div className="flex flex-wrap gap-2 mb-3">
