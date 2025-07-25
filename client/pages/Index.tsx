@@ -1777,6 +1777,30 @@ export default function Index() {
           animation: scroll-right 25s linear infinite;
         }
 
+        .animate-float-gentle {
+          animation: float-gentle 3s ease-in-out infinite;
+        }
+
+        .animate-bounce-soft {
+          animation: bounce-soft 2s ease-in-out infinite;
+        }
+
+        .animate-pulse-gentle {
+          animation: pulse-gentle 2.5s ease-in-out infinite;
+        }
+
+        .animate-pulse-slow {
+          animation: pulse-slow 3s ease-in-out infinite;
+        }
+
+        .animate-spin-slow {
+          animation: spin-slow 8s linear infinite;
+        }
+
+        .animate-wiggle-gentle {
+          animation: wiggle-gentle 4s ease-in-out infinite;
+        }
+
         @keyframes scroll-left {
           0% {
             transform: translateX(0);
