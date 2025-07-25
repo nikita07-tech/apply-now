@@ -800,7 +800,7 @@ export default function Index() {
               <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-gold mb-2 lg:mb-3">
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
                 63%
               </div>
               <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
