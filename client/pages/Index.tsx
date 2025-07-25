@@ -785,7 +785,7 @@ export default function Index() {
                 <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                ���26 LPA
+                ₹26 LPA
               </div>
               <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
                 Highest Package
@@ -2022,6 +2022,24 @@ export default function Index() {
           }
           40%, 100% {
             transform: rotateZ(0);
+          }
+        }
+
+        @keyframes wave-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+
+        @keyframes float-up {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-6px);
           }
         }
 
