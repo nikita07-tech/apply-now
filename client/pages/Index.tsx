@@ -1104,7 +1104,7 @@ export default function Index() {
           {/* Single Line Awards with Wave Animation */}
           <div className="relative overflow-hidden">
             <div
-              className="flex animate-wave-scroll space-x-3 md:space-x-6"
+              className="flex animate-wave-scroll space-x-4 md:space-x-8"
               style={{ width: "calc(300% + 96px)" }}
             >
               {/* First set */}
