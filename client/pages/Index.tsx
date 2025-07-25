@@ -1101,227 +1101,102 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          {/* First Row - Right to Left Scrolling */}
-          <div className="relative overflow-hidden mb-6 md:mb-8">
-            <div
-              className="flex animate-scroll-right space-x-4 md:space-x-8"
-              style={{ width: "calc(200% + 64px)" }}
-            >
-              {/* First set */}
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                  alt="EdTech 100 Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  EdTech 100
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                  alt="GSV 150 Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  GSV 150
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
-                  alt="Innovation Awards"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Innovation
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
-                  alt="ASSOCHAM Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  ASSOCHAM
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
-                  alt="IndiGlobal Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  IndiGlobal
-                </p>
-              </div>
-
-              {/* Duplicate set for seamless loop */}
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                  alt="EdTech 100 Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  EdTech 100
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                  alt="GSV 150 Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  GSV 150
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
-                  alt="Innovation Awards"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Innovation
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
-                  alt="ASSOCHAM Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  ASSOCHAM
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
-                  alt="IndiGlobal Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  IndiGlobal
-                </p>
-              </div>
+          {/* Awards Grid with Floating and Pulsing Animations */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-4 lg:gap-6 mb-8">
+            {/* Award 1 - Floating */}
+            <div className="w-full h-24 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-float-gentle hover:shadow-2xl transition-all duration-500 transform hover:scale-110">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                alt="EdTech 100 Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-pulse-slow"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                EdTech 100
+              </p>
             </div>
-          </div>
 
-          {/* Second Row - Left to Right Scrolling */}
-          <div className="relative overflow-hidden">
-            <div
-              className="flex animate-scroll-left space-x-4 md:space-x-8"
-              style={{ width: "calc(200% + 64px)" }}
-            >
-              {/* First set */}
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
-                  alt="Education Excellence Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Excellence
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
-                  alt="Technology Innovation Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Tech Innovation
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
-                  alt="Education Brand Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Top Brand
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                  alt="EdTech Recognition"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Recognition
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                  alt="Industry Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Industry
-                </p>
-              </div>
+            {/* Award 2 - Bouncing */}
+            <div className="w-full h-24 md:h-28 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-bounce-soft hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-100">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                alt="GSV 150 Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-spin-slow"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                GSV 150
+              </p>
+            </div>
 
-              {/* Duplicate set for seamless loop */}
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
-                  alt="Education Excellence Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Excellence
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
-                  alt="Technology Innovation Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Tech Innovation
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
-                  alt="Education Brand Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Top Brand
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                  alt="EdTech Recognition"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Recognition
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                  alt="Industry Award"
-                  className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
-                />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
-                  Industry
-                </p>
-              </div>
+            {/* Award 3 - Rotating */}
+            <div className="w-full h-24 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-float-gentle hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-200">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                alt="Innovation Awards"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-wiggle-gentle"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                Innovation
+              </p>
+            </div>
+
+            {/* Award 4 - Pulsing */}
+            <div className="w-full h-24 md:h-28 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-pulse-gentle hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-300">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                alt="ASSOCHAM Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-float-gentle"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                ASSOCHAM
+              </p>
+            </div>
+
+            {/* Award 5 - Floating */}
+            <div className="w-full h-24 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-bounce-soft hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-400">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                alt="IndiGlobal Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-pulse-slow"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                IndiGlobal
+              </p>
+            </div>
+
+            {/* Award 6 - Wiggling */}
+            <div className="w-full h-24 md:h-28 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-float-gentle hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-500">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
+                alt="Education Excellence Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-spin-slow"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                Excellence
+              </p>
+            </div>
+
+            {/* Award 7 - Rotating */}
+            <div className="w-full h-24 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-pulse-gentle hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-600">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
+                alt="Technology Innovation Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-wiggle-gentle"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                Tech Innovation
+              </p>
+            </div>
+
+            {/* Award 8 - Floating */}
+            <div className="w-full h-24 md:h-28 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 animate-bounce-soft hover:shadow-2xl transition-all duration-500 transform hover:scale-110 delay-700">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
+                alt="Education Brand Award"
+                className="w-10 h-10 md:w-14 md:h-14 object-contain mb-1 animate-float-gentle"
+              />
+              <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                Top Brand
+              </p>
             </div>
           </div>
         </div>
