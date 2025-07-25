@@ -528,11 +528,11 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                   ₹26 LPA
                 </div>
-                <div className="text-sunstone-white font-semibold text-xs sm:text-sm md:text-base">
+                <div className="text-black font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
                 </div>
                 <div className="text-gray-300 text-xs mt-1 sm:mt-2">
@@ -540,7 +540,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-sunstone-gold rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">
                   306
                 </div>
