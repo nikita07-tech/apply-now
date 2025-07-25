@@ -632,7 +632,7 @@ export default function Index() {
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
-              <span className="text-sunstone-gold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
+              <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
                 at 25+ Premier Colleges Across India
               </span>
             </h2>
