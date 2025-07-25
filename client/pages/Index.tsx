@@ -2974,6 +2974,39 @@ export default function Index() {
           }
         }
 
+        @keyframes college-wave {
+          0% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(-10%);
+          }
+          50% {
+            transform: translateX(-25%);
+          }
+          75% {
+            transform: translateX(-15%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes slide-in-horizontal {
+          0% {
+            opacity: 0;
+            transform: translateX(-100px) rotateY(-15deg);
+          }
+          50% {
+            opacity: 0.7;
+            transform: translateX(10px) rotateY(5deg);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0) rotateY(0deg);
+          }
+        }
+
         .animate-shadow-glow {
           animation: shadow-glow 3s ease-in-out infinite;
         }
