@@ -1851,34 +1851,28 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Explore Colleges Banner Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-sunstone-navy via-sunstone-navy-dark to-sunstone-navy relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold/10 via-transparent to-sunstone-gold/5 opacity-60"></div>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-sunstone-gold/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-sunstone-gold/15 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Main Banner Header */}
+      {/* Explore Colleges Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-flex items-center gap-3 bg-sunstone-gold/20 backdrop-blur-sm px-8 py-4 rounded-full mb-8 border border-sunstone-gold/30">
-              <GraduationCap className="h-6 w-6 text-sunstone-gold" />
-              <span className="text-sunstone-white font-bold text-lg">
+            <div className="inline-flex items-center gap-3 bg-sunstone-navy/10 px-8 py-4 rounded-full mb-8 border border-sunstone-navy/20">
+              <GraduationCap className="h-6 w-6 text-sunstone-navy" />
+              <span className="text-sunstone-navy font-bold text-lg">
                 Premier Partner Colleges
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-sunstone-navy mb-6 leading-tight">
               Discover Your
               <span className="block text-sunstone-gold">Dream College</span>
             </h2>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 font-medium max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-medium max-w-4xl mx-auto leading-relaxed">
               Choose from India's top institutions offering industry-focused programs with
               <span className="text-sunstone-gold font-bold"> guaranteed placement opportunities</span>
             </p>
+            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
           </div>
 
           {/* College Showcase Banner - Mobile Carousel */}
