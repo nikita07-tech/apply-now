@@ -496,7 +496,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/20">
               <GraduationCap className="h-6 w-6 text-sunstone-gold" />
               <span className="text-sunstone-navy font-bold text-lg">
-                Trusted by 5000++ Successful Students
+                <p>Trusted by 5000+ Successful Students</p>
               </span>
             </div>
 
