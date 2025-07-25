@@ -1876,12 +1876,12 @@ export default function Index() {
           </div>
 
           {/* College Showcase - Mobile Carousel */}
-          <div className="block md:hidden mb-12">
+          <div className="block md:hidden mb-8">
             <div className="relative overflow-hidden">
-              <div className="flex space-x-4 animate-college-slide" style={{ width: "calc(500% + 80px)" }}>
+              <div className="flex space-x-3 animate-college-wave" style={{ width: "calc(600% + 100px)" }}>
                 {/* ADYPU Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
-                  <div className="relative h-48">
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group animate-slide-in-horizontal">
+                  <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
