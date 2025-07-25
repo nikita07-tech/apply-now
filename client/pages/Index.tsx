@@ -2958,6 +2958,28 @@ export default function Index() {
           }
         }
 
+        @keyframes college-slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-20%);
+          }
+        }
+
+        .animate-shadow-glow {
+          animation: shadow-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes shadow-glow {
+          0%, 100% {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+          }
+          50% {
+            box-shadow: 0 0 40px rgba(79, 70, 229, 0.6), 0 0 60px rgba(79, 70, 229, 0.4);
+          }
+        }
+
         .delay-100 {
           animation-delay: 0.1s;
         }
