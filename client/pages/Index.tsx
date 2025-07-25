@@ -213,8 +213,6 @@ export default function Index() {
                   Placement Opportunity Program
                 </span>
               </p>
-
-
             </div>
 
             {/* Right Column - Application Form */}
@@ -1299,8 +1297,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-
 
       {/* Footer */}
       <footer className="bg-sunstone-navy text-sunstone-white py-0.5 md:py-8">
