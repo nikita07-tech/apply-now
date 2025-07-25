@@ -1933,6 +1933,14 @@ export default function Index() {
           animation: wiggle-gentle 4s ease-in-out infinite;
         }
 
+        .animate-wave-scroll {
+          animation: wave-scroll 30s linear infinite;
+        }
+
+        .animate-float-up {
+          animation: float-up 3s ease-in-out infinite;
+        }
+
         @keyframes scroll-left {
           0% {
             transform: translateX(0);
