@@ -1795,6 +1795,80 @@ export default function Index() {
           }
         }
 
+        @keyframes float-gentle {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-8px);
+          }
+        }
+
+        @keyframes bounce-soft {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-6px);
+          }
+          60% {
+            transform: translateY(-3px);
+          }
+        }
+
+        @keyframes pulse-gentle {
+          0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.05);
+            opacity: 0.9;
+          }
+        }
+
+        @keyframes pulse-slow {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.7;
+          }
+        }
+
+        @keyframes spin-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes wiggle-gentle {
+          0%, 7% {
+            transform: rotateZ(0);
+          }
+          15% {
+            transform: rotateZ(-5deg);
+          }
+          20% {
+            transform: rotateZ(3deg);
+          }
+          25% {
+            transform: rotateZ(-3deg);
+          }
+          30% {
+            transform: rotateZ(2deg);
+          }
+          35% {
+            transform: rotateZ(-1deg);
+          }
+          40%, 100% {
+            transform: rotateZ(0);
+          }
+        }
+
         .delay-100 {
           animation-delay: 0.1s;
         }
