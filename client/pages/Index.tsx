@@ -1875,40 +1875,37 @@ export default function Index() {
             <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
           </div>
 
-          {/* College Showcase Banner - Mobile Carousel */}
+          {/* College Showcase - Mobile Carousel */}
           <div className="block md:hidden mb-12">
-            <div className="relative overflow-hidden rounded-2xl">
+            <div className="relative overflow-hidden">
               <div className="flex space-x-4 animate-scroll-x" style={{ width: "calc(500% + 80px)" }}>
                 {/* ADYPU Banner */}
-                <div className="flex-shrink-0 w-80 bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-2xl border border-sunstone-gold/30">
-                  <div className="relative h-40">
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                  <div className="relative h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F20df54af53ac42f3b2872c80b67cdd0a?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <h3 className="text-lg font-bold">ADYPU, Pune</h3>
-                      <p className="text-sm">BCA • UGC Recognised</p>
-                    </div>
-                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold">
+                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       ₹5.25L
                     </div>
                   </div>
                   <div className="p-4">
-                    <div className="flex justify-between items-center">
-                      <div className="text-sm text-gray-600">
+                    <h3 className="text-lg font-bold text-sunstone-navy mb-1">Ajeenkya DY Patil University</h3>
+                    <p className="text-sm text-gray-600 mb-3">Pune • BCA Program • UGC Recognised</p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="text-xs text-gray-600">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
-                      <button
-                        onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}
-                        className="bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
-                      >
-                        Explore →
-                      </button>
                     </div>
+                    <button
+                      onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}
+                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
+                    >
+                      Book College Tour →
+                    </button>
                   </div>
                 </div>
 
@@ -1932,7 +1929,7 @@ export default function Index() {
                   <div className="p-4">
                     <div className="flex justify-between items-center">
                       <div className="text-sm text-gray-600">
-                        <p>✓ 2 Specialisations</p>
+                        <p>��� 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                       <button
