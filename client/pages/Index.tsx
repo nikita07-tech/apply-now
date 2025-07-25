@@ -1875,10 +1875,10 @@ export default function Index() {
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-scale-in delay-700"></div>
           </div>
 
-          {/* College Showcase - Mobile Carousel */}
-          <div className="block md:hidden mb-8">
+          {/* College Showcase - Horizontal Scrolling */}
+          <div className="mb-8">
             <div className="relative overflow-hidden">
-              <div className="flex space-x-3 animate-college-wave" style={{ width: "calc(600% + 100px)" }}>
+              <div className="flex space-x-4 animate-horizontal-scroll" style={{ width: "calc(700% + 140px)" }}>
                 {/* ADYPU Banner */}
                 <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group animate-slide-in-horizontal">
                   <div className="relative h-40">
