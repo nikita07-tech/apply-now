@@ -761,7 +761,60 @@ export default function Index() {
                 </div>
 
                 {/* Multiple Offers Card */}
-                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20 snap-start">
+                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
+                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
+                    <CheckCircle className="h-4 w-4 text-sunstone-white" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
+                    306
+                  </div>
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
+                    2+ Offers
+                  </div>
+                  <div className="text-gray-600 text-xs">Multiple offers</div>
+                </div>
+
+                {/* Duplicate set for seamless loop */}
+                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200">
+                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
+                    <Award className="h-4 w-4 text-sunstone-black" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
+                    ₹26 LPA
+                  </div>
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
+                    Highest Package
+                  </div>
+                  <div className="text-gray-600 text-xs">Record-breaking</div>
+                </div>
+
+                <div className="flex-shrink-0 w-40 bg-sunstone-navy rounded-lg p-3 text-center shadow-lg">
+                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                    <TrendingUp className="h-4 w-4 text-sunstone-black" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-gold mb-0.5">
+                    63%
+                  </div>
+                  <div className="text-sunstone-white font-bold text-xs mb-0.5">
+                    Higher ROI
+                  </div>
+                  <div className="text-gray-300 text-xs">Better return</div>
+                </div>
+
+                <div className="flex-shrink-0 w-40 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
+                  <div className="w-8 h-8 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-1">
+                    <Users className="h-4 w-4 text-sunstone-white" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
+                    5000+
+                  </div>
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
+                    Students Placed
+                  </div>
+                  <div className="text-gray-700 text-xs">Career launches</div>
+                </div>
+
+                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
                   <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
                     <CheckCircle className="h-4 w-4 text-sunstone-white" />
                   </div>
