@@ -813,7 +813,7 @@ export default function Index() {
 
             {/* Students Placed Card */}
             <div className="bg-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-gray-300 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <Users className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
