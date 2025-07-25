@@ -2670,7 +2670,7 @@ export default function Index() {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style>{`
         @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
         .scrollbar-hide {
