@@ -712,11 +712,11 @@ export default function Index() {
 
           {/* Professional Stats Grid - Carousel on Mobile */}
           <div className="block md:hidden mb-8">
-            {/* Mobile Carousel */}
-            <div className="relative overflow-hidden px-3">
+            {/* Mobile Moving Carousel */}
+            <div className="relative overflow-hidden">
               <div
-                className="flex space-x-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
-                style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                className="flex space-x-4 animate-scroll-left"
+                style={{ width: "calc(200% + 32px)" }}
               >
                 {/* Highest Package Card */}
                 <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200 snap-start">
