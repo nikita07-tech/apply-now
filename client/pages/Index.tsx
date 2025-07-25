@@ -1116,7 +1116,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.2s' }}>
@@ -1127,7 +1127,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.4s' }}>
@@ -1138,7 +1138,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.6s' }}>
@@ -1149,7 +1149,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.8s' }}>
@@ -1160,7 +1160,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1s' }}>
@@ -1171,7 +1171,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '1.2s' }}>
@@ -1182,7 +1182,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1.4s' }}>
@@ -1193,7 +1193,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
               </div>
 
               {/* Duplicate sets for seamless loop */}
@@ -1205,7 +1205,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.2s' }}>
@@ -1216,7 +1216,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.4s' }}>
@@ -1227,7 +1227,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.6s' }}>
@@ -1238,7 +1238,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.8s' }}>
@@ -1249,7 +1249,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1s' }}>
@@ -1260,7 +1260,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '1.2s' }}>
@@ -1271,7 +1271,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1.4s' }}>
@@ -1282,7 +1282,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
               </div>
 
               {/* Third duplicate set */}
@@ -1294,7 +1294,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.2s' }}>
@@ -1305,7 +1305,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.4s' }}>
@@ -1316,7 +1316,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
               </div>
 
               <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.6s' }}>
@@ -1327,7 +1327,7 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-xs font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
               </div>
             </div>
           </div>
@@ -1503,7 +1503,7 @@ export default function Index() {
                       />
 
                       <div className="absolute top-4 right-4 z-20">
-                        <div className="bg-sunstone-gold text-sunstone-black px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        <div className="bg-sunstone-gold text-sunstone-black px-3 py-1 rounded-full text-sm md:text-base font-bold shadow-lg">
                           {story.package.split(" ").slice(-2).join(" ")}
                         </div>
                       </div>
