@@ -553,12 +553,12 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Mobile Carousel */}
+            {/* Mobile Moving Carousel */}
             <div className="block md:hidden">
-              <div className="relative overflow-hidden px-3">
+              <div className="relative overflow-hidden">
                 <div
-                  className="flex space-x-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
-                  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                  className="flex space-x-4 animate-scroll-right"
+                  style={{ width: "calc(200% + 32px)" }}
                 >
                   <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20 snap-start">
                     <div className="text-2xl font-black text-sunstone-navy mb-2">
