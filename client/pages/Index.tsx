@@ -2797,6 +2797,14 @@ export default function Index() {
           animation: college-slide 25s linear infinite;
         }
 
+        .animate-college-wave {
+          animation: college-wave 20s ease-in-out infinite;
+        }
+
+        .animate-slide-in-horizontal {
+          animation: slide-in-horizontal 1s ease-out forwards;
+        }
+
         .animate-scroll-left {
           animation: scroll-left 25s linear infinite;
         }
