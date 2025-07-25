@@ -1940,122 +1940,151 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
-                  <div className="relative h-48">
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F7a429a56252b4206af965fe0b3f07c93?format=webp&width=800"
                       alt="Hi-Tech Institute"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹4.59L
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-1">Hi-Tech Institute of Engineering</h3>
-                    <p className="text-sm text-gray-600 mb-3">B.Tech Program • AICTE Approved</p>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="text-xs text-gray-600">
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">Hi-Tech Institute</h3>
+                    <p className="text-xs text-gray-600 mb-2">B.Tech • AICTE</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
                       onClick={() => window.open('https://sunstone.in/campuses/hitech', '_blank')}
-                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book College Tour →
+                      Book Tour →
                     </button>
                   </div>
                 </div>
 
                 {/* VGU Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
-                  <div className="relative h-48">
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
                       alt="Vivekananda Global University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹7.00L
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-1">Vivekananda Global University</h3>
-                    <p className="text-sm text-gray-600 mb-3">Jaipur • B.Tech Program • AICTE Approved</p>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="text-xs text-gray-600">
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">VGU Jaipur</h3>
+                    <p className="text-xs text-gray-600 mb-2">Jaipur • B.Tech • AICTE</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
                       onClick={() => window.open('https://sunstone.in/campuses/vgu', '_blank')}
-                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book College Tour →
+                      Book Tour →
                     </button>
                   </div>
                 </div>
 
                 {/* Rathinam Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
-                  <div className="relative h-48">
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
                       alt="Rathinam College"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹3.90L
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-1">Rathinam College of Arts & Science</h3>
-                    <p className="text-sm text-gray-600 mb-3">BBA Program • AICTE Approved</p>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="text-xs text-gray-600">
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">Rathinam College</h3>
+                    <p className="text-xs text-gray-600 mb-2">BBA • AICTE</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
                       onClick={() => window.open('https://sunstone.in/campuses/rathinam', '_blank')}
-                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book College Tour →
+                      Book Tour →
                     </button>
                   </div>
                 </div>
 
-                {/* Repeat for seamless scroll */}
-                {/* ADYPU Banner Repeat */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
-                  <div className="relative h-48">
+                {/* Repeat for seamless scroll - ADYPU */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹5.25L
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-1">Ajeenkya DY Patil University</h3>
-                    <p className="text-sm text-gray-600 mb-3">Pune • BCA Program • UGC Recognised</p>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="text-xs text-gray-600">
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">ADYPU</h3>
+                    <p className="text-xs text-gray-600 mb-2">Pune • BCA • UGC</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
                       onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}
-                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book College Tour →
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* SAGE Repeat */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
+                      alt="SAGE University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹3.00L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">SAGE University</h3>
+                    <p className="text-xs text-gray-600 mb-2">Indore • BCA • AICTE</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
                     </button>
                   </div>
                 </div>
