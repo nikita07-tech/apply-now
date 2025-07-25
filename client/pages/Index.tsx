@@ -1878,7 +1878,7 @@ export default function Index() {
           {/* College Showcase - Mobile Carousel */}
           <div className="block md:hidden mb-12">
             <div className="relative overflow-hidden">
-              <div className="flex space-x-4 animate-scroll-x" style={{ width: "calc(500% + 80px)" }}>
+              <div className="flex space-x-4 animate-college-slide" style={{ width: "calc(500% + 80px)" }}>
                 {/* ADYPU Banner */}
                 <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
                   <div className="relative h-48">
@@ -2024,7 +2024,7 @@ export default function Index() {
                       onClick={() => window.open('https://sunstone.in/campuses/rathinam', '_blank')}
                       className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
                     >
-                      Book College Tour ���
+                      Book College Tour →
                     </button>
                   </div>
                 </div>
