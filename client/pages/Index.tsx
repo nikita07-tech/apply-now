@@ -2794,6 +2794,10 @@ export default function Index() {
           animation: scroll-x 30s linear infinite;
         }
 
+        .animate-college-slide {
+          animation: college-slide 25s linear infinite;
+        }
+
         .animate-scroll-left {
           animation: scroll-left 25s linear infinite;
         }
