@@ -2064,7 +2064,7 @@ export default function Index() {
           </div>
 
           {/* Desktop Layout - Large Banner Cards */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 animate-fade-in-up">
             {/* ADYPU Large Banner */}
             <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105 animate-slide-in-left delay-100"
                  onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}>
