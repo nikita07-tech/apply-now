@@ -1095,7 +1095,8 @@ export default function Index() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
-              Our commitment to educational excellence has been acknowledged by leading industry bodies worldwide
+              Our commitment to educational excellence has been acknowledged by
+              leading industry bodies worldwide
             </p>
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
@@ -1113,7 +1114,9 @@ export default function Index() {
                   alt="EdTech 100 Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1121,7 +1124,9 @@ export default function Index() {
                   alt="GSV 150 Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1129,7 +1134,9 @@ export default function Index() {
                   alt="Innovation Awards"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1137,7 +1144,9 @@ export default function Index() {
                   alt="ASSOCHAM Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1145,7 +1154,9 @@ export default function Index() {
                   alt="IndiGlobal Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
+                </p>
               </div>
 
               {/* Duplicate set for seamless loop */}
@@ -1155,7 +1166,9 @@ export default function Index() {
                   alt="EdTech 100 Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1163,7 +1176,9 @@ export default function Index() {
                   alt="GSV 150 Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1171,7 +1186,9 @@ export default function Index() {
                   alt="Innovation Awards"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1179,7 +1196,9 @@ export default function Index() {
                   alt="ASSOCHAM Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1187,7 +1206,9 @@ export default function Index() {
                   alt="IndiGlobal Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
+                </p>
               </div>
             </div>
           </div>
@@ -1205,7 +1226,9 @@ export default function Index() {
                   alt="Education Excellence Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Excellence
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1213,7 +1236,9 @@ export default function Index() {
                   alt="Technology Innovation Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Tech Innovation
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1221,7 +1246,9 @@ export default function Index() {
                   alt="Education Brand Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Top Brand
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1229,7 +1256,9 @@ export default function Index() {
                   alt="EdTech Recognition"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Recognition</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Recognition
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1237,7 +1266,9 @@ export default function Index() {
                   alt="Industry Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Industry</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Industry
+                </p>
               </div>
 
               {/* Duplicate set for seamless loop */}
@@ -1247,7 +1278,9 @@ export default function Index() {
                   alt="Education Excellence Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Excellence
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1255,7 +1288,9 @@ export default function Index() {
                   alt="Technology Innovation Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Tech Innovation
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1263,7 +1298,9 @@ export default function Index() {
                   alt="Education Brand Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Top Brand
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1271,7 +1308,9 @@ export default function Index() {
                   alt="EdTech Recognition"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Recognition</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Recognition
+                </p>
               </div>
               <div className="flex-shrink-0 w-32 h-24 md:w-40 md:h-28 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -1279,7 +1318,9 @@ export default function Index() {
                   alt="Industry Award"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2"
                 />
-                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">Industry</p>
+                <p className="text-xs md:text-sm font-bold text-sunstone-navy text-center leading-tight">
+                  Industry
+                </p>
               </div>
             </div>
           </div>
