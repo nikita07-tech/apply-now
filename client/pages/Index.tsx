@@ -1079,6 +1079,254 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Awards & Recognition Section */}
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+              <Award className="h-5 w-5 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-semibold text-base">
+                Awards & Recognition
+              </span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+              Internationally Recognized Excellence
+            </h2>
+
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
+              Our commitment to educational excellence has been acknowledged by leading industry bodies worldwide
+            </p>
+            <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
+          </div>
+
+          {/* Desktop Awards Grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-8">
+            {/* Award 1 */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 text-center transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in-up">
+              <div className="relative mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-full transform rotate-12"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                  alt="2022 South Asia EdTech 100 Award"
+                  className="relative w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">EdTech 100</h3>
+              <p className="text-sm text-gray-600">South Asia 2022</p>
+            </div>
+
+            {/* Award 2 */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl border border-sunstone-navy/20 text-center transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in-up delay-100">
+              <div className="relative mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-navy/20 to-sunstone-gold/20 rounded-full transform -rotate-12"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                  alt="GSV 150 Most Transformative Companies 2024"
+                  className="relative w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">GSV 150</h3>
+              <p className="text-sm text-gray-600">Transformative 2024</p>
+            </div>
+
+            {/* Award 3 */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl border border-sunstone-gold/20 text-center transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in-up delay-200">
+              <div className="relative mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-full transform rotate-6"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                  alt="Education Innovation Awards 2023"
+                  className="relative w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Innovation Awards</h3>
+              <p className="text-sm text-gray-600">Education 2023</p>
+            </div>
+
+            {/* Award 4 */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl border border-sunstone-navy/20 text-center transform transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in-up delay-300">
+              <div className="relative mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-sunstone-navy/20 to-sunstone-gold/20 rounded-full transform -rotate-6"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                  alt="ASSOCHAM Excellence Award"
+                  className="relative w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">ASSOCHAM</h3>
+              <p className="text-sm text-gray-600">Excellence Award</p>
+            </div>
+          </div>
+
+          {/* Mobile Carousel - Awards */}
+          <div className="block md:hidden mb-8">
+            <div className="relative overflow-hidden px-3">
+              <div
+                className="flex space-x-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory animate-scroll-left"
+                style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+              >
+                {/* Award 1 Mobile */}
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-gold/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                      alt="EdTech 100 Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">EdTech 100</h3>
+                  <p className="text-xs text-gray-600">South Asia 2022</p>
+                </div>
+
+                {/* Award 2 Mobile */}
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-navy/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                      alt="GSV 150 Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">GSV 150</h3>
+                  <p className="text-xs text-gray-600">Transformative 2024</p>
+                </div>
+
+                {/* Award 3 Mobile */}
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-gold/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                      alt="Innovation Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">Innovation Awards</h3>
+                  <p className="text-xs text-gray-600">Education 2023</p>
+                </div>
+
+                {/* Award 4 Mobile */}
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-navy/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                      alt="ASSOCHAM Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">ASSOCHAM</h3>
+                  <p className="text-xs text-gray-600">Excellence Award</p>
+                </div>
+
+                {/* Additional Awards Mobile */}
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-gold/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                      alt="IndiGlobal Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">IndiGlobal</h3>
+                  <p className="text-xs text-gray-600">Excellence Award</p>
+                </div>
+
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-navy/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
+                      alt="Education Excellence Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">Education Excellence</h3>
+                  <p className="text-xs text-gray-600">Award 2023</p>
+                </div>
+
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-gold/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
+                      alt="Technology Innovation Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">Tech Innovation</h3>
+                  <p className="text-xs text-gray-600">Industry Recognition</p>
+                </div>
+
+                <div className="flex-shrink-0 w-48 bg-white rounded-xl p-4 shadow-lg border border-sunstone-navy/20 text-center snap-start">
+                  <div className="relative mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
+                      alt="Education Brand Award"
+                      className="w-16 h-16 mx-auto object-contain rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-sm font-bold text-sunstone-navy mb-1">Top Education Brand</h3>
+                  <p className="text-xs text-gray-600">Brand Recognition</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Recognition Row */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {/* Recognition 1 */}
+            <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-2xl p-6 shadow-xl text-center transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-400">
+              <div className="relative mb-4">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                  alt="IndiGlobal Excellence"
+                  className="w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">IndiGlobal</h3>
+              <p className="text-sm text-gray-600">Excellence Recognition</p>
+            </div>
+
+            {/* Recognition 2 */}
+            <div className="bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-2xl p-6 shadow-xl text-center transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-500">
+              <div className="relative mb-4">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
+                  alt="Education Excellence Awards"
+                  className="w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Education Excellence</h3>
+              <p className="text-sm text-gray-600">Awards 2023</p>
+            </div>
+
+            {/* Recognition 3 */}
+            <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-2xl p-6 shadow-xl text-center transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-600">
+              <div className="relative mb-4">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
+                  alt="Technology Innovation Award"
+                  className="w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Tech Innovation</h3>
+              <p className="text-sm text-gray-600">Industry Recognition</p>
+            </div>
+
+            {/* Recognition 4 */}
+            <div className="bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-2xl p-6 shadow-xl text-center transform transition-all duration-500 hover:scale-105 animate-fade-in-up delay-700">
+              <div className="relative mb-4">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
+                  alt="Education Brand Award"
+                  className="w-20 h-20 mx-auto object-contain rounded-lg"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-2">Top Education Brand</h3>
+              <p className="text-sm text-gray-600">Brand Recognition</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bright Minds Scholarship Section */}
       <section className="py-16 md:py-20 bg-sunstone-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
