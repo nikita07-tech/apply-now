@@ -2000,12 +2000,12 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
                   <div className="relative h-48">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fb527aa0a3fbb4a448ce702ff4ceaf3b4?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
                       alt="Rathinam College"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       ₹3.90L
@@ -2044,7 +2044,7 @@ export default function Index() {
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold text-sunstone-navy mb-1">Ajeenkya DY Patil University</h3>
-                    <p className="text-sm text-gray-600 mb-3">Pune • BCA Program • UGC Recognised</p>
+                    <p className="text-sm text-gray-600 mb-3">Pune • BCA Program �� UGC Recognised</p>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="text-xs text-gray-600">
                         <p>✓ 2 Specialisations</p>
