@@ -2180,14 +2180,14 @@ export default function Index() {
             </div>
 
             {/* VGU Large Banner */}
-            <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105"
+            <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105 animate-slide-in-left delay-400"
                  onClick={() => window.open('https://sunstone.in/campuses/vgu', '_blank')}>
-              <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-300">
+              <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-500 hover:shadow-3xl animate-float-up">
                 <div className="relative h-64 lg:h-72">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fcfb1a576795f40e490743369628305c2?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
                     alt="Vivekananda Global University Campus"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute top-6 right-6 bg-sunstone-gold text-black px-4 py-2 rounded-full font-bold shadow-lg">
                     ₹7.00 Lacs
