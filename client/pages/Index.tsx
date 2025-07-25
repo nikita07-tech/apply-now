@@ -1632,19 +1632,12 @@ export default function Index() {
 
                 <div className="mt-6 md:mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-4 md:p-6 text-center">
                   <h4 className="text-lg md:text-xl font-bold text-sunstone-white mb-2">
-                    Apply Today & Secure Your Future
+                    Merit-Based Financial Support
                   </h4>
-                  <p className="text-gray-300 text-xs md:text-sm mb-4">
+                  <p className="text-gray-300 text-xs md:text-sm">
                     Limited scholarships available on first-come, first-served
-                    basis
+                    basis for qualifying students
                   </p>
-                  <Button
-                    onClick={handleApplyNow}
-                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-6 md:px-8 py-2 md:py-3 text-base md:text-lg transition-all duration-300 transform hover:scale-105 rounded-lg w-full sm:w-auto"
-                  >
-                    Apply for Scholarship
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-                  </Button>
                 </div>
               </div>
             </div>
