@@ -39,7 +39,7 @@ const successStories = [
     name: "Harpreet Kaur",
     package: "Zenoti 8.6 LPA",
     campus: "RBU",
-    year: "21-23",
+    year: "2021-2023",
     course: "MBA",
     testimonial:
       "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a high package and an internship at FundsRoom.",
@@ -75,7 +75,7 @@ const successStories = [
     name: "Bijan Biswas",
     package: "Piramal Capital 7 LPA",
     campus: "RGI",
-    year: "21-23",
+    year: "2021-2023",
     course: "MBA",
     testimonial:
       "I would like to express my gratitude to Sunstone for the invaluable support and guidance that helped me secure a placement at Piramal Capital and Housing Finance Limited.",
