@@ -206,10 +206,10 @@ export default function Index() {
             {/* Apply Button - Responsive */}
             <Button
               onClick={handleApplyNow}
-              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base px-3 py-2 md:px-4 md:py-2"
+              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-base px-6 py-3 md:px-4 md:py-2"
             >
               <span className="hidden sm:inline">Apply Now</span>
-              <span className="sm:hidden">Apply</span>
+              <span className="sm:hidden text-lg">Apply Now</span>
             </Button>
           </div>
         </div>
