@@ -1147,7 +1147,7 @@ export default function Index() {
           </div>
 
           {/* First Row - Right to Left */}
-          <div className="relative overflow-hidden mb-6 md:mb-8">
+          <div className="hidden md:block relative overflow-hidden mb-6 md:mb-8">
             <div
               className="flex animate-scroll-right space-x-4 md:space-x-8"
               style={{ width: "calc(200% + 64px)" }}
