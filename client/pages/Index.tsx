@@ -39,7 +39,7 @@ const successStories = [
     name: "Harpreet Kaur",
     package: "Zenoti 8.6 LPA",
     campus: "RBU",
-    year: "21-23",
+    year: "2021-2023",
     course: "MBA",
     testimonial:
       "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a high package and an internship at FundsRoom.",
@@ -75,7 +75,7 @@ const successStories = [
     name: "Bijan Biswas",
     package: "Piramal Capital 7 LPA",
     campus: "RGI",
-    year: "21-23",
+    year: "2021-2023",
     course: "MBA",
     testimonial:
       "I would like to express my gratitude to Sunstone for the invaluable support and guidance that helped me secure a placement at Piramal Capital and Housing Finance Limited.",
@@ -169,7 +169,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-5 md:h-6 w-auto transition-all duration-500 hover:scale-110"
+                className="h-4 md:h-6 w-auto transition-all duration-500 hover:scale-110"
               />
             </div>
 
@@ -203,7 +203,7 @@ export default function Index() {
                 <div className="h-0.5 sm:h-1 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
               </div>
 
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
+              <p className="text-xs sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -226,7 +226,7 @@ export default function Index() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      className="text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
+                      className="hidden md:flex text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
                     >
                       <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                       <span className="hidden sm:inline">Help</span>
@@ -258,7 +258,7 @@ export default function Index() {
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-xs sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -268,37 +268,67 @@ export default function Index() {
                       I want to pursue*
                     </label>
                     <select
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sm sm:text-base text-sunstone-black font-medium"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
-                      <option value="" className="text-gray-500">
+                      <option
+                        value=""
+                        className="text-gray-500 text-xs md:text-base"
+                      >
                         Select Program
                       </option>
-                      <option value="mba" className="text-sunstone-black">
+                      <option
+                        value="mba"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         MBA
                       </option>
-                      <option value="pgdm" className="text-sunstone-black">
+                      <option
+                        value="pgdm"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         PGDM
                       </option>
-                      <option value="bba" className="text-sunstone-black">
+                      <option
+                        value="bba"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         BBA
                       </option>
-                      <option value="btech" className="text-sunstone-black">
+                      <option
+                        value="btech"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         B.Tech
                       </option>
-                      <option value="bcom" className="text-sunstone-black">
+                      <option
+                        value="bcom"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         B.Com
                       </option>
-                      <option value="bca" className="text-sunstone-black">
+                      <option
+                        value="bca"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         BCA
                       </option>
-                      <option value="mca" className="text-sunstone-black">
+                      <option
+                        value="mca"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         MCA
                       </option>
-                      <option value="bsc" className="text-sunstone-black">
+                      <option
+                        value="bsc"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         B.Sc
                       </option>
-                      <option value="msc" className="text-sunstone-black">
+                      <option
+                        value="msc"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         M.Sc
                       </option>
                     </select>
@@ -313,7 +343,7 @@ export default function Index() {
                       placeholder="Enter 10-digit mobile number"
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-sm sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-xs sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
@@ -323,148 +353,211 @@ export default function Index() {
                       Select State*
                     </label>
                     <select
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sm sm:text-base text-sunstone-black font-medium"
+                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
-                      <option value="" className="text-gray-500">
+                      <option
+                        value=""
+                        className="text-gray-500 text-xs md:text-base"
+                      >
                         Select State
                       </option>
                       <option
                         value="andhra-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Andhra Pradesh
                       </option>
                       <option
                         value="arunachal-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Arunachal Pradesh
                       </option>
-                      <option value="assam" className="text-sunstone-black">
+                      <option
+                        value="assam"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Assam
                       </option>
-                      <option value="bihar" className="text-sunstone-black">
+                      <option
+                        value="bihar"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Bihar
                       </option>
                       <option
                         value="chhattisgarh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Chhattisgarh
                       </option>
-                      <option value="goa" className="text-sunstone-black">
+                      <option
+                        value="goa"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Goa
                       </option>
-                      <option value="gujarat" className="text-sunstone-black">
+                      <option
+                        value="gujarat"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Gujarat
                       </option>
-                      <option value="haryana" className="text-sunstone-black">
+                      <option
+                        value="haryana"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Haryana
                       </option>
                       <option
                         value="himachal-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Himachal Pradesh
                       </option>
-                      <option value="jharkhand" className="text-sunstone-black">
+                      <option
+                        value="jharkhand"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Jharkhand
                       </option>
-                      <option value="karnataka" className="text-sunstone-black">
+                      <option
+                        value="karnataka"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Karnataka
                       </option>
-                      <option value="kerala" className="text-sunstone-black">
+                      <option
+                        value="kerala"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Kerala
                       </option>
                       <option
                         value="madhya-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Madhya Pradesh
                       </option>
                       <option
                         value="maharashtra"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Maharashtra
                       </option>
-                      <option value="manipur" className="text-sunstone-black">
+                      <option
+                        value="manipur"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Manipur
                       </option>
-                      <option value="meghalaya" className="text-sunstone-black">
+                      <option
+                        value="meghalaya"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Meghalaya
                       </option>
-                      <option value="mizoram" className="text-sunstone-black">
+                      <option
+                        value="mizoram"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Mizoram
                       </option>
-                      <option value="nagaland" className="text-sunstone-black">
+                      <option
+                        value="nagaland"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Nagaland
                       </option>
-                      <option value="odisha" className="text-sunstone-black">
+                      <option
+                        value="odisha"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Odisha
                       </option>
-                      <option value="punjab" className="text-sunstone-black">
+                      <option
+                        value="punjab"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Punjab
                       </option>
-                      <option value="rajasthan" className="text-sunstone-black">
+                      <option
+                        value="rajasthan"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Rajasthan
                       </option>
-                      <option value="sikkim" className="text-sunstone-black">
+                      <option
+                        value="sikkim"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Sikkim
                       </option>
                       <option
                         value="tamil-nadu"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Tamil Nadu
                       </option>
-                      <option value="telangana" className="text-sunstone-black">
+                      <option
+                        value="telangana"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Telangana
                       </option>
-                      <option value="tripura" className="text-sunstone-black">
+                      <option
+                        value="tripura"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Tripura
                       </option>
                       <option
                         value="uttar-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Uttar Pradesh
                       </option>
                       <option
                         value="uttarakhand"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Uttarakhand
                       </option>
                       <option
                         value="west-bengal"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         West Bengal
                       </option>
-                      <option value="delhi" className="text-sunstone-black">
+                      <option
+                        value="delhi"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Delhi
                       </option>
                       <option
                         value="chandigarh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Chandigarh
                       </option>
                       <option
                         value="puducherry"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Puducherry
                       </option>
                       <option
                         value="jammu-kashmir"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Jammu & Kashmir
                       </option>
-                      <option value="ladakh" className="text-sunstone-black">
+                      <option
+                        value="ladakh"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Ladakh
                       </option>
                     </select>
@@ -496,7 +589,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/20">
               <GraduationCap className="h-6 w-6 text-sunstone-gold" />
               <span className="text-sunstone-navy font-bold text-lg">
-                Trusted by 5000++ Successful Students
+                <p>Trusted by 5000+ Successful Students</p>
               </span>
             </div>
 
@@ -505,7 +598,7 @@ export default function Index() {
                 Pursue Your Dream Degree
               </span>
               <br />
-              <span className="text-sunstone-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+              <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
@@ -528,11 +621,11 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                   ₹26 LPA
                 </div>
-                <div className="text-sunstone-white font-semibold text-xs sm:text-sm md:text-base">
+                <div className="text-black font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
                 </div>
                 <div className="text-gray-300 text-xs mt-1 sm:mt-2">
@@ -540,7 +633,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="bg-sunstone-gold rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">
                   306
                 </div>
@@ -553,12 +646,12 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Mobile Carousel */}
+            {/* Mobile Moving Carousel */}
             <div className="block md:hidden">
-              <div className="relative overflow-hidden px-3">
+              <div className="relative overflow-hidden">
                 <div
-                  className="flex space-x-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
-                  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                  className="flex space-x-4 animate-scroll-right"
+                  style={{ width: "calc(200% + 32px)" }}
                 >
                   <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20 snap-start">
                     <div className="text-2xl font-black text-sunstone-navy mb-2">
@@ -584,7 +677,44 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="flex-shrink-0 w-64 bg-sunstone-gold rounded-xl p-4 shadow-xl snap-start">
+                  <div className="flex-shrink-0 w-64 bg-sunstone-gold rounded-xl p-4 shadow-xl">
+                    <div className="text-2xl font-black text-sunstone-black mb-2">
+                      306
+                    </div>
+                    <div className="text-sunstone-black font-semibold text-sm mb-1">
+                      Multiple Offer Winners
+                    </div>
+                    <div className="text-sunstone-black/70 text-xs">
+                      Students with 2+ job offers
+                    </div>
+                  </div>
+
+                  {/* Duplicate set for seamless loop */}
+                  <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20">
+                    <div className="text-2xl font-black text-sunstone-navy mb-2">
+                      5000+
+                    </div>
+                    <div className="text-sunstone-gold font-semibold text-sm mb-1">
+                      Students Successfully Placed
+                    </div>
+                    <div className="text-gray-600 text-xs">
+                      Across top companies nationwide
+                    </div>
+                  </div>
+
+                  <div className="flex-shrink-0 w-64 bg-sunstone-navy rounded-xl p-4 shadow-xl">
+                    <div className="text-2xl font-black text-sunstone-gold mb-2">
+                      ��26 LPA
+                    </div>
+                    <div className="text-sunstone-white font-semibold text-sm mb-1">
+                      Highest Package Achieved
+                    </div>
+                    <div className="text-gray-300 text-xs">
+                      Dreams turned into reality
+                    </div>
+                  </div>
+
+                  <div className="flex-shrink-0 w-64 bg-sunstone-gold rounded-xl p-4 shadow-xl">
                     <div className="text-2xl font-black text-sunstone-black mb-2">
                       306
                     </div>
@@ -613,7 +743,7 @@ export default function Index() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div
-                  className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${stat.color} mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110`}
+                  className={`text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold ${stat.color} mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110`}
                 >
                   {stat.value}
                 </div>
@@ -633,7 +763,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
               See how our programs compare with traditional colleges
             </p>
           </div>
@@ -703,7 +833,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
               Real results from real students who chose to transform their
               careers with Sunstone
             </p>
@@ -712,11 +842,11 @@ export default function Index() {
 
           {/* Professional Stats Grid - Carousel on Mobile */}
           <div className="block md:hidden mb-8">
-            {/* Mobile Carousel */}
-            <div className="relative overflow-hidden px-3">
+            {/* Mobile Moving Carousel */}
+            <div className="relative overflow-hidden">
               <div
-                className="flex space-x-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
-                style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                className="flex space-x-4 animate-scroll-left"
+                style={{ width: "calc(200% + 32px)" }}
               >
                 {/* Highest Package Card */}
                 <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200 snap-start">
@@ -761,7 +891,60 @@ export default function Index() {
                 </div>
 
                 {/* Multiple Offers Card */}
-                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20 snap-start">
+                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
+                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
+                    <CheckCircle className="h-4 w-4 text-sunstone-white" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
+                    306
+                  </div>
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
+                    2+ Offers
+                  </div>
+                  <div className="text-gray-600 text-xs">Multiple offers</div>
+                </div>
+
+                {/* Duplicate set for seamless loop */}
+                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200">
+                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
+                    <Award className="h-4 w-4 text-sunstone-black" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
+                    ₹26 LPA
+                  </div>
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
+                    Highest Package
+                  </div>
+                  <div className="text-gray-600 text-xs">Record-breaking</div>
+                </div>
+
+                <div className="flex-shrink-0 w-40 bg-sunstone-navy rounded-lg p-3 text-center shadow-lg">
+                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                    <TrendingUp className="h-4 w-4 text-sunstone-black" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-gold mb-0.5">
+                    63%
+                  </div>
+                  <div className="text-sunstone-white font-bold text-xs mb-0.5">
+                    Higher ROI
+                  </div>
+                  <div className="text-gray-300 text-xs">Better return</div>
+                </div>
+
+                <div className="flex-shrink-0 w-40 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
+                  <div className="w-8 h-8 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-1">
+                    <Users className="h-4 w-4 text-sunstone-white" />
+                  </div>
+                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
+                    5000+
+                  </div>
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
+                    Students Placed
+                  </div>
+                  <div className="text-gray-700 text-xs">Career launches</div>
+                </div>
+
+                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
                   <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
                     <CheckCircle className="h-4 w-4 text-sunstone-white" />
                   </div>
@@ -781,7 +964,7 @@ export default function Index() {
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {/* Highest Package Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
@@ -800,7 +983,7 @@ export default function Index() {
               <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-gold mb-2 lg:mb-3">
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
                 63%
               </div>
               <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
@@ -813,10 +996,10 @@ export default function Index() {
 
             {/* Students Placed Card */}
             <div className="bg-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-gray-300 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <Users className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
               </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-gold mb-2 lg:mb-3">
                 5000+
               </div>
               <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
@@ -850,7 +1033,7 @@ export default function Index() {
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 1200+
               </div>
-              <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">
+              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
                 Total Recruiters
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
@@ -861,7 +1044,7 @@ export default function Index() {
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 4.6 LPA
               </div>
-              <div className="text-sunstone-white font-bold text-sm sm:text-base md:text-lg mb-1">
+              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
                 Average Package
               </div>
               <div className="text-sunstone-white text-xs sm:text-sm">
@@ -879,7 +1062,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Top Recruiters
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
               Leading companies that trust our graduates
             </p>
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
@@ -1079,6 +1262,361 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Awards & Recognition Section */}
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+              <Award className="h-5 w-5 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-semibold text-base">
+                Awards & Recognition
+              </span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+              Internationally Recognized Excellence
+            </h2>
+
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
+              Our commitment to educational excellence has been acknowledged by
+              leading industry bodies worldwide
+            </p>
+            <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
+          </div>
+
+          {/* Single Line Awards with Wave Animation */}
+          <div className="relative overflow-hidden">
+            <div
+              className="flex animate-wave-scroll space-x-4 md:space-x-8"
+              style={{ width: "calc(300% + 96px)" }}
+            >
+              {/* First set */}
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                    alt="EdTech 100"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                    alt="GSV 150"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.4s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                    alt="Innovation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.6s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                    alt="ASSOCHAM"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.8s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                    alt="IndiGlobal"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
+                    alt="Excellence"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Excellence
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "1.2s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
+                    alt="Tech Innovation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Tech Innovation
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1.4s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
+                    alt="Top Brand"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Top Brand
+                </p>
+              </div>
+
+              {/* Duplicate sets for seamless loop */}
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                    alt="EdTech 100"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                    alt="GSV 150"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.4s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                    alt="Innovation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.6s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                    alt="ASSOCHAM"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.8s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                    alt="IndiGlobal"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
+                    alt="Excellence"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Excellence
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "1.2s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
+                    alt="Tech Innovation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Tech Innovation
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1.4s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
+                    alt="Top Brand"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Top Brand
+                </p>
+              </div>
+
+              {/* Third duplicate set */}
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                    alt="EdTech 100"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                    alt="GSV 150"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.4s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                    alt="Innovation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
+              </div>
+
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.6s" }}
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                    alt="ASSOCHAM"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bright Minds Scholarship Section */}
       <section className="py-16 md:py-20 bg-sunstone-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1131,7 +1669,7 @@ export default function Index() {
 
                 <div className="space-y-1.5 sm:space-y-2 md:space-y-3 lg:space-y-6">
                   {/* Top 10% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-2 md:p-3 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1149,7 +1687,7 @@ export default function Index() {
                   </div>
 
                   {/* Top 25% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-2 md:p-3 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1159,7 +1697,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">
-                          ��4L
+                          ₹4L
                         </div>
                         <div className="text-xs text-gray-500">Support</div>
                       </div>
@@ -1167,7 +1705,7 @@ export default function Index() {
                   </div>
 
                   {/* Top 50% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-2 md:p-3 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1187,19 +1725,12 @@ export default function Index() {
 
                 <div className="mt-6 md:mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-4 md:p-6 text-center">
                   <h4 className="text-lg md:text-xl font-bold text-sunstone-white mb-2">
-                    Apply Today & Secure Your Future
+                    Merit-Based Financial Support
                   </h4>
-                  <p className="text-gray-300 text-xs md:text-sm mb-4">
+                  <p className="text-gray-300 text-xs md:text-sm">
                     Limited scholarships available on first-come, first-served
-                    basis
+                    basis for qualifying students
                   </p>
-                  <Button
-                    onClick={handleApplyNow}
-                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-sunstone-black font-bold px-6 md:px-8 py-2 md:py-3 text-base md:text-lg transition-all duration-300 transform hover:scale-105 rounded-lg w-full sm:w-auto"
-                  >
-                    Apply for Scholarship
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-                  </Button>
                 </div>
               </div>
             </div>
@@ -1217,7 +1748,7 @@ export default function Index() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
               Real students, Real achievements, Real transformations
             </p>
             <div className="h-0.5 sm:h-1 md:h-2 w-20 sm:w-24 md:w-32 lg:w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
@@ -1248,7 +1779,7 @@ export default function Index() {
                       />
 
                       <div className="absolute top-4 right-4 z-20">
-                        <div className="bg-sunstone-gold text-sunstone-black px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        <div className="bg-sunstone-gold text-sunstone-black px-3 py-1 rounded-full text-sm md:text-base font-bold shadow-lg">
                           {story.package.split(" ").slice(-2).join(" ")}
                         </div>
                       </div>
@@ -1256,7 +1787,7 @@ export default function Index() {
 
                     {/* Content */}
                     <div className="p-3 sm:p-4 md:p-6">
-                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-sunstone-navy mb-1 sm:mb-2">
+                      <h3 className="text-xs sm:text-base md:text-lg font-bold text-sunstone-navy mb-1 sm:mb-2">
                         {story.name}
                       </h3>
                       <div className="flex flex-wrap gap-2 mb-3">
@@ -1464,10 +1995,7 @@ export default function Index() {
                   <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   +91 70653 03030
                 </div>
-                <div className="flex items-center text-gray-200">
-                  <MapPin className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
-                  Multiple Locations
-                </div>
+
                 <Button
                   onClick={handleApplyNow}
                   className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 font-bold text-xs md:text-sm py-0.5 px-1.5 md:py-2 md:px-4 mt-1 md:mt-2"
@@ -1654,6 +2182,38 @@ export default function Index() {
           animation: scroll-right 25s linear infinite;
         }
 
+        .animate-float-gentle {
+          animation: float-gentle 3s ease-in-out infinite;
+        }
+
+        .animate-bounce-soft {
+          animation: bounce-soft 2s ease-in-out infinite;
+        }
+
+        .animate-pulse-gentle {
+          animation: pulse-gentle 2.5s ease-in-out infinite;
+        }
+
+        .animate-pulse-slow {
+          animation: pulse-slow 3s ease-in-out infinite;
+        }
+
+        .animate-spin-slow {
+          animation: spin-slow 8s linear infinite;
+        }
+
+        .animate-wiggle-gentle {
+          animation: wiggle-gentle 4s ease-in-out infinite;
+        }
+
+        .animate-wave-scroll {
+          animation: wave-scroll 15s linear infinite;
+        }
+
+        .animate-float-up {
+          animation: float-up 3s ease-in-out infinite;
+        }
+
         @keyframes scroll-left {
           0% {
             transform: translateX(0);
@@ -1669,6 +2229,108 @@ export default function Index() {
           }
           100% {
             transform: translateX(0);
+          }
+        }
+
+        @keyframes float-gentle {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-8px);
+          }
+        }
+
+        @keyframes bounce-soft {
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-6px);
+          }
+          60% {
+            transform: translateY(-3px);
+          }
+        }
+
+        @keyframes pulse-gentle {
+          0%,
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.05);
+            opacity: 0.9;
+          }
+        }
+
+        @keyframes pulse-slow {
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.7;
+          }
+        }
+
+        @keyframes spin-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes wiggle-gentle {
+          0%,
+          7% {
+            transform: rotateZ(0);
+          }
+          15% {
+            transform: rotateZ(-5deg);
+          }
+          20% {
+            transform: rotateZ(3deg);
+          }
+          25% {
+            transform: rotateZ(-3deg);
+          }
+          30% {
+            transform: rotateZ(2deg);
+          }
+          35% {
+            transform: rotateZ(-1deg);
+          }
+          40%,
+          100% {
+            transform: rotateZ(0);
+          }
+        }
+
+        @keyframes wave-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+
+        @keyframes float-up {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-6px);
           }
         }
 
