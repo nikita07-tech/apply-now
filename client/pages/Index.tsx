@@ -1910,35 +1910,32 @@ export default function Index() {
                 </div>
 
                 {/* SAGE Banner */}
-                <div className="flex-shrink-0 w-80 bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-2xl border border-sunstone-gold/30">
-                  <div className="relative h-40">
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                  <div className="relative h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F6d5459d02b4043ee8a2078acff7360bd?format=webp&width=800"
                       alt="SAGE University"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <h3 className="text-lg font-bold">SAGE, Indore</h3>
-                      <p className="text-sm">BCA • AICTE Approved</p>
-                    </div>
-                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold">
+                    <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       ₹3.00L
                     </div>
                   </div>
                   <div className="p-4">
-                    <div className="flex justify-between items-center">
-                      <div className="text-sm text-gray-600">
-                        <p>��� 2 Specialisations</p>
+                    <h3 className="text-lg font-bold text-sunstone-navy mb-1">SAGE University</h3>
+                    <p className="text-sm text-gray-600 mb-3">Indore • BCA Program • AICTE Approved</p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="text-xs text-gray-600">
+                        <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
-                      <button
-                        onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}
-                        className="bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
-                      >
-                        Explore →
-                      </button>
                     </div>
+                    <button
+                      onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}
+                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
+                    >
+                      Book College Tour →
+                    </button>
                   </div>
                 </div>
 
