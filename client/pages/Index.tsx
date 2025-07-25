@@ -1108,7 +1108,10 @@ export default function Index() {
               style={{ width: "calc(300% + 96px)" }}
             >
               {/* First set */}
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
@@ -1116,10 +1119,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.2s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
@@ -1127,10 +1135,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.4s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.4s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
@@ -1138,10 +1151,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.6s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.6s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
@@ -1149,10 +1167,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.8s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.8s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
@@ -1160,10 +1183,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
@@ -1171,10 +1199,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Excellence
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '1.2s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "1.2s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
@@ -1182,10 +1215,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Tech Innovation
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1.4s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1.4s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
@@ -1193,11 +1231,16 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Top Brand
+                </p>
               </div>
 
               {/* Duplicate sets for seamless loop */}
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
@@ -1205,10 +1248,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.2s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
@@ -1216,10 +1264,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.4s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.4s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
@@ -1227,10 +1280,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.6s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.6s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
@@ -1238,10 +1296,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.8s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.8s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
@@ -1249,10 +1312,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">IndiGlobal</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
@@ -1260,10 +1328,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Excellence</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Excellence
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '1.2s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "1.2s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
@@ -1271,10 +1344,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Tech Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Tech Innovation
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '1.4s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "1.4s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
@@ -1282,11 +1360,16 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Top Brand</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Top Brand
+                </p>
               </div>
 
               {/* Third duplicate set */}
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
@@ -1294,10 +1377,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">EdTech 100</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  EdTech 100
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.2s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
@@ -1305,10 +1393,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">GSV 150</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  GSV 150
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up" style={{ animationDelay: '0.4s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                style={{ animationDelay: "0.4s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
@@ -1316,10 +1409,15 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">Innovation</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  Innovation
+                </p>
               </div>
 
-              <div className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up" style={{ animationDelay: '0.6s' }}>
+              <div
+                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                style={{ animationDelay: "0.6s" }}
+              >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
@@ -1327,7 +1425,9 @@ export default function Index() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">ASSOCHAM</p>
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  ASSOCHAM
+                </p>
               </div>
             </div>
           </div>
@@ -1960,7 +2060,8 @@ export default function Index() {
         }
 
         @keyframes float-gentle {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0px);
           }
           50% {
@@ -1969,7 +2070,11 @@ export default function Index() {
         }
 
         @keyframes bounce-soft {
-          0%, 20%, 50%, 80%, 100% {
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
             transform: translateY(0);
           }
           40% {
@@ -1981,7 +2086,8 @@ export default function Index() {
         }
 
         @keyframes pulse-gentle {
-          0%, 100% {
+          0%,
+          100% {
             transform: scale(1);
             opacity: 1;
           }
@@ -1992,7 +2098,8 @@ export default function Index() {
         }
 
         @keyframes pulse-slow {
-          0%, 100% {
+          0%,
+          100% {
             opacity: 1;
           }
           50% {
@@ -2010,7 +2117,8 @@ export default function Index() {
         }
 
         @keyframes wiggle-gentle {
-          0%, 7% {
+          0%,
+          7% {
             transform: rotateZ(0);
           }
           15% {
@@ -2028,7 +2136,8 @@ export default function Index() {
           35% {
             transform: rotateZ(-1deg);
           }
-          40%, 100% {
+          40%,
+          100% {
             transform: rotateZ(0);
           }
         }
@@ -2043,7 +2152,8 @@ export default function Index() {
         }
 
         @keyframes float-up {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0px);
           }
           50% {
