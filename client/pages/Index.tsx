@@ -2643,6 +2643,10 @@ export default function Index() {
           animation: college-wave 20s ease-in-out infinite;
         }
 
+        .animate-horizontal-scroll {
+          animation: horizontal-scroll 30s linear infinite;
+        }
+
         .animate-slide-in-horizontal {
           animation: slide-in-horizontal 1s ease-out forwards;
         }
