@@ -2034,7 +2034,7 @@ export default function Index() {
         }
 
         .animate-wave-scroll {
-          animation: wave-scroll 30s linear infinite;
+          animation: wave-scroll 15s linear infinite;
         }
 
         .animate-float-up {
