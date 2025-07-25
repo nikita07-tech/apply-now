@@ -1851,6 +1851,272 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Explore Colleges Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-8 border border-sunstone-navy/20">
+              <GraduationCap className="h-5 w-5 text-sunstone-navy" />
+              <span className="text-sunstone-navy font-semibold text-base">
+                Partner Colleges
+              </span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+              Explore Top Colleges
+            </h2>
+
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
+              Discover premium educational institutions across India offering industry-focused programs
+            </p>
+            <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
+          </div>
+
+          {/* Colleges Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+            {/* Ajeenkya DY Patil University */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 group cursor-pointer"
+                 onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F20df54af53ac42f3b2872c80b67cdd0a?format=webp&width=800"
+                  alt="Ajeenkya DY Patil University Campus"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-white rounded-full p-2 shadow-lg">
+                  <img
+                    src="https://sunstone.in/assets/images/colleges/adypu-logo.png"
+                    alt="ADYPU Logo"
+                    className="w-8 h-8 object-contain"
+                    onError={(e) => {(e.target as HTMLImageElement).style.display = 'none'}}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-sunstone-navy mb-2 group-hover:text-sunstone-gold transition-colors duration-300">
+                  Ajeenkya DY Patil University, Pune
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">BCA Program | UGC recognised</p>
+
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">2 Specialisations</span>
+                  </div>
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">10 Certifications</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-500 text-xs">Total Fees</p>
+                    <p className="text-xl font-bold text-sunstone-gold">₹5.25 Lacs</p>
+                  </div>
+                  <button className="bg-sunstone-gold/10 text-sunstone-navy px-4 py-2 rounded-lg text-sm font-medium hover:bg-sunstone-gold hover:text-white transition-all duration-300">
+                    Book College Tour →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* SAGE University */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 group cursor-pointer"
+                 onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F6d5459d02b4043ee8a2078acff7360bd?format=webp&width=800"
+                  alt="SAGE University Campus"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-white rounded-full p-2 shadow-lg">
+                  <img
+                    src="https://sunstone.in/assets/images/colleges/sage-logo.png"
+                    alt="SAGE Logo"
+                    className="w-8 h-8 object-contain"
+                    onError={(e) => {(e.target as HTMLImageElement).style.display = 'none'}}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-sunstone-navy mb-2 group-hover:text-sunstone-gold transition-colors duration-300">
+                  SAGE University, Indore
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">BCA Program | AICTE approved</p>
+
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">2 Specialisations</span>
+                  </div>
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">10 Certifications</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-500 text-xs">Total Fees</p>
+                    <p className="text-xl font-bold text-sunstone-gold">₹3.00 Lacs</p>
+                  </div>
+                  <button className="bg-sunstone-gold/10 text-sunstone-navy px-4 py-2 rounded-lg text-sm font-medium hover:bg-sunstone-gold hover:text-white transition-all duration-300">
+                    Book College Tour →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Hi-Tech Institute */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 group cursor-pointer"
+                 onClick={() => window.open('https://sunstone.in/campuses/hitech', '_blank')}>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fcd32512dcb804bc6b65bacba5aab7709?format=webp&width=800"
+                  alt="Hi-Tech Institute Campus"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-white rounded-full p-2 shadow-lg">
+                  <img
+                    src="https://sunstone.in/assets/images/colleges/hitech-logo.png"
+                    alt="Hi-Tech Logo"
+                    className="w-8 h-8 object-contain"
+                    onError={(e) => {(e.target as HTMLImageElement).style.display = 'none'}}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-sunstone-navy mb-2 group-hover:text-sunstone-gold transition-colors duration-300">
+                  Hi-Tech Institute of Engineering & Technology
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">B.Tech Program | AICTE approved</p>
+
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">2 Programs</span>
+                  </div>
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">10 Certifications</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-500 text-xs">Total Fees</p>
+                    <p className="text-xl font-bold text-sunstone-gold">₹4.59 - 4.88 Lacs</p>
+                  </div>
+                  <button className="bg-sunstone-gold/10 text-sunstone-navy px-4 py-2 rounded-lg text-sm font-medium hover:bg-sunstone-gold hover:text-white transition-all duration-300">
+                    Book College Tour →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Vivekananda Global University */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 group cursor-pointer"
+                 onClick={() => window.open('https://sunstone.in/campuses/vgu', '_blank')}>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fcfb1a576795f40e490743369628305c2?format=webp&width=800"
+                  alt="Vivekananda Global University Campus"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-white rounded-full p-2 shadow-lg">
+                  <img
+                    src="https://sunstone.in/assets/images/colleges/vgu-logo.png"
+                    alt="VGU Logo"
+                    className="w-8 h-8 object-contain"
+                    onError={(e) => {(e.target as HTMLImageElement).style.display = 'none'}}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-sunstone-navy mb-2 group-hover:text-sunstone-gold transition-colors duration-300">
+                  Vivekananda Global University, Jaipur
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">B.Tech Program | AICTE approved</p>
+
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">Computer Science</span>
+                  </div>
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">10 Certifications</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-500 text-xs">Total Fees</p>
+                    <p className="text-xl font-bold text-sunstone-gold">₹7.00 Lacs</p>
+                  </div>
+                  <button className="bg-sunstone-gold/10 text-sunstone-navy px-4 py-2 rounded-lg text-sm font-medium hover:bg-sunstone-gold hover:text-white transition-all duration-300">
+                    Book College Tour →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Rathinam College */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 group cursor-pointer"
+                 onClick={() => window.open('https://sunstone.in/campuses/rathinam', '_blank')}>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fb527aa0a3fbb4a448ce702ff4ceaf3b4?format=webp&width=800"
+                  alt="Rathinam College Campus"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-white rounded-full p-2 shadow-lg">
+                  <img
+                    src="https://sunstone.in/assets/images/colleges/rathinam-logo.png"
+                    alt="Rathinam Logo"
+                    className="w-8 h-8 object-contain"
+                    onError={(e) => {(e.target as HTMLImageElement).style.display = 'none'}}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-sunstone-navy mb-2 group-hover:text-sunstone-gold transition-colors duration-300">
+                  Rathinam College of Arts & Science
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">BBA Program | AICTE approved</p>
+
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">BBA (General)</span>
+                  </div>
+                  <div className="flex items-center text-sunstone-navy">
+                    <span className="text-xs font-medium">10 Certifications</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-500 text-xs">Total Fees</p>
+                    <p className="text-xl font-bold text-sunstone-gold">₹3.90 Lacs</p>
+                  </div>
+                  <button className="bg-sunstone-gold/10 text-sunstone-navy px-4 py-2 rounded-lg text-sm font-medium hover:bg-sunstone-gold hover:text-white transition-all duration-300">
+                    Book College Tour →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Placeholder card for 6th spot to maintain grid balance */}
+            <div className="hidden lg:block"></div>
+          </div>
+
+          {/* Explore More Button */}
+          <div className="text-center">
+            <button
+              onClick={() => window.open('https://sunstone.in/campuses', '_blank')}
+              className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark hover:from-sunstone-navy-dark hover:to-sunstone-navy text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+            >
+              Explore More Colleges
+              <ArrowRight className="inline-block ml-2 h-5 w-5" />
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Success Stories Section */}
       <section
         id="success-stories"
