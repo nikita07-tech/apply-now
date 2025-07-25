@@ -1868,8 +1868,84 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 md:h-2 w-20 sm:w-24 md:w-32 lg:w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Auto-Scrolling Container */}
-          <div className="relative overflow-hidden">
+          {/* Mobile Success Stories */}
+          <div className="block md:hidden">
+            <div className="relative">
+              {/* Current Story Display */}
+              <div className="flex justify-center mb-6">
+                <div className="w-80 bg-sunstone-white rounded-3xl shadow-xl overflow-hidden border border-sunstone-gold/20">
+                  {/* Header */}
+                  <div className="relative h-32 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
+                    <img
+                      src={successStories[currentStoryIndex].image}
+                      alt={successStories[currentStoryIndex].name}
+                      className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
+                    />
+                    <div className="absolute top-3 right-3 z-20">
+                      <div className="bg-sunstone-gold text-sunstone-black px-2 py-1 rounded-full text-sm font-bold shadow-lg">
+                        {successStories[currentStoryIndex].package.split(" ").slice(-2).join(" ")}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                      {successStories[currentStoryIndex].name}
+                    </h3>
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="bg-sunstone-navy/10 text-sunstone-navy px-2 py-1 rounded-full text-xs font-medium">
+                        {successStories[currentStoryIndex].campus}
+                      </span>
+                      <span className="bg-sunstone-gold/20 text-sunstone-black px-2 py-1 rounded-full text-xs font-medium">
+                        {successStories[currentStoryIndex].year}
+                      </span>
+                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
+                        {successStories[currentStoryIndex].course}
+                      </span>
+                    </div>
+
+                    <div className="mb-4 p-3 bg-sunstone-gold/10 rounded-xl border-l-4 border-sunstone-gold">
+                      <p className="font-bold text-sunstone-navy text-sm">
+                        {successStories[currentStoryIndex].package}
+                      </p>
+                    </div>
+
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                      "{successStories[currentStoryIndex].testimonial}"
+                    </p>
+
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dots Navigation */}
+              <div className="flex justify-center space-x-2 mb-4">
+                {successStories.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentStoryIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentStoryIndex
+                        ? 'bg-sunstone-gold scale-125'
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Auto-Scrolling Container */}
+          <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex space-x-8 animate-scroll-x"
               style={{ width: "calc(100% + 400px)" }}
