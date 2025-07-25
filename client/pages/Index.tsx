@@ -628,7 +628,7 @@ export default function Index() {
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                MBA • BBA • MCA • BCA • B.Tech
+                MBA ��� BBA • MCA • BCA • B.Tech
               </span>
               <br />
               <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
@@ -2063,13 +2063,13 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Layout - Large Banner Cards */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 animate-fade-in-up">
-            {/* ADYPU Large Banner */}
-            <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105 animate-slide-in-left delay-100"
+          {/* Desktop Layout - Compact Banner Cards */}
+          <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 mb-8 animate-fade-in-up">
+            {/* ADYPU Compact Banner */}
+            <div className="group cursor-pointer transform transition-all duration-500 hover:scale-110 animate-slide-in-horizontal delay-100"
                  onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}>
-              <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-500 hover:shadow-3xl animate-float-up">
-                <div className="relative h-64 lg:h-72">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-500 hover:shadow-xl animate-bounce-gentle">
+                <div className="relative h-48 md:h-52">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                     alt="Ajeenkya DY Patil University Campus"
