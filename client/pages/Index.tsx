@@ -1910,12 +1910,12 @@ export default function Index() {
                 </div>
 
                 {/* SAGE Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
                   <div className="relative h-48">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F6d5459d02b4043ee8a2078acff7360bd?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
                       alt="SAGE University"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       ₹3.00L
