@@ -1880,12 +1880,12 @@ export default function Index() {
             <div className="relative overflow-hidden">
               <div className="flex space-x-4 animate-scroll-x" style={{ width: "calc(500% + 80px)" }}>
                 {/* ADYPU Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
                   <div className="relative h-48">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F20df54af53ac42f3b2872c80b67cdd0a?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       ₹5.25L
