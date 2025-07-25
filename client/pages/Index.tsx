@@ -1098,6 +1098,54 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
           </div>
 
+          {/* Mobile Grid View */}
+          <div className="block md:hidden">
+            <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto mb-8">
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                  alt="Kotak Mahindra Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                  alt="Bosch"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                  alt="HCL"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                  alt="TCS"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                  alt="Paytm"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                  alt="Genpact"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* First Row - Right to Left */}
           <div className="relative overflow-hidden mb-6 md:mb-8">
             <div
