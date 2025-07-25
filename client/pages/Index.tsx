@@ -2024,7 +2024,7 @@ export default function Index() {
                       onClick={() => window.open('https://sunstone.in/campuses/rathinam', '_blank')}
                       className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors"
                     >
-                      Book College Tour →
+                      Book College Tour ���
                     </button>
                   </div>
                 </div>
@@ -2218,14 +2218,14 @@ export default function Index() {
             </div>
 
             {/* Rathinam Large Banner */}
-            <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105"
+            <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105 animate-slide-in-left delay-500"
                  onClick={() => window.open('https://sunstone.in/campuses/rathinam', '_blank')}>
-              <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-300">
+              <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-500 hover:shadow-3xl animate-float-up">
                 <div className="relative h-64 lg:h-72">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fb527aa0a3fbb4a448ce702ff4ceaf3b4?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
                     alt="Rathinam College Campus"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute top-6 right-6 bg-sunstone-gold text-black px-4 py-2 rounded-full font-bold shadow-lg">
                     ₹3.90 Lacs
