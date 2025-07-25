@@ -628,7 +628,7 @@ export default function Index() {
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                MBA ��� BBA • MCA • BCA • B.Tech
+                MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
               <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
@@ -2079,25 +2079,24 @@ export default function Index() {
                     ₹5.25 Lacs
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-sunstone-navy mb-2">Ajeenkya DY Patil University</h3>
-                  <p className="text-lg text-gray-600 mb-1">Pune • BCA Program</p>
-                  <p className="text-sm text-gray-500 mb-4">UGC Recognised</p>
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-sunstone-navy mb-1">ADYPU</h3>
+                  <p className="text-sm text-gray-600 mb-1">Pune • BCA</p>
+                  <p className="text-xs text-gray-500 mb-3">UGC Recognised</p>
 
-                  <div className="space-y-2 mb-6">
-                    <div className="flex items-center gap-2 text-gray-700">
-                      <span className="w-2 h-2 bg-sunstone-gold rounded-full"></span>
-                      <span className="text-sm font-medium">2 Specialisations</span>
+                  <div className="space-y-1 mb-4">
+                    <div className="flex items-center gap-1 text-gray-700">
+                      <span className="w-1.5 h-1.5 bg-sunstone-gold rounded-full"></span>
+                      <span className="text-xs font-medium">2 Specialisations</span>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-700">
-                      <span className="w-2 h-2 bg-sunstone-gold rounded-full"></span>
-                      <span className="text-sm font-medium">10 Industry Certifications</span>
+                    <div className="flex items-center gap-1 text-gray-700">
+                      <span className="w-1.5 h-1.5 bg-sunstone-gold rounded-full"></span>
+                      <span className="text-xs font-medium">10 Certifications</span>
                     </div>
                   </div>
 
-                  <div className="bg-sunstone-navy rounded-xl p-4 text-center">
-                    <p className="text-white font-bold text-lg">Book College Tour</p>
-                    <p className="text-gray-200 text-sm">Get personalized campus experience</p>
+                  <div className="bg-sunstone-navy rounded-lg p-2 text-center">
+                    <p className="text-white font-bold text-sm">Book Tour</p>
                   </div>
                 </div>
               </div>
