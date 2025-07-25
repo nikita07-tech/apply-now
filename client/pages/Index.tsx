@@ -2092,8 +2092,8 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Layout - Compact Banner Cards */}
-          <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 mb-8 animate-fade-in-up">
+          {/* CTA Section */}
+          <div className="text-center">
             {/* ADYPU Compact Banner */}
             <div className="group cursor-pointer transform transition-all duration-500 hover:scale-110 animate-slide-in-horizontal delay-100"
                  onClick={() => window.open('https://sunstone.in/campuses/adypu', '_blank')}>
