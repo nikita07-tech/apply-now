@@ -323,7 +323,7 @@ export default function Index() {
                       Select State*
                     </label>
                     <select
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sm sm:text-base text-sunstone-black font-medium"
+                      className="w-full px-2 sm:px-4 py-1.5 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
                       <option value="" className="text-gray-500">
