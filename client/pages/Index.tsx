@@ -326,7 +326,7 @@ export default function Index() {
                       className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
-                      <option value="" className="text-gray-500">
+                      <option value="" className="text-gray-500 text-xs md:text-base">
                         Select State
                       </option>
                       <option
