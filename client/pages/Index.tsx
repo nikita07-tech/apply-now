@@ -1362,8 +1362,44 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          {/* Single Line Awards with Wave Animation */}
-          <div className="relative overflow-hidden">
+          {/* Mobile Awards Carousel */}
+          <div className="block md:hidden">
+            <div className="relative">
+              {/* Current Award Display */}
+              <div className="flex justify-center mb-6">
+                <div className="w-64 h-48 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-6 hover:shadow-xl transition-all duration-500">
+                  <div className="w-20 h-20 mb-4 p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
+                    <img
+                      src={awards[currentAwardIndex].image}
+                      alt={awards[currentAwardIndex].title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <p className="text-base font-bold text-sunstone-navy text-center leading-tight">
+                    {awards[currentAwardIndex].title}
+                  </p>
+                </div>
+              </div>
+
+              {/* Dots Navigation */}
+              <div className="flex justify-center space-x-2 mb-4">
+                {awards.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentAwardIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentAwardIndex
+                        ? 'bg-sunstone-gold scale-125'
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Awards - Single Line Awards with Wave Animation */}
+          <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex animate-wave-scroll space-x-4 md:space-x-8"
               style={{ width: "calc(300% + 96px)" }}
