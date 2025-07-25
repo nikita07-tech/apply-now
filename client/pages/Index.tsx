@@ -1243,7 +1243,7 @@ export default function Index() {
           </div>
 
           {/* Second Row - Left to Right */}
-          <div className="relative overflow-hidden">
+          <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex animate-scroll-left space-x-4 md:space-x-8"
               style={{ width: "calc(200% + 64px)" }}
