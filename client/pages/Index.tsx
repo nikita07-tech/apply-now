@@ -149,6 +149,41 @@ const comparisonData = [
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showApplyForm, setShowApplyForm] = useState(false);
+  const [currentAwardIndex, setCurrentAwardIndex] = useState(0);
+  const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+
+  const awards = [
+    {
+      id: "edtech",
+      title: "EdTech 100",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800",
+    },
+    {
+      id: "gsv",
+      title: "GSV 150",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800",
+    },
+    {
+      id: "innovation",
+      title: "Innovation",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800",
+    },
+    {
+      id: "assocham",
+      title: "ASSOCHAM",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800",
+    },
+    {
+      id: "indiglobal",
+      title: "IndiGlobal",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800",
+    },
+  ];
 
   const handleApplyNow = () => {
     // On mobile, show the form instead of alert
@@ -176,10 +211,10 @@ export default function Index() {
             {/* Apply Button - Responsive */}
             <Button
               onClick={handleApplyNow}
-              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base px-3 py-2 md:px-4 md:py-2"
+              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-base px-6 py-3 md:px-4 md:py-2"
             >
               <span className="hidden sm:inline">Apply Now</span>
-              <span className="sm:hidden">Apply</span>
+              <span className="sm:hidden text-lg">Apply Now</span>
             </Button>
           </div>
         </div>
@@ -190,17 +225,16 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
-            <div className="text-left animate-slide-in-left">
+            <div className="text-center sm:text-left animate-slide-in-left">
               <div className="mb-4 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
-                  <span className="block text-sunstone-white animate-slide-up">
+                  <span className="block text-sunstone-white">
                     Big Dreams Need
                   </span>
-                  <span className="block text-sunstone-gold animate-bounce-gentle">
+                  <span className="block text-sunstone-gold">
                     the Right Start
                   </span>
                 </h1>
-                <div className="h-0.5 sm:h-1 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
               </div>
 
               <p className="text-xs sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
@@ -602,7 +636,7 @@ export default function Index() {
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
-              <span className="text-sunstone-gold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
+              <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
                 at 25+ Premier Colleges Across India
               </span>
             </h2>
@@ -622,10 +656,10 @@ export default function Index() {
               </div>
 
               <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
                   ₹26 LPA
                 </div>
-                <div className="text-black font-semibold text-xs sm:text-sm md:text-base">
+                <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
                 </div>
                 <div className="text-gray-300 text-xs mt-1 sm:mt-2">
@@ -634,10 +668,10 @@ export default function Index() {
               </div>
 
               <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-black mb-1 sm:mb-2">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
                   306
                 </div>
-                <div className="text-sunstone-black font-semibold text-xs sm:text-sm md:text-base">
+                <div className="text-sunstone-gold-light font-semibold text-xs sm:text-sm md:text-base">
                   Multiple Offer Winners
                 </div>
                 <div className="text-sunstone-black/70 text-xs mt-1 sm:mt-2">
@@ -964,7 +998,7 @@ export default function Index() {
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {/* Highest Package Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
@@ -980,7 +1014,7 @@ export default function Index() {
 
             {/* ROI Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
@@ -999,7 +1033,7 @@ export default function Index() {
               <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <Users className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
               </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-gold mb-2 lg:mb-3">
+              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
                 5000+
               </div>
               <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
@@ -1012,8 +1046,8 @@ export default function Index() {
 
             {/* Multiple Offers Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <CheckCircle className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+                <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
                 306
@@ -1068,8 +1102,56 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
           </div>
 
+          {/* Mobile Grid View */}
+          <div className="block md:hidden">
+            <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto mb-8">
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                  alt="Kotak Mahindra Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                  alt="Bosch"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                  alt="HCL"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                  alt="TCS"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                  alt="Paytm"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                  alt="Genpact"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* First Row - Right to Left */}
-          <div className="relative overflow-hidden mb-6 md:mb-8">
+          <div className="hidden md:block relative overflow-hidden mb-6 md:mb-8">
             <div
               className="flex animate-scroll-right space-x-4 md:space-x-8"
               style={{ width: "calc(200% + 64px)" }}
@@ -1165,7 +1247,7 @@ export default function Index() {
           </div>
 
           {/* Second Row - Left to Right */}
-          <div className="relative overflow-hidden">
+          <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex animate-scroll-left space-x-4 md:space-x-8"
               style={{ width: "calc(200% + 64px)" }}
@@ -1284,8 +1366,44 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          {/* Single Line Awards with Wave Animation */}
-          <div className="relative overflow-hidden">
+          {/* Mobile Awards Carousel */}
+          <div className="block md:hidden">
+            <div className="relative">
+              {/* Current Award Display */}
+              <div className="flex justify-center mb-6">
+                <div className="w-64 h-48 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-6 hover:shadow-xl transition-all duration-500">
+                  <div className="w-20 h-20 mb-4 p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
+                    <img
+                      src={awards[currentAwardIndex].image}
+                      alt={awards[currentAwardIndex].title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <p className="text-base font-bold text-sunstone-navy text-center leading-tight">
+                    {awards[currentAwardIndex].title}
+                  </p>
+                </div>
+              </div>
+
+              {/* Dots Navigation */}
+              <div className="flex justify-center space-x-2 mb-4">
+                {awards.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentAwardIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentAwardIndex
+                        ? "bg-sunstone-gold scale-125"
+                        : "bg-gray-300 hover:bg-gray-400"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Awards - Single Line Awards with Wave Animation */}
+          <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex animate-wave-scroll space-x-4 md:space-x-8"
               style={{ width: "calc(300% + 96px)" }}
@@ -1738,6 +1856,346 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Explore Colleges Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-4 py-2 rounded-full mb-6 border border-sunstone-navy/20">
+              <GraduationCap className="h-4 w-4 text-sunstone-navy" />
+              <span className="text-sunstone-navy font-bold text-sm">
+                Premier Partner Colleges
+              </span>
+            </div>
+
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight animate-slide-in-left">
+              Discover Your
+              <span className="block text-sunstone-gold animate-slide-in-right delay-300">
+                Dream College
+              </span>
+            </h2>
+
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-500">
+              Choose from India's top institutions with
+              <span className="text-sunstone-gold font-bold">
+                {" "}
+                guaranteed placement opportunities
+              </span>
+            </p>
+            <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-scale-in delay-700"></div>
+          </div>
+
+          {/* College Showcase - Horizontal Scrolling */}
+          <div className="mb-8">
+            <div className="relative overflow-hidden">
+              <div
+                className="flex space-x-4 animate-horizontal-scroll"
+                style={{ width: "calc(200% + 32px)" }}
+              >
+                {/* ADYPU Banner */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
+                      alt="Ajeenkya DY Patil University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹5.25L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      ADYPU
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Pune • BCA • UGC
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/adypu",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* SAGE Banner */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
+                      alt="SAGE University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹3.00L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      SAGE University
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Indore • BCA • AICTE
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/sage",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* Hi-Tech Banner */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F7a429a56252b4206af965fe0b3f07c93?format=webp&width=800"
+                      alt="Hi-Tech Institute"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹4.59L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Hi-Tech Institute
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">B.Tech • AICTE</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Programs</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/hitech",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* VGU Banner */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
+                      alt="Vivekananda Global University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹7.00L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      VGU Jaipur
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Jaipur • B.Tech • AICTE
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ Computer Science</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/vgu",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* Rathinam Banner */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
+                      alt="Rathinam College"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹3.90L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Rathinam College
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">BBA • AICTE</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ BBA (General)</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/rathinam",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* Repeat for seamless scroll - ADYPU */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
+                      alt="Ajeenkya DY Patil University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹5.25L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      ADYPU
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Pune • BCA • UGC
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/adypu",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* SAGE Repeat */}
+                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
+                      alt="SAGE University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹3.00L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      SAGE University
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Indore • BCA • AICTE
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/sage",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center"></div>
+
+          {/* CTA Section */}
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-3xl p-8 mb-8 border border-sunstone-gold/30">
+              <h3 className="text-2xl md:text-3xl font-bold text-sunstone-white mb-4">
+                Ready to Start Your Journey?
+              </h3>
+              <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto">
+                Join thousands of successful students who chose the right
+                college for their career
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  onClick={() =>
+                    window.open("https://sunstone.in/campuses", "_blank")
+                  }
+                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+                >
+                  Explore All Colleges
+                  <ArrowRight className="inline-block ml-2 h-5 w-5" />
+                </button>
+                <button className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300">
+                  Book Free Counseling
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Success Stories Section */}
       <section
         id="success-stories"
@@ -1754,8 +2212,87 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 md:h-2 w-20 sm:w-24 md:w-32 lg:w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Auto-Scrolling Container */}
-          <div className="relative overflow-hidden">
+          {/* Mobile Success Stories */}
+          <div className="block md:hidden">
+            <div className="relative">
+              {/* Current Story Display */}
+              <div className="flex justify-center mb-6">
+                <div className="w-80 bg-sunstone-white rounded-3xl shadow-xl overflow-hidden border border-sunstone-gold/20">
+                  {/* Header */}
+                  <div className="relative h-32 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
+                    <img
+                      src={successStories[currentStoryIndex].image}
+                      alt={successStories[currentStoryIndex].name}
+                      className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
+                    />
+                    <div className="absolute top-3 right-3 z-20">
+                      <div className="bg-sunstone-gold text-sunstone-black px-2 py-1 rounded-full text-sm font-bold shadow-lg">
+                        {successStories[currentStoryIndex].package
+                          .split(" ")
+                          .slice(-2)
+                          .join(" ")}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                      {successStories[currentStoryIndex].name}
+                    </h3>
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="bg-sunstone-navy/10 text-sunstone-navy px-2 py-1 rounded-full text-xs font-medium">
+                        {successStories[currentStoryIndex].campus}
+                      </span>
+                      <span className="bg-sunstone-gold/20 text-sunstone-black px-2 py-1 rounded-full text-xs font-medium">
+                        {successStories[currentStoryIndex].year}
+                      </span>
+                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
+                        {successStories[currentStoryIndex].course}
+                      </span>
+                    </div>
+
+                    <div className="mb-4 p-3 bg-sunstone-gold/10 rounded-xl border-l-4 border-sunstone-gold">
+                      <p className="font-bold text-sunstone-navy text-sm">
+                        {successStories[currentStoryIndex].package}
+                      </p>
+                    </div>
+
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                      "{successStories[currentStoryIndex].testimonial}"
+                    </p>
+
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dots Navigation */}
+              <div className="flex justify-center space-x-2 mb-4">
+                {successStories.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentStoryIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentStoryIndex
+                        ? "bg-sunstone-gold scale-125"
+                        : "bg-gray-300 hover:bg-gray-400"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Auto-Scrolling Container */}
+          <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex space-x-8 animate-scroll-x"
               style={{ width: "calc(100% + 400px)" }}
@@ -2011,7 +2548,7 @@ export default function Index() {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style>{`
         @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
         .scrollbar-hide {
@@ -2174,6 +2711,22 @@ export default function Index() {
           animation: scroll-x 30s linear infinite;
         }
 
+        .animate-college-slide {
+          animation: college-slide 25s linear infinite;
+        }
+
+        .animate-college-wave {
+          animation: college-wave 20s ease-in-out infinite;
+        }
+
+        .animate-horizontal-scroll {
+          animation: horizontal-scroll 60s linear infinite;
+        }
+
+        .animate-slide-in-horizontal {
+          animation: slide-in-horizontal 1s ease-out forwards;
+        }
+
         .animate-scroll-left {
           animation: scroll-left 25s linear infinite;
         }
@@ -2331,6 +2884,70 @@ export default function Index() {
           }
           50% {
             transform: translateY(-6px);
+          }
+        }
+
+        @keyframes college-slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-20%);
+          }
+        }
+
+        @keyframes college-wave {
+          0% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(-10%);
+          }
+          50% {
+            transform: translateX(-25%);
+          }
+          75% {
+            transform: translateX(-15%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes horizontal-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        @keyframes slide-in-horizontal {
+          0% {
+            opacity: 0;
+            transform: translateX(-100px) rotateY(-15deg);
+          }
+          50% {
+            opacity: 0.7;
+            transform: translateX(10px) rotateY(5deg);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0) rotateY(0deg);
+          }
+        }
+
+        .animate-shadow-glow {
+          animation: shadow-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes shadow-glow {
+          0%, 100% {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+          }
+          50% {
+            box-shadow: 0 0 40px rgba(79, 70, 229, 0.6), 0 0 60px rgba(79, 70, 229, 0.4);
           }
         }
 
