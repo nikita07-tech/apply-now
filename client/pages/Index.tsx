@@ -271,34 +271,34 @@ export default function Index() {
                       className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
-                      <option value="" className="text-gray-500">
+                      <option value="" className="text-gray-500 text-xs md:text-base">
                         Select Program
                       </option>
-                      <option value="mba" className="text-sunstone-black">
+                      <option value="mba" className="text-sunstone-black text-xs md:text-base">
                         MBA
                       </option>
-                      <option value="pgdm" className="text-sunstone-black">
+                      <option value="pgdm" className="text-sunstone-black text-xs md:text-base">
                         PGDM
                       </option>
-                      <option value="bba" className="text-sunstone-black">
+                      <option value="bba" className="text-sunstone-black text-xs md:text-base">
                         BBA
                       </option>
-                      <option value="btech" className="text-sunstone-black">
+                      <option value="btech" className="text-sunstone-black text-xs md:text-base">
                         B.Tech
                       </option>
-                      <option value="bcom" className="text-sunstone-black">
+                      <option value="bcom" className="text-sunstone-black text-xs md:text-base">
                         B.Com
                       </option>
-                      <option value="bca" className="text-sunstone-black">
+                      <option value="bca" className="text-sunstone-black text-xs md:text-base">
                         BCA
                       </option>
-                      <option value="mca" className="text-sunstone-black">
+                      <option value="mca" className="text-sunstone-black text-xs md:text-base">
                         MCA
                       </option>
-                      <option value="bsc" className="text-sunstone-black">
+                      <option value="bsc" className="text-sunstone-black text-xs md:text-base">
                         B.Sc
                       </option>
-                      <option value="msc" className="text-sunstone-black">
+                      <option value="msc" className="text-sunstone-black text-xs md:text-base">
                         M.Sc
                       </option>
                     </select>
