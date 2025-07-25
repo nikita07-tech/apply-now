@@ -2106,39 +2106,36 @@ export default function Index() {
             {/* SAGE Large Banner */}
             <div className="group cursor-pointer transform transition-all duration-500 hover:scale-105"
                  onClick={() => window.open('https://sunstone.in/campuses/sage', '_blank')}>
-              <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl overflow-hidden shadow-2xl border border-sunstone-gold/30 hover:border-sunstone-gold/60 transition-all duration-300">
+              <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200 hover:border-sunstone-gold/60 transition-all duration-300">
                 <div className="relative h-64 lg:h-72">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F6d5459d02b4043ee8a2078acff7360bd?format=webp&width=800"
                     alt="SAGE University Campus"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-6 left-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">SAGE University</h3>
-                    <p className="text-lg opacity-90">Indore • BCA Program</p>
-                    <p className="text-sm opacity-75">AICTE Approved</p>
-                  </div>
-                  <div className="absolute top-6 right-6 bg-sunstone-gold text-black px-4 py-2 rounded-full font-bold">
+                  <div className="absolute top-6 right-6 bg-sunstone-gold text-black px-4 py-2 rounded-full font-bold shadow-lg">
                     ₹3.00 Lacs
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2 text-gray-700">
-                        <span className="w-2 h-2 bg-sunstone-gold rounded-full"></span>
-                        <span className="text-sm font-medium">2 Specialisations</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-gray-700">
-                        <span className="w-2 h-2 bg-sunstone-gold rounded-full"></span>
-                        <span className="text-sm font-medium">10 Industry Certifications</span>
-                      </div>
+                  <h3 className="text-2xl font-bold text-sunstone-navy mb-2">SAGE University</h3>
+                  <p className="text-lg text-gray-600 mb-1">Indore • BCA Program</p>
+                  <p className="text-sm text-gray-500 mb-4">AICTE Approved</p>
+
+                  <div className="space-y-2 mb-6">
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <span className="w-2 h-2 bg-sunstone-gold rounded-full"></span>
+                      <span className="text-sm font-medium">2 Specialisations</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <span className="w-2 h-2 bg-sunstone-gold rounded-full"></span>
+                      <span className="text-sm font-medium">10 Industry Certifications</span>
                     </div>
                   </div>
-                  <div className="bg-sunstone-navy/5 rounded-xl p-4 text-center">
-                    <p className="text-sunstone-navy font-bold text-lg">Book College Tour</p>
-                    <p className="text-gray-600 text-sm">Get personalized campus experience</p>
+
+                  <div className="bg-sunstone-navy rounded-xl p-4 text-center">
+                    <p className="text-white font-bold text-lg">Book College Tour</p>
+                    <p className="text-gray-200 text-sm">Get personalized campus experience</p>
                   </div>
                 </div>
               </div>
