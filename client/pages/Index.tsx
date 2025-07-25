@@ -1863,16 +1863,16 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-sunstone-navy mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 leading-tight animate-slide-in-left">
               Discover Your
-              <span className="block text-sunstone-gold">Dream College</span>
+              <span className="block text-sunstone-gold animate-slide-in-right delay-300">Dream College</span>
             </h2>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-medium max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-500">
               Choose from India's top institutions offering industry-focused programs with
               <span className="text-sunstone-gold font-bold"> guaranteed placement opportunities</span>
             </p>
-            <div className="h-1 w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-6"></div>
+            <div className="h-1 w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 animate-scale-in delay-700"></div>
           </div>
 
           {/* College Showcase - Mobile Carousel */}
