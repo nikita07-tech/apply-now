@@ -371,40 +371,40 @@ export default function Index() {
                       <option value="jharkhand" className="text-sunstone-black text-xs md:text-base">
                         Jharkhand
                       </option>
-                      <option value="karnataka" className="text-sunstone-black">
+                      <option value="karnataka" className="text-sunstone-black text-xs md:text-base">
                         Karnataka
                       </option>
-                      <option value="kerala" className="text-sunstone-black">
+                      <option value="kerala" className="text-sunstone-black text-xs md:text-base">
                         Kerala
                       </option>
                       <option
                         value="madhya-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Madhya Pradesh
                       </option>
                       <option
                         value="maharashtra"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Maharashtra
                       </option>
-                      <option value="manipur" className="text-sunstone-black">
+                      <option value="manipur" className="text-sunstone-black text-xs md:text-base">
                         Manipur
                       </option>
-                      <option value="meghalaya" className="text-sunstone-black">
+                      <option value="meghalaya" className="text-sunstone-black text-xs md:text-base">
                         Meghalaya
                       </option>
-                      <option value="mizoram" className="text-sunstone-black">
+                      <option value="mizoram" className="text-sunstone-black text-xs md:text-base">
                         Mizoram
                       </option>
-                      <option value="nagaland" className="text-sunstone-black">
+                      <option value="nagaland" className="text-sunstone-black text-xs md:text-base">
                         Nagaland
                       </option>
-                      <option value="odisha" className="text-sunstone-black">
+                      <option value="odisha" className="text-sunstone-black text-xs md:text-base">
                         Odisha
                       </option>
-                      <option value="punjab" className="text-sunstone-black">
+                      <option value="punjab" className="text-sunstone-black text-xs md:text-base">
                         Punjab
                       </option>
                       <option value="rajasthan" className="text-sunstone-black">
