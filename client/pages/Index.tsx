@@ -994,7 +994,7 @@ export default function Index() {
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {/* Highest Package Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
                 <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
               </div>
               <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
