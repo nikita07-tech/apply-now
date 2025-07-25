@@ -2644,7 +2644,7 @@ export default function Index() {
         }
 
         .animate-horizontal-scroll {
-          animation: horizontal-scroll 30s linear infinite;
+          animation: horizontal-scroll 60s linear infinite;
         }
 
         .animate-slide-in-horizontal {
