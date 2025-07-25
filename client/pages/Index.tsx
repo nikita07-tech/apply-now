@@ -230,7 +230,6 @@ export default function Index() {
                     the Right Start
                   </span>
                 </h1>
-                <div className="h-0.5 sm:h-1 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-light rounded-full mx-auto lg:mx-0"></div>
               </div>
 
               <p className="text-xs sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
