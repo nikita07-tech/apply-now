@@ -1902,11 +1902,7 @@ export default function Index() {
                   <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   +91 70653 03030
                 </div>
-                <div className="flex items-center text-gray-200">
-                  <MapPin className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
-                  <span className="hidden md:inline">Multiple Locations</span>
-                  <span className="md:hidden">Pan India</span>
-                </div>
+
                 <Button
                   onClick={handleApplyNow}
                   className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 font-bold text-xs md:text-sm py-0.5 px-1.5 md:py-2 md:px-4 mt-1 md:mt-2"
