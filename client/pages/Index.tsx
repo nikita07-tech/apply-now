@@ -1856,23 +1856,23 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-flex items-center gap-3 bg-sunstone-navy/10 px-8 py-4 rounded-full mb-8 border border-sunstone-navy/20">
-              <GraduationCap className="h-6 w-6 text-sunstone-navy" />
-              <span className="text-sunstone-navy font-bold text-lg">
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-4 py-2 rounded-full mb-6 border border-sunstone-navy/20">
+              <GraduationCap className="h-4 w-4 text-sunstone-navy" />
+              <span className="text-sunstone-navy font-bold text-sm">
                 Premier Partner Colleges
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 leading-tight animate-slide-in-left">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight animate-slide-in-left">
               Discover Your
               <span className="block text-sunstone-gold animate-slide-in-right delay-300">Dream College</span>
             </h2>
 
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-500">
-              Choose from India's top institutions offering industry-focused programs with
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-500">
+              Choose from India's top institutions with
               <span className="text-sunstone-gold font-bold"> guaranteed placement opportunities</span>
             </p>
-            <div className="h-1 w-24 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 animate-scale-in delay-700"></div>
+            <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-scale-in delay-700"></div>
           </div>
 
           {/* College Showcase - Mobile Carousel */}
