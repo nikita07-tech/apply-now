@@ -407,64 +407,64 @@ export default function Index() {
                       <option value="punjab" className="text-sunstone-black text-xs md:text-base">
                         Punjab
                       </option>
-                      <option value="rajasthan" className="text-sunstone-black">
+                      <option value="rajasthan" className="text-sunstone-black text-xs md:text-base">
                         Rajasthan
                       </option>
-                      <option value="sikkim" className="text-sunstone-black">
+                      <option value="sikkim" className="text-sunstone-black text-xs md:text-base">
                         Sikkim
                       </option>
                       <option
                         value="tamil-nadu"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Tamil Nadu
                       </option>
-                      <option value="telangana" className="text-sunstone-black">
+                      <option value="telangana" className="text-sunstone-black text-xs md:text-base">
                         Telangana
                       </option>
-                      <option value="tripura" className="text-sunstone-black">
+                      <option value="tripura" className="text-sunstone-black text-xs md:text-base">
                         Tripura
                       </option>
                       <option
                         value="uttar-pradesh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Uttar Pradesh
                       </option>
                       <option
                         value="uttarakhand"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Uttarakhand
                       </option>
                       <option
                         value="west-bengal"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         West Bengal
                       </option>
-                      <option value="delhi" className="text-sunstone-black">
+                      <option value="delhi" className="text-sunstone-black text-xs md:text-base">
                         Delhi
                       </option>
                       <option
                         value="chandigarh"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Chandigarh
                       </option>
                       <option
                         value="puducherry"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Puducherry
                       </option>
                       <option
                         value="jammu-kashmir"
-                        className="text-sunstone-black"
+                        className="text-sunstone-black text-xs md:text-base"
                       >
                         Jammu & Kashmir
                       </option>
-                      <option value="ladakh" className="text-sunstone-black">
+                      <option value="ladakh" className="text-sunstone-black text-xs md:text-base">
                         Ladakh
                       </option>
                     </select>
