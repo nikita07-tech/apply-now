@@ -1970,12 +1970,12 @@ export default function Index() {
                 </div>
 
                 {/* VGU Banner */}
-                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                <div className="flex-shrink-0 w-80 bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-500 group animate-float-gentle">
                   <div className="relative h-48">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2Fcfb1a576795f40e490743369628305c2?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
                       alt="Vivekananda Global University"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4 bg-sunstone-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       ₹7.00L
