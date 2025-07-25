@@ -271,34 +271,64 @@ export default function Index() {
                       className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
-                      <option value="" className="text-gray-500 text-xs md:text-base">
+                      <option
+                        value=""
+                        className="text-gray-500 text-xs md:text-base"
+                      >
                         Select Program
                       </option>
-                      <option value="mba" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="mba"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         MBA
                       </option>
-                      <option value="pgdm" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="pgdm"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         PGDM
                       </option>
-                      <option value="bba" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="bba"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         BBA
                       </option>
-                      <option value="btech" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="btech"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         B.Tech
                       </option>
-                      <option value="bcom" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="bcom"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         B.Com
                       </option>
-                      <option value="bca" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="bca"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         BCA
                       </option>
-                      <option value="mca" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="mca"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         MCA
                       </option>
-                      <option value="bsc" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="bsc"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         B.Sc
                       </option>
-                      <option value="msc" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="msc"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         M.Sc
                       </option>
                     </select>
@@ -326,7 +356,10 @@ export default function Index() {
                       className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-xs sm:text-base text-sunstone-black font-medium"
                       required
                     >
-                      <option value="" className="text-gray-500 text-xs md:text-base">
+                      <option
+                        value=""
+                        className="text-gray-500 text-xs md:text-base"
+                      >
                         Select State
                       </option>
                       <option
@@ -341,10 +374,16 @@ export default function Index() {
                       >
                         Arunachal Pradesh
                       </option>
-                      <option value="assam" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="assam"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Assam
                       </option>
-                      <option value="bihar" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="bihar"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Bihar
                       </option>
                       <option
@@ -353,13 +392,22 @@ export default function Index() {
                       >
                         Chhattisgarh
                       </option>
-                      <option value="goa" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="goa"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Goa
                       </option>
-                      <option value="gujarat" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="gujarat"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Gujarat
                       </option>
-                      <option value="haryana" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="haryana"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Haryana
                       </option>
                       <option
@@ -368,13 +416,22 @@ export default function Index() {
                       >
                         Himachal Pradesh
                       </option>
-                      <option value="jharkhand" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="jharkhand"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Jharkhand
                       </option>
-                      <option value="karnataka" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="karnataka"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Karnataka
                       </option>
-                      <option value="kerala" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="kerala"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Kerala
                       </option>
                       <option
@@ -389,28 +446,52 @@ export default function Index() {
                       >
                         Maharashtra
                       </option>
-                      <option value="manipur" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="manipur"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Manipur
                       </option>
-                      <option value="meghalaya" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="meghalaya"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Meghalaya
                       </option>
-                      <option value="mizoram" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="mizoram"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Mizoram
                       </option>
-                      <option value="nagaland" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="nagaland"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Nagaland
                       </option>
-                      <option value="odisha" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="odisha"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Odisha
                       </option>
-                      <option value="punjab" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="punjab"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Punjab
                       </option>
-                      <option value="rajasthan" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="rajasthan"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Rajasthan
                       </option>
-                      <option value="sikkim" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="sikkim"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Sikkim
                       </option>
                       <option
@@ -419,10 +500,16 @@ export default function Index() {
                       >
                         Tamil Nadu
                       </option>
-                      <option value="telangana" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="telangana"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Telangana
                       </option>
-                      <option value="tripura" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="tripura"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Tripura
                       </option>
                       <option
@@ -443,7 +530,10 @@ export default function Index() {
                       >
                         West Bengal
                       </option>
-                      <option value="delhi" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="delhi"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Delhi
                       </option>
                       <option
@@ -464,7 +554,10 @@ export default function Index() {
                       >
                         Jammu & Kashmir
                       </option>
-                      <option value="ladakh" className="text-sunstone-black text-xs md:text-base">
+                      <option
+                        value="ladakh"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
                         Ladakh
                       </option>
                     </select>
