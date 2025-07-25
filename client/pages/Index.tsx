@@ -1878,7 +1878,7 @@ export default function Index() {
           {/* College Showcase - Horizontal Scrolling */}
           <div className="mb-8">
             <div className="relative overflow-hidden">
-              <div className="flex space-x-4 animate-horizontal-scroll" style={{ width: "calc(700% + 140px)" }}>
+              <div className="flex space-x-4 animate-horizontal-scroll" style={{ width: "calc(200% + 32px)" }}>
                 {/* ADYPU Banner */}
                 <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 sm:h-36">
