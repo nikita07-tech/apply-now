@@ -1892,8 +1892,8 @@ export default function Index() {
                 style={{ width: "calc(200% + 32px)" }}
               >
                 {/* ADYPU Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
@@ -1931,8 +1931,8 @@ export default function Index() {
                 </div>
 
                 {/* SAGE Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
                       alt="SAGE University"
@@ -1970,8 +1970,8 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F7a429a56252b4206af965fe0b3f07c93?format=webp&width=800"
                       alt="Hi-Tech Institute"
@@ -2007,8 +2007,8 @@ export default function Index() {
                 </div>
 
                 {/* VGU Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
                       alt="Vivekananda Global University"
@@ -2046,8 +2046,8 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
                       alt="Rathinam College"
@@ -2083,8 +2083,8 @@ export default function Index() {
                 </div>
 
                 {/* Repeat for seamless scroll - ADYPU */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
@@ -2122,8 +2122,8 @@ export default function Index() {
                 </div>
 
                 {/* SAGE Repeat */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
                       alt="SAGE University"
