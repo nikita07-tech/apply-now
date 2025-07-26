@@ -97,7 +97,7 @@ const successStories = [
 ];
 
 const stats = [
-  { value: "��26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
+  { value: "26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
   { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
   {
     value: "306",
@@ -2006,7 +2006,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors duration-300"
                     >
-                      Book Tour ���
+                      Book Tour →
                     </button>
                   </div>
                 </div>
