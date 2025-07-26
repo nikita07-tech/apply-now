@@ -1975,12 +1975,12 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                  <div className="relative h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F3ea2f2bd633c473dbfbeb16d0e8f24bf?format=webp"
                       alt="Hi-Tech Institute"
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full object-cover"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹4.59L
