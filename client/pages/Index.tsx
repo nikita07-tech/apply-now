@@ -256,7 +256,6 @@ export default function Index() {
                       <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                       <span className="hidden sm:inline">Help</span>
                     </Button>
-
                   </div>
                 </div>
 
@@ -876,7 +875,6 @@ export default function Index() {
                   </div>
                   <div className="text-gray-600 text-xs">Record-breaking</div>
                 </div>
-
               </div>
               <div>
                 {/* ROI Card */}
@@ -892,7 +890,6 @@ export default function Index() {
                   </div>
                   <div className="text-gray-300 text-xs">Better return</div>
                 </div>
-
               </div>
               <div>
                 {/* Students Placed Card */}
@@ -908,7 +905,6 @@ export default function Index() {
                   </div>
                   <div className="text-gray-700 text-xs">Career launches</div>
                 </div>
-
               </div>
               <div>
                 {/* Multiple Offers Card */}
@@ -924,7 +920,6 @@ export default function Index() {
                   </div>
                   <div className="text-gray-600 text-xs">Multiple offers</div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -2133,8 +2128,6 @@ export default function Index() {
                     </button>
                   </div>
                 </div>
-
-
 
                 {/* Duplicate set for seamless loop */}
                 {/* ADYPU */}
