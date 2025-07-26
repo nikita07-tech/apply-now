@@ -956,7 +956,7 @@ export default function Index() {
                   <div className="text-gray-300 text-xs">Better return</div>
                 </div>
 
-                <div className="flex-shrink-0 w-40 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
+                <div className="flex-shrink-0 w-40 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
                   <div className="w-8 h-8 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-1">
                     <Users className="h-4 w-4 text-sunstone-white" />
                   </div>
