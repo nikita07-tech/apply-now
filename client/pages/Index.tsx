@@ -1806,7 +1806,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">
-                          ���4L
+                          ₹4L
                         </div>
                         <div className="text-xs text-gray-500">Support</div>
                       </div>
@@ -2169,7 +2169,7 @@ export default function Index() {
           {/* CTA Section */}
           <div className="text-center">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-3xl p-8 mb-8 border border-sunstone-gold/30">
-              <h3 className="text-2xl md:text-3xl font-bold text-sunstone-white mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-4">
                 Ready to Start Your Journey?
               </h3>
               <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto">
