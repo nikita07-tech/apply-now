@@ -256,14 +256,7 @@ export default function Index() {
                       <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                       <span className="hidden sm:inline">Help</span>
                     </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setShowApplyForm(false)}
-                      className="md:hidden text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-red-100 transition-colors duration-300 p-1 sm:p-2"
-                    >
-                      <X className="h-4 w-4" />
-                    </Button>
+
                   </div>
                 </div>
 
