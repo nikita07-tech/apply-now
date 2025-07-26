@@ -212,9 +212,9 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-8 sm:py-12 md:py-16 lg:py-24 overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center">
+      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
             <div className="text-center sm:text-left animate-slide-in-left">
               <div className="mb-4 sm:mb-6 md:mb-8">
