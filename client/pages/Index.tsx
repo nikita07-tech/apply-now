@@ -199,7 +199,7 @@ export default function Index() {
       {/* Header */}
       <header className="bg-sunstone-white shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-          <div className="flex justify-center items-center h-14 sm:h-16 md:h-20">
+          <div className="flex justify-start items-center h-14 sm:h-16 md:h-20">
             <div className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
@@ -1824,7 +1824,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-gray-700">
-                          ₹2L
+                          ��2L
                         </div>
                         <div className="text-xs text-gray-500">Foundation</div>
                       </div>
