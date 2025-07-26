@@ -1896,10 +1896,13 @@ export default function Index() {
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
           </div>
 
-          {/* College Showcase - Static Grid */}
+          {/* College Showcase - Horizontal Animation */}
           <div className="mb-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 justify-items-center">
-              <div className="flex space-x-4">
+            <div className="relative overflow-hidden">
+              <div
+                className="flex space-x-6 animate-scroll-right"
+                style={{ width: "calc(200% + 48px)" }}
+              >
                 {/* ADYPU Banner */}
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
                   <div className="relative h-48">
