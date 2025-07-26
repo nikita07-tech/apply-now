@@ -1986,20 +1986,16 @@ export default function Index() {
                       ₹4.59L
                     </div>
                   </div>
-                  <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      <p>
-                        Hi-Tech Institute of Engineering &amp; Technology
-                      </p>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                      Hi-Tech Institute of Engineering & Technology
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
-                      <p>Ghaziabad</p>
+                    <p className="text-sm text-gray-600 mb-3">
+                      Ghaziabad • B.Tech • AICTE
                     </p>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>✓ 2 Programs</p>
-                        <p>✓ 10 Certifications</p>
-                      </div>
+                    <div className="text-sm text-gray-600 space-y-1 mb-4">
+                      <p>✓ 2 Programs</p>
+                      <p>✓ 10 Certifications</p>
                     </div>
                     <button
                       onClick={() =>
@@ -2008,9 +2004,9 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors duration-300"
                     >
-                      <p>Book Tour -&gt;</p>
+                      Book Tour →
                     </button>
                   </div>
                 </div>
