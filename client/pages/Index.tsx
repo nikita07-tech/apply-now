@@ -2187,7 +2187,7 @@ export default function Index() {
           {/* CTA Section */}
           <div className="text-center">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-3xl p-8 mb-8 border border-sunstone-gold/30">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-4">
+              <h3 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-4">
                 Ready to Start Your Journey?
               </h3>
               <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto">
