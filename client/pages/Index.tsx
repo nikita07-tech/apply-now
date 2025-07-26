@@ -2219,8 +2219,8 @@ export default function Index() {
                 <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F3ea2f2bd633c473dbfbeb16d0e8f24bf?format=webp"
-                      alt="Hi-Tech Institute"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
+                      alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
