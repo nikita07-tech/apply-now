@@ -97,7 +97,7 @@ const successStories = [
 ];
 
 const stats = [
-  { value: "₹26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
+  { value: "��26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
   { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
   {
     value: "306",
@@ -1084,10 +1084,10 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
-            <p className="text-xs sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
               Leading companies that trust our graduates
             </p>
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
@@ -2142,7 +2142,7 @@ export default function Index() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
-                      ₹3.00L
+                      ���3.00L
                     </div>
                   </div>
                   <div className="p-3">
