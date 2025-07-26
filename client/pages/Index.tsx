@@ -1095,7 +1095,7 @@ export default function Index() {
 
           {/* Mobile Grid View */}
           <div className="block md:hidden">
-            <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto mb-8">
+            <div className="grid grid-cols-2 gap-3 max-w-xs mx-auto mb-6">
               <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
