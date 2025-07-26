@@ -1357,37 +1357,49 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          {/* Mobile Awards Carousel */}
+          {/* Mobile Awards Horizontal Scroll */}
           <div className="block md:hidden">
-            <div className="relative">
-              {/* Current Award Display */}
-              <div className="flex justify-center mb-6">
-                <div className="w-64 h-48 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-6 hover:shadow-xl transition-all duration-500">
-                  <div className="w-20 h-20 mb-4 p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
-                    <img
-                      src={awards[currentAwardIndex].image}
-                      alt={awards[currentAwardIndex].title}
-                      className="w-full h-full object-contain"
-                    />
+            <div className="relative overflow-hidden">
+              <div
+                className="flex space-x-4 animate-scroll-left"
+                style={{ width: "calc(200% + 32px)" }}
+              >
+                {/* First set of awards */}
+                {awards.map((award, index) => (
+                  <div
+                    key={`mobile-${award.id}`}
+                    className="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+                  >
+                    <div className="w-12 h-12 mb-2 p-2 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
+                      <img
+                        src={award.image}
+                        alt={award.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-sm font-bold text-sunstone-navy text-center leading-tight">
+                      {award.title}
+                    </p>
                   </div>
-                  <p className="text-base font-bold text-sunstone-navy text-center leading-tight">
-                    {awards[currentAwardIndex].title}
-                  </p>
-                </div>
-              </div>
+                ))}
 
-              {/* Dots Navigation */}
-              <div className="flex justify-center space-x-2 mb-4">
-                {awards.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentAwardIndex(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentAwardIndex
-                        ? "bg-sunstone-gold scale-125"
-                        : "bg-gray-300 hover:bg-gray-400"
-                    }`}
-                  />
+                {/* Duplicate set for seamless loop */}
+                {awards.map((award, index) => (
+                  <div
+                    key={`mobile-dup-${award.id}`}
+                    className="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+                  >
+                    <div className="w-12 h-12 mb-2 p-2 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
+                      <img
+                        src={award.image}
+                        alt={award.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-sm font-bold text-sunstone-navy text-center leading-tight">
+                      {award.title}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -2001,7 +2013,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
