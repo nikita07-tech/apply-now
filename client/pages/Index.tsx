@@ -2109,7 +2109,7 @@ export default function Index() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
-                      ���3.00L
+                      ₹3.00L
                     </div>
                   </div>
                   <div className="p-3">
