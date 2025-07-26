@@ -97,7 +97,7 @@ const successStories = [
 ];
 
 const stats = [
-  { value: "��26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
+  { value: "26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
   { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
   {
     value: "306",
@@ -255,14 +255,6 @@ export default function Index() {
                     >
                       <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                       <span className="hidden sm:inline">Help</span>
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setShowApplyForm(false)}
-                      className="md:hidden text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-red-100 transition-colors duration-300 p-1 sm:p-2"
-                    >
-                      <X className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>
@@ -692,7 +684,7 @@ export default function Index() {
 
                   <div className="flex-shrink-0 w-64 bg-sunstone-navy rounded-xl p-4 shadow-xl snap-start">
                     <div className="text-2xl font-black text-sunstone-gold mb-2">
-                      ₹26 LPA
+                      26 LPA
                     </div>
                     <div className="text-sunstone-white font-semibold text-sm mb-1">
                       Highest Package Achieved
@@ -865,16 +857,13 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Professional Stats Grid - Carousel on Mobile */}
+          {/* Professional Stats Grid - Static on Mobile */}
           <div className="block lg:hidden mb-8">
-            {/* Mobile Moving Carousel */}
-            <div className="relative overflow-hidden">
-              <div
-                className="flex space-x-4 animate-scroll-left"
-                style={{ width: "calc(200% + 32px)" }}
-              >
+            {/* Mobile Static Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <div>
                 {/* Highest Package Card */}
-                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200 snap-start">
+                <div className="bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200">
                   <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
                     <Award className="h-4 w-4 text-sunstone-black" />
                   </div>
@@ -886,9 +875,10 @@ export default function Index() {
                   </div>
                   <div className="text-gray-600 text-xs">Record-breaking</div>
                 </div>
-
+              </div>
+              <div>
                 {/* ROI Card */}
-                <div className="flex-shrink-0 w-40 bg-sunstone-navy rounded-lg p-3 text-center shadow-lg snap-start">
+                <div className="bg-sunstone-navy rounded-lg p-3 text-center shadow-lg">
                   <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
                     <TrendingUp className="h-4 w-4 text-sunstone-black" />
                   </div>
@@ -900,9 +890,10 @@ export default function Index() {
                   </div>
                   <div className="text-gray-300 text-xs">Better return</div>
                 </div>
-
+              </div>
+              <div>
                 {/* Students Placed Card */}
-                <div className="flex-shrink-0 w-40 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30 snap-start">
+                <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
                   <div className="w-8 h-8 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-1">
                     <Users className="h-4 w-4 text-sunstone-white" />
                   </div>
@@ -914,62 +905,10 @@ export default function Index() {
                   </div>
                   <div className="text-gray-700 text-xs">Career launches</div>
                 </div>
-
+              </div>
+              <div>
                 {/* Multiple Offers Card */}
-                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
-                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
-                    <CheckCircle className="h-4 w-4 text-sunstone-white" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    306
-                  </div>
-                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    2+ Offers
-                  </div>
-                  <div className="text-gray-600 text-xs">Multiple offers</div>
-                </div>
-
-                {/* Duplicate set for seamless loop */}
-                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200">
-                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Award className="h-4 w-4 text-sunstone-black" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    ₹26 LPA
-                  </div>
-                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    Highest Package
-                  </div>
-                  <div className="text-gray-600 text-xs">Record-breaking</div>
-                </div>
-
-                <div className="flex-shrink-0 w-40 bg-sunstone-navy rounded-lg p-3 text-center shadow-lg">
-                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
-                    <TrendingUp className="h-4 w-4 text-sunstone-black" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-gold mb-0.5">
-                    63%
-                  </div>
-                  <div className="text-sunstone-white font-bold text-xs mb-0.5">
-                    Higher ROI
-                  </div>
-                  <div className="text-gray-300 text-xs">Better return</div>
-                </div>
-
-                <div className="flex-shrink-0 w-40 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
-                  <div className="w-8 h-8 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Users className="h-4 w-4 text-sunstone-white" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    5000+
-                  </div>
-                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    Students Placed
-                  </div>
-                  <div className="text-gray-700 text-xs">Career launches</div>
-                </div>
-
-                <div className="flex-shrink-0 w-40 bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
+                <div className="bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
                   <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
                     <CheckCircle className="h-4 w-4 text-sunstone-white" />
                   </div>
@@ -1093,50 +1032,142 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
           </div>
 
-          {/* Mobile Grid View */}
+          {/* Mobile Horizontal Animation View */}
           <div className="block md:hidden">
-            <div className="grid grid-cols-2 gap-3 max-w-xs mx-auto mb-6">
-              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
-                  alt="Kotak Mahindra Bank"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
-                  alt="Bosch"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
-                  alt="HCL"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
-                  alt="TCS"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
-                  alt="Paytm"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
-                  alt="Genpact"
-                  className="max-w-full max-h-full object-contain"
-                />
+            <div className="relative overflow-hidden">
+              <div
+                className="flex space-x-4 animate-scroll-right"
+                style={{ width: "calc(200% + 32px)" }}
+              >
+                {/* First set */}
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                    alt="Kotak Mahindra Bank"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                    alt="Bosch"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                    alt="HCL"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                    alt="TCS"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                    alt="Paytm"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                    alt="Genpact"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F98e68749b7514575bcde3a52e7dcc9f4?format=webp&width=800"
+                    alt="Bajaj Finserv"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5f2464ab689d49b8bbbed84a4bbfbe52?format=webp&width=800"
+                    alt="ANZ"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F59d0017fa3d9416ab3ce0ee614d4fe71?format=webp&width=800"
+                    alt="Hero"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F210f3f50118b4d20be1ff7b265c9424c?format=webp&width=800"
+                    alt="Airtel"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F13cf02d6a8e6484fa30a7ecff760a9de?format=webp&width=800"
+                    alt="Axis Bank"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
+                    alt="IBM"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+
+                {/* Duplicate set for seamless loop */}
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                    alt="Kotak Mahindra Bank"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                    alt="Bosch"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                    alt="HCL"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                    alt="TCS"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                    alt="Paytm"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                    alt="Genpact"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1896,19 +1927,19 @@ export default function Index() {
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
           </div>
 
-          {/* College Showcase - Horizontal Scrolling */}
+          {/* College Showcase - Horizontal Animation */}
           <div className="mb-8">
             <div className="relative overflow-hidden">
               <div
-                className="flex space-x-4 animate-horizontal-scroll"
-                style={{ width: "calc(200% + 32px)" }}
+                className="flex space-x-6 animate-scroll-right"
+                style={{ width: "calc(200% + 48px)" }}
               >
-                {/* ADYPU Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* ADYPU */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
-                      alt="Ajeenkya DY Patil University"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
+                      alt="Ajeenjay DY PATIL UNIVERSITY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -1917,7 +1948,7 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      ADYPU
+                      Ajeenjay DY PATIL UNIVERSITY
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
                       Pune • BCA • UGC
@@ -1942,11 +1973,11 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* SAGE Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* SAGE University */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
                       alt="SAGE University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
@@ -1959,7 +1990,7 @@ export default function Index() {
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Indore • BCA • AICTE
+                      Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -1981,12 +2012,12 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* Hi-Tech Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* Hi-Tech Institute */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F7a429a56252b4206af965fe0b3f07c93?format=webp&width=800"
-                      alt="Hi-Tech Institute"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
+                      alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -1995,9 +2026,11 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      Hi-Tech Institute
+                      Hi-Tech Institute of Engineering & Technology
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">B.Tech • AICTE</p>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Ghaziabad • B.Tech • AICTE
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
@@ -2013,16 +2046,16 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour ���
+                      Book Tour →
                     </button>
                   </div>
                 </div>
 
-                {/* VGU Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* Vivekananda Global University */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
                       alt="Vivekananda Global University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
@@ -2032,10 +2065,10 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      VGU Jaipur
+                      Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • AICTE
+                      Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -2057,11 +2090,11 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* Rathinam Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* Rathinam College */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
                       alt="Rathinam College"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
@@ -2071,9 +2104,11 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      Rathinam College
+                      Rathinam College of Arts & Science
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">BBA • AICTE</p>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Tamil Nadu • BBA • UGC
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
@@ -2094,12 +2129,13 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* Repeat for seamless scroll - ADYPU */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* Duplicate set for seamless loop */}
+                {/* ADYPU */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
-                      alt="Ajeenkya DY Patil University"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
+                      alt="Ajeenjay DY PATIL UNIVERSITY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -2108,7 +2144,7 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      ADYPU
+                      Ajeenjay DY PATIL UNIVERSITY
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
                       Pune • BCA • UGC
@@ -2133,16 +2169,16 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* SAGE Repeat */}
-                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
+                {/* SAGE University */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
                       alt="SAGE University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
-                      ���3.00L
+                      ₹3.00L
                     </div>
                   </div>
                   <div className="p-3">
@@ -2150,7 +2186,7 @@ export default function Index() {
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Indore • BCA • AICTE
+                      Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -2171,6 +2207,123 @@ export default function Index() {
                     </button>
                   </div>
                 </div>
+
+                {/* Hi-Tech Institute */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
+                      alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹4.59L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Hi-Tech Institute of Engineering & Technology
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Ghaziabad • B.Tech • AICTE
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Programs</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/hitech",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* Vivekananda Global University */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
+                      alt="Vivekananda Global University"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹7.00L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Vivekananda Global University
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Jaipur • B.Tech • UGC
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ Computer Science</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/vgu",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
+
+                {/* Rathinam College */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
+                      alt="Rathinam College"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+                      ₹3.90L
+                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                      Rathinam College of Arts & Science
+                    </h3>
+                    <p className="text-xs text-gray-600 mb-2">
+                      Tamil Nadu • BBA • UGC
+                    </p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ BBA (General)</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://sunstone.in/campuses/rathinam",
+                          "_blank",
+                        )
+                      }
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Book Tour →
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2180,25 +2333,25 @@ export default function Index() {
 
           {/* CTA Section */}
           <div className="text-center">
-            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-3xl p-8 mb-8 border border-sunstone-gold/30">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-4">
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-8 border border-sunstone-gold/30">
+              <h3 className="text-sm sm:text-base md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-2 sm:mb-3 md:mb-4">
                 Ready to Start Your Journey?
               </h3>
-              <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto">
+              <p className="text-gray-200 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6 max-w-2xl mx-auto">
                 Join thousands of successful students who chose the right
                 college for their career
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
                   onClick={() =>
                     window.open("https://sunstone.in/campuses", "_blank")
                   }
-                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+                  className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
                 >
                   Explore All Colleges
-                  <ArrowRight className="inline-block ml-2 h-5 w-5" />
+                  <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
-                <button className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300">
+                <button className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all duration-300">
                   Book Free Counseling
                 </button>
               </div>
