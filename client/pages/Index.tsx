@@ -2075,9 +2075,11 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      Rathinam College
+                      <p>Rathinam College of Arts &amp; Science</p>
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">BBA • AICTE</p>
+                    <p className="text-xs text-gray-600 mb-2">
+                      <p>Tamil Nadu</p>
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
