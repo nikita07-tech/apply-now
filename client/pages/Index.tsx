@@ -1949,18 +1949,16 @@ export default function Index() {
                       ₹3.00L
                     </div>
                   </div>
-                  <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
                       SAGE University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
-                      <p>Indore</p>
+                    <p className="text-sm text-gray-600 mb-3">
+                      Indore • MBA • AICTE
                     </p>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>✓ 2 Specialisations</p>
-                        <p>✓ 10 Certifications</p>
-                      </div>
+                    <div className="text-sm text-gray-600 space-y-1 mb-4">
+                      <p>✓ 2 Specialisations</p>
+                      <p>✓ 10 Certifications</p>
                     </div>
                     <button
                       onClick={() =>
@@ -1969,7 +1967,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors duration-300"
                     >
                       Book Tour →
                     </button>
