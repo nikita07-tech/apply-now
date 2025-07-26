@@ -1806,7 +1806,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">
-                          ₹4L
+                          ���4L
                         </div>
                         <div className="text-xs text-gray-500">Support</div>
                       </div>
@@ -1874,13 +1874,12 @@ export default function Index() {
               <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-sunstone-gold to-transparent animate-pulse"></div>
             </h2>
 
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-typewriter">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed">
               Choose from India's top institutions with
-              <span className="text-sunstone-gold font-bold animate-glow">
+              <span className="text-sunstone-gold font-bold">
                 {" "}
                 guaranteed placement opportunities
               </span>
-              <span className="animate-cursor-blink">|</span>
             </p>
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
           </div>
