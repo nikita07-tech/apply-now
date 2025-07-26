@@ -208,14 +208,7 @@ export default function Index() {
               />
             </div>
 
-            {/* Apply Button - Responsive */}
-            <Button
-              onClick={handleApplyNow}
-              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-base px-6 py-3 md:px-4 md:py-2"
-            >
-              <span className="hidden sm:inline">Apply Now</span>
-              <span className="sm:hidden text-lg">Apply Now</span>
-            </Button>
+            {/* Logo space - no apply button */}
           </div>
         </div>
       </header>
@@ -875,7 +868,7 @@ export default function Index() {
           </div>
 
           {/* Professional Stats Grid - Carousel on Mobile */}
-          <div className="block md:hidden mb-8">
+          <div className="block lg:hidden mb-8">
             {/* Mobile Moving Carousel */}
             <div className="relative overflow-hidden">
               <div
@@ -995,7 +988,7 @@ export default function Index() {
           </div>
 
           {/* Desktop Grid */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
+          <div className="hidden lg:grid lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {/* Highest Package Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
               <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
@@ -1759,9 +1752,9 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 items-center">
             {/* Left - Scholarship Image */}
-            <div className="order-1 animate-slide-in-left">
+            <div className="order-2 lg:order-1 animate-slide-in-left">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
@@ -1773,7 +1766,7 @@ export default function Index() {
             </div>
 
             {/* Right - Scholarship Info */}
-            <div className="order-2 animate-slide-in-right">
+            <div className="order-1 lg:order-2 animate-slide-in-right">
               <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
                 <div className="mb-6 md:mb-8">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
@@ -1787,7 +1780,7 @@ export default function Index() {
 
                 <div className="space-y-1.5 sm:space-y-2 md:space-y-3 lg:space-y-6">
                   {/* Top 10% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1805,7 +1798,7 @@ export default function Index() {
                   </div>
 
                   {/* Top 25% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1823,7 +1816,7 @@ export default function Index() {
                   </div>
 
                   {/* Top 50% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1868,21 +1861,30 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight animate-slide-in-left">
-              Discover Your
-              <span className="block text-sunstone-gold animate-slide-in-right delay-300">
-                Dream College
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+              <span className="inline-block animate-bounce-in-down">
+                <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
+                  Discover Your
+                </span>
               </span>
+              <span className="block animate-bounce-in-up delay-500">
+                <span className="bg-gradient-to-r from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark bg-clip-text text-transparent animate-shimmer">
+                  Dream College
+                </span>
+              </span>
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-sunstone-gold rounded-full animate-ping opacity-75"></div>
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-sunstone-gold to-transparent animate-pulse"></div>
             </h2>
 
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-500">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-typewriter">
               Choose from India's top institutions with
-              <span className="text-sunstone-gold font-bold">
+              <span className="text-sunstone-gold font-bold animate-glow">
                 {" "}
                 guaranteed placement opportunities
               </span>
+              <span className="animate-cursor-blink">|</span>
             </p>
-            <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-scale-in delay-700"></div>
+            <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
           </div>
 
           {/* College Showcase - Horizontal Scrolling */}
@@ -2711,6 +2713,40 @@ export default function Index() {
           animation: scroll-x 30s linear infinite;
         }
 
+        .animate-bounce-in-down {
+          animation: bounce-in-down 1s ease-out;
+        }
+
+        .animate-bounce-in-up {
+          animation: bounce-in-up 1s ease-out 0.5s both;
+        }
+
+        .animate-gradient-x {
+          animation: gradient-x 3s ease infinite;
+          background-size: 400% 400%;
+        }
+
+        .animate-shimmer {
+          animation: shimmer 2s linear infinite;
+          background-size: 200% 200%;
+        }
+
+        .animate-typewriter {
+          animation: typewriter 3s steps(60, end);
+        }
+
+        .animate-cursor-blink {
+          animation: cursor-blink 1s infinite;
+        }
+
+        .animate-glow {
+          animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .animate-expand-horizontal {
+          animation: expand-horizontal 1s ease-out 0.7s both;
+        }
+
         .animate-college-slide {
           animation: college-slide 25s linear infinite;
         }
@@ -2948,6 +2984,94 @@ export default function Index() {
           }
           50% {
             box-shadow: 0 0 40px rgba(79, 70, 229, 0.6), 0 0 60px rgba(79, 70, 229, 0.4);
+          }
+        }
+
+        @keyframes bounce-in-down {
+          0% {
+            opacity: 0;
+            transform: translateY(-2000px);
+          }
+          60% {
+            opacity: 1;
+            transform: translateY(30px);
+          }
+          80% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes bounce-in-up {
+          0% {
+            opacity: 0;
+            transform: translateY(2000px);
+          }
+          60% {
+            opacity: 1;
+            transform: translateY(-30px);
+          }
+          80% {
+            transform: translateY(10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes gradient-x {
+          0%, 100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+
+        @keyframes shimmer {
+          0% {
+            background-position: -200% 0;
+          }
+          100% {
+            background-position: 200% 0;
+          }
+        }
+
+        @keyframes typewriter {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes cursor-blink {
+          from, to {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        }
+
+        @keyframes glow {
+          from {
+            text-shadow: 0 0 5px #c38935, 0 0 10px #c38935, 0 0 15px #c38935;
+          }
+          to {
+            text-shadow: 0 0 10px #d4a147, 0 0 20px #d4a147, 0 0 30px #d4a147;
+          }
+        }
+
+        @keyframes expand-horizontal {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 4rem;
           }
         }
 
