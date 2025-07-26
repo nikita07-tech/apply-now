@@ -2104,7 +2104,7 @@ export default function Index() {
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Indore • BCA • AICTE
+                      Indore
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
