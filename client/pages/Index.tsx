@@ -97,7 +97,7 @@ const successStories = [
 ];
 
 const stats = [
-  { value: "₹26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
+  { value: "��26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
   { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
   {
     value: "306",
@@ -198,36 +198,27 @@ export default function Index() {
     <div className="min-h-screen bg-sunstone-white font-sans">
       {/* Header */}
       <header className="bg-sunstone-white shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 md:h-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+          <div className="flex justify-start items-center h-14 sm:h-16 md:h-20">
             <div className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-4 md:h-6 w-auto transition-all duration-500 hover:scale-110"
+                className="h-5 sm:h-6 md:h-8 w-auto transition-all duration-500 hover:scale-110"
               />
             </div>
-
-            {/* Apply Button - Responsive */}
-            <Button
-              onClick={handleApplyNow}
-              className="bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-base px-6 py-3 md:px-4 md:py-2"
-            >
-              <span className="hidden sm:inline">Apply Now</span>
-              <span className="sm:hidden text-lg">Apply Now</span>
-            </Button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-8 sm:py-12 md:py-16 lg:py-24 overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center">
+      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
-            <div className="text-center sm:text-left animate-slide-in-left">
+            <div className="text-center lg:text-left animate-slide-in-left order-1">
               <div className="mb-4 sm:mb-6 md:mb-8">
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     Big Dreams Need
                   </span>
@@ -237,7 +228,7 @@ export default function Index() {
                 </h1>
               </div>
 
-              <p className="text-xs sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -250,9 +241,9 @@ export default function Index() {
             </div>
 
             {/* Right Column - Application Form */}
-            <div className="flex justify-end">
-              <div className="bg-white rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-4 md:p-6 lg:p-8 w-full max-w-sm sm:max-w-sm md:max-w-md lg:max-w-lg border border-sunstone-gold/20">
-                <div className="flex items-center justify-between mb-4 sm:mb-6 md:mb-8">
+            <div className="flex justify-center lg:justify-end order-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-4 md:p-6 lg:p-8 w-full max-w-sm sm:max-w-md md:max-w-lg border border-sunstone-gold/20">
+                <div className="flex items-center justify-between mb-3 sm:mb-4 md:mb-6">
                   <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
@@ -277,7 +268,7 @@ export default function Index() {
                 </div>
 
                 <form
-                  className="space-y-1.5 sm:space-y-2 md:space-y-3"
+                  className="space-y-2 sm:space-y-3 md:space-y-4"
                   onSubmit={(e) => {
                     e.preventDefault();
                     alert(
@@ -875,7 +866,7 @@ export default function Index() {
           </div>
 
           {/* Professional Stats Grid - Carousel on Mobile */}
-          <div className="block md:hidden mb-8">
+          <div className="block lg:hidden mb-8">
             {/* Mobile Moving Carousel */}
             <div className="relative overflow-hidden">
               <div
@@ -995,7 +986,7 @@ export default function Index() {
           </div>
 
           {/* Desktop Grid */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
+          <div className="hidden lg:grid lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {/* Highest Package Card */}
             <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
               <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
@@ -1093,10 +1084,10 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
-            <p className="text-xs sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
               Leading companies that trust our graduates
             </p>
             <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4"></div>
@@ -1104,43 +1095,43 @@ export default function Index() {
 
           {/* Mobile Grid View */}
           <div className="block md:hidden">
-            <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto mb-8">
-              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+            <div className="grid grid-cols-2 gap-3 max-w-xs mx-auto mb-6">
+              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
                   alt="Kotak Mahindra Bank"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
                   alt="Bosch"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
                   alt="HCL"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
                   alt="TCS"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
                   alt="Paytm"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="bg-white rounded-xl shadow-lg flex items-center justify-center p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-lg shadow-md flex items-center justify-center p-3 hover:shadow-lg transition-shadow duration-300 h-16">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
                   alt="Genpact"
@@ -1366,37 +1357,49 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          {/* Mobile Awards Carousel */}
+          {/* Mobile Awards Horizontal Scroll */}
           <div className="block md:hidden">
-            <div className="relative">
-              {/* Current Award Display */}
-              <div className="flex justify-center mb-6">
-                <div className="w-64 h-48 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-6 hover:shadow-xl transition-all duration-500">
-                  <div className="w-20 h-20 mb-4 p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
-                    <img
-                      src={awards[currentAwardIndex].image}
-                      alt={awards[currentAwardIndex].title}
-                      className="w-full h-full object-contain"
-                    />
+            <div className="relative overflow-hidden">
+              <div
+                className="flex space-x-4 animate-scroll-left"
+                style={{ width: "calc(200% + 32px)" }}
+              >
+                {/* First set of awards */}
+                {awards.map((award, index) => (
+                  <div
+                    key={`mobile-${award.id}`}
+                    className="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+                  >
+                    <div className="w-12 h-12 mb-2 p-2 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
+                      <img
+                        src={award.image}
+                        alt={award.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-sm font-bold text-sunstone-navy text-center leading-tight">
+                      {award.title}
+                    </p>
                   </div>
-                  <p className="text-base font-bold text-sunstone-navy text-center leading-tight">
-                    {awards[currentAwardIndex].title}
-                  </p>
-                </div>
-              </div>
+                ))}
 
-              {/* Dots Navigation */}
-              <div className="flex justify-center space-x-2 mb-4">
-                {awards.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentAwardIndex(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentAwardIndex
-                        ? "bg-sunstone-gold scale-125"
-                        : "bg-gray-300 hover:bg-gray-400"
-                    }`}
-                  />
+                {/* Duplicate set for seamless loop */}
+                {awards.map((award, index) => (
+                  <div
+                    key={`mobile-dup-${award.id}`}
+                    className="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+                  >
+                    <div className="w-12 h-12 mb-2 p-2 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
+                      <img
+                        src={award.image}
+                        alt={award.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-sm font-bold text-sunstone-navy text-center leading-tight">
+                      {award.title}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -1759,9 +1762,9 @@ export default function Index() {
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 items-center">
             {/* Left - Scholarship Image */}
-            <div className="order-1 animate-slide-in-left">
+            <div className="order-2 lg:order-1 animate-slide-in-left">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
@@ -1773,7 +1776,7 @@ export default function Index() {
             </div>
 
             {/* Right - Scholarship Info */}
-            <div className="order-2 animate-slide-in-right">
+            <div className="order-1 lg:order-2 animate-slide-in-right">
               <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
                 <div className="mb-6 md:mb-8">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
@@ -1787,7 +1790,7 @@ export default function Index() {
 
                 <div className="space-y-1.5 sm:space-y-2 md:space-y-3 lg:space-y-6">
                   {/* Top 10% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-gold">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1805,7 +1808,7 @@ export default function Index() {
                   </div>
 
                   {/* Top 25% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-sunstone-navy">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1823,7 +1826,7 @@ export default function Index() {
                   </div>
 
                   {/* Top 50% */}
-                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-1.5 sm:p-3 md:p-6 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
+                  <div className="bg-sunstone-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400">
                     <div className="flex items-center justify-between gap-1 sm:gap-2">
                       <div>
                         <h4 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-sunstone-navy">
@@ -1868,21 +1871,29 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight animate-slide-in-left">
-              Discover Your
-              <span className="block text-sunstone-gold animate-slide-in-right delay-300">
-                Dream College
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+              <span className="inline-block animate-bounce-in-down">
+                <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
+                  Discover Your
+                </span>
               </span>
+              <span className="block animate-bounce-in-up delay-500">
+                <span className="bg-gradient-to-r from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark bg-clip-text text-transparent animate-shimmer">
+                  Dream College
+                </span>
+              </span>
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-sunstone-gold rounded-full animate-ping opacity-75"></div>
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-sunstone-gold to-transparent animate-pulse"></div>
             </h2>
 
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-500">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed">
               Choose from India's top institutions with
               <span className="text-sunstone-gold font-bold">
                 {" "}
                 guaranteed placement opportunities
               </span>
             </p>
-            <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-scale-in delay-700"></div>
+            <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
           </div>
 
           {/* College Showcase - Horizontal Scrolling */}
@@ -1893,8 +1904,8 @@ export default function Index() {
                 style={{ width: "calc(200% + 32px)" }}
               >
                 {/* ADYPU Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
@@ -1932,8 +1943,8 @@ export default function Index() {
                 </div>
 
                 {/* SAGE Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
                       alt="SAGE University"
@@ -1971,8 +1982,8 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F7a429a56252b4206af965fe0b3f07c93?format=webp&width=800"
                       alt="Hi-Tech Institute"
@@ -2002,14 +2013,14 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
 
                 {/* VGU Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
                       alt="Vivekananda Global University"
@@ -2047,8 +2058,8 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam Banner */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F47c752ab08c54c89bc22f5940dec933d?format=webp&width=800"
                       alt="Rathinam College"
@@ -2084,8 +2095,8 @@ export default function Index() {
                 </div>
 
                 {/* Repeat for seamless scroll - ADYPU */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F9104acf7304e42e9b9addf0809f83c3c?format=webp&width=800"
                       alt="Ajeenkya DY Patil University"
@@ -2123,15 +2134,15 @@ export default function Index() {
                 </div>
 
                 {/* SAGE Repeat */}
-                <div className="flex-shrink-0 w-64 sm:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-32 sm:h-36">
+                <div className="flex-shrink-0 w-64 sm:w-72 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-32 sm:h-36 md:h-40 lg:h-48">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F1698d7663bd648d3ab76a995a4ccb293?format=webp&width=800"
                       alt="SAGE University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
-                      ₹3.00L
+                      ���3.00L
                     </div>
                   </div>
                   <div className="p-3">
@@ -2170,7 +2181,7 @@ export default function Index() {
           {/* CTA Section */}
           <div className="text-center">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-3xl p-8 mb-8 border border-sunstone-gold/30">
-              <h3 className="text-2xl md:text-3xl font-bold text-sunstone-white mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-4">
                 Ready to Start Your Journey?
               </h3>
               <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto">
@@ -2203,7 +2214,7 @@ export default function Index() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
@@ -2711,6 +2722,40 @@ export default function Index() {
           animation: scroll-x 30s linear infinite;
         }
 
+        .animate-bounce-in-down {
+          animation: bounce-in-down 1s ease-out;
+        }
+
+        .animate-bounce-in-up {
+          animation: bounce-in-up 1s ease-out 0.5s both;
+        }
+
+        .animate-gradient-x {
+          animation: gradient-x 3s ease infinite;
+          background-size: 400% 400%;
+        }
+
+        .animate-shimmer {
+          animation: shimmer 2s linear infinite;
+          background-size: 200% 200%;
+        }
+
+        .animate-typewriter {
+          animation: typewriter 3s steps(60, end);
+        }
+
+        .animate-cursor-blink {
+          animation: cursor-blink 1s infinite;
+        }
+
+        .animate-glow {
+          animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .animate-expand-horizontal {
+          animation: expand-horizontal 1s ease-out 0.7s both;
+        }
+
         .animate-college-slide {
           animation: college-slide 25s linear infinite;
         }
@@ -2948,6 +2993,94 @@ export default function Index() {
           }
           50% {
             box-shadow: 0 0 40px rgba(79, 70, 229, 0.6), 0 0 60px rgba(79, 70, 229, 0.4);
+          }
+        }
+
+        @keyframes bounce-in-down {
+          0% {
+            opacity: 0;
+            transform: translateY(-2000px);
+          }
+          60% {
+            opacity: 1;
+            transform: translateY(30px);
+          }
+          80% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes bounce-in-up {
+          0% {
+            opacity: 0;
+            transform: translateY(2000px);
+          }
+          60% {
+            opacity: 1;
+            transform: translateY(-30px);
+          }
+          80% {
+            transform: translateY(10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes gradient-x {
+          0%, 100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+
+        @keyframes shimmer {
+          0% {
+            background-position: -200% 0;
+          }
+          100% {
+            background-position: 200% 0;
+          }
+        }
+
+        @keyframes typewriter {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes cursor-blink {
+          from, to {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        }
+
+        @keyframes glow {
+          from {
+            text-shadow: 0 0 5px #c38935, 0 0 10px #c38935, 0 0 15px #c38935;
+          }
+          to {
+            text-shadow: 0 0 10px #d4a147, 0 0 20px #d4a147, 0 0 30px #d4a147;
+          }
+        }
+
+        @keyframes expand-horizontal {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 4rem;
           }
         }
 
