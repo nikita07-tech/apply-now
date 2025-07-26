@@ -228,7 +228,7 @@ export default function Index() {
                 </h1>
               </div>
 
-              <p className="text-xs sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -879,7 +879,7 @@ export default function Index() {
                     <Award className="h-4 w-4 text-sunstone-black" />
                   </div>
                   <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    ₹26 LPA
+                    ��26 LPA
                   </div>
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Highest Package
