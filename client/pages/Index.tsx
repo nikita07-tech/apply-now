@@ -943,14 +943,14 @@ export default function Index() {
                   <div className="text-gray-600 text-xs">Record-breaking</div>
                 </div>
 
-                <div className="flex-shrink-0 w-40 bg-sunstone-navy rounded-lg p-3 text-center shadow-lg">
+                <div className="flex-shrink-0 w-40 bg-white rounded-lg p-3 text-center shadow-lg">
                   <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
                     <TrendingUp className="h-4 w-4 text-sunstone-black" />
                   </div>
                   <div className="text-lg font-black text-sunstone-gold mb-0.5">
                     63%
                   </div>
-                  <div className="text-sunstone-white font-bold text-xs mb-0.5">
+                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Higher ROI
                   </div>
                   <div className="text-gray-300 text-xs">Better return</div>
