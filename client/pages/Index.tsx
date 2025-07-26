@@ -1907,8 +1907,8 @@ export default function Index() {
                 <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ffe83249e5e314cac93c1160ce4b20899?format=webp"
-                      alt="Ajeenkya DY Patil University"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
+                      alt="Ajeenjay DY PATIL UNIVERSITY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -1917,7 +1917,7 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      ADYPU
+                      Ajeenjay DY PATIL UNIVERSITY
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
                       Pune • BCA • UGC
