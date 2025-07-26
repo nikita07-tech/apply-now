@@ -1942,28 +1942,30 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* SAGE Banner */}
-                <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-48">
+                {/* SAGE University */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
                       alt="SAGE University"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹3.00L
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
-                    <p className="text-sm text-gray-600 mb-3">
+                    <p className="text-xs text-gray-600 mb-2">
                       Indore • MBA • AICTE
                     </p>
-                    <div className="text-sm text-gray-600 space-y-1 mb-4">
-                      <p>✓ 2 Specialisations</p>
-                      <p>✓ 10 Certifications</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
                     </div>
                     <button
                       onClick={() =>
@@ -1972,7 +1974,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors duration-300"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
