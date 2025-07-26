@@ -1800,7 +1800,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-gold">
-                          ₹6L
+                          ���6L
                         </div>
                         <div className="text-xs text-gray-500">Max Award</div>
                       </div>
@@ -1995,9 +1995,13 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      Hi-Tech Institute
+                      <p>
+                        Hi-Tech Institute of Engineering &amp; Technology
+                      </p>
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">B.Tech • AICTE</p>
+                    <p className="text-xs text-gray-600 mb-2">
+                      <p>Ghaziabad</p>
+                    </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
@@ -2039,7 +2043,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>✓ Computer Science</p>
+                        <p>��� Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
@@ -2115,7 +2119,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>��� 2 Specialisations</p>
+                        <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
