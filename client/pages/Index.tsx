@@ -198,17 +198,15 @@ export default function Index() {
     <div className="min-h-screen bg-sunstone-white font-sans">
       {/* Header */}
       <header className="bg-sunstone-white shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 md:h-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+          <div className="flex justify-center items-center h-14 sm:h-16 md:h-20">
             <div className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
                 alt="Sunstone"
-                className="h-4 md:h-6 w-auto transition-all duration-500 hover:scale-110"
+                className="h-5 sm:h-6 md:h-8 w-auto transition-all duration-500 hover:scale-110"
               />
             </div>
-
-            {/* Logo space - no apply button */}
           </div>
         </div>
       </header>
