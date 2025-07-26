@@ -2020,28 +2020,30 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* VGU Banner */}
-                <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-48">
+                {/* Vivekananda Global University */}
+                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                  <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F7330f727cb2945db9778c7952a60837b%2F54e0115b0e7f4eb589722398d085e677?format=webp&width=800"
                       alt="Vivekananda Global University"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
                       ₹7.00L
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
-                    <p className="text-sm text-gray-600 mb-3">
+                    <p className="text-xs text-gray-600 mb-2">
                       Jaipur • B.Tech • UGC
                     </p>
-                    <div className="text-sm text-gray-600 space-y-1 mb-4">
-                      <p>✓ Computer Science</p>
-                      <p>✓ 10 Certifications</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="text-xs text-gray-600 space-y-0.5">
+                        <p>✓ Computer Science</p>
+                        <p>✓ 10 Certifications</p>
+                      </div>
                     </div>
                     <button
                       onClick={() =>
@@ -2050,7 +2052,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-sunstone-navy-dark transition-colors duration-300"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
