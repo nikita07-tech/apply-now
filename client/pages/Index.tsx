@@ -2637,6 +2637,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a
+                    href="https://sunstone.in/campuses/rayat-bahra-university"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 mt-2"
