@@ -1948,7 +1948,7 @@ export default function Index() {
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
-                      AJEENKYA DY PATIL UNIVERSITY
+                      <p>AJEENKYA DY PATIL UNIVERSITY</p>
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
                       Pune • BCA • UGC
