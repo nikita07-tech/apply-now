@@ -2118,7 +2118,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/rathinam",
+                          "https://sunstone.in/campuses/rathinam-group-of-institutions",
                           "_blank",
                         )
                       }
@@ -2314,7 +2314,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/rathinam",
+                          "https://sunstone.in/campuses/rathinam-group-of-institutions",
                           "_blank",
                         )
                       }
@@ -2655,7 +2655,7 @@ export default function Index() {
                 <li>
                   <a
                     rel="noopener noreferrer"
-                    href="https://sunstone.in/campuses/rathinam-group-of-institutions"
+                    href="https://sunstone.in/campuses/rathinam-group-of-institutions-group-of-institutions"
                     className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 cursor-pointer mt-2"
                   >
                     <p>Rathinam College of Arts and Science</p>
