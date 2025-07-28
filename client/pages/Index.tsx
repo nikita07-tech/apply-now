@@ -720,7 +720,7 @@ export default function Index() {
                   </div>
 
                   <div className="flex-shrink-0 w-64 bg-white rounded-xl p-4 shadow-xl">
-                    <div className="text-2xl font-black text-sunstone-gold mb-2">
+                    <div className="text-2xl font-black text-sunstone-navy mb-2">
                       ��26 LPA
                     </div>
                     <div className="text-sunstone-white font-semibold text-sm mb-1">
