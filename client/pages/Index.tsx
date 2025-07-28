@@ -1962,7 +1962,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/adypu",
+                          "https://sunstone.in/campuses/ajeenkya-dy-patil-university",
                           "_blank",
                         )
                       }
@@ -2158,7 +2158,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/adypu",
+                          "https://sunstone.in/campuses/ajeenkya-dy-patil-university",
                           "_blank",
                         )
                       }
