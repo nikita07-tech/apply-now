@@ -2509,25 +2509,30 @@ export default function Index() {
       </section>
 
       {/* Limited Seats Section */}
-      <section className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark py-6 md:py-8 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark py-8 md:py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold/10 to-sunstone-gold/5 opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 mb-3">
-              <div className="animate-pulse w-4 h-4 bg-sunstone-gold rounded-full"></div>
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-black text-sunstone-white">
-                ⚡ LIMITED SEATS AVAILABLE FOR 2025! ⚡
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-sunstone-white tracking-tight">
+                LIMITED SEATS AVAILABLE FOR 2025
               </h2>
-              <div className="animate-pulse w-4 h-4 bg-sunstone-gold rounded-full"></div>
+              <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
-            <p className="text-gray-200 text-base md:text-xl mb-6 max-w-3xl mx-auto">
-              Only a few seats left for our exclusive programs. Join thousands of successful students!
-            </p>
+            <div className="mb-8">
+              <p className="text-gray-200 text-lg md:text-2xl mb-2 font-medium">
+                Exclusive Admission Opportunity
+              </p>
+              <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+                Secure your spot in India's most sought-after programs. Limited seats available for exceptional candidates seeking guaranteed placement opportunities.
+              </p>
+            </div>
             <button
               onClick={() => window.open("https://sunstone.in/contactus", "_blank")}
-              className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-8 py-4 md:px-12 md:py-5 rounded-2xl font-black text-xl shadow-2xl hover:shadow-3xl transform transition-all duration-300 hover:scale-105 animate-pulse border-2 border-sunstone-gold-light"
+              className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-10 py-4 md:px-16 md:py-6 rounded-2xl font-black text-lg md:text-xl shadow-2xl hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-sunstone-gold-light"
             >
-              🚀 APPLY NOW - Secure Your Future!
+              APPLY NOW - SECURE YOUR FUTURE
             </button>
           </div>
         </div>
