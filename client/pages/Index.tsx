@@ -1974,7 +1974,7 @@ export default function Index() {
                 </div>
 
                 {/* SAGE University */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
@@ -2013,7 +2013,7 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Institute */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
@@ -2052,7 +2052,7 @@ export default function Index() {
                 </div>
 
                 {/* Vivekananda Global University */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
@@ -2091,7 +2091,7 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam College */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
@@ -2131,7 +2131,7 @@ export default function Index() {
 
                 {/* Duplicate set for seamless loop */}
                 {/* ADYPU */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
@@ -2170,7 +2170,7 @@ export default function Index() {
                 </div>
 
                 {/* SAGE University */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
@@ -2209,7 +2209,7 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Institute */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
@@ -2248,7 +2248,7 @@ export default function Index() {
                 </div>
 
                 {/* Vivekananda Global University */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
@@ -2287,7 +2287,7 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam College */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
