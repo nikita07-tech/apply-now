@@ -1443,20 +1443,12 @@ export default function Index() {
               style={{ width: "calc(300% + 96px)" }}
             >
               {/* First set */}
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0s" }}
-              >
-                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                    alt="EdTech 100"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  EdTech 100
-                </p>
+              <div className="flex-shrink-0 hover:scale-110 transition-all duration-500 group">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                  alt="EdTech 100 Award"
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                />
               </div>
 
               <div
