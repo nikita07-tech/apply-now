@@ -2645,13 +2645,7 @@ export default function Index() {
                     SAGE University
                   </a>
                 </li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
-                >
-                  GD Goenka University
-                </a>
+
                 <li>
                   <a
                     rel="noopener noreferrer"
