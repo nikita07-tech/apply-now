@@ -2053,9 +2053,7 @@ export default function Index() {
                       alt="Vivekananda Global University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
-                      ₹7.00L
-                    </div>
+
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2243,9 +2241,7 @@ export default function Index() {
                       alt="Vivekananda Global University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute top-2 right-2 bg-sunstone-gold text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg">
-                      ₹7.00L
-                    </div>
+
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
