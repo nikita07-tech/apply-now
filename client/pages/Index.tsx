@@ -633,7 +633,10 @@ export default function Index() {
                 <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">
                   Students Successfully Placed
                 </div>
-                <div className="text-gray-600 text-xs mt-1 sm:mt-2">
+                <div
+                  className="text-xs mt-1 sm:mt-2"
+                  style={{ color: "rgba(74, 74, 74, 1)" }}
+                >
                   Across top companies nationwide
                 </div>
               </div>
@@ -645,7 +648,10 @@ export default function Index() {
                 <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
                 </div>
-                <div className="text-gray-300 text-xs mt-1 sm:mt-2">
+                <div
+                  className="text-xs mt-1 sm:mt-2"
+                  style={{ color: "rgba(74, 74, 74, 1)" }}
+                >
                   Dreams turned into reality
                 </div>
               </div>
@@ -657,7 +663,10 @@ export default function Index() {
                 <div className="text-sunstone-gold-light font-semibold text-xs sm:text-sm md:text-base">
                   Multiple Offer Winners
                 </div>
-                <div className="text-sunstone-black/70 text-xs mt-1 sm:mt-2">
+                <div
+                  className="text-xs mt-1 sm:mt-2"
+                  style={{ color: "rgba(74, 74, 74, 1)" }}
+                >
                   Students with 2+ job offers
                 </div>
               </div>
@@ -873,7 +882,12 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Highest Package
                   </div>
-                  <div className="text-gray-600 text-xs">Record-breaking</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Record-breaking
+                  </div>
                 </div>
               </div>
               <div>
@@ -888,14 +902,19 @@ export default function Index() {
                   <div className="text-black font-bold text-xs mb-0.5">
                     Higher ROI
                   </div>
-                  <div className="text-gray-600 text-xs">Better return</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Better return
+                  </div>
                 </div>
               </div>
               <div>
                 {/* Students Placed Card */}
                 <div className="bg-white rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
-                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Users className="h-4 w-4 text-white" />
+                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
+                    <Award className="h-4 w-4 text-black" />
                   </div>
                   <div className="text-lg font-black text-sunstone-navy mb-0.5">
                     5000+
@@ -903,7 +922,12 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Students Placed
                   </div>
-                  <div className="text-gray-700 text-xs">Career launches</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Career launches
+                  </div>
                 </div>
               </div>
               <div>
@@ -918,7 +942,12 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     2+ Offers
                   </div>
-                  <div className="text-gray-600 text-xs">Multiple offers</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Multiple offers
+                  </div>
                 </div>
               </div>
             </div>
@@ -1436,31 +1465,23 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Awards - Single Line Awards with Wave Animation */}
+          {/* Desktop Awards - Clean Horizontal Scrolling */}
           <div className="hidden md:block relative overflow-hidden">
             <div
-              className="flex animate-wave-scroll space-x-4 md:space-x-8"
+              className="flex animate-wave-scroll space-x-8 md:space-x-12"
               style={{ width: "calc(300% + 96px)" }}
             >
               {/* First set */}
-              <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0s" }}
-              >
-                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                    alt="EdTech 100"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  EdTech 100
-                </p>
+              <div className="flex-shrink-0 hover:scale-110 transition-all duration-500 group">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                  alt="EdTech 100 Award"
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                />
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1476,10 +1497,10 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                     alt="Innovation"
@@ -1492,7 +1513,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.6s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1508,7 +1529,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.8s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
@@ -1524,7 +1545,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1540,7 +1561,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "1.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
@@ -1556,7 +1577,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1.4s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1573,10 +1594,10 @@ export default function Index() {
 
               {/* Duplicate sets for seamless loop */}
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0s" }}
               >
-                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                     alt="EdTech 100"
@@ -1589,7 +1610,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1605,10 +1626,10 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                     alt="Innovation"
@@ -1621,7 +1642,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.6s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1637,7 +1658,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.8s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
@@ -1653,7 +1674,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1669,7 +1690,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "1.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
@@ -1685,7 +1706,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1.4s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1702,10 +1723,10 @@ export default function Index() {
 
               {/* Third duplicate set */}
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0s" }}
               >
-                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                     alt="EdTech 100"
@@ -1718,7 +1739,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1734,10 +1755,10 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                     alt="Innovation"
@@ -1750,7 +1771,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.6s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1925,6 +1946,19 @@ export default function Index() {
               </span>
             </p>
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
+          </div>
+
+          {/* Explore All Colleges Button */}
+          <div className="text-center mb-8">
+            <button
+              onClick={() =>
+                window.open("https://sunstone.in/campuses", "_blank")
+              }
+              className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+            >
+              Explore All Colleges
+              <ArrowRight className="inline-block ml-2 h-5 w-5" />
+            </button>
           </div>
 
           {/* College Showcase - Horizontal Animation */}
@@ -2313,15 +2347,23 @@ export default function Index() {
               </p>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
-                  onClick={() =>
-                    window.open("https://sunstone.in/campuses", "_blank")
-                  }
+                  onClick={() => {
+                    const heroSection = document.querySelector("section");
+                    if (heroSection) {
+                      heroSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                   className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
                 >
-                  Explore All Colleges
+                  Apply Now
                   <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
-                <button className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all duration-300">
+                <button
+                  onClick={() =>
+                    window.open("https://sunstone.in/contactus", "_blank")
+                  }
+                  className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all duration-300"
+                >
                   Book Free Counseling
                 </button>
               </div>
@@ -2496,6 +2538,38 @@ export default function Index() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Limited Seats Section */}
+      <section className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark py-8 md:py-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold/10 to-sunstone-gold/5 opacity-50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-sunstone-white tracking-tight">
+                LIMITED SEATS AVAILABLE FOR 2025
+              </h2>
+              <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+            </div>
+            <div className="mb-8">
+              <p className="text-gray-200 text-lg md:text-2xl mb-2 font-medium">
+                Exclusive Admission Opportunity
+              </p>
+              <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+                Secure your spot in India's most sought-after programs. Limited
+                seats available for exceptional candidates seeking guaranteed
+                placement opportunities.
+              </p>
+            </div>
+            <button
+              onClick={() => window.open("https://sunstone.in/apply", "_blank")}
+              className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-10 py-4 md:px-16 md:py-6 rounded-2xl font-black text-lg md:text-xl shadow-2xl hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-sunstone-gold-light"
+            >
+              APPLY NOW - SECURE YOUR FUTURE
+            </button>
           </div>
         </div>
       </section>
