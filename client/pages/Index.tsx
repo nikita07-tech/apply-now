@@ -723,7 +723,7 @@ export default function Index() {
                     <div className="text-2xl font-black text-sunstone-navy mb-2">
                       ��26 LPA
                     </div>
-                    <div className="text-sunstone-white font-semibold text-sm mb-1">
+                    <div className="text-sunstone-black font-semibold text-sm mb-1">
                       Highest Package Achieved
                     </div>
                     <div className="text-gray-300 text-xs">
