@@ -909,8 +909,8 @@ export default function Index() {
               <div>
                 {/* Multiple Offers Card */}
                 <div className="bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
-                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-1">
-                    <CheckCircle className="h-4 w-4 text-sunstone-white" />
+                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                    <TrendingUp className="h-4 w-4 text-black" />
                   </div>
                   <div className="text-lg font-black text-sunstone-navy mb-0.5">
                     306
