@@ -645,7 +645,7 @@ export default function Index() {
                 <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
                 </div>
-                <div className="text-gray-300 text-xs mt-1 sm:mt-2">
+                <div className="text-xs mt-1 sm:mt-2" style={{color: "rgba(74, 74, 74, 1)"}}>
                   Dreams turned into reality
                 </div>
               </div>
