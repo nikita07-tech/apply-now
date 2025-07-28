@@ -657,7 +657,7 @@ export default function Index() {
                 <div className="text-sunstone-gold-light font-semibold text-xs sm:text-sm md:text-base">
                   Multiple Offer Winners
                 </div>
-                <div className="text-sunstone-black/70 text-xs mt-1 sm:mt-2">
+                <div className="text-xs mt-1 sm:mt-2" style={{color: "rgba(74, 74, 74, 1)"}}>
                   Students with 2+ job offers
                 </div>
               </div>
