@@ -2325,15 +2325,12 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
                   onClick={() =>
-                    window.open("https://sunstone.in/campuses", "_blank")
+                    window.open("https://sunstone.in/contactus", "_blank")
                   }
                   className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
                 >
-                  Explore All Colleges
-                  <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </button>
-                <button className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all duration-300">
                   Book Free Counseling
+                  <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
               </div>
             </div>
