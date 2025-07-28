@@ -873,7 +873,7 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Highest Package
                   </div>
-                  <div className="text-gray-600 text-xs">Record-breaking</div>
+                  <div className="text-xs" style={{color: "rgba(74, 74, 74, 1)"}}>Record-breaking</div>
                 </div>
               </div>
               <div>
