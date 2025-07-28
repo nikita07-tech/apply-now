@@ -1931,11 +1931,11 @@ export default function Index() {
           <div className="mb-8">
             <div className="relative overflow-hidden">
               <div
-                className="flex space-x-6 animate-scroll-right"
+                className="flex space-x-6 animate-scroll-left"
                 style={{ width: "calc(200% + 48px)" }}
               >
                 {/* ADYPU */}
-                <div className="flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
