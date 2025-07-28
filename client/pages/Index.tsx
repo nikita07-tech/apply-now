@@ -2508,6 +2508,30 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Limited Seats Section */}
+      <section className="bg-gradient-to-r from-red-600 to-red-700 py-4 md:py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 mb-2">
+              <div className="animate-pulse w-3 h-3 bg-white rounded-full"></div>
+              <h2 className="text-lg md:text-2xl lg:text-3xl font-black text-white">
+                🚨 LIMITED SEATS AVAILABLE FOR 2025! 🚨
+              </h2>
+              <div className="animate-pulse w-3 h-3 bg-white rounded-full"></div>
+            </div>
+            <p className="text-white text-sm md:text-lg mb-4">
+              Only a few seats left for our exclusive programs. Secure your future today!
+            </p>
+            <button
+              onClick={() => window.open("https://sunstone.in/contactus", "_blank")}
+              className="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 animate-bounce"
+            >
+              APPLY NOW - Don't Miss Out!
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-sunstone-navy text-sunstone-white py-0.5 md:py-8">
         <div className="max-w-7xl mx-auto px-2 md:px-8">
