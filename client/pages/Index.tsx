@@ -893,9 +893,9 @@ export default function Index() {
               </div>
               <div>
                 {/* Students Placed Card */}
-                <div className="bg-gradient-to-br from-sunstone-gold/10 to-sunstone-gold/20 rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
-                  <div className="w-8 h-8 bg-sunstone-navy rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Users className="h-4 w-4 text-sunstone-white" />
+                <div className="bg-white rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
+                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                    <Users className="h-4 w-4 text-white" />
                   </div>
                   <div className="text-lg font-black text-sunstone-navy mb-0.5">
                     5000+
