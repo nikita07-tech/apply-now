@@ -1436,8 +1436,8 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Awards - Single Line Awards with Wave Animation */}
-          <div className="hidden md:block relative overflow-hidden">
+          {/* Desktop Awards - Modern Grid Layout */}
+          <div className="hidden md:block">
             <div
               className="flex animate-wave-scroll space-x-4 md:space-x-8"
               style={{ width: "calc(300% + 96px)" }}
