@@ -895,7 +895,7 @@ export default function Index() {
                 {/* Students Placed Card */}
                 <div className="bg-white rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
                   <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Users className="h-4 w-4 text-white" />
+                    <Users className="h-4 w-4" style={{color: "rgba(0, 0, 0, 0)"}} />
                   </div>
                   <div className="text-lg font-black text-sunstone-navy mb-0.5">
                     5000+
