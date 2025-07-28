@@ -1942,7 +1942,6 @@ export default function Index() {
                       alt="AJEENKYA DY PATIL UNIVERSITY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -1979,7 +1978,6 @@ export default function Index() {
                       alt="SAGE University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2016,7 +2014,6 @@ export default function Index() {
                       alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2053,7 +2050,6 @@ export default function Index() {
                       alt="Vivekananda Global University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2090,7 +2086,6 @@ export default function Index() {
                       alt="Rathinam College"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2128,7 +2123,6 @@ export default function Index() {
                       alt="AJEENKYA DY PATIL UNIVERSITY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2165,7 +2159,6 @@ export default function Index() {
                       alt="SAGE University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2202,7 +2195,6 @@ export default function Index() {
                       alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2239,7 +2231,6 @@ export default function Index() {
                       alt="Vivekananda Global University"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2276,7 +2267,6 @@ export default function Index() {
                       alt="Rathinam College"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-
                   </div>
                   <div className="p-3">
                     <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
@@ -2654,8 +2644,7 @@ export default function Index() {
                     Ajeenkya DY Patil University
                   </a>
                 </li>
-                <li className="list-item mt-2">
-                </li>
+                <li className="list-item mt-2"></li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
