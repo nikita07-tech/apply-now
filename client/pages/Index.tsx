@@ -633,7 +633,10 @@ export default function Index() {
                 <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">
                   Students Successfully Placed
                 </div>
-                <div className="text-xs mt-1 sm:mt-2" style={{color: "rgba(74, 74, 74, 1)"}}>
+                <div
+                  className="text-xs mt-1 sm:mt-2"
+                  style={{ color: "rgba(74, 74, 74, 1)" }}
+                >
                   Across top companies nationwide
                 </div>
               </div>
@@ -645,7 +648,10 @@ export default function Index() {
                 <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
                 </div>
-                <div className="text-xs mt-1 sm:mt-2" style={{color: "rgba(74, 74, 74, 1)"}}>
+                <div
+                  className="text-xs mt-1 sm:mt-2"
+                  style={{ color: "rgba(74, 74, 74, 1)" }}
+                >
                   Dreams turned into reality
                 </div>
               </div>
@@ -657,7 +663,10 @@ export default function Index() {
                 <div className="text-sunstone-gold-light font-semibold text-xs sm:text-sm md:text-base">
                   Multiple Offer Winners
                 </div>
-                <div className="text-xs mt-1 sm:mt-2" style={{color: "rgba(74, 74, 74, 1)"}}>
+                <div
+                  className="text-xs mt-1 sm:mt-2"
+                  style={{ color: "rgba(74, 74, 74, 1)" }}
+                >
                   Students with 2+ job offers
                 </div>
               </div>
@@ -873,7 +882,12 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Highest Package
                   </div>
-                  <div className="text-xs" style={{color: "rgba(74, 74, 74, 1)"}}>Record-breaking</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Record-breaking
+                  </div>
                 </div>
               </div>
               <div>
@@ -888,7 +902,12 @@ export default function Index() {
                   <div className="text-black font-bold text-xs mb-0.5">
                     Higher ROI
                   </div>
-                  <div className="text-xs" style={{color: "rgba(74, 74, 74, 1)"}}>Better return</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Better return
+                  </div>
                 </div>
               </div>
               <div>
@@ -903,7 +922,12 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     Students Placed
                   </div>
-                  <div className="text-xs" style={{color: "rgba(74, 74, 74, 1)"}}>Career launches</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Career launches
+                  </div>
                 </div>
               </div>
               <div>
@@ -918,7 +942,12 @@ export default function Index() {
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
                     2+ Offers
                   </div>
-                  <div className="text-xs" style={{color: "rgba(74, 74, 74, 1)"}}>Multiple offers</div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "rgba(74, 74, 74, 1)" }}
+                  >
+                    Multiple offers
+                  </div>
                 </div>
               </div>
             </div>
@@ -1922,7 +1951,9 @@ export default function Index() {
           {/* Explore All Colleges Button */}
           <div className="text-center mb-8">
             <button
-              onClick={() => window.open("https://sunstone.in/campuses", "_blank")}
+              onClick={() =>
+                window.open("https://sunstone.in/campuses", "_blank")
+              }
               className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
             >
               Explore All Colleges
@@ -2317,9 +2348,9 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
                   onClick={() => {
-                    const heroSection = document.querySelector('section');
+                    const heroSection = document.querySelector("section");
                     if (heroSection) {
-                      heroSection.scrollIntoView({ behavior: 'smooth' });
+                      heroSection.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
                   className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
@@ -2528,7 +2559,9 @@ export default function Index() {
                 Exclusive Admission Opportunity
               </p>
               <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-                Secure your spot in India's most sought-after programs. Limited seats available for exceptional candidates seeking guaranteed placement opportunities.
+                Secure your spot in India's most sought-after programs. Limited
+                seats available for exceptional candidates seeking guaranteed
+                placement opportunities.
               </p>
             </div>
             <button
