@@ -633,7 +633,7 @@ export default function Index() {
                 <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">
                   Students Successfully Placed
                 </div>
-                <div className="text-gray-600 text-xs mt-1 sm:mt-2">
+                <div className="text-xs mt-1 sm:mt-2" style={{color: "rgba(74, 74, 74, 1)"}}>
                   Across top companies nationwide
                 </div>
               </div>
