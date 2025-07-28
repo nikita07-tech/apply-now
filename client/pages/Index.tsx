@@ -1936,7 +1936,7 @@ export default function Index() {
               >
                 {/* ADYPU */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
                       alt="AJEENKYA DY PATIL UNIVERSITY"
@@ -1973,7 +1973,7 @@ export default function Index() {
 
                 {/* SAGE University */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
                       alt="SAGE University"
@@ -2010,7 +2010,7 @@ export default function Index() {
 
                 {/* Hi-Tech Institute */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
                       alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
@@ -2047,7 +2047,7 @@ export default function Index() {
 
                 {/* Vivekananda Global University */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
                       alt="Vivekananda Global University"
@@ -2084,7 +2084,7 @@ export default function Index() {
 
                 {/* Rathinam College */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
                       alt="Rathinam College"
@@ -2114,7 +2114,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour ���
+                      Book Tour →
                     </button>
                   </div>
                 </div>
@@ -2122,7 +2122,7 @@ export default function Index() {
                 {/* Duplicate set for seamless loop */}
                 {/* ADYPU */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
                       alt="AJEENKYA DY PATIL UNIVERSITY"
@@ -2159,7 +2159,7 @@ export default function Index() {
 
                 {/* SAGE University */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
                       alt="SAGE University"
@@ -2196,7 +2196,7 @@ export default function Index() {
 
                 {/* Hi-Tech Institute */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
                       alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
@@ -2233,7 +2233,7 @@ export default function Index() {
 
                 {/* Vivekananda Global University */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
                       alt="Vivekananda Global University"
@@ -2270,7 +2270,7 @@ export default function Index() {
 
                 {/* Rathinam College */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
-                  <div className="relative h-40">
+                  <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
                       alt="Rathinam College"
@@ -2452,7 +2452,7 @@ export default function Index() {
                 >
                   <div className="bg-sunstone-white rounded-3xl shadow-xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 h-full">
                     {/* Header */}
-                    <div className="relative h-40 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
+                    <div className="relative h-32 md:h-40 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
                       <img
                         src={story.image}
                         alt={story.name}
