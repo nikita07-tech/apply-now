@@ -2540,7 +2540,7 @@ export default function Index() {
               </p>
             </div>
             <button
-              onClick={() => window.open("https://sunstone.in/contactus", "_blank")}
+              onClick={() => window.open("https://sunstone.in/apply", "_blank")}
               className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-10 py-4 md:px-16 md:py-6 rounded-2xl font-black text-lg md:text-xl shadow-2xl hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-sunstone-gold-light"
             >
               APPLY NOW - SECURE YOUR FUTURE
