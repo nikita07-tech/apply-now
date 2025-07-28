@@ -1927,6 +1927,17 @@ export default function Index() {
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
           </div>
 
+          {/* Explore All Colleges Button */}
+          <div className="text-center mb-8">
+            <button
+              onClick={() => window.open("https://sunstone.in/campuses", "_blank")}
+              className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+            >
+              Explore All Colleges
+              <ArrowRight className="inline-block ml-2 h-5 w-5" />
+            </button>
+          </div>
+
           {/* College Showcase - Horizontal Animation */}
           <div className="mb-8">
             <div className="relative overflow-hidden">
