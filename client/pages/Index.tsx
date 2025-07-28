@@ -1447,7 +1447,7 @@ export default function Index() {
                 className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0s" }}
               >
-                <div className="w-32 h-32 md:w-40 md:h-40 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                     alt="EdTech 100"
@@ -1479,7 +1479,7 @@ export default function Index() {
                 className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="w-32 h-32 md:w-40 md:h-40 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                     alt="Innovation"
@@ -1576,7 +1576,7 @@ export default function Index() {
                 className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0s" }}
               >
-                <div className="w-32 h-32 md:w-40 md:h-40 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                     alt="EdTech 100"
@@ -1608,7 +1608,7 @@ export default function Index() {
                 className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="w-32 h-32 md:w-40 md:h-40 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                     alt="Innovation"
@@ -1705,7 +1705,7 @@ export default function Index() {
                 className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0s" }}
               >
-                <div className="w-32 h-32 md:w-40 md:h-40 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                     alt="EdTech 100"
@@ -1737,7 +1737,7 @@ export default function Index() {
                 className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="w-32 h-32 md:w-40 md:h-40 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
+                <div className="w-36 h-36 md:w-48 md:h-48 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                     alt="Innovation"
