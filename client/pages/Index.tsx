@@ -1460,7 +1460,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1492,7 +1492,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.6s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1524,7 +1524,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1556,7 +1556,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1.4s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1589,7 +1589,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1621,7 +1621,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.6s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1653,7 +1653,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1685,7 +1685,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "1.4s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1718,7 +1718,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
@@ -1750,7 +1750,7 @@ export default function Index() {
               </div>
 
               <div
-                className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
+                className="flex-shrink-0 w-56 h-48 md:w-72 md:h-56 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
                 style={{ animationDelay: "0.6s" }}
               >
                 <div className="w-16 h-16 md:w-24 md:h-24 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
