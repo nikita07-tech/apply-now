@@ -1931,8 +1931,8 @@ export default function Index() {
           <div className="mb-8">
             <div className="relative overflow-hidden">
               <div
-                className="flex space-x-4 animate-scroll-left"
-                style={{ width: "calc(300% + 32px)" }}
+                className="flex space-x-3 animate-scroll-left"
+                style={{ width: "calc(500% + 60px)" }}
               >
                 {/* ADYPU */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
@@ -2114,7 +2114,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
