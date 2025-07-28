@@ -694,14 +694,14 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="flex-shrink-0 w-64 bg-sunstone-gold rounded-xl p-4 shadow-xl">
-                    <div className="text-2xl font-black text-sunstone-black mb-2">
+                  <div className="flex-shrink-0 w-64 bg-white rounded-xl p-4 shadow-xl">
+                    <div className="text-2xl font-black text-sunstone-navy mb-2">
                       306
                     </div>
                     <div className="text-sunstone-black font-semibold text-sm mb-1">
                       Multiple Offer Winners
                     </div>
-                    <div className="text-sunstone-black/70 text-xs">
+                    <div className="text-gray-600 text-xs">
                       Students with 2+ job offers
                     </div>
                   </div>
@@ -731,14 +731,14 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <div className="flex-shrink-0 w-64 bg-sunstone-gold rounded-xl p-4 shadow-xl">
-                    <div className="text-2xl font-black text-sunstone-black mb-2">
+                  <div className="flex-shrink-0 w-64 bg-white rounded-xl p-4 shadow-xl">
+                    <div className="text-2xl font-black text-sunstone-navy mb-2">
                       306
                     </div>
                     <div className="text-sunstone-black font-semibold text-sm mb-1">
                       Multiple Offer Winners
                     </div>
-                    <div className="text-sunstone-black/70 text-xs">
+                    <div className="text-gray-600 text-xs">
                       Students with 2+ job offers
                     </div>
                   </div>
