@@ -726,7 +726,7 @@ export default function Index() {
                     <div className="text-sunstone-black font-semibold text-sm mb-1">
                       Highest Package Achieved
                     </div>
-                    <div className="text-gray-300 text-xs">
+                    <div className="text-gray-600 text-xs">
                       Dreams turned into reality
                     </div>
                   </div>
