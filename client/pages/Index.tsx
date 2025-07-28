@@ -2242,7 +2242,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
@@ -2645,45 +2645,41 @@ export default function Index() {
                     SAGE University
                   </a>
                 </li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
+                >
+                  GD Goenka University
+                </a>
                 <li>
                   <a
-                    href="https://sunstone.in/campuses/mru"
-                    target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
+                    href="https://sunstone.in/campuses/rathinam-group-of-institutions"
+                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 cursor-pointer mt-2"
                   >
-                    Malla Reddy University
+                    <p>Rathinam College of Arts and Science</p>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://sunstone.in/campuses/gd-goenka"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
+                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 mt-2"
                   >
-                    GD Goenka University
+                    Rayat Bahra University
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://sunstone.in/campuses/adypu"
-                    target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
+                    href="https://sunstone.in/campuses/ajeenkya-dy-patil-university"
+                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300 cursor-pointer mt-2"
                   >
                     Ajeenkya DY Patil University
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://sunstone.in/campuses/rbu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
-                  >
-                    Rayat Bahra University
-                  </a>
+                <li className="list-item mt-2">
                 </li>
               </ul>
             </div>
