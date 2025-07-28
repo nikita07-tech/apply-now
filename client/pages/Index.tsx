@@ -2040,7 +2040,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/hitech",
+                          "https://sunstone.in/campuses/hi-tech-institute",
                           "_blank",
                         )
                       }
@@ -2236,7 +2236,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/hitech",
+                          "https://sunstone.in/campuses/hi-tech-institute",
                           "_blank",
                         )
                       }
