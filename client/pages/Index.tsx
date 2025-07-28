@@ -1436,10 +1436,12 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Awards - Modern Grid Layout */}
-          <div className="hidden md:block">
-            {/* Primary Featured Awards Row */}
-            <div className="grid grid-cols-3 gap-6 lg:gap-8 mb-8">
+          {/* Desktop Awards - Horizontal Scrolling with Larger Images */}
+          <div className="hidden md:block relative overflow-hidden">
+            <div
+              className="flex animate-wave-scroll space-x-6 md:space-x-8"
+              style={{ width: "calc(300% + 96px)" }}
+            >
               {/* First set */}
               <div
                 className="flex-shrink-0 w-40 h-32 md:w-56 md:h-40 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-3 md:p-6 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
