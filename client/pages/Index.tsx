@@ -2079,7 +2079,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/vgu",
+                          "https://sunstone.in/campuses/vivekananda-global-university",
                           "_blank",
                         )
                       }
@@ -2275,7 +2275,7 @@ export default function Index() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://sunstone.in/campuses/vgu",
+                          "https://sunstone.in/campuses/vivekananda-global-university",
                           "_blank",
                         )
                       }
