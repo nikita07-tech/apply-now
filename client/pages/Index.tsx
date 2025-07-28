@@ -1436,10 +1436,10 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Awards - Horizontal Scrolling with Larger Images */}
+          {/* Desktop Awards - Clean Horizontal Scrolling */}
           <div className="hidden md:block relative overflow-hidden">
             <div
-              className="flex animate-wave-scroll space-x-6 md:space-x-8"
+              className="flex animate-wave-scroll space-x-8 md:space-x-12"
               style={{ width: "calc(300% + 96px)" }}
             >
               {/* First set */}
