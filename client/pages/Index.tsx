@@ -2336,32 +2336,31 @@ export default function Index() {
       </section>
 
       {/* Limited Seats Section */}
-      <section className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark py-8 md:py-12 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark py-4 md:py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold/10 to-sunstone-gold/5 opacity-50"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 mb-6">
-              <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-sunstone-white tracking-tight">
+            <div className="inline-flex items-center gap-1 md:gap-3 mb-3 md:mb-6">
+              <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+              <h2 className="text-lg md:text-4xl lg:text-5xl font-black text-sunstone-white tracking-tight leading-tight">
                 LIMITED SEATS AVAILABLE FOR 2025
               </h2>
-              <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+              <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
-            <div className="mb-8">
-              <p className="text-gray-200 text-lg md:text-2xl mb-2 font-medium">
+            <div className="mb-4 md:mb-8">
+              <p className="text-gray-200 text-sm md:text-2xl mb-1 md:mb-2 font-medium">
                 Exclusive Admission Opportunity
               </p>
-              <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+              <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
                 Secure your spot in India's most sought-after programs. Limited
-                seats available for exceptional candidates seeking guaranteed
-                placement opportunities.
+                seats available for exceptional candidates.
               </p>
             </div>
             <button
               onClick={() => window.open("https://sunstone.in/apply", "_blank")}
-              className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-10 py-4 md:px-16 md:py-6 rounded-2xl font-black text-lg md:text-xl shadow-2xl hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-sunstone-gold-light"
+              className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-6 py-2.5 md:px-16 md:py-6 rounded-xl md:rounded-2xl font-bold md:font-black text-sm md:text-xl shadow-lg md:shadow-2xl hover:shadow-xl md:hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-sunstone-gold-light"
             >
-              APPLY NOW - SECURE YOUR FUTURE
+              APPLY NOW
             </button>
           </div>
         </div>
