@@ -1476,7 +1476,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                   alt="EdTech 100 Award"
-                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                  className="w-48 h-48 md:w-64 md:h-64 object-contain"
                 />
               </div>
 
