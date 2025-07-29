@@ -1430,13 +1430,11 @@ export default function Index() {
                     key={`mobile-${award.id}`}
                     className="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
                   >
-                    <div className="w-12 h-12 mb-2 p-2 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
-                      <img
-                        src={award.image}
-                        alt={award.title}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      className="w-16 h-16 mb-2 object-contain"
+                    />
                     <p className="text-sm font-bold text-sunstone-navy text-center leading-tight">
                       {award.title}
                     </p>
@@ -1449,13 +1447,11 @@ export default function Index() {
                     key={`mobile-dup-${award.id}`}
                     className="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
                   >
-                    <div className="w-12 h-12 mb-2 p-2 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg">
-                      <img
-                        src={award.image}
-                        alt={award.title}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      className="w-16 h-16 mb-2 object-contain"
+                    />
                     <p className="text-sm font-bold text-sunstone-navy text-center leading-tight">
                       {award.title}
                     </p>
@@ -1469,320 +1465,117 @@ export default function Index() {
           <div className="hidden md:block relative overflow-hidden">
             <div
               className="flex animate-wave-scroll space-x-8 md:space-x-12"
-              style={{ width: "calc(300% + 96px)" }}
+              style={{ width: "calc(200% + 96px)" }}
             >
               {/* First set */}
-              <div className="flex-shrink-0 hover:scale-110 transition-all duration-500 group">
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                   alt="EdTech 100 Award"
-                  className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
                 />
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "0.2s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                    alt="GSV 150"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  GSV 150
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0.4s" }}
-              >
-                <div className="w-48 h-48 md:w-64 md:h-64 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
-                    alt="Innovation"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Innovation
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "0.6s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
-                    alt="ASSOCHAM"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  ASSOCHAM
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0.8s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
-                    alt="IndiGlobal"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  IndiGlobal
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "1s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
-                    alt="Excellence"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Excellence
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "1.2s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
-                    alt="Tech Innovation"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Tech Innovation
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "1.4s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
-                    alt="Top Brand"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Top Brand
-                </p>
-              </div>
-
-              {/* Duplicate sets for seamless loop */}
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0s" }}
-              >
-                <div className="w-48 h-48 md:w-64 md:h-64 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                    alt="EdTech 100"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   EdTech 100
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "0.2s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                    alt="GSV 150"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                  alt="GSV 150"
+                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   GSV 150
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0.4s" }}
-              >
-                <div className="w-48 h-48 md:w-64 md:h-64 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
-                    alt="Innovation"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                  alt="Innovation"
+                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   Innovation
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "0.6s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
-                    alt="ASSOCHAM"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                  alt="ASSOCHAM"
+                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   ASSOCHAM
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0.8s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
-                    alt="IndiGlobal"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                  alt="IndiGlobal"
+                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "1s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F43492ee022f24cd1b86c7615d696d96d?format=webp&width=800"
-                    alt="Excellence"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Excellence
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "1.2s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-white rounded-lg shadow-sm group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fd7efabadd45c4d79a3fb21bca0afae6a?format=webp&width=800"
-                    alt="Tech Innovation"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Tech Innovation
-                </p>
-              </div>
-
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "1.4s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fe435bdde8d83487fb8110b13e5d1346c?format=webp&width=800"
-                    alt="Top Brand"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
-                  Top Brand
-                </p>
-              </div>
-
-              {/* Third duplicate set */}
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0s" }}
-              >
-                <div className="w-48 h-48 md:w-64 md:h-64 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
-                    alt="EdTech 100"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              {/* Duplicate set for seamless loop */}
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                  alt="EdTech 100 Award"
+                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   EdTech 100
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "0.2s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
-                    alt="GSV 150"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                  alt="GSV 150"
+                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   GSV 150
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up"
-                style={{ animationDelay: "0.4s" }}
-              >
-                <div className="w-48 h-48 md:w-64 md:h-64 mb-3 md:mb-4 p-3 md:p-4 bg-gradient-to-br from-sunstone-gold/10 to-sunstone-navy/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
-                    alt="Innovation"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                  alt="Innovation"
+                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   Innovation
                 </p>
               </div>
 
-              <div
-                className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up"
-                style={{ animationDelay: "0.6s" }}
-              >
-                <div className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 p-2 md:p-3 bg-gradient-to-br from-sunstone-navy/10 to-sunstone-gold/10 rounded-lg group-hover:scale-110 transition-transform duration-500">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
-                    alt="ASSOCHAM"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-sunstone-navy/5 to-white rounded-xl shadow-lg border border-sunstone-navy/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-navy/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
+                  alt="ASSOCHAM"
+                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   ASSOCHAM
+                </p>
+              </div>
+
+              <div className="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-sunstone-gold/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-sunstone-gold/50 group animate-float-up">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
+                  alt="IndiGlobal"
+                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+                <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
+                  IndiGlobal
                 </p>
               </div>
             </div>
