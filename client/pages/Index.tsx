@@ -1406,7 +1406,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Internationally Recognized Excellence
             </h2>
 
@@ -1605,7 +1605,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Bright Minds Scholarship Program
             </h2>
 
@@ -1726,7 +1726,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
@@ -2183,7 +2183,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <h2
-              className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
               style={{ fontSize: "38px", lineHeight: "38px" }}
             >
               Success Stories That Inspire
