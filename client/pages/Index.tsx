@@ -2184,7 +2184,6 @@ export default function Index() {
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <h2
               className="text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
-              style={{ fontSize: "38px", lineHeight: "38px" }}
             >
               Success Stories That Inspire
             </h2>
