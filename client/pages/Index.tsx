@@ -861,8 +861,7 @@ export default function Index() {
             </div>
 
             <h2
-              className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
-              style={{ fontSize: "38px" }}
+              className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
             >
               Our Impact Speaks for Itself
             </h2>
@@ -1909,7 +1908,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      Jaipur • B.Tech �� UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
