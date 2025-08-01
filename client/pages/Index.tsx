@@ -1614,8 +1614,7 @@ export default function Index() {
             </div>
 
             <h2
-              className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
-              style={{ fontSize: "38px" }}
+              className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
             >
               Bright Minds Scholarship Program
             </h2>
@@ -1907,7 +1906,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      Jaipur • B.Tech �� UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
