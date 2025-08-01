@@ -218,7 +218,7 @@ export default function Index() {
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left order-1">
               <div className="mb-4 sm:mb-6 md:mb-8">
-                <h1 className="text-sm sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+                <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     Big Dreams Need
                   </span>
@@ -605,12 +605,12 @@ export default function Index() {
           <div className="text-center animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/20">
               <GraduationCap className="h-6 w-6 text-sunstone-gold" />
-              <span className="text-sunstone-navy font-bold text-lg">
+              <span className="text-sunstone-navy font-bold text-sm sm:text-lg">
                 <p>Trusted by 5000+ Successful Students</p>
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Pursue Your Dream Degree
               </span>
@@ -786,7 +786,7 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
             <p className="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
@@ -856,7 +856,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
@@ -1052,7 +1052,7 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-xs sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
@@ -1406,7 +1406,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Internationally Recognized Excellence
             </h2>
 
@@ -1605,7 +1605,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Bright Minds Scholarship Program
             </h2>
 
@@ -1634,7 +1634,7 @@ export default function Index() {
             <div className="order-1 lg:order-2 animate-slide-in-right">
               <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
                 <div className="mb-6 md:mb-8">
-                  <h3 className="text-xs sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
+                  <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
                     Merit-Based Financial Awards
                   </h3>
                   <p className="text-gray-600 text-base md:text-lg">
@@ -1726,7 +1726,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
@@ -1757,7 +1757,7 @@ export default function Index() {
               onClick={() =>
                 window.open("https://sunstone.in/campuses", "_blank")
               }
-              className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+              className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-4 py-2 sm:px-6 sm:py-3 rounded-xl font-bold text-sm sm:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
             >
               Explore All Colleges
               <ArrowRight className="inline-block ml-2 h-5 w-5" />
@@ -2182,10 +2182,7 @@ export default function Index() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2
-              className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
-              style={{ fontSize: "38px", lineHeight: "38px" }}
-            >
+            <h2 className="text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
