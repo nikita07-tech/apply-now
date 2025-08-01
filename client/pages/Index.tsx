@@ -1757,7 +1757,7 @@ export default function Index() {
               onClick={() =>
                 window.open("https://sunstone.in/campuses", "_blank")
               }
-              className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+              className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-4 py-2 sm:px-6 sm:py-3 rounded-xl font-bold text-sm sm:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
             >
               Explore All Colleges
               <ArrowRight className="inline-block ml-2 h-5 w-5" />
@@ -2183,7 +2183,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <h2
-              className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
+              className="text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
               style={{ fontSize: "38px", lineHeight: "38px" }}
             >
               Success Stories That Inspire
