@@ -863,7 +863,7 @@ export default function Index() {
             </div>
 
             <h2
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
+              className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
               style={{ fontSize: "38px" }}
             >
               Our Impact Speaks for Itself
@@ -1061,7 +1061,7 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
+            <h2 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
