@@ -1495,7 +1495,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                   alt="Innovation"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '160px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   Innovation
@@ -1529,7 +1529,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                   alt="EdTech 100 Award"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '160px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   EdTech 100
@@ -1551,7 +1551,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                   alt="Innovation"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '160px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   Innovation
