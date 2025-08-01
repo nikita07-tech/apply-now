@@ -2367,7 +2367,12 @@ export default function Index() {
               </p>
             </div>
             <button
-              onClick={() => window.open("https://sunstone.in/apply", "_blank")}
+              onClick={() => {
+                const heroSection = document.querySelector("section");
+                if (heroSection) {
+                  heroSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="bg-sunstone-gold text-sunstone-navy hover:bg-sunstone-gold-light px-6 py-2.5 md:px-16 md:py-6 rounded-xl md:rounded-2xl font-bold md:font-black text-sm md:text-xl shadow-lg md:shadow-2xl hover:shadow-xl md:hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-sunstone-gold-light"
             >
               APPLY NOW
