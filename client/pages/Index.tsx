@@ -218,7 +218,7 @@ export default function Index() {
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left order-1">
               <div className="mb-4 sm:mb-6 md:mb-8">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+                <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     Big Dreams Need
                   </span>
@@ -244,7 +244,7 @@ export default function Index() {
             <div className="flex justify-center lg:justify-end order-2">
               <div className="bg-white rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-4 md:p-6 lg:p-8 w-full max-w-sm sm:max-w-md md:max-w-lg border border-sunstone-gold/20">
                 <div className="flex items-center justify-between mb-3 sm:mb-4 md:mb-6">
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
+                  <h3 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
                   <div className="flex gap-2">
@@ -1879,7 +1879,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>✓ 2 Programs</p>
+                        <p>�� 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
