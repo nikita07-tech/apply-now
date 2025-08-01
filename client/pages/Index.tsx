@@ -1716,7 +1716,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
