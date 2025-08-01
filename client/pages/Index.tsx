@@ -1618,7 +1618,7 @@ export default function Index() {
             </div>
 
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
+              className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
               style={{ fontSize: "38px" }}
             >
               Bright Minds Scholarship Program
