@@ -2386,20 +2386,20 @@ export default function Index() {
               </p>
               <div className="flex space-x-0.5 md:space-x-3">
                 <a
-                  href="https://www.youtube.com/@SunstoneIND"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-red-600 p-1 md:p-2 rounded-full hover:bg-red-700 transition-all duration-300"
-                >
-                  <Youtube className="h-3 w-3 md:h-5 md:w-5 text-white" />
-                </a>
-                <a
                   href="https://www.instagram.com/sunstone.in/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-purple-500 to-pink-500 p-1 md:p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
                 >
                   <Instagram className="h-3 w-3 md:h-5 md:w-5 text-white" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@SunstoneIND"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-red-600 p-1 md:p-2 rounded-full hover:bg-red-700 transition-all duration-300"
+                >
+                  <Youtube className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://www.facebook.com/sunstoneedu"
