@@ -1484,7 +1484,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
                   alt="GSV 150"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   GSV 150
@@ -1506,7 +1506,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
                   alt="ASSOCHAM"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   ASSOCHAM
@@ -1517,7 +1517,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
                   alt="IndiGlobal"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
@@ -1540,7 +1540,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
                   alt="GSV 150"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   GSV 150
@@ -1562,7 +1562,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
                   alt="ASSOCHAM"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   ASSOCHAM
@@ -1573,7 +1573,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
                   alt="IndiGlobal"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
