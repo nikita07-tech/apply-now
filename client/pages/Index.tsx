@@ -611,7 +611,7 @@ export default function Index() {
             </div>
 
             <h2
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0"
+              className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0"
               style={{ fontSize: "38px" }}
             >
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
@@ -790,7 +790,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <h2
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4"
+              className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4"
               style={{ fontSize: "38px" }}
             >
               Why Sunstone Powered Programs Stand Out?
@@ -1879,7 +1879,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>�� 2 Programs</p>
+                        <p>✓ 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
