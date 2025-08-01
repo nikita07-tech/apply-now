@@ -1742,7 +1742,7 @@ export default function Index() {
             </div>
 
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden"
+              className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden"
               style={{ fontSize: "38px" }}
             >
               <span className="inline-block animate-bounce-in-down">
