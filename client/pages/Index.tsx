@@ -218,7 +218,7 @@ export default function Index() {
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left order-1">
               <div className="mb-4 sm:mb-6 md:mb-8">
-                <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+                <h1 className="text-sm sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     Big Dreams Need
                   </span>
@@ -244,7 +244,7 @@ export default function Index() {
             <div className="flex justify-center lg:justify-end order-2">
               <div className="bg-white rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-4 md:p-6 lg:p-8 w-full max-w-sm sm:max-w-md md:max-w-lg border border-sunstone-gold/20">
                 <div className="flex items-center justify-between mb-3 sm:mb-4 md:mb-6">
-                  <h3 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
+                  <h3 className="text-xs sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
                   <div className="flex gap-2">
@@ -610,10 +610,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0"
-              style={{ fontSize: "38px" }}
-            >
+            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Pursue Your Dream Degree
               </span>
@@ -789,10 +786,7 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2
-              className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4"
-              style={{ fontSize: "38px" }}
-            >
+            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
             <p className="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
@@ -862,10 +856,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
-              style={{ fontSize: "38px" }}
-            >
+            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
@@ -1061,7 +1052,7 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
+            <h2 className="text-xs sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
@@ -1415,10 +1406,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
-              style={{ fontSize: "38px" }}
-            >
+            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Internationally Recognized Excellence
             </h2>
 
@@ -1617,10 +1605,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
-              style={{ fontSize: "38px" }}
-            >
+            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Bright Minds Scholarship Program
             </h2>
 
@@ -1649,7 +1634,7 @@ export default function Index() {
             <div className="order-1 lg:order-2 animate-slide-in-right">
               <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
                 <div className="mb-6 md:mb-8">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
+                  <h3 className="text-xs sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
                     Merit-Based Financial Awards
                   </h3>
                   <p className="text-gray-600 text-base md:text-lg">
@@ -1715,7 +1700,7 @@ export default function Index() {
                 </div>
 
                 <div className="mt-6 md:mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-4 md:p-6 text-center">
-                  <h4 className="text-lg md:text-xl font-bold text-sunstone-white mb-2">
+                  <h4 className="text-xs md:text-xl font-bold text-sunstone-white mb-2">
                     Merit-Based Financial Support
                   </h4>
                   <p className="text-gray-300 text-xs md:text-sm">
@@ -1741,10 +1726,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden"
-              style={{ fontSize: "38px" }}
-            >
+            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
@@ -1799,7 +1781,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       <p>AJEENKYA DY PATIL UNIVERSITY</p>
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1835,7 +1817,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1871,7 +1853,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1907,7 +1889,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1943,7 +1925,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1980,7 +1962,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       AJEENKYA DY PATIL UNIVERSITY
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2016,7 +1998,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2052,7 +2034,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2088,7 +2070,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2124,7 +2106,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-sm font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
