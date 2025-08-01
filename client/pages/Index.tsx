@@ -1472,7 +1472,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                   alt="EdTech 100 Award"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "160px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   EdTech 100
@@ -1483,7 +1484,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
                   alt="GSV 150"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "128px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   GSV 150
@@ -1494,7 +1496,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                   alt="Innovation"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "160px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   Innovation
@@ -1505,7 +1508,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
                   alt="ASSOCHAM"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "128px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   ASSOCHAM
@@ -1516,7 +1520,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
                   alt="IndiGlobal"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "129px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
@@ -1528,7 +1533,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
                   alt="EdTech 100 Award"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "160px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   EdTech 100
@@ -1539,7 +1545,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
                   alt="GSV 150"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "128px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   GSV 150
@@ -1550,7 +1557,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
                   alt="Innovation"
-                  className="w-32 h-32 md:w-40 md:h-40 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "160px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   Innovation
@@ -1561,7 +1569,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F582ba6eebf4642a082afea06cbd56d00?format=webp&width=800"
                   alt="ASSOCHAM"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "128px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   ASSOCHAM
@@ -1572,7 +1581,8 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
                   alt="IndiGlobal"
-                  className="w-24 h-24 md:w-32 md:h-32 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                  style={{ width: "203px", height: "129px" }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
@@ -1716,7 +1726,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
@@ -2064,7 +2074,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      Jaipur ��� B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -2172,7 +2182,7 @@ export default function Index() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
+            <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
