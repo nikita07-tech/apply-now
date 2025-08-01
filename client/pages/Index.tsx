@@ -610,9 +610,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0"
-            >
+            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Pursue Your Dream Degree
               </span>
@@ -788,9 +786,7 @@ export default function Index() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2
-              className="text-xs sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4"
-            >
+            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
             <p className="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
@@ -860,9 +856,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
-            >
+            <h2 className="text-xs sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
@@ -1412,9 +1406,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
-            >
+            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Internationally Recognized Excellence
             </h2>
 
@@ -1613,9 +1605,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4"
-            >
+            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
               Bright Minds Scholarship Program
             </h2>
 
@@ -1736,9 +1726,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2
-              className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden"
-            >
+            <h2 className="text-xs sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
