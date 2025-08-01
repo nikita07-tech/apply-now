@@ -1710,7 +1710,7 @@ export default function Index() {
                 </div>
 
                 <div className="mt-6 md:mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-4 md:p-6 text-center">
-                  <h4 className="text-lg md:text-xl font-bold text-sunstone-white mb-2">
+                  <h4 className="text-xs md:text-xl font-bold text-sunstone-white mb-2">
                     Merit-Based Financial Support
                   </h4>
                   <p className="text-gray-300 text-xs md:text-sm">
