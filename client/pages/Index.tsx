@@ -1726,7 +1726,7 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-3 leading-tight relative overflow-hidden" style={{fontSize: '38px'}}>
               <span className="inline-block animate-bounce-in-down">
                 <span className="bg-gradient-to-r from-sunstone-navy via-sunstone-navy to-sunstone-gold bg-clip-text text-transparent animate-gradient-x">
                   Discover Your
@@ -1910,7 +1910,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour ���
+                      Book Tour →
                     </button>
                   </div>
                 </div>
