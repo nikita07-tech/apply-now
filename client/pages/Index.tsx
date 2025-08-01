@@ -1517,7 +1517,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
                   alt="IndiGlobal"
-                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '129px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
@@ -1573,7 +1573,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Ffca98ae9ea584fb59b9aea5254adc256?format=webp&width=800"
                   alt="IndiGlobal"
-                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '128px' }}
+                  className="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500" style={{ width: '203px', height: '129px' }}
                 />
                 <p className="text-sm md:text-base font-bold text-sunstone-navy text-center leading-tight">
                   IndiGlobal
@@ -2065,7 +2065,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      Jaipur ��� B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
