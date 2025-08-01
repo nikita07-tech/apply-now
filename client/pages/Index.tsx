@@ -2533,12 +2533,7 @@ export default function Index() {
                   +91 70653 03030
                 </div>
 
-                <Button
-                  onClick={handleApplyNow}
-                  className="bg-sunstone-gold text-sunstone-black hover:bg-sunstone-gold-dark transition-all duration-300 font-bold text-xs md:text-sm py-0.5 px-1.5 md:py-2 md:px-4 mt-1 md:mt-2"
-                >
-                  Apply Now
-                </Button>
+
               </div>
             </div>
           </div>
