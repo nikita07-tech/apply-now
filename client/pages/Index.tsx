@@ -1554,13 +1554,38 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 items-center">
             {/* Left - Scholarship Image */}
             <div className="order-2 lg:order-1 animate-slide-in-left">
-              <div className="relative">
+              <div
+                className="relative cursor-pointer"
+                onClick={() => {
+                  // Scroll to the application form in the hero section
+                  const applicationForm = document.querySelector("form");
+                  if (applicationForm) {
+                    applicationForm.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                    // Focus on the first input field
+                    const firstInput =
+                      applicationForm.querySelector('input[type="text"]');
+                    if (firstInput) {
+                      setTimeout(() => firstInput.focus(), 500);
+                    }
+                  }
+                }}
+              >
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
                   alt="Bright Minds Scholarship - Financial support for academic excellence"
-                  className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105"
+                  className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
                 />
+                <div className="absolute inset-0 bg-black/0 hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                  <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
+                    <span className="text-sunstone-navy font-bold text-sm">
+                      Click to Apply
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1607,7 +1632,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">
-                          ₹4L
+                          ��4L
                         </div>
                         <div className="text-xs text-gray-500">Support</div>
                       </div>
@@ -1637,10 +1662,32 @@ export default function Index() {
                   <h4 className="text-xs md:text-xl font-bold text-sunstone-white mb-2">
                     Merit-Based Financial Support
                   </h4>
-                  <p className="text-gray-300 text-xs md:text-sm">
+                  <p className="text-gray-300 text-xs md:text-sm mb-4">
                     Limited scholarships available on first-come, first-served
                     basis for qualifying students
                   </p>
+                  <button
+                    onClick={() => {
+                      // Scroll to the application form in the hero section
+                      const applicationForm = document.querySelector("form");
+                      if (applicationForm) {
+                        applicationForm.scrollIntoView({
+                          behavior: "smooth",
+                          block: "center",
+                        });
+                        // Focus on the first input field
+                        const firstInput =
+                          applicationForm.querySelector('input[type="text"]');
+                        if (firstInput) {
+                          setTimeout(() => firstInput.focus(), 500);
+                        }
+                      }
+                    }}
+                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-sm md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 w-full"
+                  >
+                    Apply Now for Scholarship
+                    <ArrowRight className="inline-block ml-2 h-4 w-4 md:h-5 md:w-5" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -1706,7 +1753,7 @@ export default function Index() {
                 style={{ width: "calc(200% + 24px)" }}
               >
                 {/* ADYPU */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
@@ -1715,14 +1762,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       <p>AJEENKYA DY PATIL UNIVERSITY</p>
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Pune • BCA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1734,7 +1781,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1742,7 +1789,7 @@ export default function Index() {
                 </div>
 
                 {/* SAGE University */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
@@ -1751,14 +1798,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1770,7 +1817,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1778,7 +1825,7 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Institute */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
@@ -1787,14 +1834,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       <p>Ghaziabad • B.Tech • AICTE</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1806,7 +1853,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1814,7 +1861,7 @@ export default function Index() {
                 </div>
 
                 {/* Vivekananda Global University */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
@@ -1823,14 +1870,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       <p>Jaipur • B.Tech • UGC</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1842,7 +1889,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1850,7 +1897,7 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam College */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
@@ -1859,14 +1906,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Tamil Nadu • BBA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1878,7 +1925,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1887,7 +1934,7 @@ export default function Index() {
 
                 {/* Duplicate set for seamless loop */}
                 {/* ADYPU */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
@@ -1896,14 +1943,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       AJEENKYA DY PATIL UNIVERSITY
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Pune • BCA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1915,7 +1962,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1923,7 +1970,7 @@ export default function Index() {
                 </div>
 
                 {/* SAGE University */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
@@ -1932,14 +1979,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1951,7 +1998,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1959,7 +2006,7 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Institute */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
@@ -1968,14 +2015,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Ghaziabad • B.Tech • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1987,7 +2034,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -1995,7 +2042,7 @@ export default function Index() {
                 </div>
 
                 {/* Vivekananda Global University */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
@@ -2004,14 +2051,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -2023,7 +2070,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
@@ -2031,7 +2078,7 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam College */}
-                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
@@ -2040,14 +2087,14 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Tamil Nadu • BBA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -2059,7 +2106,7 @@ export default function Index() {
                           "_blank",
                         )
                       }
-                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
                       Book Tour →
                     </button>
