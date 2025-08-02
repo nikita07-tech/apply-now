@@ -42,7 +42,7 @@ const successStories = [
     year: "2021-2023",
     course: "MBA",
     testimonial:
-      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure an internship at FundsRoom.",
+      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a position at Zenoti and an internship at FundsRoom.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
   },
