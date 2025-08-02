@@ -1632,7 +1632,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-navy">
-                          ��4L
+                          <p>₹4L</p>
                         </div>
                         <div className="text-xs text-gray-500">Support</div>
                       </div>
