@@ -30,7 +30,7 @@ const successStories = [
     year: "22-24",
     course: "MBA",
     testimonial:
-      "I am immensely grateful to Sunstone for the incredible international placement opportunity. The unwavering support, exceptional faculty, and comprehensive curriculum played a pivotal role in shaping my career.",
+      "I am immensely grateful to Sunstone for the incredible international placement opportunity at Dhanguard. The unwavering support, exceptional faculty, and comprehensive curriculum played a pivotal role in shaping my career.",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F2be463e1c8b0473bb0fd5f659ac02eae?format=webp&width=800",
   },
@@ -42,7 +42,7 @@ const successStories = [
     year: "2021-2023",
     course: "MBA",
     testimonial:
-      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a high package and an internship at FundsRoom.",
+      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a position at Zenoti and an internship at FundsRoom.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
   },
@@ -54,14 +54,14 @@ const successStories = [
     year: "2022-2024",
     course: "MBA",
     testimonial:
-      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life.",
+      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life, I secured a position at Pivotal Associates.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/samuel-abhishek-mba-2022-24-3c3296?format=webp&width=800",
   },
   {
     id: 4,
     name: "Akash Das",
-    package: "Manforce Group 6.5 LPA",
+    package: "Field Job 6.5 LPA",
     campus: "ADYPU",
     year: "2022-2024",
     course: "MBA",
@@ -252,6 +252,7 @@ export default function Index() {
                       variant="ghost"
                       size="sm"
                       className="hidden md:flex text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
+                      onClick={() => window.open("tel:+918045681999", "_self")}
                     >
                       <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                       <span className="hidden sm:inline">Help</span>
@@ -643,7 +644,7 @@ export default function Index() {
 
               <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  ₹26 LPA
+                  <p>26 LPA</p>
                 </div>
                 <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
@@ -866,9 +867,9 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Professional Stats Grid - Static on Mobile */}
-          <div className="block lg:hidden mb-8">
-            {/* Mobile Static Grid */}
+          {/* Professional Stats Grid - Consistent across all devices */}
+          <div className="mb-8">
+            {/* Unified Grid Layout */}
             <div className="grid grid-cols-2 gap-4">
               <div>
                 {/* Highest Package Card */}
@@ -949,73 +950,6 @@ export default function Index() {
                     Multiple offers
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Desktop Grid */}
-          <div className="hidden lg:grid lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
-            {/* Highest Package Card */}
-            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                ₹26 LPA
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Highest Package
-              </div>
-              <div className="text-gray-600 text-sm">
-                Record-breaking achievement
-              </div>
-            </div>
-
-            {/* ROI Card */}
-            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                63%
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Higher ROI
-              </div>
-              <div className="text-sunstone-navy text-sm">
-                Better return on investment
-              </div>
-            </div>
-
-            {/* Students Placed Card */}
-            <div className="bg-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-gray-300 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <Users className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                5000+
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Students Placed
-              </div>
-              <div className="text-gray-700 text-sm">
-                Successful career launches
-              </div>
-            </div>
-
-            {/* Multiple Offers Card */}
-            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                306
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Students with 2+ Offers
-              </div>
-              <div className="text-gray-600 text-sm">
-                Multiple job offers secured
               </div>
             </div>
           </div>
@@ -1769,10 +1703,10 @@ export default function Index() {
             <div className="relative overflow-hidden">
               <div
                 className="flex space-x-3 animate-scroll-left"
-                style={{ width: "calc(500% + 60px)" }}
+                style={{ width: "calc(200% + 24px)" }}
               >
                 {/* ADYPU */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
@@ -1808,7 +1742,7 @@ export default function Index() {
                 </div>
 
                 {/* SAGE University */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
@@ -1844,7 +1778,7 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Institute */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
@@ -1857,7 +1791,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Ghaziabad • B.Tech • AICTE
+                      <p>Ghaziabad • B.Tech • AICTE</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -1880,7 +1814,7 @@ export default function Index() {
                 </div>
 
                 {/* Vivekananda Global University */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
@@ -1893,7 +1827,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      <p>Jaipur • B.Tech • UGC</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -1916,7 +1850,7 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam College */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
@@ -1953,7 +1887,7 @@ export default function Index() {
 
                 {/* Duplicate set for seamless loop */}
                 {/* ADYPU */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
@@ -1989,7 +1923,7 @@ export default function Index() {
                 </div>
 
                 {/* SAGE University */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
@@ -2025,7 +1959,7 @@ export default function Index() {
                 </div>
 
                 {/* Hi-Tech Institute */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
@@ -2038,7 +1972,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      <p>• Ghaziabad • B.Tech • AICTE</p>
+                      Ghaziabad • B.Tech • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -2055,13 +1989,13 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      <p>Book Tour -&gt;</p>
+                      Book Tour →
                     </button>
                   </div>
                 </div>
 
                 {/* Vivekananda Global University */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F59b6bcb17b9345588c7d09580538f412?format=webp&width=800"
@@ -2074,7 +2008,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      <p>Jaipur • B.Tech • UGC</p>
+                      Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -2097,7 +2031,7 @@ export default function Index() {
                 </div>
 
                 {/* Rathinam College */}
-                <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
+                <div className="flex-shrink-0 w-56 md:w-80 lg:w-96 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
                   <div className="relative h-32 md:h-40">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Ff76f4bbe02f44c8fb202d3c56b0397cb?format=webp"
@@ -2161,14 +2095,6 @@ export default function Index() {
                   Apply Now
                   <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
-                <button
-                  onClick={() =>
-                    window.open("https://sunstone.in/contactus", "_blank")
-                  }
-                  className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all duration-300"
-                >
-                  Book Free Counseling
-                </button>
               </div>
             </div>
           </div>
@@ -2182,7 +2108,7 @@ export default function Index() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
@@ -2204,14 +2130,6 @@ export default function Index() {
                       alt={successStories[currentStoryIndex].name}
                       className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
                     />
-                    <div className="absolute top-3 right-3 z-20">
-                      <div className="bg-sunstone-gold text-sunstone-black px-2 py-1 rounded-full text-sm font-bold shadow-lg">
-                        {successStories[currentStoryIndex].package
-                          .split(" ")
-                          .slice(-2)
-                          .join(" ")}
-                      </div>
-                    </div>
                   </div>
 
                   {/* Content */}
@@ -2229,12 +2147,6 @@ export default function Index() {
                       <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
                         {successStories[currentStoryIndex].course}
                       </span>
-                    </div>
-
-                    <div className="mb-4 p-3 bg-sunstone-gold/10 rounded-xl border-l-4 border-sunstone-gold">
-                      <p className="font-bold text-sunstone-navy text-sm">
-                        {successStories[currentStoryIndex].package}
-                      </p>
                     </div>
 
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -2293,12 +2205,6 @@ export default function Index() {
                         alt={story.name}
                         className="w-20 h-20 rounded-full object-cover border-4 border-sunstone-white z-10 transition-all duration-500 hover:scale-110 shadow-xl"
                       />
-
-                      <div className="absolute top-4 right-4 z-20">
-                        <div className="bg-sunstone-gold text-sunstone-black px-3 py-1 rounded-full text-sm md:text-base font-bold shadow-lg">
-                          {story.package.split(" ").slice(-2).join(" ")}
-                        </div>
-                      </div>
                     </div>
 
                     {/* Content */}
@@ -2316,12 +2222,6 @@ export default function Index() {
                         <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
                           {story.course}
                         </span>
-                      </div>
-
-                      <div className="mb-4 p-3 bg-sunstone-gold/10 rounded-xl border-l-4 border-sunstone-gold">
-                        <p className="font-bold text-sunstone-navy text-sm">
-                          {story.package}
-                        </p>
                       </div>
 
                       <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
@@ -2761,6 +2661,12 @@ export default function Index() {
 
         .animate-scroll-left {
           animation: scroll-left 25s linear infinite;
+        }
+
+        @media (min-width: 768px) {
+          .animate-scroll-left {
+            animation: scroll-left 40s linear infinite;
+          }
         }
 
         .animate-scroll-right {
