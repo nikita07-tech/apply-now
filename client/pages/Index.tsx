@@ -866,9 +866,9 @@ export default function Index() {
             <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Professional Stats Grid - Static on Mobile */}
-          <div className="block lg:hidden mb-8">
-            {/* Mobile Static Grid */}
+          {/* Professional Stats Grid - Consistent across all devices */}
+          <div className="mb-8">
+            {/* Unified Grid Layout */}
             <div className="grid grid-cols-2 gap-4">
               <div>
                 {/* Highest Package Card */}
@@ -2115,7 +2115,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
-                        <p>✓ 10 Certifications</p>
+                        <p>��� 10 Certifications</p>
                       </div>
                     </div>
                     <button
