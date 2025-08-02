@@ -1749,7 +1749,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       <p>AJEENKYA DY PATIL UNIVERSITY</p>
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1785,7 +1785,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1821,7 +1821,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1857,7 +1857,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1893,7 +1893,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1930,7 +1930,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       AJEENKYA DY PATIL UNIVERSITY
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -1966,7 +1966,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2002,7 +2002,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2038,7 +2038,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
@@ -2074,7 +2074,7 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-3">
-                    <h3 className="text-xs font-bold text-sunstone-navy mb-1 truncate">
+                    <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
