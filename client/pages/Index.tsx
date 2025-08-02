@@ -30,7 +30,7 @@ const successStories = [
     year: "22-24",
     course: "MBA",
     testimonial:
-      "I am immensely grateful to Sunstone for the incredible international placement opportunity. The unwavering support, exceptional faculty, and comprehensive curriculum played a pivotal role in shaping my career.",
+      "I am immensely grateful to Sunstone for the incredible international placement opportunity at Dhanguard. The unwavering support, exceptional faculty, and comprehensive curriculum played a pivotal role in shaping my career.",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F2be463e1c8b0473bb0fd5f659ac02eae?format=webp&width=800",
   },
