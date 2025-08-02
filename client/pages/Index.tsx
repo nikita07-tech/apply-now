@@ -1832,7 +1832,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>��� Computer Science</p>
+                        <p>✓ Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
