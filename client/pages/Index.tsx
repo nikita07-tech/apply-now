@@ -54,7 +54,7 @@ const successStories = [
     year: "2022-2024",
     course: "MBA",
     testimonial:
-      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life.",
+      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life, I secured a position at Pivotal Associates.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/samuel-abhishek-mba-2022-24-3c3296?format=webp&width=800",
   },
@@ -1792,7 +1792,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Ghaziabad • B.Tech ��� AICTE
+                      Ghaziabad • B.Tech ����� AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
