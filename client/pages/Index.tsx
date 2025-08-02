@@ -1704,7 +1704,7 @@ export default function Index() {
             <div className="relative overflow-hidden">
               <div
                 className="flex space-x-3 animate-scroll-left"
-                style={{ width: "calc(1000% + 120px)" }}
+                style={{ width: "calc(200% + 24px)" }}
               >
                 {/* ADYPU */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
@@ -1832,7 +1832,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
-                        <p>✓ Computer Science</p>
+                        <p>��� Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
