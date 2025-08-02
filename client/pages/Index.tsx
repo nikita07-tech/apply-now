@@ -1752,7 +1752,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       <p>AJEENKYA DY PATIL UNIVERSITY</p>
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Pune • BCA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -1788,7 +1788,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -1824,7 +1824,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       <p>Ghaziabad • B.Tech • AICTE</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -1860,7 +1860,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       <p>Jaipur • B.Tech • UGC</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -1896,7 +1896,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Tamil Nadu • BBA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -1933,7 +1933,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       AJEENKYA DY PATIL UNIVERSITY
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Pune • BCA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -1969,7 +1969,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       SAGE University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -2005,7 +2005,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Ghaziabad • B.Tech • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -2041,7 +2041,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Vivekananda Global University
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
@@ -2077,7 +2077,7 @@ export default function Index() {
                     <h3 className="text-xs md:text-sm lg:text-base font-bold text-sunstone-navy mb-1 truncate">
                       Rathinam College of Arts & Science
                     </h3>
-                    <p className="text-xs text-gray-600 mb-2">
+                    <p className="text-xs md:text-sm text-gray-600 mb-2">
                       Tamil Nadu • BBA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
