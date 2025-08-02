@@ -2096,14 +2096,7 @@ export default function Index() {
                   Apply Now
                   <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
-                <button
-                  onClick={() =>
-                    window.open("https://sunstone.in/contactus", "_blank")
-                  }
-                  className="bg-transparent border-2 border-sunstone-gold text-sunstone-gold hover:bg-sunstone-gold hover:text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all duration-300"
-                >
-                  Book Free Counseling
-                </button>
+
               </div>
             </div>
           </div>
