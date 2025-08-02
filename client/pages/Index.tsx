@@ -954,8 +954,6 @@ export default function Index() {
             </div>
           </div>
 
-
-
           {/* Additional Stats Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
@@ -2097,7 +2095,6 @@ export default function Index() {
                   Apply Now
                   <ArrowRight className="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </button>
-
               </div>
             </div>
           </div>
@@ -2133,7 +2130,6 @@ export default function Index() {
                       alt={successStories[currentStoryIndex].name}
                       className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
                     />
-
                   </div>
 
                   {/* Content */}
@@ -2152,8 +2148,6 @@ export default function Index() {
                         {successStories[currentStoryIndex].course}
                       </span>
                     </div>
-
-
 
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
                       "{successStories[currentStoryIndex].testimonial}"
@@ -2211,8 +2205,6 @@ export default function Index() {
                         alt={story.name}
                         className="w-20 h-20 rounded-full object-cover border-4 border-sunstone-white z-10 transition-all duration-500 hover:scale-110 shadow-xl"
                       />
-
-
                     </div>
 
                     {/* Content */}
@@ -2231,8 +2223,6 @@ export default function Index() {
                           {story.course}
                         </span>
                       </div>
-
-
 
                       <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
                         "{story.testimonial}"
