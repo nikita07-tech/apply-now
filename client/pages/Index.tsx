@@ -1704,7 +1704,7 @@ export default function Index() {
             <div className="relative overflow-hidden">
               <div
                 className="flex space-x-3 animate-scroll-left"
-                style={{ width: "calc(500% + 60px)" }}
+                style={{ width: "calc(1000% + 120px)" }}
               >
                 {/* ADYPU */}
                 <div className="flex-shrink-0 w-56 md:w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group">
@@ -1828,7 +1828,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      Jaipur • B.Tech ��� UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -1973,7 +1973,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      <p>• Ghaziabad • B.Tech • AICTE</p>
+                      Ghaziabad • B.Tech • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
@@ -1990,7 +1990,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      <p>Book Tour -&gt;</p>
+                      Book Tour →
                     </button>
                   </div>
                 </div>
@@ -2009,7 +2009,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      <p>Jaipur • B.Tech • UGC</p>
+                      Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
