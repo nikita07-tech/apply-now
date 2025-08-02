@@ -1643,9 +1643,15 @@ export default function Index() {
                   </p>
                   <button
                     onClick={() => {
-                      const heroSection = document.querySelector("section");
-                      if (heroSection) {
-                        heroSection.scrollIntoView({ behavior: "smooth" });
+                      // Scroll to the application form in the hero section
+                      const applicationForm = document.querySelector('form');
+                      if (applicationForm) {
+                        applicationForm.scrollIntoView({ behavior: "smooth", block: "center" });
+                        // Focus on the first input field
+                        const firstInput = applicationForm.querySelector('input[type="text"]');
+                        if (firstInput) {
+                          setTimeout(() => firstInput.focus(), 500);
+                        }
                       }
                     }}
                     className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-sm md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 w-full"
