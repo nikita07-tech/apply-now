@@ -42,7 +42,7 @@ const successStories = [
     year: "2021-2023",
     course: "MBA",
     testimonial:
-      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure a high package and an internship at FundsRoom.",
+      "My MBA experience with Sunstone has been incredible. The experienced faculty and comprehensive curriculum helped me secure an internship at FundsRoom.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
   },
@@ -61,7 +61,7 @@ const successStories = [
   {
     id: 4,
     name: "Akash Das",
-    package: "Manforce Group 6.5 LPA",
+    package: "Field Job 6.5 LPA",
     campus: "ADYPU",
     year: "2022-2024",
     course: "MBA",
@@ -1857,7 +1857,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs text-gray-600 mb-2">
-                      Ghaziabad • B.Tech • AICTE
+                      Ghaziabad • B.Tech ��� AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
