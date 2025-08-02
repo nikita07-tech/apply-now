@@ -953,72 +953,7 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Grid */}
-          <div className="hidden lg:grid lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
-            {/* Highest Package Card */}
-            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <Award className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                ₹26 LPA
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Highest Package
-              </div>
-              <div className="text-gray-600 text-sm">
-                Record-breaking achievement
-              </div>
-            </div>
 
-            {/* ROI Card */}
-            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                63%
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Higher ROI
-              </div>
-              <div className="text-sunstone-navy text-sm">
-                Better return on investment
-              </div>
-            </div>
-
-            {/* Students Placed Card */}
-            <div className="bg-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-gray-300 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <Users className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-white" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                5000+
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Students Placed
-              </div>
-              <div className="text-gray-700 text-sm">
-                Successful career launches
-              </div>
-            </div>
-
-            {/* Multiple Offers Card */}
-            <div className="bg-sunstone-white rounded-2xl p-6 lg:p-8 text-center shadow-xl border-2 border-sunstone-navy/20 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 lg:w-16 lg:h-16 bg-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <TrendingUp className="h-6 w-6 lg:h-8 lg:w-8 text-sunstone-black" />
-              </div>
-              <div className="text-2xl lg:text-4xl font-black text-sunstone-navy mb-2 lg:mb-3">
-                306
-              </div>
-              <div className="text-sunstone-black font-bold text-base lg:text-lg mb-1 lg:mb-2">
-                Students with 2+ Offers
-              </div>
-              <div className="text-gray-600 text-sm">
-                Multiple job offers secured
-              </div>
-            </div>
-          </div>
 
           {/* Additional Stats Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
@@ -2115,7 +2050,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
-                        <p>��� 10 Certifications</p>
+                        <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
