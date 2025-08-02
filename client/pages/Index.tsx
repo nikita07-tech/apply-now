@@ -1637,10 +1637,22 @@ export default function Index() {
                   <h4 className="text-xs md:text-xl font-bold text-sunstone-white mb-2">
                     Merit-Based Financial Support
                   </h4>
-                  <p className="text-gray-300 text-xs md:text-sm">
+                  <p className="text-gray-300 text-xs md:text-sm mb-4">
                     Limited scholarships available on first-come, first-served
                     basis for qualifying students
                   </p>
+                  <button
+                    onClick={() => {
+                      const heroSection = document.querySelector("section");
+                      if (heroSection) {
+                        heroSection.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                    className="bg-sunstone-gold hover:bg-sunstone-gold-dark text-black px-6 py-3 rounded-xl font-bold text-sm md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 w-full"
+                  >
+                    Apply Now for Scholarship
+                    <ArrowRight className="inline-block ml-2 h-4 w-4 md:h-5 md:w-5" />
+                  </button>
                 </div>
               </div>
             </div>
