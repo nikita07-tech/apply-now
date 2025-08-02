@@ -1756,7 +1756,7 @@ export default function Index() {
                       Pune • BCA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1792,7 +1792,7 @@ export default function Index() {
                       Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1828,7 +1828,7 @@ export default function Index() {
                       <p>Ghaziabad • B.Tech • AICTE</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1864,7 +1864,7 @@ export default function Index() {
                       <p>Jaipur • B.Tech • UGC</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1900,7 +1900,7 @@ export default function Index() {
                       Tamil Nadu • BBA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1937,7 +1937,7 @@ export default function Index() {
                       Pune • BCA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -1973,7 +1973,7 @@ export default function Index() {
                       Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -2009,7 +2009,7 @@ export default function Index() {
                       Ghaziabad • B.Tech • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Programs</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -2045,7 +2045,7 @@ export default function Index() {
                       Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ Computer Science</p>
                         <p>✓ 10 Certifications</p>
                       </div>
@@ -2081,7 +2081,7 @@ export default function Index() {
                       Tamil Nadu • BBA • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="text-xs text-gray-600 space-y-0.5">
+                      <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
