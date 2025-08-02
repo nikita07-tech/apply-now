@@ -1554,13 +1554,29 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 items-center">
             {/* Left - Scholarship Image */}
             <div className="order-2 lg:order-1 animate-slide-in-left">
-              <div className="relative">
+              <div className="relative cursor-pointer" onClick={() => {
+                // Scroll to the application form in the hero section
+                const applicationForm = document.querySelector('form');
+                if (applicationForm) {
+                  applicationForm.scrollIntoView({ behavior: "smooth", block: "center" });
+                  // Focus on the first input field
+                  const firstInput = applicationForm.querySelector('input[type="text"]');
+                  if (firstInput) {
+                    setTimeout(() => firstInput.focus(), 500);
+                  }
+                }
+              }}>
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
                   alt="Bright Minds Scholarship - Financial support for academic excellence"
-                  className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105"
+                  className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
                 />
+                <div className="absolute inset-0 bg-black/0 hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                  <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
+                    <span className="text-sunstone-navy font-bold text-sm">Click to Apply</span>
+                  </div>
+                </div>
               </div>
             </div>
 
