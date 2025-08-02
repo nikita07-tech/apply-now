@@ -252,6 +252,7 @@ export default function Index() {
                       variant="ghost"
                       size="sm"
                       className="hidden md:flex text-sunstone-navy hover:text-sunstone-navy-dark hover:bg-sunstone-gold/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
+                      onClick={() => window.open("tel:+918045681999", "_self")}
                     >
                       <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
                       <span className="hidden sm:inline">Help</span>
