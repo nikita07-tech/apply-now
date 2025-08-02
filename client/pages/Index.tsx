@@ -643,7 +643,7 @@ export default function Index() {
 
               <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  ₹26 LPA
+                  ���26 LPA
                 </div>
                 <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
                   Highest Package Achieved
@@ -2204,14 +2204,7 @@ export default function Index() {
                       alt={successStories[currentStoryIndex].name}
                       className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
                     />
-                    <div className="absolute top-3 right-3 z-20">
-                      <div className="bg-sunstone-gold text-sunstone-black px-2 py-1 rounded-full text-sm font-bold shadow-lg">
-                        {successStories[currentStoryIndex].package
-                          .split(" ")
-                          .slice(-2)
-                          .join(" ")}
-                      </div>
-                    </div>
+
                   </div>
 
                   {/* Content */}
@@ -2231,11 +2224,7 @@ export default function Index() {
                       </span>
                     </div>
 
-                    <div className="mb-4 p-3 bg-sunstone-gold/10 rounded-xl border-l-4 border-sunstone-gold">
-                      <p className="font-bold text-sunstone-navy text-sm">
-                        {successStories[currentStoryIndex].package}
-                      </p>
-                    </div>
+
 
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
                       "{successStories[currentStoryIndex].testimonial}"
@@ -2294,11 +2283,7 @@ export default function Index() {
                         className="w-20 h-20 rounded-full object-cover border-4 border-sunstone-white z-10 transition-all duration-500 hover:scale-110 shadow-xl"
                       />
 
-                      <div className="absolute top-4 right-4 z-20">
-                        <div className="bg-sunstone-gold text-sunstone-black px-3 py-1 rounded-full text-sm md:text-base font-bold shadow-lg">
-                          {story.package.split(" ").slice(-2).join(" ")}
-                        </div>
-                      </div>
+
                     </div>
 
                     {/* Content */}
@@ -2318,11 +2303,7 @@ export default function Index() {
                         </span>
                       </div>
 
-                      <div className="mb-4 p-3 bg-sunstone-gold/10 rounded-xl border-l-4 border-sunstone-gold">
-                        <p className="font-bold text-sunstone-navy text-sm">
-                          {story.package}
-                        </p>
-                      </div>
+
 
                       <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
                         "{story.testimonial}"
