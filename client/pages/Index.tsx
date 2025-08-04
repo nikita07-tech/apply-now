@@ -624,11 +624,16 @@ export default function Index() {
 
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
-                Experience New Age Education
+                Revolutionizing Higher Education for Tomorrow's Leaders
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
                 MBA • BBA • MCA • BCA • B.Tech
+              </span>
+              <br />
+              <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
+                Transform your career with industry-integrated programs designed by corporate leaders,
+                featuring cutting-edge curriculum, practical learning experiences, and guaranteed placement support.
               </span>
               <br />
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mt-8 sm:mt-12 text-center max-w-6xl mx-auto">
