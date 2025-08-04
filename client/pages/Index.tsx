@@ -645,6 +645,7 @@ export default function Index() {
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">Curriculum for</h3>
                   <p className="text-sunstone-navy text-base font-semibold">Jobs of 2030</p>
+                  <p className="text-gray-600 text-sm mt-2">AI, Data Science & emerging tech skills for future careers</p>
                 </div>
 
                 <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.2s'}}>
@@ -655,6 +656,7 @@ export default function Index() {
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">Corporate Leaders</h3>
                   <p className="text-sunstone-navy text-base font-semibold">Turned Educators</p>
+                  <p className="text-gray-600 text-sm mt-2">Learn from C-suite executives and industry veterans</p>
                 </div>
 
                 <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.4s'}}>
@@ -665,6 +667,7 @@ export default function Index() {
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">Build Your</h3>
                   <p className="text-sunstone-navy text-base font-semibold">First Startup</p>
+                  <p className="text-gray-600 text-sm mt-2">Dedicated incubation support with funding access</p>
                 </div>
 
                 <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.6s'}}>
@@ -675,6 +678,7 @@ export default function Index() {
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">NextGen</h3>
                   <p className="text-sunstone-navy text-base font-semibold">Tech Tools</p>
+                  <p className="text-gray-600 text-sm mt-2">Cutting-edge software and platforms for modern learning</p>
                 </div>
 
                 <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.8s'}}>
@@ -685,6 +689,7 @@ export default function Index() {
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">Practical Learning</h3>
                   <p className="text-sunstone-navy text-base font-semibold">Over Theory</p>
+                  <p className="text-gray-600 text-sm mt-2">Real company projects and hands-on case studies</p>
                 </div>
               </div>
 
