@@ -599,15 +599,26 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Program Overview Banner */}
-      <section className="bg-gradient-to-br from-sunstone-gold/5 via-sunstone-white to-sunstone-navy/5 py-8 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sunstone-gold/5 to-transparent opacity-40"></div>
+      {/* New Age Education Section */}
+      <section className="relative bg-gradient-to-br from-gray-50 via-white to-sunstone-gold/5 py-16 md:py-24 lg:py-32 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-sunstone-navy/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-sunstone-gold/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: '4s'}}></div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/20">
-              <GraduationCap className="h-6 w-6 text-sunstone-gold" />
-              <span className="text-sunstone-navy font-bold text-sm sm:text-lg">
-                <p>Trusted by 5000+ Successful Students</p>
+          {/* Header Section */}
+          <div className="text-center mb-16 md:mb-20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8 border border-sunstone-gold/20 shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-xl flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <span className="text-sunstone-navy font-bold text-lg md:text-xl">
+                Experience New Age Education
               </span>
             </div>
 
