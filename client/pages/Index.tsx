@@ -24,6 +24,42 @@ import { useState } from "react";
 const successStories = [
   {
     id: 1,
+    name: "Jaya Tiwari",
+    package: "Sunstone Graduate",
+    campus: "SRMU",
+    year: "2022-2025",
+    course: "BCA",
+    testimonial:
+      "Sunstone has been a game-changer in my journey. The practical curriculum, supportive faculty, and collaborative environment have sharpened my skills and broadened my perspective. It's more than an institution—it's a community fostering growth and success.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F186690ab4fef44fe970178b31091c6a8?format=webp&width=800",
+  },
+  {
+    id: 2,
+    name: "Balram Jat",
+    package: "Current Student",
+    campus: "JNU",
+    year: "2024-2027",
+    course: "BCA",
+    testimonial:
+      "The admission process at Sunstone was seamless, with clear guidance at every step. The diverse student community and supportive faculty create an engaging learning experience. Modern facilities and a focus on skill development have added immense value to my journey.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F46d9e7da8b4d4986a23ac7bc3bc57c77?format=webp&width=800",
+  },
+  {
+    id: 3,
+    name: "Devraj Tripathi",
+    package: "Current Student",
+    campus: "SRMU",
+    year: "2022-2026",
+    course: "B.Tech",
+    testimonial:
+      "Sunstone has been a game-changer for me! The hands-on learning, expert faculty, and supportive environment have boosted my skills and confidence. It's more than just an institution—it's a community that nurtures success.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F46d9c36d98b44d46827f381a7afe15ec?format=webp&width=800",
+  },
+  {
+    id: 4,
     name: "Pulkit Singh",
     package: "Dhanguard 10 LPA",
     campus: "GDG",
@@ -35,7 +71,7 @@ const successStories = [
       "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F2be463e1c8b0473bb0fd5f659ac02eae?format=webp&width=800",
   },
   {
-    id: 2,
+    id: 5,
     name: "Harpreet Kaur",
     package: "Zenoti 8.6 LPA",
     campus: "RBU",
@@ -47,31 +83,7 @@ const successStories = [
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
   },
   {
-    id: 3,
-    name: "Samuel Jaya Abishek",
-    package: "Pivotal Associates 12 LPA",
-    campus: "MRU",
-    year: "2022-2024",
-    course: "MBA",
-    testimonial:
-      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life, I secured a position at Pivotal Associates.",
-    image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/samuel-abhishek-mba-2022-24-3c3296?format=webp&width=800",
-  },
-  {
-    id: 4,
-    name: "Akash Das",
-    package: "Field Job 6.5 LPA",
-    campus: "ADYPU",
-    year: "2022-2024",
-    course: "MBA",
-    testimonial:
-      "Sunstone equipped me with in-demand industry skills, and I'm grateful for the guidance from Dr. Omkar Dange and the dedicated faculty. The paid internships and live projects greatly boosted my resume.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb0f8c68af5ba46a2bd76dedd450e2c0d",
-  },
-  {
-    id: 5,
+    id: 6,
     name: "Bijan Biswas",
     package: "Piramal Capital 7 LPA",
     campus: "RGI",
@@ -81,18 +93,6 @@ const successStories = [
       "I would like to express my gratitude to Sunstone for the invaluable support and guidance that helped me secure a placement at Piramal Capital and Housing Finance Limited.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/1684043070051-670752?format=webp&width=800",
-  },
-  {
-    id: 6,
-    name: "Anushree Soni",
-    package: "Hike Education 7 LPA",
-    campus: "SAGE Bhopal",
-    year: "23-25",
-    course: "MBA",
-    testimonial:
-      "I am incredibly grateful to Sunstone for their constant support and guidance, which were pivotal in helping me secure a placement as a Business Development Manager at Hike Education.",
-    image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/anushree-soni-sageb-1-0bcdb6?format=webp&width=800",
   },
 ];
 
@@ -105,7 +105,7 @@ const stats = [
     color: "text-sunstone-gold",
   },
   { value: "5000+", label: "Students Placed", color: "text-sunstone-gold" },
-  { value: "1200+", label: "Total Recruiters", color: "text-sunstone-gold" },
+  { value: "1400+", label: "Total Offers", color: "text-sunstone-gold" },
 ];
 
 const comparisonData = [
@@ -220,10 +220,10 @@ export default function Index() {
               <div className="mb-4 sm:mb-6 md:mb-8">
                 <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Big Dreams Need
+                    Your Dream Career Starts
                   </span>
                   <span className="block text-sunstone-gold">
-                    the Right Start
+                    with the Right Course
                   </span>
                 </h1>
               </div>
@@ -613,12 +613,35 @@ export default function Index() {
 
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
-                Pursue Your Dream Degree
+                Experience New Age Education
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
+              <br />
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-6 text-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Curriculum for</span>
+                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Jobs of 2030</span>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Corporate Leaders</span>
+                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Turned Educators</span>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Build Your</span>
+                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">First Startup</span>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">NextGen</span>
+                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Tech Tools</span>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Practical Learning</span>
+                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Over Theory</span>
+                </div>
+              </div>
               <br />
               <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
                 at 25+ Premier Colleges Across India
@@ -958,13 +981,13 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                1200+
+                1400+
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                Total Recruiters
+                Total Offers
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                Industry partners hiring our graduates
+                5000+ students placed with 7× more companies vs management institutes
               </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
