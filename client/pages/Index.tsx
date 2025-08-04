@@ -220,7 +220,7 @@ export default function Index() {
               <div className="mb-4 sm:mb-6 md:mb-8">
                 <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Your Dream Career Starts
+                    Engineer your future
                   </span>
                   <span className="block text-sunstone-gold">
                     with the Right Course
@@ -1638,7 +1638,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-gold">
-                          ₹6L
+                          ���6L
                         </div>
                         <div className="text-xs text-gray-500">Max Award</div>
                       </div>
@@ -2120,7 +2120,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
-                        <p>✓ 10 Certifications</p>
+                        <p>��� 10 Certifications</p>
                       </div>
                     </div>
                     <button
