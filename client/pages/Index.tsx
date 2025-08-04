@@ -738,13 +738,13 @@ export default function Index() {
                   {/* Duplicate set for seamless loop */}
                   <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20">
                     <div className="text-2xl font-black text-sunstone-navy mb-2">
-                      5000+
+                      7×
                     </div>
                     <div className="text-sunstone-gold font-semibold text-sm mb-1">
-                      Students Successfully Placed
+                      more companies
                     </div>
                     <div className="text-gray-600 text-xs">
-                      Across top companies nationwide
+                      vs management institutes
                     </div>
                   </div>
 
