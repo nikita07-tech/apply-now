@@ -983,7 +983,7 @@ export default function Index() {
                 Total Offers
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                5000+ students placed with 7× more companies vs management institutes
+                offers
               </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
