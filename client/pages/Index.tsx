@@ -636,125 +636,55 @@ export default function Index() {
                 featuring cutting-edge curriculum, practical learning experiences, and guaranteed placement support.
               </span>
               <br />
-              {/* Key Features Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16 max-w-7xl mx-auto">
-                <div className="group bg-gradient-to-br from-white via-white to-sunstone-gold/5 rounded-3xl p-8 md:p-10 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 via-orange-400 to-orange-600 rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-xl">
-                    <svg className="w-10 h-10 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto">
+                <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-sunstone-navy text-xl md:text-2xl font-bold mb-4 group-hover:text-sunstone-gold transition-colors duration-500">Future-Ready Curriculum</h3>
-                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">Industry-aligned programs featuring AI, Data Science, Digital Marketing, and emerging technologies. Designed by Fortune 500 leaders.</p>
-                  <div className="flex items-center space-x-2 text-sunstone-gold font-semibold">
-                    <span className="text-sm">Learn More</span>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">Curriculum for</h3>
+                  <p className="text-sunstone-navy text-base font-semibold">Jobs of 2030</p>
                 </div>
 
-                <div className="group bg-gradient-to-br from-white via-white to-sunstone-gold/5 rounded-3xl p-8 md:p-10 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu" style={{animationDelay: '0.2s'}}>
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-xl">
-                    <svg className="w-10 h-10 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.2s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
-                  <h3 className="text-sunstone-navy text-xl md:text-2xl font-bold mb-4 group-hover:text-sunstone-gold transition-colors duration-500">Industry Expert Faculty</h3>
-                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">Learn from corporate leaders, C-suite executives, and industry veterans with 15+ years experience at top companies like Google, Microsoft, and McKinsey.</p>
-                  <div className="flex items-center space-x-2 text-sunstone-gold font-semibold">
-                    <span className="text-sm">Meet Faculty</span>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">Corporate Leaders</h3>
+                  <p className="text-sunstone-navy text-base font-semibold">Turned Educators</p>
                 </div>
 
-                <div className="group bg-gradient-to-br from-white via-white to-sunstone-gold/5 rounded-3xl p-8 md:p-10 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu" style={{animationDelay: '0.4s'}}>
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 via-purple-400 to-purple-600 rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-xl">
-                    <svg className="w-10 h-10 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.4s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                   </div>
-                  <h3 className="text-sunstone-navy text-xl md:text-2xl font-bold mb-4 group-hover:text-sunstone-gold transition-colors duration-500">Entrepreneurship Focus</h3>
-                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">Build your startup with dedicated incubation support, mentorship from successful entrepreneurs, and access to funding networks worth ₹500+ Crores.</p>
-                  <div className="flex items-center space-x-2 text-sunstone-gold font-semibold">
-                    <span className="text-sm">Start Journey</span>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">Build Your</h3>
+                  <p className="text-sunstone-navy text-base font-semibold">First Startup</p>
                 </div>
 
-                <div className="group bg-gradient-to-br from-white via-white to-sunstone-gold/5 rounded-3xl p-8 md:p-10 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu" style={{animationDelay: '0.6s'}}>
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-green-500 via-green-400 to-green-600 rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-xl">
-                    <svg className="w-10 h-10 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.6s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                     </svg>
                   </div>
-                  <h3 className="text-sunstone-navy text-xl md:text-2xl font-bold mb-4 group-hover:text-sunstone-gold transition-colors duration-500">Guaranteed Placement</h3>
-                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">100% placement guarantee with our network of 1400+ partner companies. Average salary 2.5x higher than traditional programs.</p>
-                  <div className="flex items-center space-x-2 text-sunstone-gold font-semibold">
-                    <span className="text-sm">View Partners</span>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">NextGen</h3>
+                  <p className="text-sunstone-navy text-base font-semibold">Tech Tools</p>
                 </div>
 
-                <div className="group bg-gradient-to-br from-white via-white to-sunstone-gold/5 rounded-3xl p-8 md:p-10 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu" style={{animationDelay: '0.8s'}}>
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-red-500 via-red-400 to-red-600 rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-xl">
-                    <svg className="w-10 h-10 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center" style={{animationDelay: '0.8s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   </div>
-                  <h3 className="text-sunstone-navy text-xl md:text-2xl font-bold mb-4 group-hover:text-sunstone-gold transition-colors duration-500">Experiential Learning</h3>
-                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">Learn by doing with real company projects, international immersions, and hands-on case studies. 70% practical, 30% theory.</p>
-                  <div className="flex items-center space-x-2 text-sunstone-gold font-semibold">
-                    <span className="text-sm">Experience Now</span>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-
-                <div className="group bg-gradient-to-br from-white via-white to-sunstone-gold/5 rounded-3xl p-8 md:p-10 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu" style={{animationDelay: '1s'}}>
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-indigo-500 via-indigo-400 to-indigo-600 rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-xl">
-                    <svg className="w-10 h-10 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                    </svg>
-                  </div>
-                  <h3 className="text-sunstone-navy text-xl md:text-2xl font-bold mb-4 group-hover:text-sunstone-gold transition-colors duration-500">Global Opportunities</h3>
-                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">Study abroad programs, international internships, and global campus experiences across USA, UK, Canada, and Singapore.</p>
-                  <div className="flex items-center space-x-2 text-sunstone-gold font-semibold">
-                    <span className="text-sm">Explore Global</span>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              {/* Call to Action */}
-              <div className="mt-16 md:mt-20 text-center">
-                <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 md:p-12 shadow-2xl border border-sunstone-gold/20">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                    Ready to Transform Your Future?
-                  </h3>
-                  <p className="text-sunstone-gold-light text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                    Join 5000+ students who chose the new age education approach and landed their dream careers
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button
-                      onClick={() => document.getElementById('heroForm')?.scrollIntoView({ behavior: 'smooth' })}
-                      className="bg-gradient-to-r from-sunstone-gold to-sunstone-gold-dark text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl"
-                    >
-                      Apply Now - Limited Seats
-                    </button>
-                    <button className="text-sunstone-gold border-2 border-sunstone-gold px-8 py-4 rounded-2xl font-bold text-lg hover:bg-sunstone-gold hover:text-white transition-all duration-300">
-                      Download Brochure
-                    </button>
-                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">Practical Learning</h3>
+                  <p className="text-sunstone-navy text-base font-semibold">Over Theory</p>
                 </div>
               </div>
 
@@ -2003,7 +1933,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>✓ BBA (General)</p>
+                        <p>�� BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
