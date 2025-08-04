@@ -620,81 +620,63 @@ export default function Index() {
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
-              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-6 text-center">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Curriculum for</span>
-                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Jobs of 2030</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mt-8 sm:mt-12 text-center max-w-6xl mx-auto">
+                <div className="group bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/30 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-110 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu animate-float-gentle">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-lg group-hover:shadow-xl">
+                    <svg className="w-8 h-8 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-gold text-base sm:text-lg font-black block mb-2 group-hover:text-sunstone-gold-light transition-colors duration-500">Curriculum for</h3>
+                  <p className="text-white text-sm sm:text-base font-bold opacity-90 group-hover:opacity-100 transition-opacity duration-500">Jobs of 2030</p>
+                  <div className="mt-3 h-1 w-8 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Corporate Leaders</span>
-                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Turned Educators</span>
+                <div className="group bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/30 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-110 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu animate-float-gentle" style={{animationDelay: '0.2s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-lg group-hover:shadow-xl">
+                    <svg className="w-8 h-8 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-gold text-base sm:text-lg font-black block mb-2 group-hover:text-sunstone-gold-light transition-colors duration-500">Corporate Leaders</h3>
+                  <p className="text-white text-sm sm:text-base font-bold opacity-90 group-hover:opacity-100 transition-opacity duration-500">Turned Educators</p>
+                  <div className="mt-3 h-1 w-8 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Build Your</span>
-                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">First Startup</span>
+                <div className="group bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/30 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-110 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu animate-float-gentle" style={{animationDelay: '0.4s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-lg group-hover:shadow-xl">
+                    <svg className="w-8 h-8 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-gold text-base sm:text-lg font-black block mb-2 group-hover:text-sunstone-gold-light transition-colors duration-500">Build Your</h3>
+                  <p className="text-white text-sm sm:text-base font-bold opacity-90 group-hover:opacity-100 transition-opacity duration-500">First Startup</p>
+                  <div className="mt-3 h-1 w-8 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">NextGen</span>
-                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Tech Tools</span>
+                <div className="group bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/30 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-110 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu animate-float-gentle" style={{animationDelay: '0.6s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-lg group-hover:shadow-xl">
+                    <svg className="w-8 h-8 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-gold text-base sm:text-lg font-black block mb-2 group-hover:text-sunstone-gold-light transition-colors duration-500">NextGen</h3>
+                  <p className="text-white text-sm sm:text-base font-bold opacity-90 group-hover:opacity-100 transition-opacity duration-500">Tech Tools</p>
+                  <div className="mt-3 h-1 w-8 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <span className="text-sunstone-gold text-xs sm:text-sm font-bold block">Practical Learning</span>
-                  <span className="text-sunstone-navy text-xs sm:text-sm font-semibold">Over Theory</span>
+                <div className="group bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/30 hover:border-sunstone-gold/60 transition-all duration-700 hover:scale-110 hover:shadow-2xl hover:shadow-sunstone-gold/20 transform-gpu animate-float-gentle" style={{animationDelay: '0.8s'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-gold via-sunstone-gold-light to-sunstone-gold-dark rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-all duration-700 shadow-lg group-hover:shadow-xl">
+                    <svg className="w-8 h-8 text-white transition-transform duration-500 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-gold text-base sm:text-lg font-black block mb-2 group-hover:text-sunstone-gold-light transition-colors duration-500">Practical Learning</h3>
+                  <p className="text-white text-sm sm:text-base font-bold opacity-90 group-hover:opacity-100 transition-opacity duration-500">Over Theory</p>
+                  <div className="mt-3 h-1 w-8 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 </div>
               </div>
-              <br />
-              <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
-                at 25+ Premier Colleges Across India
-              </span>
+
             </h2>
 
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 max-w-4xl mx-auto px-3 sm:px-4">
-              <div className="bg-sunstone-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  5000+
-                </div>
-                <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">
-                  Students Successfully Placed
-                </div>
-                <div
-                  className="text-xs mt-1 sm:mt-2"
-                  style={{ color: "rgba(74, 74, 74, 1)" }}
-                >
-                  Across top companies nationwide
-                </div>
-              </div>
 
-              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  <p>26 LPA</p>
-                </div>
-                <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
-                  Highest Package Achieved
-                </div>
-                <div
-                  className="text-xs mt-1 sm:mt-2"
-                  style={{ color: "rgba(74, 74, 74, 1)" }}
-                >
-                  Dreams turned into reality
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  306
-                </div>
-                <div className="text-sunstone-gold-light font-semibold text-xs sm:text-sm md:text-base">
-                  Multiple Offer Winners
-                </div>
-                <div
-                  className="text-xs mt-1 sm:mt-2"
-                  style={{ color: "rgba(74, 74, 74, 1)" }}
-                >
-                  Students with 2+ job offers
-                </div>
-              </div>
-            </div>
 
             {/* Mobile Moving Carousel */}
             <div className="block md:hidden">
