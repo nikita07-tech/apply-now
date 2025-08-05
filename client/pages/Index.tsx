@@ -1013,7 +1013,7 @@ export default function Index() {
             </div>
 
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
-              7× More Companies Compared to Management Institutes - Professional Course Excellence
+              <p>Our Impact Speaks for Itself</p>
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
               Real results from real students who chose to transform their
