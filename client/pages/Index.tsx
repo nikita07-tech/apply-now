@@ -220,10 +220,10 @@ export default function Index() {
               <div className="mb-4 sm:mb-6 md:mb-8">
                 <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Engineer your future
+                    Master Tomorrow's Skills Today
                   </span>
                   <span className="block text-sunstone-gold">
-                    with the Right Course
+                    Choose Your Elite Professional Course
                   </span>
                 </h1>
               </div>
