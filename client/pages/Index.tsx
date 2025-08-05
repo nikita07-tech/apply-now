@@ -285,7 +285,7 @@ export default function Index() {
                 </div>
 
                 <form
-                  className="space-y-2 sm:space-y-3 md:space-y-4"
+                  className="space-y-3 sm:space-y-3 md:space-y-4"
                   onSubmit={(e) => {
                     e.preventDefault();
                     alert(
