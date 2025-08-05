@@ -311,7 +311,7 @@ export default function Index() {
                       I want to pursue*
                     </label>
                     <select
-                      className="w-full px-4 sm:px-4 py-3 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-base sm:text-base text-sunstone-black font-medium"
+                      className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none bg-sunstone-white text-sm sm:text-base text-sunstone-black font-medium"
                       required
                     >
                       <option
