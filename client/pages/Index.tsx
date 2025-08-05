@@ -218,7 +218,7 @@ export default function Index() {
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left order-1 pt-4 sm:pt-0">
               <div className="mb-6 sm:mb-6 md:mb-8">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+                <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     Master Tomorrow's Skills Today
                   </span>
