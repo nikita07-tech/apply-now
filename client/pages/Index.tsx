@@ -607,12 +607,12 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-2.5 sm:py-3 md:py-4 text-sm sm:text-lg md:text-xl font-bold rounded-xl shadow-lg"
+                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-4 sm:py-3 md:py-4 text-lg sm:text-lg md:text-xl font-bold rounded-xl shadow-lg"
                   >
                     Send OTP
                   </Button>
 
-                  <p className="text-xs text-gray-500 text-center px-1 sm:px-2 leading-tight">
+                  <p className="text-sm sm:text-xs text-gray-500 text-center px-2 sm:px-2 leading-tight">
                     By clicking "Send OTP", you agree to our Terms & Conditions
                     and Privacy Policy
                   </p>
