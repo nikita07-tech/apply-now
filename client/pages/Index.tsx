@@ -608,7 +608,7 @@ export default function Index() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-4 sm:py-3 md:py-4 text-lg sm:text-lg md:text-xl font-bold rounded-xl shadow-lg"
+                    className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-3 sm:py-3 md:py-4 text-base sm:text-lg md:text-xl font-bold rounded-lg sm:rounded-xl shadow-lg"
                   >
                     Send OTP
                   </Button>
