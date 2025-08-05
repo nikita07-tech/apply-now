@@ -245,7 +245,8 @@ export default function Index() {
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                      <span className="text-sunstone-gold">◆</span> Choose from 9+ Premium Programs
+                      <span className="text-sunstone-gold">◆</span> Choose from
+                      9+ Premium Programs
                       <span className="text-sunstone-gold">◆</span>
                     </p>
                   </div>
