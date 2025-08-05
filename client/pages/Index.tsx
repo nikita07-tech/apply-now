@@ -828,6 +828,238 @@ export default function Index() {
                   </p>
                 </div>
               </div>
+
+              {/* Mobile Horizontal Scrolling */}
+              <div className="block md:hidden mt-8">
+                <div className="relative overflow-hidden">
+                  <div
+                    className="flex space-x-4 animate-scroll-right px-4"
+                    style={{ width: "calc(200% + 32px)" }}
+                  >
+                    {/* Card 1 */}
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 10V3L4 14h7v7l9-11h-7z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Curriculum for
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        Jobs of 2030
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        AI, Data Science & emerging tech skills for future careers
+                      </p>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Corporate Leaders
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        Turned Educators
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        Learn from C-suite executives and industry veterans
+                      </p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Build Your
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        First Startup
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        Dedicated incubation support with funding access
+                      </p>
+                    </div>
+
+                    {/* Card 4 */}
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        NextGen
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        Tech Tools
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        Cutting-edge software and platforms for modern learning
+                      </p>
+                    </div>
+
+                    {/* Card 5 */}
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Practical Learning
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        Over Theory
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        Real company projects and hands-on case studies
+                      </p>
+                    </div>
+
+                    {/* Duplicate set for seamless loop */}
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M13 10V3L4 14h7v7l9-11h-7z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Curriculum for
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        Jobs of 2030
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        AI, Data Science & emerging tech skills for future careers
+                      </p>
+                    </div>
+
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Corporate Leaders
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        Turned Educators
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        Learn from C-suite executives and industry veterans
+                      </p>
+                    </div>
+
+                    <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                        <svg
+                          className="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                        Build Your
+                      </h3>
+                      <p className="text-sunstone-navy text-base font-semibold">
+                        First Startup
+                      </p>
+                      <p className="text-gray-600 text-sm mt-2">
+                        Dedicated incubation support with funding access
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </h2>
 
             {/* Mobile Moving Carousel */}
