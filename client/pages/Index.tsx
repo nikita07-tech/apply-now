@@ -613,7 +613,7 @@ export default function Index() {
                     Send OTP
                   </Button>
 
-                  <p className="text-sm sm:text-xs text-gray-500 text-center px-2 sm:px-2 leading-tight">
+                  <p className="text-xs sm:text-xs text-gray-500 text-center px-1 sm:px-2 leading-tight">
                     By clicking "Send OTP", you agree to our Terms & Conditions
                     and Privacy Policy
                   </p>
@@ -2359,7 +2359,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      Jaipur • B.Tech • UGC
+                      Jaipur • B.Tech �� UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
