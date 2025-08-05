@@ -679,7 +679,8 @@ export default function Index() {
                 support.
               </span>
               <br />
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto">
+              {/* Desktop Grid Layout */}
+              <div className="hidden md:grid grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto">
                 <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
                     <svg
