@@ -226,6 +226,30 @@ export default function Index() {
                     Choose Your Elite Professional Course
                   </span>
                 </h1>
+
+                {/* Dynamic Course Showcase */}
+                <div className="mb-4 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
+                  <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 px-2 sm:px-4 lg:px-0">
+                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300">
+                      MBA・PGDM
+                    </span>
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300">
+                      BBA・B.Tech
+                    </span>
+                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300">
+                      BCA・MCA
+                    </span>
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300">
+                      B.Com・B.Sc・M.Sc
+                    </span>
+                  </div>
+                  <div className="text-center lg:text-left mt-3">
+                    <p className="text-xs sm:text-sm text-gray-300 font-medium">
+                      <span className="text-sunstone-gold">◆</span> Choose from 9+ Premium Programs
+                      <span className="text-sunstone-gold">◆</span>
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-2 sm:px-4 lg:px-0">
