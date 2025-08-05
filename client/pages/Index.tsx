@@ -252,7 +252,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <p className="text-base sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
