@@ -24,6 +24,42 @@ import { useState } from "react";
 const successStories = [
   {
     id: 1,
+    name: "Jaya Tiwari",
+    package: "Sunstone Graduate",
+    campus: "SRMU",
+    year: "2022-2025",
+    course: "BCA",
+    testimonial:
+      "Sunstone has been a game-changer in my journey. The practical curriculum, supportive faculty, and collaborative environment have sharpened my skills and broadened my perspective. It's more than an institution—it's a community fostering growth and success.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F186690ab4fef44fe970178b31091c6a8?format=webp&width=800",
+  },
+  {
+    id: 2,
+    name: "Balram Jat",
+    package: "Current Student",
+    campus: "JNU",
+    year: "2024-2027",
+    course: "BCA",
+    testimonial:
+      "The admission process at Sunstone was seamless, with clear guidance at every step. The diverse student community and supportive faculty create an engaging learning experience. Modern facilities and a focus on skill development have added immense value to my journey.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F46d9e7da8b4d4986a23ac7bc3bc57c77?format=webp&width=800",
+  },
+  {
+    id: 3,
+    name: "Devraj Tripathi",
+    package: "Current Student",
+    campus: "SRMU",
+    year: "2022-2026",
+    course: "B.Tech",
+    testimonial:
+      "Sunstone has been a game-changer for me! The hands-on learning, expert faculty, and supportive environment have boosted my skills and confidence. It's more than just an institution—it's a community that nurtures success.",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F46d9c36d98b44d46827f381a7afe15ec?format=webp&width=800",
+  },
+  {
+    id: 4,
     name: "Pulkit Singh",
     package: "Dhanguard 10 LPA",
     campus: "GDG",
@@ -35,7 +71,7 @@ const successStories = [
       "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F2be463e1c8b0473bb0fd5f659ac02eae?format=webp&width=800",
   },
   {
-    id: 2,
+    id: 5,
     name: "Harpreet Kaur",
     package: "Zenoti 8.6 LPA",
     campus: "RBU",
@@ -47,31 +83,7 @@ const successStories = [
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/harpreet-kaur-mba-2021-0fb231?format=webp&width=800",
   },
   {
-    id: 3,
-    name: "Samuel Jaya Abishek",
-    package: "Pivotal Associates 12 LPA",
-    campus: "MRU",
-    year: "2022-2024",
-    course: "MBA",
-    testimonial:
-      "My MBA in Finance and Analytics at Malla Reddy University powered by Sunstone has been an amazing experience. With excellent faculty support, industry expert lectures, and enriching campus life, I secured a position at Pivotal Associates.",
-    image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/samuel-abhishek-mba-2022-24-3c3296?format=webp&width=800",
-  },
-  {
-    id: 4,
-    name: "Akash Das",
-    package: "Field Job 6.5 LPA",
-    campus: "ADYPU",
-    year: "2022-2024",
-    course: "MBA",
-    testimonial:
-      "Sunstone equipped me with in-demand industry skills, and I'm grateful for the guidance from Dr. Omkar Dange and the dedicated faculty. The paid internships and live projects greatly boosted my resume.",
-    image:
-      "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb0f8c68af5ba46a2bd76dedd450e2c0d",
-  },
-  {
-    id: 5,
+    id: 6,
     name: "Bijan Biswas",
     package: "Piramal Capital 7 LPA",
     campus: "RGI",
@@ -81,18 +93,6 @@ const successStories = [
       "I would like to express my gratitude to Sunstone for the invaluable support and guidance that helped me secure a placement at Piramal Capital and Housing Finance Limited.",
     image:
       "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/1684043070051-670752?format=webp&width=800",
-  },
-  {
-    id: 6,
-    name: "Anushree Soni",
-    package: "Hike Education 7 LPA",
-    campus: "SAGE Bhopal",
-    year: "23-25",
-    course: "MBA",
-    testimonial:
-      "I am incredibly grateful to Sunstone for their constant support and guidance, which were pivotal in helping me secure a placement as a Business Development Manager at Hike Education.",
-    image:
-      "https://cdn.builder.io/api/v1/assets/e6da493dd54948398735dc4759779933/anushree-soni-sageb-1-0bcdb6?format=webp&width=800",
   },
 ];
 
@@ -105,7 +105,7 @@ const stats = [
     color: "text-sunstone-gold",
   },
   { value: "5000+", label: "Students Placed", color: "text-sunstone-gold" },
-  { value: "1200+", label: "Total Recruiters", color: "text-sunstone-gold" },
+  { value: "1400+", label: "Total Offers", color: "text-sunstone-gold" },
 ];
 
 const comparisonData = [
@@ -220,10 +220,10 @@ export default function Index() {
               <div className="mb-4 sm:mb-6 md:mb-8">
                 <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Big Dreams Need
+                    Engineer your future
                   </span>
                   <span className="block text-sunstone-gold">
-                    the Right Start
+                    with the Right Course
                   </span>
                 </h1>
               </div>
@@ -599,79 +599,210 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Program Overview Banner */}
-      <section className="bg-gradient-to-br from-sunstone-gold/5 via-sunstone-white to-sunstone-navy/5 py-8 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sunstone-gold/5 to-transparent opacity-40"></div>
+      {/* New Age Education Section */}
+      <section className="relative bg-gradient-to-br from-gray-50 via-white to-sunstone-gold/5 py-16 md:py-24 lg:py-32 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
+          <div
+            className="absolute bottom-20 right-20 w-48 h-48 bg-sunstone-navy/5 rounded-full blur-3xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
+          <div
+            className="absolute top-1/2 left-1/4 w-24 h-24 bg-sunstone-gold/5 rounded-full blur-2xl animate-pulse"
+            style={{ animationDelay: "4s" }}
+          ></div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/20">
-              <GraduationCap className="h-6 w-6 text-sunstone-gold" />
-              <span className="text-sunstone-navy font-bold text-sm sm:text-lg">
-                <p>Trusted by 5000+ Successful Students</p>
+          {/* Header Section */}
+          <div className="text-center mb-16 md:mb-20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8 border border-sunstone-gold/20 shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-xl flex items-center justify-center">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <span className="text-sunstone-navy font-bold text-lg md:text-xl">
+                Experience New Age Education
               </span>
             </div>
 
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
-                Pursue Your Dream Degree
+                Revolutionizing Higher Education for Tomorrow's Leaders
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
                 MBA • BBA • MCA • BCA • B.Tech
               </span>
               <br />
-              <span className="text-sunstone-navy text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium">
-                at 25+ Premier Colleges Across India
+              <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
+                Transform your career with industry-integrated programs designed
+                by corporate leaders, featuring cutting-edge curriculum,
+                practical learning experiences, and guaranteed placement
+                support.
               </span>
+              <br />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto">
+                <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                    Curriculum for
+                  </h3>
+                  <p className="text-sunstone-navy text-base font-semibold">
+                    Jobs of 2030
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    AI, Data Science & emerging tech skills for future careers
+                  </p>
+                </div>
+
+                <div
+                  className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style={{ animationDelay: "0.2s" }}
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                    Corporate Leaders
+                  </h3>
+                  <p className="text-sunstone-navy text-base font-semibold">
+                    Turned Educators
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Learn from C-suite executives and industry veterans
+                  </p>
+                </div>
+
+                <div
+                  className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style={{ animationDelay: "0.4s" }}
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                    Build Your
+                  </h3>
+                  <p className="text-sunstone-navy text-base font-semibold">
+                    First Startup
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Dedicated incubation support with funding access
+                  </p>
+                </div>
+
+                <div
+                  className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style={{ animationDelay: "0.6s" }}
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                    NextGen
+                  </h3>
+                  <p className="text-sunstone-navy text-base font-semibold">
+                    Tech Tools
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Cutting-edge software and platforms for modern learning
+                  </p>
+                </div>
+
+                <div
+                  className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style={{ animationDelay: "0.8s" }}
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                    Practical Learning
+                  </h3>
+                  <p className="text-sunstone-navy text-base font-semibold">
+                    Over Theory
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Real company projects and hands-on case studies
+                  </p>
+                </div>
+              </div>
             </h2>
-
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 max-w-4xl mx-auto px-3 sm:px-4">
-              <div className="bg-sunstone-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border border-sunstone-gold/20 transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  5000+
-                </div>
-                <div className="text-sunstone-gold font-semibold text-xs sm:text-sm md:text-base">
-                  Students Successfully Placed
-                </div>
-                <div
-                  className="text-xs mt-1 sm:mt-2"
-                  style={{ color: "rgba(74, 74, 74, 1)" }}
-                >
-                  Across top companies nationwide
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  <p>26 LPA</p>
-                </div>
-                <div className="text-sunstone-gold-dark font-semibold text-xs sm:text-sm md:text-base">
-                  Highest Package Achieved
-                </div>
-                <div
-                  className="text-xs mt-1 sm:mt-2"
-                  style={{ color: "rgba(74, 74, 74, 1)" }}
-                >
-                  Dreams turned into reality
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl transform hover:scale-105 transition-all duration-300">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-sunstone-navy mb-1 sm:mb-2">
-                  306
-                </div>
-                <div className="text-sunstone-gold-light font-semibold text-xs sm:text-sm md:text-base">
-                  Multiple Offer Winners
-                </div>
-                <div
-                  className="text-xs mt-1 sm:mt-2"
-                  style={{ color: "rgba(74, 74, 74, 1)" }}
-                >
-                  Students with 2+ job offers
-                </div>
-              </div>
-            </div>
 
             {/* Mobile Moving Carousel */}
             <div className="block md:hidden">
@@ -682,13 +813,13 @@ export default function Index() {
                 >
                   <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20 snap-start">
                     <div className="text-2xl font-black text-sunstone-navy mb-2">
-                      5000+
+                      7×
                     </div>
                     <div className="text-sunstone-gold font-semibold text-sm mb-1">
-                      Students Successfully Placed
+                      more companies
                     </div>
                     <div className="text-gray-600 text-xs">
-                      Across top companies nationwide
+                      vs management institutes
                     </div>
                   </div>
 
@@ -719,13 +850,13 @@ export default function Index() {
                   {/* Duplicate set for seamless loop */}
                   <div className="flex-shrink-0 w-64 bg-sunstone-white rounded-xl p-4 shadow-xl border border-sunstone-gold/20">
                     <div className="text-2xl font-black text-sunstone-navy mb-2">
-                      5000+
+                      7×
                     </div>
                     <div className="text-sunstone-gold font-semibold text-sm mb-1">
-                      Students Successfully Placed
+                      more companies
                     </div>
                     <div className="text-gray-600 text-xs">
-                      Across top companies nationwide
+                      vs management institutes
                     </div>
                   </div>
 
@@ -958,21 +1089,19 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                1200+
+                1400+
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                Total Recruiters
+                Total Offers
               </div>
-              <div className="text-gray-300 text-xs sm:text-sm">
-                Industry partners hiring our graduates
-              </div>
+              <div className="text-gray-300 text-xs sm:text-sm">offers</div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                4.6 LPA
+                1020+
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                Average Package
+                Unique Job Opportunities
               </div>
               <div className="text-sunstone-white text-xs sm:text-sm">
                 Consistent placement success
@@ -1614,7 +1743,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-gold">
-                          ₹6L
+                          ���6L
                         </div>
                         <div className="text-xs text-gray-500">Max Award</div>
                       </div>
@@ -1914,7 +2043,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>✓ BBA (General)</p>
+                        <p>�� BBA (General)</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
@@ -2096,7 +2225,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
-                        <p>✓ 10 Certifications</p>
+                        <p>��� 10 Certifications</p>
                       </div>
                     </div>
                     <button
