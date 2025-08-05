@@ -104,8 +104,8 @@ const stats = [
     label: "Students with 2+ Offers",
     color: "text-sunstone-gold",
   },
-  { value: "5000+", label: "Students Placed", color: "text-sunstone-gold" },
-  { value: "1200+", label: "Total Recuiters", color: "text-sunstone-gold" },
+  { value: "7×", label: "More Companies", color: "text-sunstone-gold" },
+  { value: "1400+", label: "Job Offers", color: "text-sunstone-gold" },
 ];
 
 const comparisonData = [
