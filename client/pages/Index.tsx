@@ -228,23 +228,23 @@ export default function Index() {
                 </h1>
 
                 {/* Dynamic Course Showcase */}
-                <div className="mb-4 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
-                  <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 px-2 sm:px-4 lg:px-0">
-                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300">
+                <div className="mb-6 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
+                  <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 px-1 sm:px-2 lg:px-0">
+                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-4 py-2 sm:px-3 sm:py-1.5 rounded-full text-sm sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       MBA・PGDM
                     </span>
-                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300">
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-4 py-2 sm:px-3 sm:py-1.5 rounded-full text-sm sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       BBA・B.Tech
                     </span>
-                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300">
+                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-4 py-2 sm:px-3 sm:py-1.5 rounded-full text-sm sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       BCA・MCA
                     </span>
-                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300">
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-4 py-2 sm:px-3 sm:py-1.5 rounded-full text-sm sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       B.Com・B.Sc・M.Sc
                     </span>
                   </div>
-                  <div className="text-center lg:text-left mt-3">
-                    <p className="text-xs sm:text-sm text-gray-300 font-medium">
+                  <div className="text-center lg:text-left mt-4 sm:mt-3">
+                    <p className="text-sm sm:text-sm text-gray-300 font-medium">
                       <span className="text-sunstone-gold">◆</span> Choose from 9+ Premium Programs
                       <span className="text-sunstone-gold">◆</span>
                     </p>
