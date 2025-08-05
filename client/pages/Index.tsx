@@ -212,13 +212,13 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-16 items-center">
+      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-8 sm:py-10 md:py-12 lg:py-16 xl:py-24 overflow-hidden relative min-h-screen sm:min-h-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
-            <div className="text-center lg:text-left animate-slide-in-left order-1">
-              <div className="mb-4 sm:mb-6 md:mb-8">
-                <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+            <div className="text-center lg:text-left animate-slide-in-left order-1 pt-4 sm:pt-0">
+              <div className="mb-6 sm:mb-6 md:mb-8">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     Master Tomorrow's Skills Today
                   </span>
