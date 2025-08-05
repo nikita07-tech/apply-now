@@ -295,7 +295,7 @@ export default function Index() {
                   }}
                 >
                   <div>
-                    <label className="block text-sm sm:text-sm font-medium text-sunstone-black mb-2 sm:mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1.5 sm:mb-2">
                       Full Name*
                     </label>
                     <input
@@ -307,7 +307,7 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <label className="block text-sm sm:text-sm font-medium text-sunstone-black mb-2 sm:mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1.5 sm:mb-2">
                       I want to pursue*
                     </label>
                     <select
@@ -378,7 +378,7 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <label className="block text-sm sm:text-sm font-medium text-sunstone-black mb-2 sm:mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1.5 sm:mb-2">
                       Mobile Number*
                     </label>
                     <input
@@ -392,7 +392,7 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <label className="block text-sm sm:text-sm font-medium text-sunstone-black mb-2 sm:mb-2">
+                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1.5 sm:mb-2">
                       Select State*
                     </label>
                     <select
