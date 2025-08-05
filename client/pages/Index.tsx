@@ -98,14 +98,14 @@ const successStories = [
 
 const stats = [
   { value: "26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
-  { value: "4.6 LPA", label: "Average Package", color: "text-sunstone-gold" },
+  { value: "4.6 LPA", label: "Average package", color: "text-sunstone-gold" },
   {
-    value: "306",
-    label: "Students with 2+ Offers",
+    value: "5000+",
+    label: "Students Placed",
     color: "text-sunstone-gold",
   },
   { value: "7×", label: "More Companies", color: "text-sunstone-gold" },
-  { value: "1400+", label: "Job Offers", color: "text-sunstone-gold" },
+  { value: "1200+", label: "Total Recuiters", color: "text-sunstone-gold" },
 ];
 
 const comparisonData = [
