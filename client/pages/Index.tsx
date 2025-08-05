@@ -1092,7 +1092,7 @@ export default function Index() {
                 <p>1200+</p>
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                Total Offers
+                <p>Total Recuiters</p>
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">offers</div>
             </div>
