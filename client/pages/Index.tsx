@@ -294,13 +294,13 @@ export default function Index() {
                   }}
                 >
                   <div>
-                    <label className="block text-xs sm:text-sm font-medium text-sunstone-black mb-1 sm:mb-2">
+                    <label className="block text-sm sm:text-sm font-medium text-sunstone-black mb-2 sm:mb-2">
                       Full Name*
                     </label>
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full px-2 sm:px-4 py-1 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-xs sm:text-base text-sunstone-black font-medium placeholder-gray-500"
+                      className="w-full px-4 sm:px-4 py-3 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-sunstone-gold focus:border-sunstone-gold outline-none text-base sm:text-base text-sunstone-black font-medium placeholder-gray-500"
                       required
                     />
                   </div>
