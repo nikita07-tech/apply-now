@@ -268,8 +268,8 @@ export default function Index() {
             {/* Right Column - Application Form */}
             <div className="flex justify-center lg:justify-end order-2 px-2 sm:px-0">
               <div className="bg-white rounded-lg sm:rounded-xl md:rounded-2xl shadow-2xl p-3 sm:p-4 md:p-6 lg:p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg border border-sunstone-gold/20">
-                <div className="flex items-center justify-between mb-4 sm:mb-4 md:mb-6">
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy">
+                <div className="flex items-center justify-between mb-3 sm:mb-4 md:mb-6">
+                  <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy">
                     Apply Now
                   </h3>
                   <div className="flex gap-2">
