@@ -1743,7 +1743,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-sunstone-gold">
-                          ���6L
+                          <p>₹6L</p>
                         </div>
                         <div className="text-xs text-gray-500">Max Award</div>
                       </div>
