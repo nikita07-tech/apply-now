@@ -1073,16 +1073,16 @@ export default function Index() {
                     <Award className="h-4 w-4 text-black" />
                   </div>
                   <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    5000+
+                    <p>7×</p>
                   </div>
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    Students Placed
+                    <p>More Companies</p>
                   </div>
                   <div
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    Career launches
+                    <p> Compared to Management Institutes </p>
                   </div>
                 </div>
               </div>
