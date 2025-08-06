@@ -1237,7 +1237,7 @@ export default function Index() {
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    <p> Compared to Management Institutes </p>
+                    <p>Management to top private institutes</p>
                   </div>
                 </div>
               </div>
