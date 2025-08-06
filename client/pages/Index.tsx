@@ -765,7 +765,7 @@ export default function Index() {
                     Start Your
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
-                    First Startup
+                    Own Business
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
                     Dedicated incubation support with funding access
@@ -917,7 +917,7 @@ export default function Index() {
                         Start Your
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
-                        First Startup
+                        Own Business
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
                         Dedicated incubation support with funding access
@@ -1055,7 +1055,7 @@ export default function Index() {
                         Start Your
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
-                        First Startup
+                        Own Business
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
                         Dedicated incubation support with funding access
