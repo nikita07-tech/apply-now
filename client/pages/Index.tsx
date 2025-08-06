@@ -768,7 +768,7 @@ export default function Index() {
                     Own Business
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Dedicated incubation support with funding access
+                    Get help and support to start your business idea
                   </p>
                 </div>
 
@@ -920,7 +920,7 @@ export default function Index() {
                         Own Business
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Dedicated incubation support with funding access
+                        Get help and support to start your business idea
                       </p>
                     </div>
 
@@ -1058,7 +1058,7 @@ export default function Index() {
                         Own Business
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Dedicated incubation support with funding access
+                        Get help and support to start your business idea
                       </p>
                     </div>
                   </div>
