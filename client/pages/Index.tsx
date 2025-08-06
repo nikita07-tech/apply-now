@@ -864,8 +864,7 @@ export default function Index() {
                         Learning
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        AI, Data Science & emerging tech skills for future
-                        careers
+                        Learn what companies need today and tomorrow
                       </p>
                     </div>
 
@@ -1005,8 +1004,7 @@ export default function Index() {
                         Learning
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        AI, Data Science & emerging tech skills for future
-                        careers
+                        Learn what companies need today and tomorrow
                       </p>
                     </div>
 
