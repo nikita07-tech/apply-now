@@ -822,7 +822,7 @@ export default function Index() {
                     </svg>
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                    Practical Learning
+                    Industry
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
                     Over Theory
@@ -970,7 +970,7 @@ export default function Index() {
                         </svg>
                       </div>
                       <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                        Practical Learning
+                        Industry
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
                         Over Theory
