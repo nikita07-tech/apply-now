@@ -234,7 +234,7 @@ export default function Index() {
                       MBA・PGDM
                     </span>
                     <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
-                      BBA・B.Tech
+                      <p>BBA・B.Com</p>
                     </span>
                     <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       BCA・MCA
@@ -2340,7 +2340,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
@@ -2359,7 +2359,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      Jaipur • B.Tech �� UGC
+                      Jaipur • B.Tech • UGC
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
