@@ -825,7 +825,7 @@ export default function Index() {
                     Industry
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
-                    Over Theory
+                    Visits & Projects
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
                     Real company projects and hands-on case studies
@@ -973,7 +973,7 @@ export default function Index() {
                         Industry
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
-                        Over Theory
+                        Visits & Projects
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
                         Real company projects and hands-on case studies
@@ -2148,7 +2148,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      <p>Ghaziabad • B.Tech • AICTE</p>
+                      <p>Ghaziabad �� B.Tech • AICTE</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
