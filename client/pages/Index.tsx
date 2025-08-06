@@ -864,7 +864,8 @@ export default function Index() {
                         Jobs of 2030
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        AI, Data Science & emerging tech skills for future careers
+                        AI, Data Science & emerging tech skills for future
+                        careers
                       </p>
                     </div>
 
@@ -1004,7 +1005,8 @@ export default function Index() {
                         Jobs of 2030
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        AI, Data Science & emerging tech skills for future careers
+                        AI, Data Science & emerging tech skills for future
+                        careers
                       </p>
                     </div>
 
@@ -1273,7 +1275,9 @@ export default function Index() {
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
                 <p>job profiles</p>
               </div>
-              <div className="text-gray-300 text-xs sm:text-sm"><p>jobs</p></div>
+              <div className="text-gray-300 text-xs sm:text-sm">
+                <p>jobs</p>
+              </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
