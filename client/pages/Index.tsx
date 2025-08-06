@@ -705,7 +705,7 @@ export default function Index() {
                     Future Ready
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
-                    Jobs of 2030
+                    Learning
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
                     AI, Data Science & emerging tech skills for future careers
@@ -861,7 +861,7 @@ export default function Index() {
                         Future Ready
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
-                        Jobs of 2030
+                        Learning
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
                         AI, Data Science & emerging tech skills for future
@@ -1002,7 +1002,7 @@ export default function Index() {
                         Future Ready
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
-                        Jobs of 2030
+                        Learning
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
                         AI, Data Science & emerging tech skills for future
