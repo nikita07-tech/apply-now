@@ -219,7 +219,7 @@ export default function Index() {
               <div className="mb-6 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Build Your Career, Create Your Success
+                    Start Your Career, Create Your Success
                   </span>
                   <span className="block text-sunstone-gold">
                     India's Most Trusted Education Platform
@@ -762,7 +762,7 @@ export default function Index() {
                     </svg>
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                    Build Your
+                    Start Your
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
                     First Startup
@@ -914,7 +914,7 @@ export default function Index() {
                         </svg>
                       </div>
                       <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                        Build Your
+                        Start Your
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
                         First Startup
@@ -1052,7 +1052,7 @@ export default function Index() {
                         </svg>
                       </div>
                       <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                        Build Your
+                        Start Your
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
                         First Startup
