@@ -219,10 +219,10 @@ export default function Index() {
               <div className="mb-6 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Master Tomorrow's Skills Today
+                    "Success is not final, failure is not fatal"
                   </span>
                   <span className="block text-sunstone-gold">
-                    Choose Your Elite Professional Course
+                    It's your courage to continue that counts
                   </span>
                 </h1>
 
@@ -2146,7 +2146,7 @@ export default function Index() {
                       Hi-Tech Institute of Engineering & Technology
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      <p>Ghaziabad • B.Tech • AICTE</p>
+                      <p>Ghaziabad �� B.Tech • AICTE</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
