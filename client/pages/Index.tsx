@@ -1268,7 +1268,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                <p>1400+</p>
+                <p>1000+</p>
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
                 <p>Total Offers</p>
