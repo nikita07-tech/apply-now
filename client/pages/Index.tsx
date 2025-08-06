@@ -219,10 +219,10 @@ export default function Index() {
               <div className="mb-6 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Transform Your Dreams Into Reality
+                    Shape Your Future, Lead Your Industry
                   </span>
                   <span className="block text-sunstone-gold">
-                    Empowering Tomorrow's Leaders Today
+                    Where Excellence Meets Opportunity
                   </span>
                 </h1>
 
@@ -2296,7 +2296,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>��� 2 Specialisations</p>
-                        <p>✓ 10 Certifications</p>
+                        <p>��� 10 Certifications</p>
                       </div>
                     </div>
                     <button
