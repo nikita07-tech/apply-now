@@ -2619,8 +2619,7 @@ export default function Index() {
                 Don't Miss This Chance!
               </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
-                Secure your spot in India's most sought-after programs. Limited
-                seats available for exceptional candidates.
+                Join India's best colleges today. Very few seats are left - apply now before it's too late!
               </p>
             </div>
             <button
