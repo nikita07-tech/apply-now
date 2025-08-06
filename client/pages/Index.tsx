@@ -2616,7 +2616,7 @@ export default function Index() {
             </div>
             <div className="mb-4 md:mb-8">
               <p className="text-gray-200 text-sm md:text-2xl mb-1 md:mb-2 font-medium">
-                Exclusive Admission Opportunity
+                Don't Miss This Chance!
               </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
                 Secure your spot in India's most sought-after programs. Limited
