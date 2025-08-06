@@ -1257,7 +1257,7 @@ export default function Index() {
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    Multiple offers
+                    <p>Students with 2+ job offers</p>
                   </div>
                 </div>
               </div>
