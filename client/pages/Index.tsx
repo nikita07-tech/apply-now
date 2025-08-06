@@ -798,7 +798,7 @@ export default function Index() {
                     Learning Tools
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Cutting-edge software and platforms for modern learning
+                    Use latest technology and software for better learning
                   </p>
                 </div>
 
@@ -948,7 +948,7 @@ export default function Index() {
                         Learning Tools
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Cutting-edge software and platforms for modern learning
+                        Use latest technology and software for better learning
                       </p>
                     </div>
 
