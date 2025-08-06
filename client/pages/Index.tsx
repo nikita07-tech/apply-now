@@ -702,7 +702,7 @@ export default function Index() {
                     </svg>
                   </div>
                   <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                    Curriculum for
+                    Future Ready
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
                     Jobs of 2030
@@ -858,7 +858,7 @@ export default function Index() {
                         </svg>
                       </div>
                       <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                        Curriculum for
+                        Future Ready
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
                         Jobs of 2030
@@ -999,7 +999,7 @@ export default function Index() {
                         </svg>
                       </div>
                       <h3 className="text-sunstone-navy text-lg font-bold mb-2">
-                        Curriculum for
+                        Future Ready
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
                         Jobs of 2030
