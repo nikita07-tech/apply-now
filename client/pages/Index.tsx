@@ -1283,7 +1283,7 @@ export default function Index() {
                 Unique Job Opportunities
               </div>
               <div className="text-sunstone-white text-xs sm:text-sm">
-                Consistent placement success
+                <p>across in demand sectors</p>
               </div>
             </div>
           </div>
