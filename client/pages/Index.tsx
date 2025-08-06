@@ -738,7 +738,8 @@ export default function Index() {
                     Turned Educators
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Learn from business leaders with real work experience, including industry visits
+                    Learn from business leaders with real work experience,
+                    including industry visits
                   </p>
                 </div>
 
@@ -892,7 +893,8 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from business leaders with real work experience, including industry visits
+                        Learn from business leaders with real work experience,
+                        including industry visits
                       </p>
                     </div>
 
@@ -1031,7 +1033,8 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from business leaders with real work experience, including industry visits
+                        Learn from business leaders with real work experience,
+                        including industry visits
                       </p>
                     </div>
 
@@ -2619,7 +2622,8 @@ export default function Index() {
                 Don't Miss This Chance!
               </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
-                Join India's best colleges today. Very few seats are left - apply now before it's too late!
+                Join India's best colleges today. Very few seats are left -
+                apply now before it's too late!
               </p>
             </div>
             <button
