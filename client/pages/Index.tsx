@@ -795,7 +795,7 @@ export default function Index() {
                     Modern
                   </h3>
                   <p className="text-sunstone-navy text-base font-semibold">
-                    Tech Tools
+                    Learning Tools
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
                     Cutting-edge software and platforms for modern learning
@@ -945,7 +945,7 @@ export default function Index() {
                         Modern
                       </h3>
                       <p className="text-sunstone-navy text-base font-semibold">
-                        Tech Tools
+                        Learning Tools
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
                         Cutting-edge software and platforms for modern learning
