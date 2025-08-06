@@ -115,12 +115,12 @@ const comparisonData = [
   },
   {
     feature: "Industry Exposure",
-    sunstone: "8+ Months Of Industry Internships",
+    sunstone: "<p>6+ Months Of Industry Internships</p>",
     others: "Minimal Or No Internship Opportunities",
   },
   {
     feature: "Hands-On Learning",
-    sunstone: "3 Capstone Projects (1 Every Year)",
+    sunstone: "<p>3+ Capstone Projects (1 Every Year)</p>",
     others: "Projects With Minimal Industry Use",
   },
   {
@@ -130,7 +130,7 @@ const comparisonData = [
   },
   {
     feature: "Certifications",
-    sunstone: "10 In-Demand Advanced Certifications",
+    sunstone: "<p>10 In-Demand Certifications</p>",
     others: "Limited Or No Certification Options",
   },
   {
@@ -1239,7 +1239,7 @@ export default function Index() {
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    <p>Management to top private institutes</p>
+                    <p>hiring than top private institues</p>
                   </div>
                 </div>
               </div>
@@ -1253,13 +1253,13 @@ export default function Index() {
                     306
                   </div>
                   <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    2+ Offers
+                    <p>Students</p>
                   </div>
                   <div
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    <p>Students with 2+ job offers</p>
+                    <p>with 2+ job offers</p>
                   </div>
                 </div>
               </div>
@@ -1270,13 +1270,13 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                <p>1000+</p>
+                <p>1170+</p>
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                <p>job profiles</p>
+                <p>Offers</p>
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                <p>jobs</p>
+                <p>From Legacy Institues</p>
               </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
@@ -1287,7 +1287,7 @@ export default function Index() {
                 Unique Job Opportunities
               </div>
               <div className="text-sunstone-white text-xs sm:text-sm">
-                <p>across in demand sectors</p>
+                <p>Across in Demand Sectors</p>
               </div>
             </div>
           </div>
@@ -2471,7 +2471,7 @@ export default function Index() {
               Success Stories That Inspire
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4">
-              Real students, Real achievements, Real transformations
+              <p>Real Students, Real Achievements, Real Transformations</p>
             </p>
             <div className="h-0.5 sm:h-1 md:h-2 w-20 sm:w-24 md:w-32 lg:w-40 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
