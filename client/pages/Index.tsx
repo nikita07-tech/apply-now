@@ -2610,7 +2610,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-1 md:gap-3 mb-3 md:mb-6">
               <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
               <h2 className="text-lg md:text-4xl lg:text-5xl font-black text-sunstone-white tracking-tight leading-tight">
-                LIMITED SEATS AVAILABLE FOR 2025
+                HURRY! ONLY FEW SEATS LEFT FOR 2025
               </h2>
               <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
