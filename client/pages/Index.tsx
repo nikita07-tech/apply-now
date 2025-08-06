@@ -708,7 +708,7 @@ export default function Index() {
                     Learning
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    AI, Data Science & emerging tech skills for future careers
+                    Skills and knowledge needed for tomorrow's careers
                   </p>
                 </div>
 
@@ -738,7 +738,7 @@ export default function Index() {
                     Turned Educators
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Learn from C-suite executives and industry veterans
+                    Learn from business leaders with real work experience, including industry visits
                   </p>
                 </div>
 
@@ -864,7 +864,7 @@ export default function Index() {
                         Learning
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn what companies need today and tomorrow
+                        Skills and knowledge needed for tomorrow's careers
                       </p>
                     </div>
 
@@ -892,7 +892,7 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from C-suite executives and industry veterans
+                        Learn from business leaders with real work experience, including industry visits
                       </p>
                     </div>
 
@@ -1004,7 +1004,7 @@ export default function Index() {
                         Learning
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn what companies need today and tomorrow
+                        Skills and knowledge needed for tomorrow's careers
                       </p>
                     </div>
 
@@ -1031,7 +1031,7 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from C-suite executives and industry veterans
+                        Learn from business leaders with real work experience, including industry visits
                       </p>
                     </div>
 
