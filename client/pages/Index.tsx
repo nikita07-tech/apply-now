@@ -244,7 +244,7 @@ export default function Index() {
                       </ul>
                     </span>
                     <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
-                      <p>・B.Sc・M.Sc</p>
+                      B.Sc・M.Sc
                     </span>
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
