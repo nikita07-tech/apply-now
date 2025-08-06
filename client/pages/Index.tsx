@@ -104,7 +104,6 @@ const stats = [
     label: "Students Placed",
     color: "text-sunstone-gold",
   },
-  { value: "7×", label: "More Companies", color: "text-sunstone-gold" },
   { value: "1200+", label: "Total Recuiters", color: "text-sunstone-gold" },
 ];
 
