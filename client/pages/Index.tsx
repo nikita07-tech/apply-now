@@ -250,8 +250,8 @@ export default function Index() {
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                      <span className="text-sunstone-gold">◆</span> Choose from
-                      9+ Premium Programs
+                      <span className="text-sunstone-gold">◆</span>
+                      <p>Choose from 9+ industry oriented Programs</p>
                       <span className="text-sunstone-gold">◆</span>
                     </p>
                   </div>
@@ -2296,7 +2296,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>���� 2 Specialisations</p>
+                        <p>��� 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
