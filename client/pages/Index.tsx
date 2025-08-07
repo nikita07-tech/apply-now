@@ -219,7 +219,7 @@ export default function Index() {
               <div className="mb-6 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Start Your Career, Create Your Success
+                    <p>Shape Your Future With Confidence</p>
                   </span>
                   <span className="block text-sunstone-gold">
                     India's Most Trusted Education Platform
@@ -673,7 +673,7 @@ export default function Index() {
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                MBA • BBA • MCA • BCA • B.Tech
+                <p>MBA • BBA • MCA • BCA • B.Tech• B.Sc• M.Sc</p>
               </span>
               <br />
               <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1400,6 +1400,48 @@ export default function Index() {
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Feea877b831d64075ba17371c561ddec4?format=webp&width=800"
+                    alt="Patanjali"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefd837fb63004d7890bcb7c20df119f9?format=webp&width=800&removeBackground=true"
+                    alt="ICICI Bank"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F9338b89a92ee45f8bbc610ff8d572e1d?format=webp&width=800"
+                    alt="Blinkit"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800&removeBackground=true"
+                    alt="Coca Cola"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefe1bcf105594d46af5b7848b2454d14?format=webp&width=800"
+                    alt="Swiggy"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F047b89f49e6f401ba2be9779a2891e0c?format=webp&width=800"
+                    alt="Zomato"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
 
                 {/* Duplicate set for seamless loop */}
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
@@ -1497,6 +1539,27 @@ export default function Index() {
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Feea877b831d64075ba17371c561ddec4?format=webp&width=800"
+                  alt="Patanjali"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefd837fb63004d7890bcb7c20df119f9?format=webp&width=800"
+                  alt="ICICI Bank"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F9338b89a92ee45f8bbc610ff8d572e1d?format=webp&width=800"
+                  alt="Blinkit"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
 
               {/* Duplicate set for seamless loop */}
               <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
@@ -1590,6 +1653,27 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
                   alt="IBM"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800"
+                  alt="Coca Cola"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefe1bcf105594d46af5b7848b2454d14?format=webp&width=800"
+                  alt="Swiggy"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F047b89f49e6f401ba2be9779a2891e0c?format=webp&width=800"
+                  alt="Zomato"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
@@ -1888,7 +1972,7 @@ export default function Index() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F61c95e7b53934712b9bd4c49faac358e"
                   alt="Bright Minds Scholarship - Financial support for academic excellence"
                   className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
                 />
