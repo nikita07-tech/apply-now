@@ -1423,7 +1423,7 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800&removeBackground=true"
                     alt="Coca Cola"
                     className="max-w-full max-h-full object-contain"
                   />
