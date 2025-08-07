@@ -219,7 +219,7 @@ export default function Index() {
               <div className="mb-6 sm:mb-6 md:mb-8">
                 <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
-                    Start Your Career, Create Your Success
+                    <p>Shape Your Future With Confidence</p>
                   </span>
                   <span className="block text-sunstone-gold">
                     India's Most Trusted Education Platform
@@ -673,7 +673,7 @@ export default function Index() {
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                MBA • BBA • MCA • BCA • B.Tech
+                <p>MBA • BBA • MCA • BCA • B.Tech• B.Sc• M.Sc</p>
               </span>
               <br />
               <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1888,7 +1888,7 @@ export default function Index() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2F13b8398546b349eea73b05379cea83a0?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F61c95e7b53934712b9bd4c49faac358e"
                   alt="Bright Minds Scholarship - Financial support for academic excellence"
                   className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
                 />
