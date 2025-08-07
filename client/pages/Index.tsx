@@ -1656,6 +1656,27 @@ export default function Index() {
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800"
+                  alt="Coca Cola"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefe1bcf105594d46af5b7848b2454d14?format=webp&width=800"
+                  alt="Swiggy"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F047b89f49e6f401ba2be9779a2891e0c?format=webp&width=800"
+                  alt="Zomato"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
 
               {/* Duplicate set for seamless loop */}
               <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
