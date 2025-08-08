@@ -1399,7 +1399,7 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefd837fb63004d7890bcb7c20df119f9?format=webp&width=800&removeBackground=true"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F162ca9865d3744d28e438d1ce3f1691d?format=webp&width=800"
                     alt="ICICI Bank"
                     className="max-w-full max-h-full object-contain"
                   />
@@ -1413,7 +1413,7 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800&removeBackground=true"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F83fe33e7331d4b708f19f11192a028fb?format=webp&width=800"
                     alt="Coca Cola"
                     className="max-w-full max-h-full object-contain"
                   />
@@ -1538,7 +1538,7 @@ export default function Index() {
               </div>
               <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefd837fb63004d7890bcb7c20df119f9?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F162ca9865d3744d28e438d1ce3f1691d?format=webp&width=800"
                   alt="ICICI Bank"
                   className="max-w-full max-h-full object-contain"
                 />
@@ -1641,7 +1641,7 @@ export default function Index() {
               </div>
               <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F83fe33e7331d4b708f19f11192a028fb?format=webp&width=800"
                   alt="Coca Cola"
                   className="max-w-full max-h-full object-contain"
                 />
@@ -2144,7 +2144,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
-                        <p>✓ 10 Certifications</p>
+                        <p>��� 10 Certifications</p>
                       </div>
                     </div>
                     <button
