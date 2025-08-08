@@ -1237,7 +1237,7 @@ export default function Index() {
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    <p>hiring than top private institutes</p>
+                    hiring than top private institutes
                   </div>
                 </div>
               </div>
