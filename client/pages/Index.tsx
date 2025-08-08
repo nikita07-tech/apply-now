@@ -1938,8 +1938,9 @@ export default function Index() {
                       block: "center",
                     });
                     // Focus on the first input field
-                    const firstInput =
-                      applicationForm.querySelector('input[type="text"]') as HTMLInputElement;
+                    const firstInput = applicationForm.querySelector(
+                      'input[type="text"]',
+                    ) as HTMLInputElement;
                     if (firstInput) {
                       setTimeout(() => firstInput.focus(), 500);
                     }
@@ -2049,8 +2050,9 @@ export default function Index() {
                           block: "center",
                         });
                         // Focus on the first input field
-                        const firstInput =
-                          applicationForm.querySelector('input[type="text"]') as HTMLInputElement;
+                        const firstInput = applicationForm.querySelector(
+                          'input[type="text"]',
+                        ) as HTMLInputElement;
                         if (firstInput) {
                           setTimeout(() => firstInput.focus(), 500);
                         }
