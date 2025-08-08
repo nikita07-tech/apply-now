@@ -673,7 +673,7 @@ export default function Index() {
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                <p>MBA • BBA ��� MCA • BCA • B.Tech• B.Sc• M.Sc</p>
+                <p>MBA • BBA • MCA • BCA • B.Tech • B.Sc • M.Sc</p>
               </span>
               <br />
               <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -2144,7 +2144,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
-                        <p>��� 10 Certifications</p>
+                        <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
@@ -2337,7 +2337,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour ���
+                      Book Tour →
                     </button>
                   </div>
                 </div>
@@ -2360,8 +2360,8 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>��� 2 Specialisations</p>
-                        <p>��� 10 Certifications</p>
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
@@ -2469,7 +2469,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
-                        <p>��� 10 Certifications</p>
+                        <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
