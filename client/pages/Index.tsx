@@ -1969,7 +1969,7 @@ export default function Index() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F61c95e7b53934712b9bd4c49faac358e"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F3a5ed5e8117e46deaa05a11dc6942f27"
                   alt="Bright Minds Scholarship - Financial support for academic excellence"
                   className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
                 />
