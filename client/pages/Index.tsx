@@ -738,8 +738,7 @@ export default function Index() {
                     Turned Educators
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Learn from business leaders with real work experience,
-                    including industry visits
+                    Learn from corporate leaders with real work experience
                   </p>
                 </div>
 
@@ -829,7 +828,7 @@ export default function Index() {
                     Visits & Projects
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Visit real companies and work on actual projects
+                    Visit real companies and work on real world projects
                   </p>
                 </div>
               </div>
@@ -893,8 +892,7 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from business leaders with real work experience,
-                        including industry visits
+                        Learn from corporate leaders with real work experience
                       </p>
                     </div>
 
@@ -978,7 +976,7 @@ export default function Index() {
                         Visits & Projects
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Visit real companies and work on actual projects
+                        Visit real companies and work on real world projects
                       </p>
                     </div>
 
@@ -1033,8 +1031,7 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from business leaders with real work experience,
-                        including industry visits
+                        Learn from corporate leaders with real work experience
                       </p>
                     </div>
 
@@ -1240,7 +1237,7 @@ export default function Index() {
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    <p>hiring than top private institues</p>
+                    <p>hiring than top private institutes</p>
                   </div>
                 </div>
               </div>
@@ -1277,7 +1274,7 @@ export default function Index() {
                 <p>Offers</p>
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                <p>From Legacy Institues</p>
+                <p>From Legacy Recruiters</p>
               </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
