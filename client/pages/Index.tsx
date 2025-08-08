@@ -645,7 +645,7 @@ export default function Index() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Header Section */}
-          <div className="text-center mb-16 md:mb-20">
+          <div className="text-center mb-8 md:mb-12">
             <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8 border border-sunstone-gold/20 shadow-lg">
               <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-xl flex items-center justify-center">
                 <svg
@@ -673,7 +673,7 @@ export default function Index() {
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                <p>MBA • BBA • MCA • BCA • B.Tech• B.Sc• M.Sc</p>
+                <p>MBA • BBA ��� MCA • BCA • B.Tech• B.Sc• M.Sc</p>
               </span>
               <br />
               <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1096,7 +1096,7 @@ export default function Index() {
       {/* Comparison Table Section */}
       <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
@@ -1265,7 +1265,7 @@ export default function Index() {
           </div>
 
           {/* Additional Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-8 md:mb-12 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 <p>1170+</p>
@@ -1295,7 +1295,7 @@ export default function Index() {
       {/* Top Recruiters Section */}
       <section className="py-8 md:py-12 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <div className="text-center mb-6 md:mb-8 lg:mb-10">
             <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
@@ -1705,7 +1705,7 @@ export default function Index() {
       {/* Awards & Recognition Section */}
       <section className="py-8 md:py-12 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
@@ -1904,7 +1904,7 @@ export default function Index() {
       <section className="py-8 md:py-12 bg-sunstone-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
@@ -2072,7 +2072,7 @@ export default function Index() {
       <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-8 md:mb-12">
             <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-4 py-2 rounded-full mb-6 border border-sunstone-navy/20">
               <GraduationCap className="h-4 w-4 text-sunstone-navy" />
               <span className="text-sunstone-navy font-bold text-sm">
@@ -2527,7 +2527,7 @@ export default function Index() {
         className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
