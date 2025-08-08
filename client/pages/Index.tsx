@@ -1392,13 +1392,6 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
-                    alt="IBM"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
-                  <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Feea877b831d64075ba17371c561ddec4?format=webp&width=800"
                     alt="Patanjali"
                     className="max-w-full max-h-full object-contain"
