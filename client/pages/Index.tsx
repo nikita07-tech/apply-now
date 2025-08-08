@@ -646,7 +646,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Header Section */}
           <div className="text-center mb-8 md:mb-12">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8 border border-sunstone-gold/20 shadow-lg">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-6 border border-sunstone-gold/20 shadow-lg">
               <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-xl flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-white"
@@ -1706,7 +1706,7 @@ export default function Index() {
       <section className="py-8 md:py-12 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
                 Awards & Recognition
@@ -1905,7 +1905,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
                 Financial Support Available
@@ -2494,7 +2494,7 @@ export default function Index() {
 
           {/* CTA Section */}
           <div className="text-center">
-            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-8 border border-sunstone-gold/30">
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-6 border border-sunstone-gold/30">
               <h3 className="text-sm sm:text-base md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-2 sm:mb-3 md:mb-4">
                 Ready to Start Your Journey?
               </h3>
@@ -2524,7 +2524,7 @@ export default function Index() {
       {/* Success Stories Section */}
       <section
         id="success-stories"
-        className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden"
+        className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
