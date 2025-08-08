@@ -1159,8 +1159,8 @@ export default function Index() {
       {/* Our Impact in Numbers Section */}
       <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-8 border border-sunstone-navy/20">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-4 md:mb-6 border border-sunstone-navy/20">
               <TrendingUp className="h-5 w-5 text-sunstone-navy" />
               <span className="text-sunstone-navy font-semibold text-base">
                 Proven Track Record
