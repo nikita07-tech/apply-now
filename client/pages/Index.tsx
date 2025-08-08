@@ -629,7 +629,7 @@ export default function Index() {
       </section>
 
       {/* New Age Education Section */}
-      <section className="relative bg-gradient-to-br from-gray-50 via-white to-sunstone-gold/5 py-16 md:py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-gray-50 via-white to-sunstone-gold/5 py-8 md:py-12 lg:py-16 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-32 h-32 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
@@ -1094,7 +1094,7 @@ export default function Index() {
       </section>
 
       {/* Comparison Table Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
@@ -1157,7 +1157,7 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-8 border border-sunstone-navy/20">
@@ -1293,7 +1293,7 @@ export default function Index() {
       </section>
 
       {/* Top Recruiters Section */}
-      <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
+      <section className="py-8 md:py-12 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">
             <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
@@ -1703,7 +1703,7 @@ export default function Index() {
       </section>
 
       {/* Awards & Recognition Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
@@ -1901,7 +1901,7 @@ export default function Index() {
       </section>
 
       {/* Bright Minds Scholarship Section */}
-      <section className="py-16 md:py-20 bg-sunstone-white">
+      <section className="py-8 md:py-12 bg-sunstone-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
@@ -2069,7 +2069,7 @@ export default function Index() {
       </section>
 
       {/* Explore Colleges Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -2179,7 +2179,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>✓ 2 Specialisations</p>
+                        <p>�� 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
