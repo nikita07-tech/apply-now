@@ -211,13 +211,13 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-8 sm:py-10 md:py-12 lg:py-16 xl:py-24 overflow-hidden relative min-h-screen sm:min-h-0">
+      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 overflow-hidden relative min-h-[70vh] sm:min-h-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left order-1 pt-4 sm:pt-0">
-              <div className="mb-6 sm:mb-6 md:mb-8">
-                <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+              <div className="mb-4 sm:mb-6 md:mb-8">
+                <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-2 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     <p>Shape Your Future With Confidence</p>
                   </span>
@@ -227,7 +227,7 @@ export default function Index() {
                 </h1>
 
                 {/* Dynamic Course Showcase */}
-                <div className="mb-4 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
+                <div className="mb-3 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
                   <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 sm:gap-3 px-1 sm:px-2 lg:px-0">
                     <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       MBA・PGDM
@@ -257,7 +257,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
