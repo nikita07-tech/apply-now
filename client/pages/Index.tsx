@@ -115,12 +115,12 @@ const comparisonData = [
   },
   {
     feature: "Industry Exposure",
-    sunstone: "<p>6+ Months Of Industry Internships</p>",
+    sunstone: "6+ Months Of Industry Internships",
     others: "Minimal Or No Internship Opportunities",
   },
   {
     feature: "Hands-On Learning",
-    sunstone: "<p>3+ Capstone Projects (1 Every Year)</p>",
+    sunstone: "3+ Capstone Projects (1 Every Year)",
     others: "Projects With Minimal Industry Use",
   },
   {
@@ -130,7 +130,7 @@ const comparisonData = [
   },
   {
     feature: "Certifications",
-    sunstone: "<p>10 In-Demand Certifications</p>",
+    sunstone: "10 In-Demand Certifications",
     others: "Limited Or No Certification Options",
   },
   {
