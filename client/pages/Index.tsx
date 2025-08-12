@@ -115,12 +115,12 @@ const comparisonData = [
   },
   {
     feature: "Industry Exposure",
-    sunstone: "<p>6+ Months Of Industry Internships</p>",
+    sunstone: "6+ Months Of Industry Internships",
     others: "Minimal Or No Internship Opportunities",
   },
   {
     feature: "Hands-On Learning",
-    sunstone: "<p>3+ Capstone Projects (1 Every Year)</p>",
+    sunstone: "3+ Capstone Projects (1 Every Year)",
     others: "Projects With Minimal Industry Use",
   },
   {
@@ -130,7 +130,7 @@ const comparisonData = [
   },
   {
     feature: "Certifications",
-    sunstone: "<p>10 In-Demand Certifications</p>",
+    sunstone: "10 In-Demand Certifications",
     others: "Limited Or No Certification Options",
   },
   {
@@ -211,13 +211,13 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-8 sm:py-10 md:py-12 lg:py-16 xl:py-24 overflow-hidden relative min-h-screen sm:min-h-0">
+      <section className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark text-sunstone-white py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 overflow-hidden relative min-h-[70vh] sm:min-h-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center">
             {/* Left Column - Hero Content */}
             <div className="text-center lg:text-left animate-slide-in-left order-1 pt-4 sm:pt-0">
-              <div className="mb-6 sm:mb-6 md:mb-8">
-                <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
+              <div className="mb-4 sm:mb-6 md:mb-8">
+                <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-2 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight">
                   <span className="block text-sunstone-white">
                     <p>Shape Your Future With Confidence</p>
                   </span>
@@ -227,7 +227,7 @@ export default function Index() {
                 </h1>
 
                 {/* Dynamic Course Showcase */}
-                <div className="mb-4 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
+                <div className="mb-3 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
                   <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 sm:gap-3 px-1 sm:px-2 lg:px-0">
                     <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       MBA・PGDM
@@ -257,7 +257,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0">
                 Get{" "}
                 <span className="text-sunstone-gold font-bold">
                   200+ assured placement opportunities
@@ -629,7 +629,7 @@ export default function Index() {
       </section>
 
       {/* New Age Education Section */}
-      <section className="relative bg-gradient-to-br from-gray-50 via-white to-sunstone-gold/5 py-16 md:py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-gray-50 via-white to-sunstone-gold/5 py-8 md:py-12 lg:py-16 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-32 h-32 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
@@ -645,8 +645,8 @@ export default function Index() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Header Section */}
-          <div className="text-center mb-16 md:mb-20">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8 border border-sunstone-gold/20 shadow-lg">
+          <div className="text-center mb-8 md:mb-12">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-6 border border-sunstone-gold/20 shadow-lg">
               <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-xl flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-white"
@@ -667,13 +667,13 @@ export default function Index() {
               </span>
             </div>
 
-            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0 text-center">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Revolutionizing Higher Education for Tomorrow's Leaders
               </span>
               <br />
               <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                <p>MBA • BBA • MCA • BCA • B.Tech• B.Sc• M.Sc</p>
+                <p>MBA • BBA • MCA • BCA • B.Tech • B.Sc • M.Sc</p>
               </span>
               <br />
               <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -684,7 +684,7 @@ export default function Index() {
               </span>
               <br />
               {/* Desktop Grid Layout */}
-              <div className="hidden md:grid grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto">
+              <div className="hidden md:grid grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto justify-items-center items-start place-items-center">
                 <div className="group bg-white rounded-2xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
                     <svg
@@ -738,8 +738,7 @@ export default function Index() {
                     Turned Educators
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Learn from business leaders with real work experience,
-                    including industry visits
+                    Learn from corporate leaders with real work experience
                   </p>
                 </div>
 
@@ -829,7 +828,7 @@ export default function Index() {
                     Visits & Projects
                   </p>
                   <p className="text-gray-600 text-sm mt-2">
-                    Visit real companies and work on actual projects
+                    Visit real companies and work on real world projects
                   </p>
                 </div>
               </div>
@@ -893,8 +892,7 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from business leaders with real work experience,
-                        including industry visits
+                        Learn from corporate leaders with real work experience
                       </p>
                     </div>
 
@@ -978,7 +976,7 @@ export default function Index() {
                         Visits & Projects
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Visit real companies and work on actual projects
+                        Visit real companies and work on real world projects
                       </p>
                     </div>
 
@@ -1033,8 +1031,7 @@ export default function Index() {
                         Turned Educators
                       </p>
                       <p className="text-gray-600 text-sm mt-2">
-                        Learn from business leaders with real work experience,
-                        including industry visits
+                        Learn from corporate leaders with real work experience
                       </p>
                     </div>
 
@@ -1097,9 +1094,9 @@ export default function Index() {
       </section>
 
       {/* Comparison Table Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 sm:mb-4 px-3 sm:px-4">
               Why Sunstone Powered Programs Stand Out?
             </h2>
@@ -1160,10 +1157,10 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-8 border border-sunstone-navy/20">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-4 md:mb-6 border border-sunstone-navy/20">
               <TrendingUp className="h-5 w-5 text-sunstone-navy" />
               <span className="text-sunstone-navy font-semibold text-base">
                 Proven Track Record
@@ -1240,7 +1237,7 @@ export default function Index() {
                     className="text-xs"
                     style={{ color: "rgba(74, 74, 74, 1)" }}
                   >
-                    <p>hiring than top private institues</p>
+                    hiring than top private institutes
                   </div>
                 </div>
               </div>
@@ -1268,7 +1265,7 @@ export default function Index() {
           </div>
 
           {/* Additional Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-8 md:mb-12 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 <p>1170+</p>
@@ -1277,7 +1274,7 @@ export default function Index() {
                 <p>Offers</p>
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                <p>From Legacy Institues</p>
+                <p>From Legacy Recruiters</p>
               </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
@@ -1296,9 +1293,9 @@ export default function Index() {
       </section>
 
       {/* Top Recruiters Section */}
-      <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
+      <section className="py-8 md:py-12 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <div className="text-center mb-6 md:mb-8 lg:mb-10">
             <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 px-3 sm:px-4">
               Top Recruiters
             </h2>
@@ -1395,13 +1392,6 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
-                    alt="IBM"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
-                  <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Feea877b831d64075ba17371c561ddec4?format=webp&width=800"
                     alt="Patanjali"
                     className="max-w-full max-h-full object-contain"
@@ -1409,7 +1399,7 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefd837fb63004d7890bcb7c20df119f9?format=webp&width=800&removeBackground=true"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F162ca9865d3744d28e438d1ce3f1691d?format=webp&width=800"
                     alt="ICICI Bank"
                     className="max-w-full max-h-full object-contain"
                   />
@@ -1423,7 +1413,7 @@ export default function Index() {
                 </div>
                 <div className="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800&removeBackground=true"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F83fe33e7331d4b708f19f11192a028fb?format=webp&width=800"
                     alt="Coca Cola"
                     className="max-w-full max-h-full object-contain"
                   />
@@ -1548,7 +1538,7 @@ export default function Index() {
               </div>
               <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefd837fb63004d7890bcb7c20df119f9?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F162ca9865d3744d28e438d1ce3f1691d?format=webp&width=800"
                   alt="ICICI Bank"
                   className="max-w-full max-h-full object-contain"
                 />
@@ -1651,14 +1641,7 @@ export default function Index() {
               </div>
               <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
-                  alt="IBM"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F5d102bd1e497422087230cabf86dba67?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F83fe33e7331d4b708f19f11192a028fb?format=webp&width=800"
                   alt="Coca Cola"
                   className="max-w-full max-h-full object-contain"
                 />
@@ -1714,23 +1697,16 @@ export default function Index() {
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5da5c2524a7e4d53816c33b2a72bb3df?format=webp&width=800"
-                  alt="IBM"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Awards & Recognition Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-sunstone-navy/5 to-sunstone-gold/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
                 Awards & Recognition
@@ -1925,11 +1901,11 @@ export default function Index() {
       </section>
 
       {/* Bright Minds Scholarship Section */}
-      <section className="py-16 md:py-20 bg-sunstone-white">
+      <section className="py-8 md:py-12 bg-sunstone-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-8 border border-sunstone-gold/30">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
                 Financial Support Available
@@ -1962,8 +1938,9 @@ export default function Index() {
                       block: "center",
                     });
                     // Focus on the first input field
-                    const firstInput =
-                      applicationForm.querySelector('input[type="text"]');
+                    const firstInput = applicationForm.querySelector(
+                      'input[type="text"]',
+                    ) as HTMLInputElement;
                     if (firstInput) {
                       setTimeout(() => firstInput.focus(), 500);
                     }
@@ -1972,7 +1949,7 @@ export default function Index() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-sunstone-gold/20 to-sunstone-navy/20 rounded-2xl transform rotate-2"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F61c95e7b53934712b9bd4c49faac358e"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F3a5ed5e8117e46deaa05a11dc6942f27"
                   alt="Bright Minds Scholarship - Financial support for academic excellence"
                   className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
                 />
@@ -2073,8 +2050,9 @@ export default function Index() {
                           block: "center",
                         });
                         // Focus on the first input field
-                        const firstInput =
-                          applicationForm.querySelector('input[type="text"]');
+                        const firstInput = applicationForm.querySelector(
+                          'input[type="text"]',
+                        ) as HTMLInputElement;
                         if (firstInput) {
                           setTimeout(() => firstInput.focus(), 500);
                         }
@@ -2093,10 +2071,10 @@ export default function Index() {
       </section>
 
       {/* Explore Colleges Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-8 md:mb-12">
             <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-4 py-2 rounded-full mb-6 border border-sunstone-navy/20">
               <GraduationCap className="h-4 w-4 text-sunstone-navy" />
               <span className="text-sunstone-navy font-bold text-sm">
@@ -2203,7 +2181,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>✓ 2 Specialisations</p>
+                        <p>�� 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
@@ -2361,7 +2339,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour ���
+                      Book Tour →
                     </button>
                   </div>
                 </div>
@@ -2384,8 +2362,8 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>��� 2 Specialisations</p>
-                        <p>��� 10 Certifications</p>
+                        <p>✓ 2 Specialisations</p>
+                        <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
@@ -2493,7 +2471,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ BBA (General)</p>
-                        <p>��� 10 Certifications</p>
+                        <p>✓ 10 Certifications</p>
                       </div>
                     </div>
                     <button
@@ -2518,7 +2496,7 @@ export default function Index() {
 
           {/* CTA Section */}
           <div className="text-center">
-            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-8 border border-sunstone-gold/30">
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-6 border border-sunstone-gold/30">
               <h3 className="text-sm sm:text-base md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-2 sm:mb-3 md:mb-4">
                 Ready to Start Your Journey?
               </h3>
@@ -2548,10 +2526,10 @@ export default function Index() {
       {/* Success Stories Section */}
       <section
         id="success-stories"
-        className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden"
+        className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Success Stories That Inspire
             </h2>
