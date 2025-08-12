@@ -1072,7 +1072,7 @@ export default function Index() {
       {/* Stats Section */}
       <section className="bg-sunstone-navy py-6 sm:py-8 md:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 px-3 sm:px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 px-3 sm:px-4">
             {stats.map((stat, index) => (
               <div
                 key={index}
