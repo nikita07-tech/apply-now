@@ -229,16 +229,16 @@ export default function Index() {
                 {/* Dynamic Course Showcase */}
                 <div className="mb-3 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
                   <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 sm:gap-3 px-1 sm:px-2 lg:px-0">
-                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       MBA・PGDM
                     </span>
                     <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       <p>BBA・B.Com</p>
                     </span>
-                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       BCA・MCA
                     </span>
-                    <span className="bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm text-sunstone-gold px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-gold/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
+                    <span className="bg-gradient-to-r from-sunstone-white/20 to-sunstone-white/10 backdrop-blur-sm text-sunstone-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-sunstone-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0">
                       <ul>
                         <li>BTECH </li>
                       </ul>
@@ -249,9 +249,7 @@ export default function Index() {
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                      <span className="text-sunstone-gold">◆</span>
                       <p>Choose from 9+ industry oriented Programs</p>
-                      <span className="text-sunstone-gold">◆</span>
                     </p>
                   </div>
                 </div>
@@ -667,6 +665,7 @@ export default function Index() {
               </span>
             </div>
 
+            <div className="text-center">
             <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0 text-center">
               <span className="bg-gradient-to-r from-sunstone-navy to-sunstone-gold bg-clip-text text-transparent">
                 Revolutionizing Higher Education for Tomorrow's Leaders
@@ -1065,6 +1064,7 @@ export default function Index() {
                 </div>
               </div>
             </h2>
+            </div>
           </div>
         </div>
       </section>
