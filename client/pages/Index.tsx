@@ -678,7 +678,7 @@ export default function Index() {
               <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
                 Transform your career with industry-integrated programs designed
                 by corporate leaders, featuring cutting-edge curriculum,
-                practical learning experiences, and guaranteed placement
+                practical learning experiences, and assured placement
                 support.
               </span>
               <br />
@@ -2101,7 +2101,7 @@ export default function Index() {
               Choose from India's top institutions with
               <span className="text-sunstone-gold font-bold">
                 {" "}
-                guaranteed placement opportunities
+                assured placement opportunities
               </span>
             </p>
             <div className="h-0.5 w-16 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"></div>
@@ -2181,7 +2181,7 @@ export default function Index() {
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
-                        <p>�� 2 Specialisations</p>
+                        <p>✓ 2 Specialisations</p>
                         <p>✓ 10 Certifications</p>
                       </div>
                     </div>
