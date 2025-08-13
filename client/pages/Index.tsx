@@ -2472,7 +2472,7 @@ export default function Index() {
                 Ready to Start Your Journey?
               </h3>
               <p className="text-gray-200 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6 max-w-2xl mx-auto">
-                Campus with 200+ job opportunities and industry partnerships
+                Campus with 200+ job opportunities and industry
               </p>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
