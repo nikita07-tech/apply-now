@@ -688,7 +688,7 @@ export default function Index() {
                 </span>
                 <br />
                 <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA • BBA • MCA • BCA • B.Tech • B.Sc • M.Sc</p>
+                  <p>MBA �� BBA • MCA • BCA • B.Tech • B.Sc • M.Sc</p>
                 </span>
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -2658,8 +2658,10 @@ export default function Index() {
                 Don't Miss This Chance!
               </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
-                Join India's best colleges today. Very few seats are left -
-                apply now before it's too late!
+                <p>
+                  Grab this chance to get admission in only campus with 200+
+                  job opportunity and industry partnerships
+                </p>
               </p>
             </div>
             <button
