@@ -625,7 +625,8 @@ export default function Index() {
                       htmlFor="terms-checkbox"
                       className="text-xs text-gray-500 leading-tight cursor-pointer"
                     >
-                      By clicking "Send OTP", I agree to the Terms & Conditions and Privacy Policy
+                      By clicking "Send OTP", I agree to the Terms & Conditions
+                      and Privacy Policy
                     </label>
                   </div>
 
@@ -1187,7 +1188,9 @@ export default function Index() {
               <p>Our Impact Speaks for Itself</p>
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
-              Experience transformative education that creates industry-ready professionals through innovative learning approaches and real-world skill development
+              Experience transformative education that creates industry-ready
+              professionals through innovative learning approaches and
+              real-world skill development
             </p>
             <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
@@ -1198,28 +1201,60 @@ export default function Index() {
               {/* Tab 1: Industry Integration */}
               <div className="bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-navy/20">
                 <div className="w-12 h-12 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-sunstone-navy mb-3">Industry Integration</h3>
+                <h3 className="text-lg font-bold text-sunstone-navy mb-3">
+                  Industry Integration
+                </h3>
                 <div className="space-y-2">
-                  <div className="text-2xl font-black text-sunstone-navy">6+</div>
-                  <div className="text-sm text-gray-600">Months of hands-on industry internships with real companies</div>
+                  <div className="text-2xl font-black text-sunstone-navy">
+                    6+
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Months of hands-on industry internships with real companies
+                  </div>
                 </div>
               </div>
 
               {/* Tab 2: Skill Development */}
               <div className="bg-gradient-to-br from-sunstone-gold/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-gold/20">
                 <div className="w-12 h-12 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  <svg
+                    className="w-6 h-6 text-black"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-sunstone-navy mb-3">Skill Excellence</h3>
+                <h3 className="text-lg font-bold text-sunstone-navy mb-3">
+                  Skill Excellence
+                </h3>
                 <div className="space-y-2">
-                  <div className="text-2xl font-black text-sunstone-navy">10+</div>
-                  <div className="text-sm text-gray-600">Industry-recognized certifications for job-ready skills</div>
+                  <div className="text-2xl font-black text-sunstone-navy">
+                    10+
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Industry-recognized certifications for job-ready skills
+                  </div>
                 </div>
               </div>
 
@@ -1228,10 +1263,16 @@ export default function Index() {
                 <div className="w-12 h-12 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-sunstone-navy mb-3">Career Success</h3>
+                <h3 className="text-lg font-bold text-sunstone-navy mb-3">
+                  Career Success
+                </h3>
                 <div className="space-y-2">
-                  <div className="text-2xl font-black text-sunstone-navy">200+</div>
-                  <div className="text-sm text-gray-600">Assured placement opportunities with campus partnerships</div>
+                  <div className="text-2xl font-black text-sunstone-navy">
+                    200+
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Assured placement opportunities with campus partnerships
+                  </div>
                 </div>
               </div>
             </div>
@@ -1250,7 +1291,10 @@ export default function Index() {
                 <p>From Top Recruiters</p>
               </div>
             </div>
-            <div className="rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl" style={{backgroundColor: '#1b2a56'}}>
+            <div
+              className="rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl"
+              style={{ backgroundColor: "#1b2a56" }}
+            >
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 1020+
               </div>
@@ -1893,9 +1937,9 @@ export default function Index() {
               Recognizing academic excellence with financial support up to{" "}
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
               <p>
-                for deserving students based on CAT/CMAT/JEE/XAT/12th
-                score. Students can also take SAT (Sunstone Admission
-                Test) for amazing scholarship
+                for deserving students based on CAT/CMAT/JEE/XAT/12th score.
+                Students can also take SAT (Sunstone Admission Test) for amazing
+                scholarship
               </p>
             </p>
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
@@ -1948,7 +1992,8 @@ export default function Index() {
                     Merit-Based Scholarship
                   </h3>
                   <p className="text-gray-600 text-base md:text-lg">
-                    Scholarships awarded based on academic merit and entrance exam scores, not financial need
+                    Scholarships awarded based on academic merit and entrance
+                    exam scores, not financial need
                   </p>
                 </div>
 
@@ -2013,7 +2058,8 @@ export default function Index() {
                     Merit-Based Scholarship
                   </h4>
                   <p className="text-gray-300 text-xs md:text-sm mb-4">
-                    Limited scholarships available for top-performing students based on entrance exam scores
+                    Limited scholarships available for top-performing students
+                    based on entrance exam scores
                   </p>
                   <button
                     onClick={() => {
@@ -2659,8 +2705,8 @@ export default function Index() {
               </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
                 <p>
-                  Grab this chance to get admission in only campus with 200+
-                  job opportunity and industry partnerships
+                  Grab this chance to get admission in only campus with 200+ job
+                  opportunity and industry partnerships
                 </p>
               </p>
             </div>
