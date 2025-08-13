@@ -2501,8 +2501,7 @@ export default function Index() {
                 Ready to Start Your Journey?
               </h3>
               <p className="text-gray-200 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6 max-w-2xl mx-auto">
-                Join thousands of successful students who chose the right
-                college for their career
+                Campus with 200+ job opportunities and industry partnerships
               </p>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
