@@ -1121,7 +1121,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="bg-sunstone-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300">
+          <div className="bg-sunstone-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300 border-4 border-sunstone-navy-dark">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
