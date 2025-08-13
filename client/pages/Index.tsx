@@ -614,17 +614,27 @@ export default function Index() {
                     </select>
                   </div>
 
+                  <div className="flex items-start space-x-2">
+                    <input
+                      type="checkbox"
+                      id="terms-checkbox"
+                      className="mt-1 h-4 w-4 text-sunstone-gold border-2 border-gray-300 rounded focus:ring-sunstone-gold focus:ring-2"
+                      required
+                    />
+                    <label
+                      htmlFor="terms-checkbox"
+                      className="text-xs text-gray-500 leading-tight cursor-pointer"
+                    >
+                      By clicking "Send OTP", I agree to the Terms & Conditions and Privacy Policy
+                    </label>
+                  </div>
+
                   <Button
                     type="submit"
                     className="w-full bg-sunstone-navy hover:bg-sunstone-navy-dark text-sunstone-white py-3 sm:py-3 md:py-4 text-base sm:text-lg md:text-xl font-bold rounded-lg sm:rounded-xl shadow-lg"
                   >
                     Send OTP
                   </Button>
-
-                  <p className="text-xs sm:text-xs text-gray-500 text-center px-1 sm:px-2 leading-tight">
-                    By clicking "Send OTP", you agree to our Terms & Conditions
-                    and Privacy Policy
-                  </p>
                 </form>
               </div>
             </div>
