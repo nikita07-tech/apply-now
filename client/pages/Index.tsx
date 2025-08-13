@@ -1996,11 +1996,10 @@ export default function Index() {
 
                 <div className="mt-6 md:mt-8 bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl p-4 md:p-6 text-center">
                   <h4 className="text-xs md:text-xl font-bold text-sunstone-white mb-2">
-                    Merit-Based Financial Support
+                    Merit-Based Scholarship
                   </h4>
                   <p className="text-gray-300 text-xs md:text-sm mb-4">
-                    Limited scholarships available on first-come, first-served
-                    basis for qualifying students
+                    Limited scholarships available for top-performing students based on entrance exam scores
                   </p>
                   <button
                     onClick={() => {
