@@ -376,6 +376,12 @@ export default function Index() {
                       >
                         M.Sc
                       </option>
+                      <option
+                        value="others"
+                        className="text-sunstone-black text-xs md:text-base"
+                      >
+                        Others
+                      </option>
                     </select>
                   </div>
 
@@ -1171,94 +1177,51 @@ export default function Index() {
               <p>Our Impact Speaks for Itself</p>
             </h2>
             <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
-              Real results from real students who chose to transform their
-              careers with Sunstone
+              Experience transformative education that creates industry-ready professionals through innovative learning approaches and real-world skill development
             </p>
             <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Professional Stats Grid - Consistent across all devices */}
+          {/* Three Tabs Story Section */}
           <div className="mb-8">
-            {/* Unified Grid Layout */}
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                {/* Highest Package Card */}
-                <div className="bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-gray-200">
-                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Award className="h-4 w-4 text-sunstone-black" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    ₹26 LPA
-                  </div>
-                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    Highest Package
-                  </div>
-                  <div
-                    className="text-xs"
-                    style={{ color: "rgba(74, 74, 74, 1)" }}
-                  >
-                    Record-breaking
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Tab 1: Industry Integration */}
+              <div className="bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-navy/20">
+                <div className="w-12 h-12 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-sunstone-navy mb-3">Industry Integration</h3>
+                <div className="space-y-2">
+                  <div className="text-2xl font-black text-sunstone-navy">6+</div>
+                  <div className="text-sm text-gray-600">Months of hands-on industry internships with real companies</div>
                 </div>
               </div>
-              <div>
-                {/* ROI Card */}
-                <div className="bg-white rounded-lg p-3 text-center shadow-lg">
-                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
-                    <TrendingUp className="h-4 w-4 text-black" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    63%
-                  </div>
-                  <div className="text-black font-bold text-xs mb-0.5">
-                    Higher ROI
-                  </div>
-                  <div
-                    className="text-xs"
-                    style={{ color: "rgba(74, 74, 74, 1)" }}
-                  >
-                    Better return
-                  </div>
+
+              {/* Tab 2: Skill Development */}
+              <div className="bg-gradient-to-br from-sunstone-gold/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-gold/20">
+                <div className="w-12 h-12 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-sunstone-navy mb-3">Skill Excellence</h3>
+                <div className="space-y-2">
+                  <div className="text-2xl font-black text-sunstone-navy">10+</div>
+                  <div className="text-sm text-gray-600">Industry-recognized certifications for job-ready skills</div>
                 </div>
               </div>
-              <div>
-                {/* Students Placed Card */}
-                <div className="bg-white rounded-lg p-3 text-center shadow-lg border border-sunstone-gold/30">
-                  <div className="w-8 h-8 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-light rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Award className="h-4 w-4 text-black" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    <p>7×</p>
-                  </div>
-                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    <p>More Companies</p>
-                  </div>
-                  <div
-                    className="text-xs"
-                    style={{ color: "rgba(74, 74, 74, 1)" }}
-                  >
-                    hiring than top private institutes
-                  </div>
+
+              {/* Tab 3: Career Success */}
+              <div className="bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-navy/20">
+                <div className="w-12 h-12 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-white" />
                 </div>
-              </div>
-              <div>
-                {/* Multiple Offers Card */}
-                <div className="bg-sunstone-white rounded-lg p-3 text-center shadow-lg border border-sunstone-navy/20">
-                  <div className="w-8 h-8 bg-sunstone-gold rounded-full flex items-center justify-center mx-auto mb-1">
-                    <TrendingUp className="h-4 w-4 text-black" />
-                  </div>
-                  <div className="text-lg font-black text-sunstone-navy mb-0.5">
-                    306
-                  </div>
-                  <div className="text-sunstone-black font-bold text-xs mb-0.5">
-                    <p>Students</p>
-                  </div>
-                  <div
-                    className="text-xs"
-                    style={{ color: "rgba(74, 74, 74, 1)" }}
-                  >
-                    <p>with 2+ job offers</p>
-                  </div>
+                <h3 className="text-lg font-bold text-sunstone-navy mb-3">Career Success</h3>
+                <div className="space-y-2">
+                  <div className="text-2xl font-black text-sunstone-navy">200+</div>
+                  <div className="text-sm text-gray-600">Assured placement opportunities with campus partnerships</div>
                 </div>
               </div>
             </div>
@@ -1274,7 +1237,7 @@ export default function Index() {
                 <p>Offers</p>
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                <p>From Legacy Recruiters</p>
+                <p>From Top Recruiters</p>
               </div>
             </div>
             <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
@@ -1908,7 +1871,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 bg-sunstone-gold/10 px-6 py-3 rounded-full mb-6 border border-sunstone-gold/30">
               <Award className="h-5 w-5 text-sunstone-gold" />
               <span className="text-sunstone-navy font-semibold text-base">
-                Financial Support Available
+                Merit-Based Scholarship Program
               </span>
             </div>
 
@@ -1919,7 +1882,7 @@ export default function Index() {
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
               Recognizing academic excellence with financial support up to{" "}
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span> for
-              deserving students
+              deserving students based on CAT/CMAT/JEE/XAT/12th score. Students can also take SAT (Sunstone Admission Test).
             </p>
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
           </div>
@@ -1968,11 +1931,10 @@ export default function Index() {
               <div className="bg-gradient-to-br from-gray-50 to-sunstone-gold/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200">
                 <div className="mb-6 md:mb-8">
                   <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
-                    Merit-Based Financial Awards
+                    Merit-Based Scholarship
                   </h3>
                   <p className="text-gray-600 text-base md:text-lg">
-                    Scholarships awarded based on academic performance and
-                    potential
+                    Scholarships awarded based on academic merit and entrance exam scores, not financial need
                   </p>
                 </div>
 
