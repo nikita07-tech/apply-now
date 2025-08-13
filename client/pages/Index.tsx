@@ -1886,7 +1886,7 @@ export default function Index() {
             </div>
 
             <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-sunstone-navy mb-4 md:mb-6 px-4">
-              Bright Minds Scholarship Program
+              Bright Minds Scholarship Program - Students can also take SAT to grab amazing scholarships
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
