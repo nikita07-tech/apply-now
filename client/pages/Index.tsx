@@ -1240,7 +1240,7 @@ export default function Index() {
                 <p>From Top Recruiters</p>
               </div>
             </div>
-            <div className="bg-sunstone-navy rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
+            <div className="rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl" style={{backgroundColor: '#1b2a56'}}>
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
                 1020+
               </div>
