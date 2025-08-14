@@ -1225,7 +1225,7 @@ export default function Index() {
                 <TrendingUp className="h-10 w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy to-sunstone-gold mb-4 animate-glow">
+              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
                 1170+
               </div>
 
@@ -1251,7 +1251,7 @@ export default function Index() {
                 <Users className="h-10 w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-gold to-sunstone-navy mb-4 animate-glow" style={{animationDelay: "0.3s"}}>
+              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
                 1020+
               </div>
 
@@ -1277,7 +1277,7 @@ export default function Index() {
                 <Star className="h-10 w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy to-sunstone-gold mb-4 animate-glow" style={{animationDelay: "0.6s"}}>
+              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
                 302+
               </div>
 
