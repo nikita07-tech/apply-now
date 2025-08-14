@@ -689,7 +689,7 @@ export default function Index() {
                 </span>
                 <br />
                 <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA �� BBA • MCA • BCA • B.Tech • B.Sc • M.Sc</p>
+                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
                 </span>
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1279,16 +1279,16 @@ export default function Index() {
           </div>
 
           {/* Additional Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-8 md:mb-12 px-3 sm:px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-8 md:mb-12 px-3 sm:px-4 md:px-0">
             <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
               <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                <p>1170+</p>
+                1170+
               </div>
               <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                <p>Offers</p>
+                Offers from Top Recruiters
               </div>
               <div className="text-gray-300 text-xs sm:text-sm">
-                <p>From Top Recruiters</p>
+                Industry partnerships providing diverse opportunities
               </div>
             </div>
             <div
@@ -1302,7 +1302,18 @@ export default function Index() {
                 Unique Job Opportunities
               </div>
               <div className="text-sunstone-white text-xs sm:text-sm">
-                <p>Across in Demand Sectors</p>
+                Across in Demand Sectors
+              </div>
+            </div>
+            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
+                302+
+              </div>
+              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
+                Students with Multiple Offers
+              </div>
+              <div className="text-gray-300 text-xs sm:text-sm">
+                2+ Job Offers per Student
               </div>
             </div>
           </div>
@@ -1937,9 +1948,11 @@ export default function Index() {
               Recognizing academic excellence with financial support up to{" "}
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
               <p>
-                for deserving students based on CAT/CMAT/JEE/XAT/12th score.
-                Students can also take SAT (Sunstone Admission Test) for amazing
-                scholarship
+                <p>
+                  for deserving students based on CAT/CMAT/JEE/XAT/12th
+                  score. Students can also take SAT (Sunstone Admission
+                  Test) to grab amazing scholarship
+                </p>
               </p>
             </p>
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
@@ -2700,13 +2713,10 @@ export default function Index() {
               <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
             <div className="mb-4 md:mb-8">
-              <p className="text-gray-200 text-sm md:text-2xl mb-1 md:mb-2 font-medium">
-                Don't Miss This Chance!
-              </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
                 <p>
-                  Grab this chance to get admission in only campus with 200+ job
-                  opportunity and industry partnerships
+                  Grab this chance to get admission in only campus with 200+
+                  job opportunity and industry based curriculum
                 </p>
               </p>
             </div>
