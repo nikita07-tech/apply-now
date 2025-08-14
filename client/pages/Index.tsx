@@ -1178,7 +1178,10 @@ export default function Index() {
         {/* Subtle background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-64 h-64 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-20 w-48 h-48 bg-sunstone-navy/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: "2s"}}></div>
+          <div
+            className="absolute bottom-20 left-20 w-48 h-48 bg-sunstone-navy/5 rounded-full blur-2xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -1189,7 +1192,10 @@ export default function Index() {
               <span className="text-sunstone-navy font-bold text-lg tracking-wide">
                 🏆 SUNSTONE EXCELLENCE PROVEN
               </span>
-              <div className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse" style={{animationDelay: "0.5s"}}></div>
+              <div
+                className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-6 animate-shimmer leading-tight">
@@ -1201,9 +1207,16 @@ export default function Index() {
                 Sunstone: Where Excellence Meets Opportunity
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                <span className="text-sunstone-gold font-semibold">Witness the Sunstone difference</span> - our previous batch results showcase
-                why we're India's most trusted education platform. These extraordinary achievements reflect our unwavering commitment
-                to <span className="text-sunstone-navy font-semibold">transforming lives through world-class education</span>.
+                <span className="text-sunstone-gold font-semibold">
+                  Witness the Sunstone difference
+                </span>{" "}
+                - our previous batch results showcase why we're India's most
+                trusted education platform. These extraordinary achievements
+                reflect our unwavering commitment to{" "}
+                <span className="text-sunstone-navy font-semibold">
+                  transforming lives through world-class education
+                </span>
+                .
               </p>
             </div>
 
@@ -1213,7 +1226,9 @@ export default function Index() {
 
             <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full">
               <Star className="h-5 w-5 text-sunstone-gold animate-bounce-soft" />
-              <span className="text-sunstone-navy font-semibold">Consistently Ranked #1 in Student Outcomes</span>
+              <span className="text-sunstone-navy font-semibold">
+                Consistently Ranked #1 in Student Outcomes
+              </span>
             </div>
           </div>
 
@@ -1234,14 +1249,20 @@ export default function Index() {
               </h3>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                <span className="text-sunstone-gold font-semibold">Sunstone's unmatched industry reputation</span> attracts
-                leading companies like Google, Microsoft, and Amazon. Our graduates are the <span className="font-semibold">first choice</span>
+                <span className="text-sunstone-gold font-semibold">
+                  Sunstone's unmatched industry reputation
+                </span>{" "}
+                attracts leading companies like Google, Microsoft, and Amazon.
+                Our graduates are the{" "}
+                <span className="font-semibold">first choice</span>
                 for top recruiters across every major industry.
               </p>
 
               <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
                 <Award className="h-5 w-5 text-sunstone-gold mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">Industry's Most Trusted</span>
+                <span className="text-sunstone-navy font-bold text-sm">
+                  Industry's Most Trusted
+                </span>
               </div>
             </div>
 
@@ -1260,14 +1281,20 @@ export default function Index() {
               </h3>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                <span className="text-sunstone-gold font-semibold">Sunstone's extensive network</span> spans from cutting-edge
-                startups to Fortune 500 giants. Our <span className="font-semibold">exclusive partnerships</span> create
-                unprecedented career pathways across 15+ high-growth sectors.
+                <span className="text-sunstone-gold font-semibold">
+                  Sunstone's extensive network
+                </span>{" "}
+                spans from cutting-edge startups to Fortune 500 giants. Our{" "}
+                <span className="font-semibold">exclusive partnerships</span>{" "}
+                create unprecedented career pathways across 15+ high-growth
+                sectors.
               </p>
 
               <div className="inline-flex items-center bg-gradient-to-r from-sunstone-navy/20 to-sunstone-navy/10 px-6 py-3 rounded-full border border-sunstone-navy/30 group-hover:scale-110 transition-transform duration-500">
                 <GraduationCap className="h-5 w-5 text-sunstone-navy mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">Unmatched Network</span>
+                <span className="text-sunstone-navy font-bold text-sm">
+                  Unmatched Network
+                </span>
               </div>
             </div>
 
@@ -1286,14 +1313,19 @@ export default function Index() {
               </h3>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                <span className="text-sunstone-gold font-semibold">The ultimate testament to Sunstone's excellence</span> -
-                our students don't just find jobs, they have the <span className="font-semibold">luxury of choice</span>.
-                This is what happens when world-class education meets industry demand.
+                <span className="text-sunstone-gold font-semibold">
+                  The ultimate testament to Sunstone's excellence
+                </span>{" "}
+                - our students don't just find jobs, they have the{" "}
+                <span className="font-semibold">luxury of choice</span>. This is
+                what happens when world-class education meets industry demand.
               </p>
 
               <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
                 <CheckCircle className="h-5 w-5 text-sunstone-gold mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">Premium Choice</span>
+                <span className="text-sunstone-navy font-bold text-sm">
+                  Premium Choice
+                </span>
               </div>
             </div>
           </div>
@@ -1304,16 +1336,26 @@ export default function Index() {
               <div className="mb-6">
                 <div className="inline-flex items-center gap-2 bg-sunstone-gold/20 px-4 py-2 rounded-full mb-4">
                   <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
-                  <span className="text-sunstone-navy font-bold text-sm">SUNSTONE PROMISE DELIVERED</span>
+                  <span className="text-sunstone-navy font-bold text-sm">
+                    SUNSTONE PROMISE DELIVERED
+                  </span>
                 </div>
               </div>
 
               <blockquote className="text-2xl md:text-3xl font-bold text-sunstone-navy leading-relaxed mb-6">
-                "These remarkable numbers don't just represent statistics – they represent
-                <span className="text-sunstone-gold"> Sunstone's unwavering commitment</span> to student success,
+                "These remarkable numbers don't just represent statistics – they
+                represent
+                <span className="text-sunstone-gold">
+                  {" "}
+                  Sunstone's unwavering commitment
+                </span>{" "}
+                to student success,
                 <br className="hidden md:block" />
-                <span className="text-sunstone-gold">dreams transformed into reality</span>, and families celebrating their
-                children's extraordinary achievements."
+                <span className="text-sunstone-gold">
+                  dreams transformed into reality
+                </span>
+                , and families celebrating their children's extraordinary
+                achievements."
               </blockquote>
 
               <div className="flex justify-center items-center gap-4 mb-6">
@@ -1323,7 +1365,11 @@ export default function Index() {
               </div>
 
               <p className="text-lg font-semibold text-sunstone-navy">
-                <span className="text-sunstone-gold">Join the Sunstone success story</span> - where excellence is not just promised, but consistently delivered.
+                <span className="text-sunstone-gold">
+                  Join the Sunstone success story
+                </span>{" "}
+                - where excellence is not just promised, but consistently
+                delivered.
               </p>
             </div>
           </div>
@@ -1959,9 +2005,9 @@ export default function Index() {
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
               <p>
                 <p>
-                  for deserving students based on CAT/CMAT/JEE/XAT/12th
-                  score. Students can also take SAT (Sunstone Admission
-                  Test) to grab amazing scholarship
+                  for deserving students based on CAT/CMAT/JEE/XAT/12th score.
+                  Students can also take SAT (Sunstone Admission Test) to grab
+                  amazing scholarship
                 </p>
               </p>
             </p>
@@ -2725,8 +2771,8 @@ export default function Index() {
             <div className="mb-4 md:mb-8">
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
                 <p>
-                  Grab this chance to get admission in only campus with 200+
-                  job opportunity and industry based curriculum
+                  Grab this chance to get admission in only campus with 200+ job
+                  opportunity and industry based curriculum
                 </p>
               </p>
             </div>
