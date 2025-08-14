@@ -1235,20 +1235,20 @@ export default function Index() {
           {/* Enhanced Statistics with Sunstone Praise */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8 mb-4 md:mb-12">
             {/* Stat 1: Offers from Top Recruiters */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl md:rounded-2xl p-4 md:p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <TrendingUp className="h-6 w-6 md:h-10 md:w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-lg md:rounded-2xl p-3 md:p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-10 h-10 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-2 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <TrendingUp className="h-5 w-5 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 md:mb-4">
+              <div className="text-2xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-1 md:mb-4">
                 1170+
               </div>
 
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 md:mb-4">
+              <h3 className="text-base md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-1 md:mb-4">
                 Offers from Top Recruiters
               </h3>
 
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3 md:mb-6">
+              <p className="text-xs md:text-base text-gray-700 leading-relaxed mb-2 md:mb-6">
                 <span className="text-sunstone-gold font-semibold">
                   Sunstone's unmatched industry reputation
                 </span>{" "}
@@ -2446,7 +2446,7 @@ export default function Index() {
                       SAGE University
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      Indore • MBA ��� AICTE
+                      Indore • MBA • AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
