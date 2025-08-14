@@ -1174,7 +1174,7 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-6 md:py-16 bg-gradient-to-br from-white via-gray-50 to-sunstone-gold/5 relative overflow-hidden">
+      <section className="py-4 md:py-16 bg-gradient-to-br from-white via-gray-50 to-sunstone-gold/5 relative overflow-hidden">
         {/* Subtle background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-64 h-64 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
@@ -1186,7 +1186,7 @@ export default function Index() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Epic Header with Sunstone Praise */}
-          <div className="text-center mb-6 md:mb-16">
+          <div className="text-center mb-4 md:mb-16">
             <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-sunstone-gold/30 to-sunstone-gold/20 backdrop-blur-sm px-4 sm:px-8 py-2 sm:py-4 rounded-full mb-4 sm:mb-6 border border-sunstone-gold/40 shadow-xl animate-glow">
               <div className="w-2 sm:w-3 h-2 sm:h-3 bg-sunstone-gold rounded-full animate-pulse"></div>
               <span className="text-sunstone-navy font-bold text-sm sm:text-lg tracking-wide">
@@ -1198,15 +1198,15 @@ export default function Index() {
               ></div>
             </div>
 
-            <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-3 sm:mb-6 animate-shimmer leading-tight">
+            <h2 className="text-xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-2 sm:mb-6 animate-shimmer leading-tight">
               Our Impact Speaks for Itself
             </h2>
 
-            <div className="max-w-4xl mx-auto mb-4 sm:mb-8">
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-4">
+            <div className="max-w-4xl mx-auto mb-3 sm:mb-8">
+              <p className="text-base sm:text-xl md:text-2xl font-bold text-sunstone-navy mb-1 sm:mb-4">
                 Sunstone: Where Excellence Meets Opportunity
               </p>
-              <p className="text-sm sm:text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-lg text-gray-700 leading-relaxed">
                 <span className="text-sunstone-gold font-semibold">
                   Witness the Sunstone difference
                 </span>{" "}
@@ -1220,7 +1220,7 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="flex justify-center mb-3 sm:mb-6">
+            <div className="flex justify-center mb-2 sm:mb-6">
               <div className="w-24 sm:w-40 h-0.5 sm:h-1 bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mx-auto rounded-full animate-expand-horizontal"></div>
             </div>
 
