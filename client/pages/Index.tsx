@@ -1178,14 +1178,14 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-8 md:mb-12">
-            <div className="inline-flex items-center gap-2 bg-gray-100 px-6 py-3 rounded-full mb-4 md:mb-6 border border-gray-200">
-              <TrendingUp className="h-5 w-5 text-gray-700" />
-              <span className="text-gray-700 font-semibold text-base">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full mb-4 md:mb-6 border border-sunstone-gold/30 shadow-lg">
+              <TrendingUp className="h-5 w-5 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-semibold text-base">
                 Previous Batch Results
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-4 md:mb-6 animate-shimmer">
               Our Impact Speaks for Itself
             </h2>
 
@@ -1193,7 +1193,7 @@ export default function Index() {
               Real results from our previous batch demonstrating consistent placement success and industry recognition.
             </p>
 
-            <div className="w-24 h-0.5 bg-gray-300 mx-auto mt-6"></div>
+            <div className="w-32 h-1 bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mx-auto mt-6 rounded-full animate-expand-horizontal"></div>
           </div>
 
           {/* Three Key Statistics */}
