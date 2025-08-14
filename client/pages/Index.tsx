@@ -689,7 +689,7 @@ export default function Index() {
                 </span>
                 <br />
                 <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA �� BBA • MCA • BCA • B.Tech • B.Sc • M.Sc</p>
+                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
                 </span>
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1174,136 +1174,203 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-white via-gray-50 to-sunstone-gold/5 relative overflow-hidden">
+        {/* Subtle background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
+          <div
+            className="absolute bottom-20 left-20 w-48 h-48 bg-sunstone-navy/5 rounded-full blur-2xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-4 md:mb-6 border border-sunstone-navy/20">
-              <TrendingUp className="h-5 w-5 text-sunstone-navy" />
-              <span className="text-sunstone-navy font-semibold text-base">
-                Proven Track Record
+          {/* Epic Header with Sunstone Praise */}
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-gold/30 to-sunstone-gold/20 backdrop-blur-sm px-8 py-4 rounded-full mb-6 border border-sunstone-gold/40 shadow-xl animate-glow">
+              <div className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse"></div>
+              <span className="text-sunstone-navy font-bold text-lg tracking-wide">
+                🏆 SUNSTONE EXCELLENCE PROVEN
+              </span>
+              <div
+                className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
+            </div>
+
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-6 animate-shimmer leading-tight">
+              Our Impact Speaks for Itself
+            </h2>
+
+            <div className="max-w-4xl mx-auto mb-8">
+              <p className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+                Sunstone: Where Excellence Meets Opportunity
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                <span className="text-sunstone-gold font-semibold">
+                  Witness the Sunstone difference
+                </span>{" "}
+                - our previous batch results showcase why we're India's most
+                trusted education platform. These extraordinary achievements
+                reflect our unwavering commitment to{" "}
+                <span className="text-sunstone-navy font-semibold">
+                  transforming lives through world-class education
+                </span>
+                .
+              </p>
+            </div>
+
+            <div className="flex justify-center mb-6">
+              <div className="w-40 h-1 bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mx-auto rounded-full animate-expand-horizontal"></div>
+            </div>
+
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full">
+              <Star className="h-5 w-5 text-sunstone-gold animate-bounce-soft" />
+              <span className="text-sunstone-navy font-semibold">
+                Consistently Ranked #1 in Student Outcomes
               </span>
             </div>
-
-            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
-              <p>Our Impact Speaks for Itself</p>
-            </h2>
-            <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
-              Experience transformative education that creates industry-ready
-              professionals through innovative learning approaches and
-              real-world skill development
-            </p>
-            <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* Three Tabs Story Section */}
-          <div className="mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Tab 1: Industry Integration */}
-              <div className="bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-navy/20">
-                <div className="w-12 h-12 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-sunstone-navy mb-3">
-                  Industry Integration
-                </h3>
-                <div className="space-y-2">
-                  <div className="text-2xl font-black text-sunstone-navy">
-                    6+
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Months of hands-on industry internships with real companies
-                  </div>
-                </div>
+          {/* Enhanced Statistics with Sunstone Praise */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Stat 1: Offers from Top Recruiters */}
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <TrendingUp className="h-10 w-10 text-white" />
               </div>
 
-              {/* Tab 2: Skill Development */}
-              <div className="bg-gradient-to-br from-sunstone-gold/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-gold/20">
-                <div className="w-12 h-12 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    className="w-6 h-6 text-black"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-sunstone-navy mb-3">
-                  Skill Excellence
-                </h3>
-                <div className="space-y-2">
-                  <div className="text-2xl font-black text-sunstone-navy">
-                    10+
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Industry-recognized certifications for job-ready skills
-                  </div>
-                </div>
+              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+                1170+
               </div>
 
-              {/* Tab 3: Career Success */}
-              <div className="bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-xl p-6 text-center shadow-lg border border-sunstone-navy/20">
-                <div className="w-12 h-12 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-lg font-bold text-sunstone-navy mb-3">
-                  Career Success
-                </h3>
-                <div className="space-y-2">
-                  <div className="text-2xl font-black text-sunstone-navy">
-                    200+
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Assured placement opportunities with campus partnerships
-                  </div>
-                </div>
+              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+                Offers from Top Recruiters
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-6">
+                <span className="text-sunstone-gold font-semibold">
+                  Sunstone's unmatched industry reputation
+                </span>{" "}
+                attracts leading companies like Google, Microsoft, and Amazon.
+                Our graduates are the{" "}
+                <span className="font-semibold">first choice</span>
+                for top recruiters across every major industry.
+              </p>
+
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
+                <Award className="h-5 w-5 text-sunstone-gold mr-2" />
+                <span className="text-sunstone-navy font-bold text-sm">
+                  Industry's Most Trusted
+                </span>
               </div>
             </div>
-          </div>
 
-          {/* Additional Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-8 md:mb-12 px-3 sm:px-4 md:px-0">
-            <div className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl">
-              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
-                <p>1170+</p>
+            {/* Stat 2: Unique Job Opportunities */}
+            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Users className="h-10 w-10 text-white" />
               </div>
-              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
-                <p>Offers</p>
-              </div>
-              <div className="text-gray-300 text-xs sm:text-sm">
-                <p>From Top Recruiters</p>
-              </div>
-            </div>
-            <div
-              className="rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-xl"
-              style={{ backgroundColor: "#1b2a56" }}
-            >
-              <div className="text-xl sm:text-2xl md:text-3xl font-black text-sunstone-gold mb-1 sm:mb-2">
+
+              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
                 1020+
               </div>
-              <div className="text-sunstone-white font-bold text-xs sm:text-base md:text-lg mb-1">
+
+              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
                 Unique Job Opportunities
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-6">
+                <span className="text-sunstone-gold font-semibold">
+                  Sunstone's extensive network
+                </span>{" "}
+                spans from cutting-edge startups to Fortune 500 giants. Our{" "}
+                <span className="font-semibold">exclusive partnerships</span>{" "}
+                create unprecedented career pathways across 15+ high-growth
+                sectors.
+              </p>
+
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-navy/20 to-sunstone-navy/10 px-6 py-3 rounded-full border border-sunstone-navy/30 group-hover:scale-110 transition-transform duration-500">
+                <GraduationCap className="h-5 w-5 text-sunstone-navy mr-2" />
+                <span className="text-sunstone-navy font-bold text-sm">
+                  Unmatched Network
+                </span>
               </div>
-              <div className="text-sunstone-white text-xs sm:text-sm">
-                <p>Across in Demand Sectors</p>
+            </div>
+
+            {/* Stat 3: Students with Multiple Offers */}
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Star className="h-10 w-10 text-white" />
               </div>
+
+              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+                302+
+              </div>
+
+              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+                Students with 2+ Job Offers
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-6">
+                <span className="text-sunstone-gold font-semibold">
+                  The ultimate testament to Sunstone's excellence
+                </span>{" "}
+                - our students don't just find jobs, they have the{" "}
+                <span className="font-semibold">luxury of choice</span>. This is
+                what happens when world-class education meets industry demand.
+              </p>
+
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
+                <CheckCircle className="h-5 w-5 text-sunstone-gold mr-2" />
+                <span className="text-sunstone-navy font-bold text-sm">
+                  Premium Choice
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Sunstone Excellence Statement */}
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-sunstone-navy/10 via-sunstone-gold/10 to-sunstone-navy/10 rounded-2xl p-8 md:p-12 border border-sunstone-gold/30 max-w-5xl mx-auto shadow-2xl backdrop-blur-sm">
+              <div className="mb-6">
+                <div className="inline-flex items-center gap-2 bg-sunstone-gold/20 px-4 py-2 rounded-full mb-4">
+                  <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+                  <span className="text-sunstone-navy font-bold text-sm">
+                    SUNSTONE PROMISE DELIVERED
+                  </span>
+                </div>
+              </div>
+
+              <blockquote className="text-2xl md:text-3xl font-bold text-sunstone-navy leading-relaxed mb-6">
+                "These remarkable numbers don't just represent statistics – they
+                represent
+                <span className="text-sunstone-gold">
+                  {" "}
+                  Sunstone's unwavering commitment
+                </span>{" "}
+                to student success,
+                <br className="hidden md:block" />
+                <span className="text-sunstone-gold">
+                  dreams transformed into reality
+                </span>
+                , and families celebrating their children's extraordinary
+                achievements."
+              </blockquote>
+
+              <div className="flex justify-center items-center gap-4 mb-6">
+                <div className="w-16 h-1 bg-gradient-to-r from-transparent to-sunstone-gold rounded-full"></div>
+                <div className="w-4 h-4 bg-sunstone-gold rounded-full animate-pulse"></div>
+                <div className="w-16 h-1 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full"></div>
+              </div>
+
+              <p className="text-lg font-semibold text-sunstone-navy">
+                <span className="text-sunstone-gold">
+                  Join the Sunstone success story
+                </span>{" "}
+                - where excellence is not just promised, but consistently
+                delivered.
+              </p>
             </div>
           </div>
         </div>
@@ -1937,9 +2004,11 @@ export default function Index() {
               Recognizing academic excellence with financial support up to{" "}
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
               <p>
-                for deserving students based on CAT/CMAT/JEE/XAT/12th score.
-                Students can also take SAT (Sunstone Admission Test) for amazing
-                scholarship
+                <p>
+                  for deserving students based on CAT/CMAT/JEE/XAT/12th score.
+                  Students can also take SAT (Sunstone Admission Test) to grab
+                  amazing scholarship
+                </p>
               </p>
             </p>
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
@@ -2323,7 +2392,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
@@ -2700,13 +2769,10 @@ export default function Index() {
               <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
             <div className="mb-4 md:mb-8">
-              <p className="text-gray-200 text-sm md:text-2xl mb-1 md:mb-2 font-medium">
-                Don't Miss This Chance!
-              </p>
               <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
                 <p>
                   Grab this chance to get admission in only campus with 200+ job
-                  opportunity and industry partnerships
+                  opportunity and industry based curriculum
                 </p>
               </p>
             </div>
