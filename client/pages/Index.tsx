@@ -2001,14 +2001,14 @@ export default function Index() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
-              Recognizing academic excellence with financial support up to{" "}
+              <p>
+                Recognizing academic excellence with scholarship up to
+              </p>{" "}
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
               <p>
-                <p>
-                  for deserving students based on CAT/CMAT/JEE/XAT/12th score.
-                  Students can also take SAT (Sunstone Admission Test) to grab
-                  amazing scholarship
-                </p>
+                for deserving students based on CAT/CMAT/JEE/XAT/12th score.
+                Students can also take SAT (Sunstone Admission Test) to grab
+                amazing scholarship
               </p>
             </p>
             <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-4 md:mt-6"></div>
@@ -2590,9 +2590,6 @@ export default function Index() {
               <h3 className="text-sm sm:text-base md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-2 sm:mb-3 md:mb-4">
                 Ready to Start Your Journey?
               </h3>
-              <p className="text-gray-200 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6 max-w-2xl mx-auto">
-                Campus with 200+ job opportunities and industry
-              </p>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
                   onClick={() => {
