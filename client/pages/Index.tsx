@@ -689,7 +689,7 @@ export default function Index() {
                 </span>
                 <br />
                 <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA • BBA ��� MCA •BCA • B.Tech • B.Sc • M.Sc</p>
+                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
                 </span>
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1233,22 +1233,22 @@ export default function Index() {
           </div>
 
           {/* Enhanced Statistics with Sunstone Praise */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-12">
             {/* Stat 1: Offers from Top Recruiters */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <TrendingUp className="h-10 w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl md:rounded-2xl p-4 md:p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <TrendingUp className="h-6 w-6 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 md:mb-4">
                 1170+
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 md:mb-4">
                 Offers from Top Recruiters
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3 md:mb-6">
                 <span className="text-sunstone-gold font-semibold">
                   Sunstone's unmatched industry reputation
                 </span>{" "}
@@ -1258,29 +1258,29 @@ export default function Index() {
                 for top recruiters across every major industry.
               </p>
 
-              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
-                <Award className="h-5 w-5 text-sunstone-gold mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-3 md:px-6 py-2 md:py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
+                <Award className="h-4 w-4 md:h-5 md:w-5 text-sunstone-gold mr-1 md:mr-2" />
+                <span className="text-sunstone-navy font-bold text-xs md:text-sm">
                   Industry's Most Trusted
                 </span>
               </div>
             </div>
 
             {/* Stat 2: Unique Job Opportunities */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <Users className="h-10 w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-xl md:rounded-2xl p-4 md:p-8 text-center shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-3 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Users className="h-6 w-6 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 md:mb-4">
                 1020+
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 md:mb-4">
                 Unique Job Opportunities
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3 md:mb-6">
                 <span className="text-sunstone-gold font-semibold">
                   Sunstone's extensive network
                 </span>{" "}
@@ -1290,29 +1290,29 @@ export default function Index() {
                 sectors.
               </p>
 
-              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-navy/20 to-sunstone-navy/10 px-6 py-3 rounded-full border border-sunstone-navy/30 group-hover:scale-110 transition-transform duration-500">
-                <GraduationCap className="h-5 w-5 text-sunstone-navy mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-navy/20 to-sunstone-navy/10 px-3 md:px-6 py-2 md:py-3 rounded-full border border-sunstone-navy/30 group-hover:scale-110 transition-transform duration-500">
+                <GraduationCap className="h-4 w-4 md:h-5 md:w-5 text-sunstone-navy mr-1 md:mr-2" />
+                <span className="text-sunstone-navy font-bold text-xs md:text-sm">
                   Unmatched Network
                 </span>
               </div>
             </div>
 
             {/* Stat 3: Students with Multiple Offers */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <Star className="h-10 w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl md:rounded-2xl p-4 md:p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Star className="h-6 w-6 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 md:mb-4">
                 302+
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 md:mb-4">
                 Students with 2+ Job Offers
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3 md:mb-6">
                 <span className="text-sunstone-gold font-semibold">
                   The ultimate testament to Sunstone's excellence
                 </span>{" "}
@@ -1321,9 +1321,9 @@ export default function Index() {
                 what happens when world-class education meets industry demand.
               </p>
 
-              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-6 py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
-                <CheckCircle className="h-5 w-5 text-sunstone-gold mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 px-3 md:px-6 py-2 md:py-3 rounded-full border border-sunstone-gold/30 group-hover:scale-110 transition-transform duration-500">
+                <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-sunstone-gold mr-1 md:mr-2" />
+                <span className="text-sunstone-navy font-bold text-xs md:text-sm">
                   Premium Choice
                 </span>
               </div>
