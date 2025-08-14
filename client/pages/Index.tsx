@@ -1332,17 +1332,17 @@ export default function Index() {
 
           {/* Sunstone Excellence Statement */}
           <div className="text-center">
-            <div className="bg-gradient-to-r from-sunstone-navy/10 via-sunstone-gold/10 to-sunstone-navy/10 rounded-2xl p-8 md:p-12 border border-sunstone-gold/30 max-w-5xl mx-auto shadow-2xl backdrop-blur-sm">
-              <div className="mb-6">
-                <div className="inline-flex items-center gap-2 bg-sunstone-gold/20 px-4 py-2 rounded-full mb-4">
-                  <div className="w-2 h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
-                  <span className="text-sunstone-navy font-bold text-sm">
+            <div className="bg-gradient-to-r from-sunstone-navy/10 via-sunstone-gold/10 to-sunstone-navy/10 rounded-xl md:rounded-2xl p-4 md:p-8 lg:p-12 border border-sunstone-gold/30 max-w-5xl mx-auto shadow-2xl backdrop-blur-sm">
+              <div className="mb-3 md:mb-6">
+                <div className="inline-flex items-center gap-1 md:gap-2 bg-sunstone-gold/20 px-3 md:px-4 py-1.5 md:py-2 rounded-full mb-2 md:mb-4">
+                  <div className="w-1.5 md:w-2 h-1.5 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
+                  <span className="text-sunstone-navy font-bold text-xs md:text-sm">
                     SUNSTONE PROMISE DELIVERED
                   </span>
                 </div>
               </div>
 
-              <blockquote className="text-2xl md:text-3xl font-bold text-sunstone-navy leading-relaxed mb-6">
+              <blockquote className="text-lg md:text-2xl lg:text-3xl font-bold text-sunstone-navy leading-relaxed mb-3 md:mb-6">
                 "These remarkable numbers don't just represent statistics – they
                 represent
                 <span className="text-sunstone-gold">
@@ -1358,13 +1358,13 @@ export default function Index() {
                 achievements."
               </blockquote>
 
-              <div className="flex justify-center items-center gap-4 mb-6">
-                <div className="w-16 h-1 bg-gradient-to-r from-transparent to-sunstone-gold rounded-full"></div>
-                <div className="w-4 h-4 bg-sunstone-gold rounded-full animate-pulse"></div>
-                <div className="w-16 h-1 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full"></div>
+              <div className="flex justify-center items-center gap-2 md:gap-4 mb-3 md:mb-6">
+                <div className="w-8 md:w-16 h-0.5 md:h-1 bg-gradient-to-r from-transparent to-sunstone-gold rounded-full"></div>
+                <div className="w-2 md:w-4 h-2 md:h-4 bg-sunstone-gold rounded-full animate-pulse"></div>
+                <div className="w-8 md:w-16 h-0.5 md:h-1 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full"></div>
               </div>
 
-              <p className="text-lg font-semibold text-sunstone-navy">
+              <p className="text-sm md:text-lg font-semibold text-sunstone-navy">
                 <span className="text-sunstone-gold">
                   Join the Sunstone success story
                 </span>{" "}
