@@ -1233,7 +1233,7 @@ export default function Index() {
           </div>
 
           {/* Enhanced Statistics with Sunstone Praise */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8 mb-4 md:mb-12">
             {/* Stat 1: Offers from Top Recruiters */}
             <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl md:rounded-2xl p-4 md:p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
               <div className="w-12 h-12 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
@@ -2446,7 +2446,7 @@ export default function Index() {
                       SAGE University
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      Indore • MBA • AICTE
+                      Indore • MBA ��� AICTE
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
