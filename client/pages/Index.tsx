@@ -1174,248 +1174,98 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-12 md:py-20 bg-gradient-to-br from-sunstone-navy via-sunstone-navy-dark to-black relative overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-sunstone-gold/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: "2s"}}></div>
-          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-sunstone-gold/8 rounded-full blur-2xl animate-float"></div>
-        </div>
-
+      <section className="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-sunstone-navy/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Epic Header */}
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-gold/20 to-sunstone-gold/10 backdrop-blur-sm px-8 py-4 rounded-full mb-8 border border-sunstone-gold/30 shadow-2xl">
-              <div className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse"></div>
-              <span className="text-sunstone-white font-bold text-lg tracking-wide">
-                THE SUNSTONE SUCCESS STORY
+          {/* Header */}
+          <div className="text-center mb-8 md:mb-12 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full mb-4 md:mb-6 border border-sunstone-navy/20">
+              <TrendingUp className="h-5 w-5 text-sunstone-navy" />
+              <span className="text-sunstone-navy font-semibold text-base">
+                Previous Batch Results
               </span>
-              <div className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse" style={{animationDelay: "0.5s"}}></div>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-white via-sunstone-gold to-sunstone-white mb-6 leading-tight animate-glow">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-sunstone-navy mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4">
               Our Impact Speaks for Itself
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 font-medium max-w-4xl mx-auto leading-relaxed">
-              Where dreams meet opportunity, where potential becomes reality,
-              <br className="hidden md:block" />
-              <span className="text-sunstone-gold font-bold">where success stories are born every day</span>
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-3 sm:px-4">
+              Real results from our previous batch - proving our commitment to student success through measurable outcomes
             </p>
-            <div className="flex justify-center mt-8">
-              <div className="h-1 w-24 bg-gradient-to-r from-transparent via-sunstone-gold to-transparent rounded-full animate-expand-horizontal"></div>
-            </div>
+            <div className="h-0.5 sm:h-1 w-20 sm:w-24 md:w-32 bg-gradient-to-r from-sunstone-gold to-sunstone-navy rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"></div>
           </div>
 
-          {/* The Success Journey - Three Acts */}
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold text-sunstone-gold mb-4 animate-slide-in-left">
-                The Journey to Excellence
-              </h3>
-              <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-                Follow the remarkable path from enrollment to extraordinary career success
-              </p>
-            </div>
-
-            {/* Story Timeline */}
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-sunstone-gold via-sunstone-gold to-transparent rounded-full hidden md:block"></div>
-
-              {/* Act 1: The Foundation */}
-              <div className="flex flex-col md:flex-row items-center mb-16 animate-slide-in-left">
-                <div className="md:w-1/2 text-center md:text-right md:pr-12">
-                  <div className="inline-block bg-gradient-to-r from-sunstone-navy-dark to-sunstone-navy rounded-2xl p-8 shadow-2xl border border-sunstone-gold/20 hover:scale-105 transition-all duration-500">
-                    <div className="w-16 h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto md:mx-0 md:ml-auto mb-6 animate-bounce-soft">
-                      <div className="text-3xl font-black text-sunstone-navy">1</div>
-                    </div>
-                    <h4 className="text-2xl font-bold text-sunstone-white mb-4">The Foundation</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Students embark on their transformative journey with industry-integrated programs,
-                      hands-on learning, and mentorship from corporate leaders.
-                    </p>
-                  </div>
-                </div>
-                <div className="hidden md:block w-8 h-8 bg-sunstone-gold rounded-full border-4 border-sunstone-navy shadow-lg animate-pulse"></div>
-                <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0">
-                  <div className="bg-gradient-to-br from-sunstone-gold/10 to-transparent rounded-2xl p-6 border border-sunstone-gold/20">
-                    <div className="text-4xl font-black text-sunstone-gold mb-2 animate-float">6+</div>
-                    <div className="text-sunstone-white font-bold text-lg">Months of Industry Training</div>
-                    <div className="text-gray-300 text-sm mt-2">Real-world experience with leading companies</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Act 2: The Transformation */}
-              <div className="flex flex-col md:flex-row-reverse items-center mb-16 animate-slide-in-right">
-                <div className="md:w-1/2 text-center md:text-left md:pl-12">
-                  <div className="inline-block bg-gradient-to-r from-sunstone-navy-dark to-sunstone-navy rounded-2xl p-8 shadow-2xl border border-sunstone-gold/20 hover:scale-105 transition-all duration-500">
-                    <div className="w-16 h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto md:mx-0 mb-6 animate-bounce-soft" style={{animationDelay: "0.5s"}}>
-                      <div className="text-3xl font-black text-sunstone-navy">2</div>
-                    </div>
-                    <h4 className="text-2xl font-bold text-sunstone-white mb-4">The Transformation</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Through rigorous skill development, industry certifications, and practical projects,
-                      students evolve into job-ready professionals.
-                    </p>
-                  </div>
-                </div>
-                <div className="hidden md:block w-8 h-8 bg-sunstone-gold rounded-full border-4 border-sunstone-navy shadow-lg animate-pulse" style={{animationDelay: "1s"}}></div>
-                <div className="md:w-1/2 md:pr-12 mt-8 md:mt-0">
-                  <div className="bg-gradient-to-br from-sunstone-gold/10 to-transparent rounded-2xl p-6 border border-sunstone-gold/20">
-                    <div className="text-4xl font-black text-sunstone-gold mb-2 animate-float" style={{animationDelay: "0.5s"}}>10+</div>
-                    <div className="text-sunstone-white font-bold text-lg">Industry Certifications</div>
-                    <div className="text-gray-300 text-sm mt-2">Recognized credentials for career advancement</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Act 3: The Triumph */}
-              <div className="flex flex-col md:flex-row items-center animate-slide-in-left">
-                <div className="md:w-1/2 text-center md:text-right md:pr-12">
-                  <div className="inline-block bg-gradient-to-r from-sunstone-navy-dark to-sunstone-navy rounded-2xl p-8 shadow-2xl border border-sunstone-gold/20 hover:scale-105 transition-all duration-500">
-                    <div className="w-16 h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto md:mx-0 md:ml-auto mb-6 animate-bounce-soft" style={{animationDelay: "1s"}}>
-                      <div className="text-3xl font-black text-sunstone-navy">3</div>
-                    </div>
-                    <h4 className="text-2xl font-bold text-sunstone-white mb-4">The Triumph</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Graduates emerge as industry leaders, securing multiple offers from top companies
-                      and launching successful careers across diverse sectors.
-                    </p>
-                  </div>
-                </div>
-                <div className="hidden md:block w-8 h-8 bg-sunstone-gold rounded-full border-4 border-sunstone-navy shadow-lg animate-pulse" style={{animationDelay: "1.5s"}}></div>
-                <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0">
-                  <div className="bg-gradient-to-br from-sunstone-gold/10 to-transparent rounded-2xl p-6 border border-sunstone-gold/20">
-                    <div className="text-4xl font-black text-sunstone-gold mb-2 animate-float" style={{animationDelay: "1s"}}>200+</div>
-                    <div className="text-sunstone-white font-bold text-lg">Placement Opportunities</div>
-                    <div className="text-gray-300 text-sm mt-2">Guaranteed pathways to career success</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* The Epic Numbers - Our Greatest Achievements */}
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-gold via-sunstone-white to-sunstone-gold mb-6 animate-shimmer">
-              The Numbers That Define Excellence
-            </h3>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Behind every success story lies a foundation of unwavering commitment to student achievement
-            </p>
-          </div>
-
-          {/* Three Legendary Stats */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          {/* Three Key Statistics */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
             {/* Stat 1: Offers from Top Recruiters */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-dark rounded-3xl blur-xl opacity-25 group-hover:opacity-40 transition-opacity duration-500"></div>
-              <div className="relative bg-gradient-to-br from-sunstone-navy-dark via-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 border border-sunstone-gold/30 hover:border-sunstone-gold/60 transition-all duration-500 hover:scale-105 shadow-2xl">
-                {/* Floating Icon */}
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center shadow-lg animate-float">
-                    <TrendingUp className="h-6 w-6 text-sunstone-navy" />
-                  </div>
-                </div>
-
-                <div className="text-center pt-8">
-                  <div className="text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-gold to-sunstone-white mb-4 animate-glow">
-                    1170+
-                  </div>
-                  <h4 className="text-2xl font-bold text-sunstone-white mb-3">
-                    Offers from Top Recruiters
-                  </h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Industry giants trust our graduates with their most important roles,
-                    creating a pipeline of opportunities that spans every major sector.
-                  </p>
-
-                  {/* Achievement Badge */}
-                  <div className="inline-flex items-center bg-sunstone-gold/20 px-4 py-2 rounded-full mt-4">
-                    <Award className="h-4 w-4 text-sunstone-gold mr-2" />
-                    <span className="text-sunstone-gold font-semibold text-sm">Industry Preferred</span>
-                  </div>
-                </div>
+            <div className="group bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-2xl p-6 md:p-8 text-center shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 animate-fade-in-up">
+              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                <TrendingUp className="h-8 w-8 text-white" />
+              </div>
+              <div className="text-4xl md:text-5xl font-black text-sunstone-navy mb-2 animate-glow">
+                1170+
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-sunstone-navy mb-3">
+                Offers from Top Recruiters
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Leading companies across industries have extended offers to our graduates, validating the quality of education and skill development.
+              </p>
+              <div className="inline-flex items-center bg-sunstone-gold/20 px-3 py-1 rounded-full mt-4">
+                <Award className="h-3 w-3 text-sunstone-gold mr-1" />
+                <span className="text-sunstone-gold font-semibold text-xs">Industry Trusted</span>
               </div>
             </div>
 
             {/* Stat 2: Unique Job Opportunities */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-dark rounded-3xl blur-xl opacity-25 group-hover:opacity-40 transition-opacity duration-500"></div>
-              <div className="relative bg-gradient-to-br from-sunstone-navy-dark via-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 border border-sunstone-gold/30 hover:border-sunstone-gold/60 transition-all duration-500 hover:scale-105 shadow-2xl">
-                {/* Floating Icon */}
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center shadow-lg animate-float" style={{animationDelay: "0.5s"}}>
-                    <Users className="h-6 w-6 text-sunstone-navy" />
-                  </div>
-                </div>
-
-                <div className="text-center pt-8">
-                  <div className="text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-gold to-sunstone-white mb-4 animate-glow" style={{animationDelay: "0.5s"}}>
-                    1020+
-                  </div>
-                  <h4 className="text-2xl font-bold text-sunstone-white mb-3">
-                    Unique Job Opportunities
-                  </h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    From emerging startups to Fortune 500 companies, our network spans
-                    every in-demand sector, ensuring diverse career pathways for every graduate.
-                  </p>
-
-                  {/* Achievement Badge */}
-                  <div className="inline-flex items-center bg-sunstone-gold/20 px-4 py-2 rounded-full mt-4">
-                    <GraduationCap className="h-4 w-4 text-sunstone-gold mr-2" />
-                    <span className="text-sunstone-gold font-semibold text-sm">Sector Diverse</span>
-                  </div>
-                </div>
+            <div className="group bg-gradient-to-br from-sunstone-gold/5 to-sunstone-white rounded-2xl p-6 md:p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 animate-fade-in-up delay-200">
+              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                <Users className="h-8 w-8 text-sunstone-navy" />
+              </div>
+              <div className="text-4xl md:text-5xl font-black text-sunstone-navy mb-2 animate-glow" style={{animationDelay: "0.2s"}}>
+                1020+
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-sunstone-navy mb-3">
+                Unique Job Opportunities
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Diverse career pathways spanning startups to Fortune 500 companies across all in-demand sectors and emerging technologies.
+              </p>
+              <div className="inline-flex items-center bg-sunstone-gold/20 px-3 py-1 rounded-full mt-4">
+                <GraduationCap className="h-3 w-3 text-sunstone-gold mr-1" />
+                <span className="text-sunstone-gold font-semibold text-xs">Sector Wide</span>
               </div>
             </div>
 
             {/* Stat 3: Students with Multiple Offers */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-sunstone-gold to-sunstone-gold-dark rounded-3xl blur-xl opacity-25 group-hover:opacity-40 transition-opacity duration-500"></div>
-              <div className="relative bg-gradient-to-br from-sunstone-navy-dark via-sunstone-navy to-sunstone-navy-dark rounded-3xl p-8 border border-sunstone-gold/30 hover:border-sunstone-gold/60 transition-all duration-500 hover:scale-105 shadow-2xl">
-                {/* Floating Icon */}
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center shadow-lg animate-float" style={{animationDelay: "1s"}}>
-                    <Star className="h-6 w-6 text-sunstone-navy" />
-                  </div>
-                </div>
-
-                <div className="text-center pt-8">
-                  <div className="text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-gold to-sunstone-white mb-4 animate-glow" style={{animationDelay: "1s"}}>
-                    302+
-                  </div>
-                  <h4 className="text-2xl font-bold text-sunstone-white mb-3">
-                    Students with Multiple Offers
-                  </h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    The ultimate validation of excellence - our graduates don't just find jobs,
-                    they have the luxury of choosing from multiple offers, ensuring the perfect career fit.
-                  </p>
-
-                  {/* Achievement Badge */}
-                  <div className="inline-flex items-center bg-sunstone-gold/20 px-4 py-2 rounded-full mt-4">
-                    <CheckCircle className="h-4 w-4 text-sunstone-gold mr-2" />
-                    <span className="text-sunstone-gold font-semibold text-sm">Choice Advantage</span>
-                  </div>
-                </div>
+            <div className="group bg-gradient-to-br from-sunstone-navy/5 to-sunstone-white rounded-2xl p-6 md:p-8 text-center shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 animate-fade-in-up delay-400">
+              <div className="w-16 h-16 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                <Star className="h-8 w-8 text-white" />
+              </div>
+              <div className="text-4xl md:text-5xl font-black text-sunstone-navy mb-2 animate-glow" style={{animationDelay: "0.4s"}}>
+                302+
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-sunstone-navy mb-3">
+                Students with 2+ Job Offers
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                The ultimate success metric - students enjoying the privilege of choice with multiple job offers to select their ideal career path.
+              </p>
+              <div className="inline-flex items-center bg-sunstone-gold/20 px-3 py-1 rounded-full mt-4">
+                <CheckCircle className="h-3 w-3 text-sunstone-gold mr-1" />
+                <span className="text-sunstone-gold font-semibold text-xs">Multiple Choice</span>
               </div>
             </div>
           </div>
 
-          {/* The Legacy Statement */}
+          {/* Bottom Statement */}
           <div className="text-center">
-            <div className="inline-block bg-gradient-to-r from-sunstone-gold/10 to-transparent rounded-2xl p-8 border border-sunstone-gold/20 backdrop-blur-sm">
-              <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sunstone-white via-sunstone-gold to-sunstone-white leading-relaxed">
-                "These aren't just numbers – they're dreams fulfilled,
-                <br className="hidden md:block" />
-                futures secured, and lives transformed."
+            <div className="bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 rounded-xl p-6 border border-sunstone-navy/20">
+              <p className="text-lg md:text-xl font-bold text-sunstone-navy mb-2">
+                Previous Batch Success Data
               </p>
-              <div className="flex justify-center mt-6">
-                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-sunstone-gold to-transparent rounded-full"></div>
-              </div>
+              <p className="text-gray-600 text-sm md:text-base">
+                These numbers represent real achievements from our graduates, demonstrating consistent placement success and industry recognition.
+              </p>
             </div>
           </div>
         </div>
@@ -2437,7 +2287,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour →
+                      Book Tour ���
                     </button>
                   </div>
                 </div>
