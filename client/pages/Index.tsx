@@ -1093,6 +1093,22 @@ export default function Index() {
                           Get help and support to start your business idea
                         </p>
                       </div>
+
+                      {/* Verified Placement Reports - Mobile */}
+                      <div className="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-sunstone-gold/20 hover:border-sunstone-gold/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center">
+                        <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg">
+                          <Award className="w-8 h-8 text-white" />
+                        </div>
+                        <h3 className="text-sunstone-navy text-lg font-bold mb-2">
+                          Verified
+                        </h3>
+                        <p className="text-sunstone-navy text-base font-semibold">
+                          Placement Reports
+                        </p>
+                        <p className="text-gray-600 text-sm mt-2">
+                          Audited by B2K Analytics - official auditor for IIM Ahmedabad
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
