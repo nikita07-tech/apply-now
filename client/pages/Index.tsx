@@ -2820,14 +2820,6 @@ export default function Index() {
                   <Youtube className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
-                  href="https://www.facebook.com/sunstoneedu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 p-1 md:p-2 rounded-full hover:bg-blue-700 transition-all duration-300"
-                >
-                  <Facebook className="h-3 w-3 md:h-5 md:w-5 text-white" />
-                </a>
-                <a
                   href="https://in.linkedin.com/school/sunstone-/"
                   target="_blank"
                   rel="noopener noreferrer"
