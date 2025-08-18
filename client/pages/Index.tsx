@@ -248,9 +248,7 @@ export default function Index() {
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                      <p>
-                        Choose from 9 industry oriented Programs and others
-                      </p>
+                      <p>Choose from 9 industry oriented Programs and others</p>
                     </p>
                   </div>
                 </div>
@@ -2002,15 +2000,14 @@ export default function Index() {
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
               <span>
                 <p>
-                  Recognizing academic excellence with scholarship up to ₹6
-                  Lacs
+                  Recognizing academic excellence with scholarship up to ₹6 Lacs
                 </p>
               </span>
               <p>
                 <p>
-                  for deserving students based on CAT/CMAT/JEE/XAT/12th
-                  score. Students can also take SAT (Sunstone Admission
-                  Test) to grab financial benefits
+                  for deserving students based on CAT/CMAT/JEE/XAT/12th score.
+                  Students can also take SAT (Sunstone Admission Test) to grab
+                  financial benefits
                 </p>
               </p>
             </p>
