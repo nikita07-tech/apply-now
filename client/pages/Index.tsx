@@ -2001,13 +2001,15 @@ export default function Index() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
-              Recognizing academic excellence with financial support up to{" "}
+              <p>
+                Recognizing academic excellence with scholarship up to
+              </p>{" "}
               <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
               <p>
                 <p>
-                  for deserving students based on CAT/CMAT/JEE/XAT/12th score.
-                  Students can also take SAT (Sunstone Admission Test) to grab
-                  amazing scholarship
+                  for deserving students based on CAT/CMAT/JEE/XAT/12th
+                  score. Students can also take SAT (Sunstone Admission
+                  Test) to grab amazing financial benefits
                 </p>
               </p>
             </p>
