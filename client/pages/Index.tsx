@@ -1270,20 +1270,20 @@ export default function Index() {
             </div>
 
             {/* Stat 2: Unique Job Opportunities */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-lg sm:shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <Users className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-lg md:rounded-2xl p-3 md:p-8 text-center shadow-md md:shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-8 h-8 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-2 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Users className="h-4 w-4 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 sm:mb-3 md:mb-4">
+              <div className="text-2xl md:text-6xl font-black text-gray-900 mb-1 md:mb-4">
                 1020+
               </div>
 
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 md:mb-4">
+              <h3 className="text-sm md:text-2xl font-bold text-sunstone-navy mb-1 md:mb-4">
                 Unique Job Opportunities
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base">
+              <p className="text-gray-700 leading-relaxed mb-2 md:mb-6 text-xs md:text-base hidden md:block">
                 <span className="text-sunstone-gold font-semibold">
                   Sunstone's extensive network
                 </span>{" "}
@@ -1293,9 +1293,9 @@ export default function Index() {
                 sectors.
               </p>
 
-              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-navy/20 to-sunstone-navy/10 px-6 py-3 rounded-full border border-sunstone-navy/30 group-hover:scale-110 transition-transform duration-500">
-                <GraduationCap className="h-5 w-5 text-sunstone-navy mr-2" />
-                <span className="text-sunstone-navy font-bold text-sm">
+              <div className="inline-flex items-center bg-gradient-to-r from-sunstone-navy/20 to-sunstone-navy/10 px-3 py-1 md:px-6 md:py-3 rounded-full border border-sunstone-navy/30 group-hover:scale-110 transition-transform duration-500">
+                <GraduationCap className="h-3 w-3 md:h-5 md:w-5 text-sunstone-navy mr-1 md:mr-2" />
+                <span className="text-sunstone-navy font-bold text-xs md:text-sm">
                   Unmatched Network
                 </span>
               </div>
