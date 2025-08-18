@@ -1347,7 +1347,8 @@ export default function Index() {
               </div>
 
               <blockquote className="text-sm md:text-3xl font-bold text-sunstone-navy leading-relaxed mb-3 md:mb-6">
-                "200+ Assured Placement Opportunities or, Get Your 1st Year Tuition-Fee Back*"
+                "200+ Assured Placement Opportunities or, Get Your 1st Year
+                Tuition-Fee Back*"
                 <br />
                 <span className="text-xs md:text-base text-gray-600 mt-2 block">
                   *Terms and Conditions Applied
@@ -1360,8 +1361,7 @@ export default function Index() {
                 <div className="w-8 md:w-16 h-0.5 md:h-1 bg-gradient-to-r from-sunstone-gold to-transparent rounded-full"></div>
               </div>
 
-              <p className="text-xs md:text-lg font-semibold text-sunstone-navy">
-              </p>
+              <p className="text-xs md:text-lg font-semibold text-sunstone-navy"></p>
             </div>
           </div>
         </div>
