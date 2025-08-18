@@ -690,9 +690,7 @@ export default function Index() {
                   Revolutionizing Higher Education for Tomorrow's Leaders
                 </span>
                 <br />
-                <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
-                </span>
+                <span className="inline text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold" />
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
                   Transform your career with industry-integrated programs
