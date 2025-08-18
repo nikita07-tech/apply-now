@@ -2597,9 +2597,6 @@ export default function Index() {
               <h3 className="text-sm sm:text-base md:text-2xl lg:text-3xl font-bold text-sunstone-white mb-2 sm:mb-3 md:mb-4">
                 Ready to Start Your Journey?
               </h3>
-              <p className="text-gray-200 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6 max-w-2xl mx-auto">
-                Campus with 200+ job opportunities and industry
-              </p>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center">
                 <button
                   onClick={() => {
