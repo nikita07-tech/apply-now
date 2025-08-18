@@ -1197,7 +1197,7 @@ export default function Index() {
               ></div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-blue-600 mb-6 animate-shimmer leading-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-blue-900 mb-6 animate-shimmer leading-tight">
               Our Impact Speaks for Itself
             </h2>
 
