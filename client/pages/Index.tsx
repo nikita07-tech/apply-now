@@ -254,7 +254,7 @@ export default function Index() {
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                      <p>Choose from 9+ industry oriented Programs</p>
+                      <p>Choose from 9 industry oriented Programs and others</p>
                     </p>
                   </div>
                 </div>
