@@ -1177,7 +1177,7 @@ export default function Index() {
       </section>
 
       {/* Our Impact in Numbers Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-white via-gray-50 to-sunstone-gold/5 relative overflow-hidden">
+      <section className="py-6 md:py-16 bg-gradient-to-br from-white via-gray-50 to-sunstone-gold/5 relative overflow-hidden">
         {/* Subtle background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-64 h-64 bg-sunstone-gold/10 rounded-full blur-3xl animate-pulse"></div>
@@ -1189,27 +1189,27 @@ export default function Index() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Epic Header with Sunstone Praise */}
-          <div className="text-center mb-12 md:mb-16">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-gold/30 to-sunstone-gold/20 backdrop-blur-sm px-8 py-4 rounded-full mb-6 border border-sunstone-gold/40 shadow-xl animate-glow">
-              <div className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse"></div>
-              <span className="text-sunstone-navy font-bold text-lg tracking-wide">
+          <div className="text-center mb-6 md:mb-16">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sunstone-gold/30 to-sunstone-gold/20 backdrop-blur-sm px-4 py-2 md:px-8 md:py-4 rounded-full mb-3 md:mb-6 border border-sunstone-gold/40 shadow-xl animate-glow">
+              <div className="w-2 h-2 md:w-3 md:h-3 bg-sunstone-gold rounded-full animate-pulse"></div>
+              <span className="text-sunstone-navy font-bold text-sm md:text-lg tracking-wide">
                 🏆 SUNSTONE EXCELLENCE PROVEN
               </span>
               <div
-                className="w-3 h-3 bg-sunstone-gold rounded-full animate-pulse"
+                className="w-2 h-2 md:w-3 md:h-3 bg-sunstone-gold rounded-full animate-pulse"
                 style={{ animationDelay: "0.5s" }}
               ></div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-sunstone-navy mb-6 animate-shimmer leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-6xl lg:text-7xl font-black text-sunstone-navy mb-3 md:mb-6 animate-shimmer leading-tight">
               Our Impact Speaks for Itself
             </h2>
 
-            <div className="max-w-4xl mx-auto mb-8">
-              <p className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+            <div className="max-w-4xl mx-auto mb-4 md:mb-8">
+              <p className="text-sm md:text-2xl font-bold text-sunstone-navy mb-2 md:mb-4">
                 Sunstone: Where Excellence Meets Opportunity
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs md:text-lg text-gray-700 leading-relaxed hidden md:block">
                 <span className="text-sunstone-gold font-semibold">
                   Witness the Sunstone difference
                 </span>{" "}
@@ -1223,13 +1223,13 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="flex justify-center mb-6">
-              <div className="w-40 h-1 bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mx-auto rounded-full animate-expand-horizontal"></div>
+            <div className="flex justify-center mb-3 md:mb-6">
+              <div className="w-20 md:w-40 h-0.5 md:h-1 bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mx-auto rounded-full animate-expand-horizontal"></div>
             </div>
 
-            <div className="inline-flex items-center gap-2 bg-sunstone-navy/10 px-6 py-3 rounded-full">
-              <Star className="h-5 w-5 text-sunstone-gold animate-bounce-soft" />
-              <span className="text-sunstone-navy font-semibold">
+            <div className="inline-flex items-center gap-1 md:gap-2 bg-sunstone-navy/10 px-3 py-2 md:px-6 md:py-3 rounded-full">
+              <Star className="h-3 w-3 md:h-5 md:w-5 text-sunstone-gold animate-bounce-soft" />
+              <span className="text-sunstone-navy font-semibold text-xs md:text-base">
                 Consistently Ranked #1 in Student Outcomes
               </span>
             </div>
