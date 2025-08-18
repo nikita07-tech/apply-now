@@ -9,7 +9,6 @@ import {
   TrendingUp,
   Award,
   Phone,
-  Facebook,
   Instagram,
   Youtube,
   Linkedin,
