@@ -1341,22 +1341,17 @@ export default function Index() {
                 <div className="inline-flex items-center gap-1 md:gap-2 bg-sunstone-gold/20 px-2 py-1 md:px-4 md:py-2 rounded-full mb-2 md:mb-4">
                   <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
                   <span className="text-sunstone-navy font-bold text-xs md:text-sm">
-                    SUNSTONE PROMISE DELIVERED
+                    <p>PLACEMENT OPPORTUNITY PROGRAM</p>
                   </span>
                 </div>
               </div>
 
               <blockquote className="text-sm md:text-3xl font-bold text-sunstone-navy leading-relaxed mb-3 md:mb-6">
-                "These remarkable numbers represent
-                <span className="text-sunstone-gold">
-                  {" "}
-                  Sunstone's unwavering commitment
-                </span>{" "}
-                to student success and{" "}
-                <span className="text-sunstone-gold">
-                  dreams transformed into reality
+                "200+ Assured Placement Opportunities or, Get Your 1st Year Tuition-Fee Back*"
+                <br />
+                <span className="text-xs md:text-base text-gray-600 mt-2 block">
+                  *Terms and Conditions Applied
                 </span>
-                ."
               </blockquote>
 
               <div className="flex justify-center items-center gap-2 md:gap-4 mb-3 md:mb-6">
@@ -1366,10 +1361,6 @@ export default function Index() {
               </div>
 
               <p className="text-xs md:text-lg font-semibold text-sunstone-navy">
-                <span className="text-sunstone-gold">
-                  Join the Sunstone success story
-                </span>{" "}
-                - where excellence is consistently delivered.
               </p>
             </div>
           </div>
