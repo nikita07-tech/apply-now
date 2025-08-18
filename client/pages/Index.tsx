@@ -1148,28 +1148,12 @@ export default function Index() {
                         {row.feature}
                       </td>
                       <td className="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-sunstone-gold/10 border-l-2 sm:border-l-4 border-sunstone-gold">
-                        {row.feature === "Placement Verification" ? (
-                          <div className="flex flex-col items-center space-y-2">
-                            <div className="flex items-center justify-center space-x-1 sm:space-x-2">
-                              <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-sunstone-gold flex-shrink-0" />
-                              <span className="text-sunstone-black font-medium text-xs sm:text-sm md:text-base leading-tight">
-                                {row.sunstone}
-                              </span>
-                            </div>
-                            <img
-                              src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F200d2d0c60a04eb3a07668a05d6f6217?format=webp&width=800"
-                              alt="B2K Analytics Verification Certificate"
-                              className="max-w-full h-auto rounded-lg shadow-md max-h-20 object-contain"
-                            />
-                          </div>
-                        ) : (
-                          <div className="flex items-center justify-center space-x-1 sm:space-x-2">
-                            <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-sunstone-gold flex-shrink-0" />
-                            <span className="text-sunstone-black font-medium text-xs sm:text-sm md:text-base leading-tight">
-                              {row.sunstone}
-                            </span>
-                          </div>
-                        )}
+                        <div className="flex items-center justify-center space-x-1 sm:space-x-2">
+                          <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-sunstone-gold flex-shrink-0" />
+                          <span className="text-sunstone-black font-medium text-xs sm:text-sm md:text-base leading-tight">
+                            {row.sunstone}
+                          </span>
+                        </div>
                       </td>
                       <td className="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-gray-100 border-l-2 sm:border-l-4 border-gray-400">
                         <div className="flex items-center justify-center space-x-1 sm:space-x-2">
