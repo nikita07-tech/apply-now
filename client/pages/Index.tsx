@@ -2242,7 +2242,7 @@ export default function Index() {
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
                         <p>✓ 2 Specialisations</p>
-                        <p>✓ 10 Certifications</p>
+                        <p>��� 10 Certifications</p>
                       </div>
                     </div>
                     <button
@@ -2950,6 +2950,10 @@ export default function Index() {
                 <div className="flex items-center text-gray-200">
                   <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   +91 70653 03030
+                </div>
+                <div className="flex items-center text-gray-200">
+                  <span className="mr-1 md:mr-2">✉</span>
+                  connect@sunstone.in
                 </div>
               </div>
             </div>
