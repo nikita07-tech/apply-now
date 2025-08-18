@@ -688,9 +688,7 @@ export default function Index() {
                   Revolutionizing Higher Education for Tomorrow's Leaders
                 </span>
                 <br />
-                <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
-                </span>
+                <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold" />
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
                   Transform your career with industry-integrated programs
@@ -1198,7 +1196,7 @@ export default function Index() {
               ></div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-6 animate-shimmer leading-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-sunstone-navy mb-6 animate-shimmer leading-tight">
               Our Impact Speaks for Itself
             </h2>
 
@@ -1233,22 +1231,22 @@ export default function Index() {
           </div>
 
           {/* Enhanced Statistics with Sunstone Praise */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-10 md:mb-12">
             {/* Stat 1: Offers from Top Recruiters */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <TrendingUp className="h-10 w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-lg sm:shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <TrendingUp className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 sm:mb-3 md:mb-4">
                 1170+
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 md:mb-4">
                 Offers from Top Recruiters
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base">
                 <span className="text-sunstone-gold font-semibold">
                   Sunstone's unmatched industry reputation
                 </span>{" "}
@@ -1267,20 +1265,20 @@ export default function Index() {
             </div>
 
             {/* Stat 2: Unique Job Opportunities */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <Users className="h-10 w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-lg sm:shadow-xl border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Users className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 sm:mb-3 md:mb-4">
                 1020+
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 md:mb-4">
                 Unique Job Opportunities
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base">
                 <span className="text-sunstone-gold font-semibold">
                   Sunstone's extensive network
                 </span>{" "}
@@ -1299,20 +1297,20 @@ export default function Index() {
             </div>
 
             {/* Stat 3: Students with Multiple Offers */}
-            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-2xl p-8 text-center shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-              <div className="w-18 h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
-                <Star className="h-10 w-10 text-white" />
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-lg sm:shadow-xl border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-18 md:h-18 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                <Star className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white" />
               </div>
 
-              <div className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-2 sm:mb-3 md:mb-4">
                 302+
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-sunstone-navy mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-sunstone-navy mb-2 sm:mb-3 md:mb-4">
                 Students with 2+ Job Offers
               </h3>
 
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base">
                 <span className="text-sunstone-gold font-semibold">
                   The ultimate testament to Sunstone's excellence
                 </span>{" "}
@@ -2001,13 +1999,17 @@ export default function Index() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4">
-              Recognizing academic excellence with financial support up to{" "}
-              <span className="text-sunstone-gold font-bold">₹6 Lacs</span>
+              <span>
+                <p>
+                  Recognizing academic excellence with scholarship up to{" "}
+                  <strong>₹6 Lacs</strong>
+                </p>
+              </span>
               <p>
                 <p>
                   for deserving students based on CAT/CMAT/JEE/XAT/12th score.
                   Students can also take SAT (Sunstone Admission Test) to grab
-                  amazing scholarship
+                  amazing financial benefits
                 </p>
               </p>
             </p>
@@ -2392,7 +2394,7 @@ export default function Index() {
                       }
                       className="w-full bg-sunstone-navy text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-sunstone-navy-dark transition-all duration-300 transform hover:scale-105"
                     >
-                      Book Tour ���
+                      Book Tour �����
                     </button>
                   </div>
                 </div>
@@ -2768,14 +2770,11 @@ export default function Index() {
               </h2>
               <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
-            <div className="mb-4 md:mb-8">
-              <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
-                <p>
-                  Grab this chance to get admission in only campus with 200+ job
-                  opportunity and industry based curriculum
-                </p>
-              </p>
-            </div>
+            <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto px-2 md:px-0 whitespace-nowrap">
+              Grab this chance to get admission in only campus with 200+ job
+              opportunity and industry based curriculum
+            </p>
+            <div className="mb-4 md:mb-8"></div>
             <button
               onClick={() => {
                 const heroSection = document.querySelector("section");
@@ -2815,14 +2814,6 @@ export default function Index() {
                   className="bg-red-600 p-1 md:p-2 rounded-full hover:bg-red-700 transition-all duration-300"
                 >
                   <Youtube className="h-3 w-3 md:h-5 md:w-5 text-white" />
-                </a>
-                <a
-                  href="https://www.facebook.com/sunstoneedu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 p-1 md:p-2 rounded-full hover:bg-blue-700 transition-all duration-300"
-                >
-                  <Facebook className="h-3 w-3 md:h-5 md:w-5 text-white" />
                 </a>
                 <a
                   href="https://in.linkedin.com/school/sunstone-/"
@@ -2935,7 +2926,16 @@ export default function Index() {
                     Ajeenkya DY Patil University
                   </a>
                 </li>
-                <li className="list-item mt-2"></li>
+                <li>
+                  <a
+                    href="https://sunstone.in/campuses/jecrc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
+                  >
+                    JECRC University
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
@@ -2947,6 +2947,7 @@ export default function Index() {
                   <Phone className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                   +91 70653 03030
                 </div>
+                <div className="text-gray-200">connect@sunstone.in</div>
               </div>
             </div>
           </div>
