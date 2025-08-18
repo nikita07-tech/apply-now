@@ -691,7 +691,7 @@ export default function Index() {
                 </span>
                 <br />
                 <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA • BBA • MCA •BCA ��� B.Tech • B.Sc • M.Sc</p>
+                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
                 </span>
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
@@ -1200,7 +1200,7 @@ export default function Index() {
               ></div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sunstone-navy via-sunstone-gold to-sunstone-navy mb-6 animate-shimmer leading-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-sunstone-navy mb-6 animate-shimmer leading-tight">
               Our Impact Speaks for Itself
             </h2>
 
