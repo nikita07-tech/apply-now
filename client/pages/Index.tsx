@@ -2770,10 +2770,10 @@ export default function Index() {
               </h2>
               <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-sunstone-gold rounded-full animate-pulse"></div>
             </div>
+            <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto px-2 md:px-0 whitespace-nowrap">
+              Grab this chance to get admission in only campus with 200+ job opportunity and industry based curriculum
+            </p>
             <div className="mb-4 md:mb-8">
-              <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto leading-relaxed px-2 md:px-0">
-                Grab this chance to get admission in only campus with 200+ job opportunity and industry based curriculum
-              </p>
             </div>
             <button
               onClick={() => {
