@@ -145,7 +145,8 @@ const comparisonData = [
   },
   {
     feature: "Placement Reports",
-    sunstone: "Audited & Verified By B2K Analytics - Official Auditor For IIM Ahmedabad",
+    sunstone:
+      "Audited & Verified By B2K Analytics - Official Auditor For IIM Ahmedabad",
     others: "No Official Auditor For Placement Reports",
   },
 ];
