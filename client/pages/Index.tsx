@@ -1108,6 +1108,180 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Placement Report Section */}
+      <section className="py-8 md:py-12 bg-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-10 w-32 h-32 bg-sunstone-gold/5 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-sunstone-navy/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Header */}
+          <div className="text-center mb-6 md:mb-8">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sunstone-navy/10 to-sunstone-gold/10 backdrop-blur-sm px-6 py-3 rounded-full mb-4 border border-sunstone-gold/20">
+              <Award className="h-5 w-5 text-sunstone-gold" />
+              <span className="text-sunstone-navy font-bold text-sm md:text-base">
+                Verified Impact Report
+              </span>
+            </div>
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-sunstone-navy mb-3 md:mb-4">
+              Sunstone Powered Program
+            </h2>
+            <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
+              Our impact speaks for itself with verified placement data
+            </p>
+          </div>
+
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {/* Card 1 - Audited Reports */}
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl p-6 border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-xl">
+              <div className="w-14 h-14 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <CheckCircle className="h-7 w-7 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-3 text-center">
+                Audited & Verified Reports
+              </h3>
+              <p className="text-gray-700 text-center leading-relaxed mb-4">
+                Placement reports audited and verified by{" "}
+                <span className="font-semibold text-sunstone-gold">
+                  B2K Analytics
+                </span>{" "}
+                - official auditor for{" "}
+                <span className="font-semibold text-sunstone-navy">
+                  IIM Ahmedabad
+                </span>
+              </p>
+              <div className="bg-sunstone-gold/10 rounded-lg p-3 text-center">
+                <span className="text-sunstone-navy font-semibold text-sm">
+                  ✓ Transparency Guaranteed
+                </span>
+              </div>
+            </div>
+
+            {/* Card 2 - Industry Trust */}
+            <div className="group bg-gradient-to-br from-white to-sunstone-navy/5 rounded-xl p-6 border border-sunstone-navy/20 hover:border-sunstone-navy/40 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-xl">
+              <div className="w-14 h-14 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <TrendingUp className="h-7 w-7 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-3 text-center">
+                Industry-Leading Results
+              </h3>
+              <p className="text-gray-700 text-center leading-relaxed mb-4">
+                While other colleges rely on unofficial data, Sunstone maintains{" "}
+                <span className="font-semibold text-sunstone-gold">
+                  the highest standards
+                </span>{" "}
+                of transparency and accountability in placement reporting
+              </p>
+              <div className="bg-sunstone-navy/10 rounded-lg p-3 text-center">
+                <span className="text-sunstone-navy font-semibold text-sm">
+                  ✓ Proven Excellence
+                </span>
+              </div>
+            </div>
+
+            {/* Card 3 - Trusted Results */}
+            <div className="group bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl p-6 border border-sunstone-gold/20 hover:border-sunstone-gold/40 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-xl">
+              <div className="w-14 h-14 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Star className="h-7 w-7 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-sunstone-navy mb-3 text-center">
+                Consistent Success
+              </h3>
+              <p className="text-gray-700 text-center leading-relaxed mb-4">
+                Our placement success is{" "}
+                <span className="font-semibold text-sunstone-gold">
+                  consistently validated
+                </span>{" "}
+                year after year, making us India's most trusted education platform
+              </p>
+              <div className="bg-sunstone-gold/10 rounded-lg p-3 text-center">
+                <span className="text-sunstone-navy font-semibold text-sm">
+                  ✓ Trust Delivered
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Horizontal Carousel */}
+          <div className="block md:hidden">
+            <div className="relative overflow-hidden">
+              <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-4" style={{ scrollSnapType: "x mandatory" }}>
+                {/* Card 1 - Mobile */}
+                <div className="flex-shrink-0 w-72 bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl p-4 border border-sunstone-gold/20 shadow-lg" style={{ scrollSnapAlign: "start" }}>
+                  <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3">
+                    <CheckCircle className="h-5 w-5 text-white" />
+                  </div>
+                  <h3 className="text-base font-bold text-sunstone-navy mb-2 text-center">
+                    Audited & Verified Reports
+                  </h3>
+                  <p className="text-gray-700 text-center text-sm leading-relaxed mb-3">
+                    Placement reports audited by{" "}
+                    <span className="font-semibold text-sunstone-gold">B2K Analytics</span>{" "}
+                    - official auditor for{" "}
+                    <span className="font-semibold text-sunstone-navy">IIM Ahmedabad</span>
+                  </p>
+                  <div className="bg-sunstone-gold/10 rounded-lg p-2 text-center">
+                    <span className="text-sunstone-navy font-semibold text-xs">
+                      ✓ Transparency Guaranteed
+                    </span>
+                  </div>
+                </div>
+
+                {/* Card 2 - Mobile */}
+                <div className="flex-shrink-0 w-72 bg-gradient-to-br from-white to-sunstone-navy/5 rounded-xl p-4 border border-sunstone-navy/20 shadow-lg" style={{ scrollSnapAlign: "start" }}>
+                  <div className="w-10 h-10 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-full flex items-center justify-center mx-auto mb-3">
+                    <TrendingUp className="h-5 w-5 text-white" />
+                  </div>
+                  <h3 className="text-base font-bold text-sunstone-navy mb-2 text-center">
+                    Industry-Leading Results
+                  </h3>
+                  <p className="text-gray-700 text-center text-sm leading-relaxed mb-3">
+                    While other colleges rely on unofficial data, Sunstone maintains{" "}
+                    <span className="font-semibold text-sunstone-gold">the highest standards</span>{" "}
+                    of transparency
+                  </p>
+                  <div className="bg-sunstone-navy/10 rounded-lg p-2 text-center">
+                    <span className="text-sunstone-navy font-semibold text-xs">
+                      ✓ Proven Excellence
+                    </span>
+                  </div>
+                </div>
+
+                {/* Card 3 - Mobile */}
+                <div className="flex-shrink-0 w-72 bg-gradient-to-br from-white to-sunstone-gold/5 rounded-xl p-4 border border-sunstone-gold/20 shadow-lg" style={{ scrollSnapAlign: "start" }}>
+                  <div className="w-10 h-10 bg-gradient-to-br from-sunstone-gold to-sunstone-gold-dark rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Star className="h-5 w-5 text-white" />
+                  </div>
+                  <h3 className="text-base font-bold text-sunstone-navy mb-2 text-center">
+                    Consistent Success
+                  </h3>
+                  <p className="text-gray-700 text-center text-sm leading-relaxed mb-3">
+                    Our success is{" "}
+                    <span className="font-semibold text-sunstone-gold">consistently validated</span>{" "}
+                    year after year, making us India's most trusted platform
+                  </p>
+                  <div className="bg-sunstone-gold/10 rounded-lg p-2 text-center">
+                    <span className="text-sunstone-navy font-semibold text-xs">
+                      ✓ Trust Delivered
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile scroll indicator */}
+            <div className="flex justify-center mt-4 space-x-2">
+              <div className="w-2 h-2 bg-sunstone-gold rounded-full"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Comparison Table Section */}
       <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
