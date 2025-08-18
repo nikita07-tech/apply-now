@@ -2930,7 +2930,16 @@ export default function Index() {
                     Ajeenkya DY Patil University
                   </a>
                 </li>
-                <li className="list-item mt-2"></li>
+                <li>
+                  <a
+                    href="https://sunstone.in/campuses/jecrc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-200 hover:text-sunstone-gold transition-colors duration-300"
+                  >
+                    JECRC University
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1">
