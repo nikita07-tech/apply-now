@@ -1120,6 +1120,9 @@ export default function Index() {
             <p className="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4">
               See how our programs compare with traditional colleges
             </p>
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4 mb-2 mt-2 font-semibold">
+              Placement reports are audited and verified by B2K Analytics, the official auditor of IIM Ahmedabad. No other colleges have this official verification.
+            </p>
           </div>
 
           <div className="bg-sunstone-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300 border-4 border-sunstone-navy-dark">
