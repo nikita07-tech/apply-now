@@ -249,7 +249,9 @@ export default function Index() {
                   </div>
                   <div className="text-center lg:text-left mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                      <p>Choose from 9+ industry oriented Programs</p>
+                      <p>
+                        Choose from 9 industry oriented Programs or others
+                      </p>
                     </p>
                   </div>
                 </div>
@@ -689,7 +691,7 @@ export default function Index() {
                 </span>
                 <br />
                 <span className="text-sunstone-black text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
-                  <p>MBA • BBA • MCA •BCA • B.Tech • B.Sc • M.Sc</p>
+                  <p>MBA • BBA • MCA •BCA ��� B.Tech • B.Sc • M.Sc</p>
                 </span>
                 <br />
                 <span className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed">
