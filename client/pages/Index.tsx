@@ -142,11 +142,6 @@ const comparisonData = [
     sunstone: "Build A Job-Ready Portfolio",
     others: "No Structured Portfolio Development",
   },
-  {
-    feature: "Placement Verification",
-    sunstone: "Reports Audited & Verified by B2K Analytics (Official Auditor of IIM Ahmedabad)",
-    others: "No Official Auditing or Verification",
-  },
 ];
 
 export default function Index() {
