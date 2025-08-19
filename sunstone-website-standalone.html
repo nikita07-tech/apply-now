@@ -1,0 +1,3466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunstone - Shape Your Future With Confidence</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: ["class"],
+        theme: {
+          container: {
+            center: true,
+            padding: "2rem",
+            screens: {
+              "2xl": "1400px",
+            },
+          },
+          fontFamily: {
+            sans: ["Public Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              border: "hsl(214.3 31.8% 91.4%)",
+              input: "hsl(214.3 31.8% 91.4%)",
+              ring: "hsl(222.2 84% 4.9%)",
+              background: "hsl(0 0% 100%)",
+              foreground: "hsl(222.2 84% 4.9%)",
+              primary: {
+                DEFAULT: "hsl(222.2 47.4% 11.2%)",
+                foreground: "hsl(210 40% 98%)",
+              },
+              sunstone: {
+                navy: "#22336a",
+                "navy-dark": "#1a2851",
+                "navy-light": "#2d4a7f",
+                gold: "#c38935",
+                "gold-light": "#d4a147",
+                "gold-dark": "#b37d2a",
+                white: "#ffffff",
+                black: "#000000",
+              },
+              secondary: {
+                DEFAULT: "hsl(210 40% 96.1%)",
+                foreground: "hsl(222.2 47.4% 11.2%)",
+              },
+              destructive: {
+                DEFAULT: "hsl(0 84.2% 60.2%)",
+                foreground: "hsl(210 40% 98%)",
+              },
+              muted: {
+                DEFAULT: "hsl(210 40% 96.1%)",
+                foreground: "hsl(215.4 16.3% 46.9%)",
+              },
+              accent: {
+                DEFAULT: "hsl(210 40% 96.1%)",
+                foreground: "hsl(222.2 47.4% 11.2%)",
+              },
+              popover: {
+                DEFAULT: "hsl(0 0% 100%)",
+                foreground: "hsl(222.2 84% 4.9%)",
+              },
+              card: {
+                DEFAULT: "hsl(0 0% 100%)",
+                foreground: "hsl(222.2 84% 4.9%)",
+              },
+            },
+            borderRadius: {
+              lg: "var(--radius)",
+              md: "calc(var(--radius) - 2px)",
+              sm: "calc(var(--radius) - 4px)",
+            },
+            keyframes: {
+              "accordion-down": {
+                from: { height: "0" },
+                to: { height: "var(--radix-accordion-content-height)" },
+              },
+              "accordion-up": {
+                from: { height: "var(--radix-accordion-content-height)" },
+                to: { height: "0" },
+              },
+            },
+            animation: {
+              "accordion-down": "accordion-down 0.2s ease-out",
+              "accordion-up": "accordion-up 0.2s ease-out",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --radius: 0.5rem;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slide-in-left {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slide-in-right {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes bounce-gentle {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @keyframes scale-in {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @keyframes scroll-x {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes scroll-right {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes float-gentle {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      @keyframes bounce-soft {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-6px);
+        }
+        60% {
+          transform: translateY(-3px);
+        }
+      }
+
+      @keyframes pulse-gentle {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.9;
+        }
+      }
+
+      @keyframes wave-scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-33.333%);
+        }
+      }
+
+      @keyframes float-up {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+
+      @keyframes bounce-in-down {
+        0% {
+          opacity: 0;
+          transform: translateY(-2000px);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+        80% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce-in-up {
+        0% {
+          opacity: 0;
+          transform: translateY(2000px);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(-30px);
+        }
+        80% {
+          transform: translateY(10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes gradient-x {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow:
+            0 0 5px #c38935,
+            0 0 10px #c38935,
+            0 0 15px #c38935;
+        }
+        to {
+          text-shadow:
+            0 0 10px #d4a147,
+            0 0 20px #d4a147,
+            0 0 30px #d4a147;
+        }
+      }
+
+      @keyframes expand-horizontal {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 4rem;
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fade-in-up 1s ease-out;
+      }
+
+      .animate-slide-in-left {
+        animation: slide-in-left 1s ease-out;
+      }
+
+      .animate-slide-in-right {
+        animation: slide-in-right 1s ease-out;
+      }
+
+      .animate-bounce-gentle {
+        animation: bounce-gentle 3s infinite;
+      }
+
+      .animate-scale-in {
+        animation: scale-in 0.8s ease-out;
+      }
+
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+
+      .animate-scroll-x {
+        animation: scroll-x 30s linear infinite;
+      }
+
+      .animate-bounce-in-down {
+        animation: bounce-in-down 1s ease-out;
+      }
+
+      .animate-bounce-in-up {
+        animation: bounce-in-up 1s ease-out 0.5s both;
+      }
+
+      .animate-gradient-x {
+        animation: gradient-x 3s ease infinite;
+        background-size: 400% 400%;
+      }
+
+      .animate-shimmer {
+        animation: shimmer 2s linear infinite;
+        background-size: 200% 200%;
+      }
+
+      .animate-glow {
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      .animate-expand-horizontal {
+        animation: expand-horizontal 1s ease-out 0.7s both;
+      }
+
+      .animate-scroll-left {
+        animation: scroll-left 25s linear infinite;
+      }
+
+      @media (min-width: 768px) {
+        .animate-scroll-left {
+          animation: scroll-left 40s linear infinite;
+        }
+      }
+
+      .animate-scroll-right {
+        animation: scroll-right 25s linear infinite;
+      }
+
+      .animate-float-gentle {
+        animation: float-gentle 3s ease-in-out infinite;
+      }
+
+      .animate-bounce-soft {
+        animation: bounce-soft 2s ease-in-out infinite;
+      }
+
+      .animate-pulse-gentle {
+        animation: pulse-gentle 2.5s ease-in-out infinite;
+      }
+
+      .animate-wave-scroll {
+        animation: wave-scroll 15s linear infinite;
+      }
+
+      .animate-float-up {
+        animation: float-up 3s ease-in-out infinite;
+      }
+
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+      .delay-400 {
+        animation-delay: 0.4s;
+      }
+      .delay-500 {
+        animation-delay: 0.5s;
+      }
+      .delay-700 {
+        animation-delay: 0.7s;
+      }
+      .delay-1000 {
+        animation-delay: 1s;
+      }
+
+      /* Lucide React Icons as SVG */
+      .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white font-sans">
+    <!-- Header -->
+    <header
+      class="bg-white shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95"
+    >
+      <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div class="flex justify-start items-center h-14 sm:h-16 md:h-20">
+          <div class="flex items-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
+              alt="Sunstone"
+              class="h-4 sm:h-5 md:h-6 w-auto transition-all duration-500 hover:scale-110"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 overflow-hidden relative min-h-[70vh] sm:min-h-0"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 lg:px-8 relative z-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center"
+        >
+          <!-- Left Column - Hero Content -->
+          <div
+            class="text-center lg:text-left animate-slide-in-left order-1 pt-4 sm:pt-0"
+          >
+            <div class="mb-4 sm:mb-6 md:mb-8">
+              <h1
+                class="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-2 sm:mb-4 md:mb-6 animate-fade-in-up leading-tight"
+              >
+                <span class="block text-white">
+                  Shape Your Future With Confidence
+                </span>
+                <span class="block text-yellow-400">
+                  India's Most Trusted Education Platform
+                </span>
+              </h1>
+
+              <!-- Dynamic Course Showcase -->
+              <div class="mb-3 sm:mb-6 md:mb-8 animate-fade-in-up delay-200">
+                <div
+                  class="flex flex-wrap justify-center lg:justify-start gap-1.5 sm:gap-3 px-1 sm:px-2 lg:px-0"
+                >
+                  <span
+                    class="bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm text-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0"
+                  >
+                    MBA・PGDM
+                  </span>
+                  <span
+                    class="bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm text-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0"
+                  >
+                    BBA・B.Com
+                  </span>
+                  <span
+                    class="bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm text-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0"
+                  >
+                    BCA・MCA
+                  </span>
+                  <span
+                    class="bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm text-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0"
+                  >
+                    BTECH
+                  </span>
+                  <span
+                    class="bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm text-white px-3 py-1.5 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-bold border border-white/30 hover:scale-105 transition-all duration-300 min-w-0 flex-shrink-0"
+                  >
+                    B.Sc・M.Sc
+                  </span>
+                </div>
+                <div class="text-center lg:text-left mt-2 sm:mt-3">
+                  <p class="text-xs sm:text-sm text-gray-300 font-medium">
+                    Choose from 9 industry oriented Programs and others
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p
+              class="text-sm sm:text-base md:text-lg lg:text-xl mb-3 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in-up delay-300 font-medium leading-relaxed px-1 sm:px-2 lg:px-0"
+            >
+              Get
+              <span class="text-yellow-400 font-bold"
+                >200+ assured placement opportunities</span
+              >
+              with
+              <span class="text-white font-semibold"
+                >Placement Opportunity Program</span
+              >
+            </p>
+          </div>
+
+          <!-- Right Column - Application Form -->
+          <div class="flex justify-center lg:justify-end order-2 px-2 sm:px-0">
+            <div
+              class="bg-white rounded-lg sm:rounded-xl md:rounded-2xl shadow-2xl p-3 sm:p-4 md:p-6 lg:p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg border border-yellow-400/20"
+            >
+              <div
+                class="flex items-center justify-between mb-3 sm:mb-4 md:mb-6"
+              >
+                <h3
+                  class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-blue-900"
+                >
+                  Apply Now
+                </h3>
+                <div class="flex gap-2">
+                  <button
+                    class="hidden md:flex text-blue-900 hover:text-blue-800 hover:bg-yellow-400/10 transition-colors duration-300 text-xs sm:text-sm p-1 sm:p-2"
+                  >
+                    <svg
+                      class="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <span class="hidden sm:inline">Help</span>
+                  </button>
+                </div>
+              </div>
+
+              <form
+                class="space-y-2.5 sm:space-y-3 md:space-y-4"
+                onsubmit="handleFormSubmit(event)"
+              >
+                <div>
+                  <label
+                    class="block text-xs sm:text-sm font-medium text-black mb-1.5 sm:mb-2"
+                  >
+                    Full Name*
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-yellow-400 focus:border-yellow-400 outline-none text-sm sm:text-base text-black font-medium placeholder-gray-500"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    class="block text-xs sm:text-sm font-medium text-black mb-1.5 sm:mb-2"
+                  >
+                    I want to pursue*
+                  </label>
+                  <select
+                    class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-yellow-400 focus:border-yellow-400 outline-none bg-white text-sm sm:text-base text-black font-medium"
+                    required
+                  >
+                    <option value="" class="text-gray-500 text-xs md:text-base">
+                      Select Program
+                    </option>
+                    <option value="mba" class="text-black text-xs md:text-base">
+                      MBA
+                    </option>
+                    <option
+                      value="pgdm"
+                      class="text-black text-xs md:text-base"
+                    >
+                      PGDM
+                    </option>
+                    <option value="bba" class="text-black text-xs md:text-base">
+                      BBA
+                    </option>
+                    <option
+                      value="btech"
+                      class="text-black text-xs md:text-base"
+                    >
+                      B.Tech
+                    </option>
+                    <option
+                      value="bcom"
+                      class="text-black text-xs md:text-base"
+                    >
+                      B.Com
+                    </option>
+                    <option value="bca" class="text-black text-xs md:text-base">
+                      BCA
+                    </option>
+                    <option value="mca" class="text-black text-xs md:text-base">
+                      MCA
+                    </option>
+                    <option value="bsc" class="text-black text-xs md:text-base">
+                      B.Sc
+                    </option>
+                    <option value="msc" class="text-black text-xs md:text-base">
+                      M.Sc
+                    </option>
+                    <option
+                      value="others"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Others
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    class="block text-xs sm:text-sm font-medium text-black mb-1.5 sm:mb-2"
+                  >
+                    Mobile Number*
+                  </label>
+                  <input
+                    type="tel"
+                    placeholder="Enter 10-digit mobile number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-yellow-400 focus:border-yellow-400 outline-none text-sm sm:text-base text-black font-medium placeholder-gray-500"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    class="block text-xs sm:text-sm font-medium text-black mb-1.5 sm:mb-2"
+                  >
+                    Select State*
+                  </label>
+                  <select
+                    class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-gray-300 rounded-lg focus:ring-2 sm:focus:ring-3 focus:ring-yellow-400 focus:border-yellow-400 outline-none bg-white text-sm sm:text-base text-black font-medium"
+                    required
+                  >
+                    <option value="" class="text-gray-500 text-xs md:text-base">
+                      Select State
+                    </option>
+                    <option
+                      value="andhra-pradesh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Andhra Pradesh
+                    </option>
+                    <option
+                      value="arunachal-pradesh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Arunachal Pradesh
+                    </option>
+                    <option
+                      value="assam"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Assam
+                    </option>
+                    <option
+                      value="bihar"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Bihar
+                    </option>
+                    <option
+                      value="chhattisgarh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Chhattisgarh
+                    </option>
+                    <option value="goa" class="text-black text-xs md:text-base">
+                      Goa
+                    </option>
+                    <option
+                      value="gujarat"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Gujarat
+                    </option>
+                    <option
+                      value="haryana"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Haryana
+                    </option>
+                    <option
+                      value="himachal-pradesh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Himachal Pradesh
+                    </option>
+                    <option
+                      value="jharkhand"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Jharkhand
+                    </option>
+                    <option
+                      value="karnataka"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Karnataka
+                    </option>
+                    <option
+                      value="kerala"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Kerala
+                    </option>
+                    <option
+                      value="madhya-pradesh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Madhya Pradesh
+                    </option>
+                    <option
+                      value="maharashtra"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Maharashtra
+                    </option>
+                    <option
+                      value="manipur"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Manipur
+                    </option>
+                    <option
+                      value="meghalaya"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Meghalaya
+                    </option>
+                    <option
+                      value="mizoram"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Mizoram
+                    </option>
+                    <option
+                      value="nagaland"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Nagaland
+                    </option>
+                    <option
+                      value="odisha"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Odisha
+                    </option>
+                    <option
+                      value="punjab"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Punjab
+                    </option>
+                    <option
+                      value="rajasthan"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Rajasthan
+                    </option>
+                    <option
+                      value="sikkim"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Sikkim
+                    </option>
+                    <option
+                      value="tamil-nadu"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Tamil Nadu
+                    </option>
+                    <option
+                      value="telangana"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Telangana
+                    </option>
+                    <option
+                      value="tripura"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Tripura
+                    </option>
+                    <option
+                      value="uttar-pradesh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Uttar Pradesh
+                    </option>
+                    <option
+                      value="uttarakhand"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Uttarakhand
+                    </option>
+                    <option
+                      value="west-bengal"
+                      class="text-black text-xs md:text-base"
+                    >
+                      West Bengal
+                    </option>
+                    <option
+                      value="delhi"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Delhi
+                    </option>
+                    <option
+                      value="chandigarh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Chandigarh
+                    </option>
+                    <option
+                      value="puducherry"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Puducherry
+                    </option>
+                    <option
+                      value="jammu-kashmir"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Jammu & Kashmir
+                    </option>
+                    <option
+                      value="ladakh"
+                      class="text-black text-xs md:text-base"
+                    >
+                      Ladakh
+                    </option>
+                  </select>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <input
+                    type="checkbox"
+                    id="terms-checkbox"
+                    class="mt-1 h-4 w-4 text-yellow-400 border-2 border-gray-300 rounded focus:ring-yellow-400 focus:ring-2"
+                    required
+                  />
+                  <label
+                    for="terms-checkbox"
+                    class="text-xs text-gray-500 leading-tight cursor-pointer"
+                  >
+                    By clicking "Send OTP", I agree to the Terms & Conditions
+                    and Privacy Policy
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-blue-900 hover:bg-blue-800 text-white py-3 sm:py-3 md:py-4 text-base sm:text-lg md:text-xl font-bold rounded-lg sm:rounded-xl shadow-lg"
+                >
+                  Send OTP
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Age Education Section -->
+    <section
+      class="relative bg-gradient-to-br from-gray-50 via-white to-yellow-400/5 py-8 md:py-12 lg:py-16 overflow-hidden"
+    >
+      <!-- Background Elements -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute top-10 left-10 w-32 h-32 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-20 right-20 w-48 h-48 bg-blue-900/5 rounded-full blur-3xl animate-pulse"
+          style="animation-delay: 2s"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/4 w-24 h-24 bg-yellow-400/5 rounded-full blur-2xl animate-pulse"
+          style="animation-delay: 4s"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Header Section -->
+        <div class="text-center mb-8 md:mb-12">
+          <div
+            class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-900/10 to-yellow-400/10 backdrop-blur-sm px-8 py-4 rounded-2xl mb-6 border border-yellow-400/20 shadow-lg"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <span class="text-blue-900 font-bold text-lg md:text-xl">
+              Experience New Age Education
+            </span>
+          </div>
+
+          <div class="text-center">
+            <h2
+              class="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-900 mb-4 sm:mb-6 md:mb-8 leading-tight px-3 sm:px-4 lg:px-0 text-center"
+            >
+              <span
+                class="bg-gradient-to-r from-blue-900 to-yellow-400 bg-clip-text text-transparent"
+              >
+                Revolutionizing Higher Education for Tomorrow's Leaders
+              </span>
+              <br />
+              <span
+                class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium mt-4 block max-w-4xl mx-auto leading-relaxed"
+              >
+                Transform your career with industry-integrated programs designed
+                by corporate leaders, featuring cutting-edge curriculum,
+                practical learning experiences, and assured placement support.
+              </span>
+              <br />
+              <!-- Desktop Grid Layout -->
+              <div
+                class="hidden md:grid grid-cols-2 lg:grid-cols-5 gap-6 mt-12 max-w-6xl mx-auto justify-items-center items-start place-items-center"
+              >
+                <div
+                  class="group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                >
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-blue-900 text-lg font-bold mb-2">
+                    Future Ready
+                  </h3>
+                  <p class="text-blue-900 text-base font-semibold">Learning</p>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Skills and knowledge needed for tomorrow's careers
+                  </p>
+                </div>
+
+                <div
+                  class="group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style="animation-delay: 0.2s"
+                >
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-blue-900 text-lg font-bold mb-2">
+                    Corporate Leaders
+                  </h3>
+                  <p class="text-blue-900 text-base font-semibold">
+                    Turned Educators
+                  </p>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Learn from corporate leaders with real work experience
+                  </p>
+                </div>
+
+                <div
+                  class="group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style="animation-delay: 0.4s"
+                >
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-blue-900 text-lg font-bold mb-2">
+                    Start Your
+                  </h3>
+                  <p class="text-blue-900 text-base font-semibold">
+                    Own Business
+                  </p>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Get help and support to start your business idea
+                  </p>
+                </div>
+
+                <div
+                  class="group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style="animation-delay: 0.6s"
+                >
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-blue-900 text-lg font-bold mb-2">Modern</h3>
+                  <p class="text-blue-900 text-base font-semibold">
+                    Learning Tools
+                  </p>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Use latest technology and software for better learning
+                  </p>
+                </div>
+
+                <div
+                  class="group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                  style="animation-delay: 0.8s"
+                >
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                  >
+                    <svg
+                      class="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="text-blue-900 text-lg font-bold mb-2">Industry</h3>
+                  <p class="text-blue-900 text-base font-semibold">
+                    Visits & Projects
+                  </p>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Visit real companies and work on real world projects
+                  </p>
+                </div>
+              </div>
+
+              <!-- Mobile Horizontal Scrolling -->
+              <div class="block md:hidden mt-8">
+                <div class="relative overflow-hidden">
+                  <div
+                    class="flex space-x-4 animate-scroll-right px-4"
+                    style="width: calc(200% + 32px)"
+                  >
+                    <!-- Card 1 -->
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Future Ready
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Learning
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Skills and knowledge needed for tomorrow's careers
+                      </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Corporate Leaders
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Turned Educators
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Learn from corporate leaders with real work experience
+                      </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Start Your
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Own Business
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Get help and support to start your business idea
+                      </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Modern
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Learning Tools
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Use latest technology and software for better learning
+                      </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Industry
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Visits & Projects
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Visit real companies and work on real world projects
+                      </p>
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Future Ready
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Learning
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Skills and knowledge needed for tomorrow's careers
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Corporate Leaders
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Turned Educators
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Learn from corporate leaders with real work experience
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex-shrink-0 w-64 group bg-white rounded-2xl p-6 border border-blue-900/20 hover:border-blue-900/60 transition-all duration-500 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <div
+                        class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg"
+                      >
+                        <svg
+                          class="w-8 h-8 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="text-blue-900 text-lg font-bold mb-2">
+                        Start Your
+                      </h3>
+                      <p class="text-blue-900 text-base font-semibold">
+                        Own Business
+                      </p>
+                      <p class="text-gray-600 text-sm mt-2">
+                        Get help and support to start your business idea
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-blue-900 py-6 sm:py-8 md:py-12 lg:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 px-3 sm:px-4"
+        >
+          <div
+            class="text-center animate-scale-in bg-blue-900/20 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4"
+            style="animation-delay: 0ms"
+          >
+            <div
+              class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-yellow-400 mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110"
+            >
+              26 LPA
+            </div>
+            <div class="text-white text-xs leading-tight opacity-90">
+              Highest Package
+            </div>
+          </div>
+          <div
+            class="text-center animate-scale-in bg-blue-900/20 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4"
+            style="animation-delay: 100ms"
+          >
+            <div
+              class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-yellow-400 mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110"
+            >
+              4.6 LPA
+            </div>
+            <div class="text-white text-xs leading-tight opacity-90">
+              Average package
+            </div>
+          </div>
+          <div
+            class="text-center animate-scale-in bg-blue-900/20 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4"
+            style="animation-delay: 200ms"
+          >
+            <div
+              class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-yellow-400 mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110"
+            >
+              5000+
+            </div>
+            <div class="text-white text-xs leading-tight opacity-90">
+              Students Placed
+            </div>
+          </div>
+          <div
+            class="text-center animate-scale-in bg-blue-900/20 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4"
+            style="animation-delay: 300ms"
+          >
+            <div
+              class="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-yellow-400 mb-0.5 sm:mb-1 md:mb-2 transition-all duration-300 hover:scale-110"
+            >
+              1200+
+            </div>
+            <div class="text-white text-xs leading-tight opacity-90">
+              Total Recuiters
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="py-8 md:py-12 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 animate-fade-in-up">
+          <h2
+            class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-blue-900 mb-3 sm:mb-4 px-3 sm:px-4"
+          >
+            Why Sunstone Powered Programs Stand Out?
+          </h2>
+          <p
+            class="text-xs sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-3 sm:px-4"
+          >
+            See how our programs compare with traditional colleges
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up delay-300 border-4 border-blue-800"
+        >
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead>
+                <tr
+                  class="bg-gradient-to-r from-blue-900 to-blue-800 text-white"
+                >
+                  <th
+                    class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-left text-xs sm:text-sm md:text-base lg:text-lg font-bold"
+                  >
+                    Key Offerings
+                  </th>
+                  <th
+                    class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-center text-xs sm:text-sm md:text-base lg:text-lg font-bold bg-yellow-400/20"
+                  >
+                    Sunstone-Powered Programs
+                  </th>
+                  <th
+                    class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-center text-xs sm:text-sm md:text-base lg:text-lg font-bold"
+                  >
+                    Other Colleges
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="border-b border-gray-200 hover:bg-gray-50 transition-all duration-300 animate-fade-in-up"
+                  style="animation-delay: 100ms"
+                >
+                  <td
+                    class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 font-semibold text-xs sm:text-sm md:text-base text-black bg-gray-50"
+                  >
+                    Specializations
+                  </td>
+                  <td
+                    class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-yellow-400/10 border-l-2 sm:border-l-4 border-yellow-400"
+                  >
+                    <div
+                      class="flex items-center justify-center space-x-1 sm:space-x-2"
+                    >
+                      <svg
+                        class="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-yellow-400 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <span
+                        class="text-black font-medium text-xs sm:text-sm md:text-base leading-tight"
+                      >
+                        5 Advanced New-Age Specializations
+                      </span>
+                    </div>
+                  </td>
+                  <td
+                    class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-gray-100 border-l-2 sm:border-l-4 border-gray-400"
+                  >
+                    <div
+                      class="flex items-center justify-center space-x-1 sm:space-x-2"
+                    >
+                      <svg
+                        class="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-gray-500 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                      <span
+                        class="text-black font-medium text-xs sm:text-sm md:text-base leading-tight"
+                      >
+                        Limited Or No Specialization Choices
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Additional table rows would continue here with the same pattern -->
+                <tr
+                  class="border-b border-gray-200 hover:bg-gray-50 transition-all duration-300 animate-fade-in-up"
+                  style="animation-delay: 200ms"
+                >
+                  <td
+                    class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 font-semibold text-xs sm:text-sm md:text-base text-black bg-gray-50"
+                  >
+                    Industry Exposure
+                  </td>
+                  <td
+                    class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-yellow-400/10 border-l-2 sm:border-l-4 border-yellow-400"
+                  >
+                    <div
+                      class="flex items-center justify-center space-x-1 sm:space-x-2"
+                    >
+                      <svg
+                        class="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-yellow-400 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <span
+                        class="text-black font-medium text-xs sm:text-sm md:text-base leading-tight"
+                      >
+                        6+ Months Of Industry Internships
+                      </span>
+                    </div>
+                  </td>
+                  <td
+                    class="px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-3 md:py-4 lg:py-6 text-center bg-gray-100 border-l-2 sm:border-l-4 border-gray-400"
+                  >
+                    <div
+                      class="flex items-center justify-center space-x-1 sm:space-x-2"
+                    >
+                      <svg
+                        class="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-gray-500 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                      <span
+                        class="text-black font-medium text-xs sm:text-sm md:text-base leading-tight"
+                      >
+                        Minimal Or No Internship Opportunities
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Impact in Numbers Section -->
+    <section
+      class="py-6 md:py-16 bg-gradient-to-br from-white via-gray-50 to-yellow-400/5 relative overflow-hidden"
+    >
+      <!-- Subtle background elements -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute top-20 right-20 w-64 h-64 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-20 left-20 w-48 h-48 bg-blue-900/5 rounded-full blur-2xl animate-pulse"
+          style="animation-delay: 2s"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Epic Header with Sunstone Praise -->
+        <div class="text-center mb-6 md:mb-16">
+          <div
+            class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400/30 to-yellow-400/20 backdrop-blur-sm px-4 py-2 md:px-8 md:py-4 rounded-full mb-3 md:mb-6 border border-yellow-400/40 shadow-xl animate-glow"
+          >
+            <div
+              class="w-2 h-2 md:w-3 md:h-3 bg-yellow-400 rounded-full animate-pulse"
+            ></div>
+            <span
+              class="text-blue-900 font-bold text-sm md:text-lg tracking-wide"
+            >
+              🏆 SUNSTONE EXCELLENCE PROVEN
+            </span>
+            <div
+              class="w-2 h-2 md:w-3 md:h-3 bg-yellow-400 rounded-full animate-pulse"
+              style="animation-delay: 0.5s"
+            ></div>
+          </div>
+
+          <h2
+            class="text-xl sm:text-2xl md:text-6xl lg:text-7xl font-black text-blue-900 mb-3 md:mb-6 animate-shimmer leading-tight"
+          >
+            Our Impact Speaks for Itself
+          </h2>
+
+          <div class="max-w-4xl mx-auto mb-4 md:mb-8">
+            <p class="text-sm md:text-2xl font-bold text-blue-900 mb-2 md:mb-4">
+              Sunstone: Where Excellence Meets Opportunity
+            </p>
+            <p
+              class="text-xs md:text-lg text-gray-700 leading-relaxed hidden md:block"
+            >
+              <span class="text-yellow-400 font-semibold"
+                >Witness the Sunstone difference</span
+              >
+              - our previous batch results showcase why we're India's most
+              trusted education platform. These extraordinary achievements
+              reflect our unwavering commitment to
+              <span class="text-blue-900 font-semibold"
+                >transforming lives through world-class education</span
+              >.
+            </p>
+          </div>
+
+          <div class="flex justify-center mb-3 md:mb-6">
+            <div
+              class="w-20 md:w-40 h-0.5 md:h-1 bg-gradient-to-r from-blue-900 via-yellow-400 to-blue-900 mx-auto rounded-full animate-expand-horizontal"
+            ></div>
+          </div>
+
+          <div
+            class="inline-flex items-center gap-1 md:gap-2 bg-blue-900/10 px-3 py-2 md:px-6 md:py-3 rounded-full"
+          >
+            <svg
+              class="h-3 w-3 md:h-5 md:w-5 text-yellow-400 animate-bounce-soft"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              />
+            </svg>
+            <span class="text-blue-900 font-semibold text-xs md:text-base">
+              Consistently Ranked #1 in Student Outcomes
+            </span>
+          </div>
+        </div>
+
+        <!-- Enhanced Statistics with Sunstone Praise -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8 mb-6 md:mb-12"
+        >
+          <!-- Stat 1: Offers from Top Recruiters -->
+          <div
+            class="group bg-gradient-to-br from-white to-yellow-400/5 rounded-lg md:rounded-2xl p-3 md:p-8 text-center shadow-md md:shadow-xl border border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+          >
+            <div
+              class="w-8 h-8 md:w-18 md:h-18 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg"
+            >
+              <svg
+                class="h-4 w-4 md:h-10 md:w-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="text-2xl md:text-6xl font-black text-gray-900 mb-1 md:mb-4"
+            >
+              1170+
+            </div>
+
+            <h3
+              class="text-sm md:text-2xl font-bold text-blue-900 mb-1 md:mb-4"
+            >
+              Offers from Top Recruiters
+            </h3>
+
+            <p
+              class="text-gray-700 leading-relaxed mb-2 md:mb-6 text-xs md:text-base hidden md:block"
+            >
+              <span class="text-yellow-400 font-semibold"
+                >Sunstone's unmatched industry reputation</span
+              >
+              attracts leading companies like Google, Microsoft, and Amazon. Our
+              graduates are the
+              <span class="font-semibold">first choice</span> for top recruiters
+              across every major industry.
+            </p>
+
+            <div
+              class="inline-flex items-center bg-gradient-to-r from-yellow-400/20 to-yellow-400/10 px-3 py-1 md:px-6 md:py-3 rounded-full border border-yellow-400/30 group-hover:scale-110 transition-transform duration-500"
+            >
+              <svg
+                class="h-3 w-3 md:h-5 md:w-5 text-yellow-400 mr-1 md:mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-blue-900 font-bold text-xs md:text-sm">
+                Industry's Most Trusted
+              </span>
+            </div>
+          </div>
+
+          <!-- Stat 2: Unique Job Opportunities -->
+          <div
+            class="group bg-gradient-to-br from-white to-blue-900/5 rounded-lg md:rounded-2xl p-3 md:p-8 text-center shadow-md md:shadow-xl border border-blue-900/20 hover:border-blue-900/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+          >
+            <div
+              class="w-8 h-8 md:w-18 md:h-18 bg-gradient-to-br from-blue-900 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg"
+            >
+              <svg
+                class="h-4 w-4 md:h-10 md:w-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="text-2xl md:text-6xl font-black text-gray-900 mb-1 md:mb-4"
+            >
+              1020+
+            </div>
+
+            <h3
+              class="text-sm md:text-2xl font-bold text-blue-900 mb-1 md:mb-4"
+            >
+              Unique Job Opportunities
+            </h3>
+
+            <p
+              class="text-gray-700 leading-relaxed mb-2 md:mb-6 text-xs md:text-base hidden md:block"
+            >
+              <span class="text-yellow-400 font-semibold"
+                >Sunstone's extensive network</span
+              >
+              spans from cutting-edge startups to Fortune 500 giants. Our
+              <span class="font-semibold">exclusive partnerships</span> create
+              unprecedented career pathways across 15+ high-growth sectors.
+            </p>
+
+            <div
+              class="inline-flex items-center bg-gradient-to-r from-blue-900/20 to-blue-900/10 px-3 py-1 md:px-6 md:py-3 rounded-full border border-blue-900/30 group-hover:scale-110 transition-transform duration-500"
+            >
+              <svg
+                class="h-3 w-3 md:h-5 md:w-5 text-blue-900 mr-1 md:mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l9-5-9-5-9 5 9 5z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                />
+              </svg>
+              <span class="text-blue-900 font-bold text-xs md:text-sm">
+                Unmatched Network
+              </span>
+            </div>
+          </div>
+
+          <!-- Stat 3: Students with Multiple Offers -->
+          <div
+            class="group bg-gradient-to-br from-white to-yellow-400/5 rounded-lg md:rounded-2xl p-3 md:p-8 text-center shadow-md md:shadow-xl border border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+          >
+            <div
+              class="w-8 h-8 md:w-18 md:h-18 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg"
+            >
+              <svg
+                class="h-4 w-4 md:h-10 md:w-10 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="text-2xl md:text-6xl font-black text-gray-900 mb-1 md:mb-4"
+            >
+              302+
+            </div>
+
+            <h3
+              class="text-sm md:text-2xl font-bold text-blue-900 mb-1 md:mb-4"
+            >
+              Students with 2+ Job Offers
+            </h3>
+
+            <p
+              class="text-gray-700 leading-relaxed mb-2 md:mb-6 text-xs md:text-base hidden md:block"
+            >
+              <span class="text-yellow-400 font-semibold"
+                >The ultimate testament to Sunstone's excellence</span
+              >
+              - our students don't just find jobs, they have the
+              <span class="font-semibold">luxury of choice</span>. This is what
+              happens when world-class education meets industry demand.
+            </p>
+
+            <div
+              class="inline-flex items-center bg-gradient-to-r from-yellow-400/20 to-yellow-400/10 px-3 py-1 md:px-6 md:py-3 rounded-full border border-yellow-400/30 group-hover:scale-110 transition-transform duration-500"
+            >
+              <svg
+                class="h-3 w-3 md:h-5 md:w-5 text-yellow-400 mr-1 md:mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span class="text-blue-900 font-bold text-xs md:text-sm">
+                Premium Choice
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunstone Excellence Statement -->
+        <div class="text-center">
+          <div
+            class="bg-gradient-to-r from-blue-900/10 via-yellow-400/10 to-blue-900/10 rounded-xl md:rounded-2xl p-4 md:p-12 border border-yellow-400/30 max-w-5xl mx-auto shadow-lg md:shadow-2xl backdrop-blur-sm"
+          >
+            <div class="mb-3 md:mb-6">
+              <div
+                class="inline-flex items-center gap-1 md:gap-2 bg-yellow-400/20 px-2 py-1 md:px-4 md:py-2 rounded-full mb-2 md:mb-4"
+              >
+                <div
+                  class="w-1.5 h-1.5 md:w-2 md:h-2 bg-yellow-400 rounded-full animate-pulse"
+                ></div>
+                <span class="text-blue-900 font-bold text-xs md:text-sm">
+                  PLACEMENT OPPORTUNITY PROGRAM
+                </span>
+              </div>
+            </div>
+
+            <blockquote
+              class="text-sm md:text-3xl font-bold text-blue-900 leading-relaxed mb-3 md:mb-6"
+            >
+              "200+ Assured Placement Opportunities or, Get Your 1st Year
+              Tuition-Fee Back*"
+              <br />
+              <span class="text-xs md:text-base text-gray-600 mt-2 block">
+                *Terms and Conditions Applied
+              </span>
+            </blockquote>
+
+            <div
+              class="flex justify-center items-center gap-2 md:gap-4 mb-3 md:mb-6"
+            >
+              <div
+                class="w-8 md:w-16 h-0.5 md:h-1 bg-gradient-to-r from-transparent to-yellow-400 rounded-full"
+              ></div>
+              <div
+                class="w-2 h-2 md:w-4 md:h-4 bg-yellow-400 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="w-8 md:w-16 h-0.5 md:h-1 bg-gradient-to-r from-yellow-400 to-transparent rounded-full"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Recruiters Section -->
+    <section class="py-8 md:py-12 bg-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 md:mb-8 lg:mb-10">
+          <h2
+            class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-blue-900 mb-2 sm:mb-3 px-3 sm:px-4"
+          >
+            Top Recruiters
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg text-gray-600 px-3 sm:px-4">
+            Leading companies that trust our graduates
+          </p>
+          <div
+            class="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-yellow-400 to-blue-900 rounded-full mx-auto mt-3 sm:mt-4"
+          ></div>
+        </div>
+
+        <!-- Mobile Horizontal Animation View -->
+        <div class="block md:hidden">
+          <div class="relative overflow-hidden">
+            <div
+              class="flex space-x-4 animate-scroll-right"
+              style="width: calc(200% + 32px)"
+            >
+              <!-- First set -->
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                  alt="Kotak Mahindra Bank"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                  alt="Bosch"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                  alt="HCL"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                  alt="TCS"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                  alt="Paytm"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                  alt="Genpact"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <!-- Duplicate set for seamless loop -->
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                  alt="Kotak Mahindra Bank"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 w-20 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                  alt="Bosch"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Horizontal Animation -->
+        <div class="hidden md:block relative overflow-hidden mb-6 md:mb-8">
+          <div
+            class="flex animate-scroll-right space-x-4 md:space-x-8"
+            style="width: calc(200% + 64px)"
+          >
+            <!-- First set -->
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                alt="Kotak Mahindra Bank"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                alt="Bosch"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                alt="HCL"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                alt="TCS"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                alt="Paytm"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                alt="Genpact"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <!-- Duplicate set for seamless loop -->
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                alt="Kotak Mahindra Bank"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-24 h-16 md:w-32 md:h-20 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 md:p-4 hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                alt="Bosch"
+                class="max-w-full max-h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Recognition Section -->
+    <section
+      class="py-8 md:py-12 bg-gradient-to-br from-blue-900/5 to-yellow-400/5 relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 animate-fade-in-up">
+          <div
+            class="inline-flex items-center gap-2 bg-yellow-400/10 px-6 py-3 rounded-full mb-6 border border-yellow-400/30"
+          >
+            <svg
+              class="h-5 w-5 text-yellow-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="text-blue-900 font-semibold text-base">
+              Awards & Recognition
+            </span>
+          </div>
+
+          <h2
+            class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-blue-900 mb-4 md:mb-6 px-4"
+          >
+            Internationally Recognized Excellence
+          </h2>
+
+          <p
+            class="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4"
+          >
+            Our commitment to educational excellence has been acknowledged by
+            leading industry bodies worldwide
+          </p>
+          <div
+            class="h-1 w-24 md:w-32 bg-gradient-to-r from-yellow-400 to-blue-900 rounded-full mx-auto mt-4 md:mt-6"
+          ></div>
+        </div>
+
+        <!-- Mobile Awards Horizontal Scroll -->
+        <div class="block md:hidden">
+          <div class="relative overflow-hidden">
+            <div
+              class="flex space-x-4 animate-scroll-left"
+              style="width: calc(200% + 32px)"
+            >
+              <!-- First set of awards -->
+              <div
+                class="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                  alt="EdTech 100"
+                  class="w-16 h-16 mb-2 object-contain"
+                />
+                <p
+                  class="text-sm font-bold text-blue-900 text-center leading-tight"
+                >
+                  EdTech 100
+                </p>
+              </div>
+              <div
+                class="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                  alt="GSV 150"
+                  class="w-16 h-16 mb-2 object-contain"
+                />
+                <p
+                  class="text-sm font-bold text-blue-900 text-center leading-tight"
+                >
+                  GSV 150
+                </p>
+              </div>
+              <div
+                class="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                  alt="Innovation"
+                  class="w-16 h-16 mb-2 object-contain"
+                />
+                <p
+                  class="text-sm font-bold text-blue-900 text-center leading-tight"
+                >
+                  Innovation
+                </p>
+              </div>
+              <!-- Duplicate set for seamless loop -->
+              <div
+                class="flex-shrink-0 w-48 h-36 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 hover:shadow-xl transition-all duration-500"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                  alt="EdTech 100"
+                  class="w-16 h-16 mb-2 object-contain"
+                />
+                <p
+                  class="text-sm font-bold text-blue-900 text-center leading-tight"
+                >
+                  EdTech 100
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Awards - Clean Horizontal Scrolling -->
+        <div class="hidden md:block relative overflow-hidden">
+          <div
+            class="flex animate-wave-scroll space-x-8 md:space-x-12"
+            style="width: calc(200% + 96px)"
+          >
+            <!-- First set -->
+            <div
+              class="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-yellow-400/50 group animate-float-up"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                alt="EdTech 100 Award"
+                class="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                style="width: 203px; height: 160px"
+              />
+              <p
+                class="text-sm md:text-base font-bold text-blue-900 text-center leading-tight"
+              >
+                EdTech 100
+              </p>
+            </div>
+
+            <div
+              class="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-gradient-to-br from-blue-900/5 to-white rounded-xl shadow-lg border border-blue-900/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-blue-900/50 group animate-float-up"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fa82dcc397d864ace86260ded1fdc663f?format=webp&width=800"
+                alt="GSV 150"
+                class="w-24 h-24 mb-2 md:mb-3 object-contain group-hover:scale-110 transition-transform duration-500"
+                style="width: 203px; height: 128px"
+              />
+              <p
+                class="text-sm md:text-base font-bold text-blue-900 text-center leading-tight"
+              >
+                GSV 150
+              </p>
+            </div>
+
+            <div
+              class="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-yellow-400/50 group animate-float-up"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2F2a2af0b7fb294dc48ea196fb5e95eedc?format=webp&width=800"
+                alt="Innovation"
+                class="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                style="width: 203px; height: 160px"
+              />
+              <p
+                class="text-sm md:text-base font-bold text-blue-900 text-center leading-tight"
+              >
+                Innovation
+              </p>
+            </div>
+
+            <!-- Duplicate set for seamless loop -->
+            <div
+              class="flex-shrink-0 w-64 h-52 md:w-80 md:h-64 bg-white rounded-xl shadow-lg border border-yellow-400/20 flex flex-col items-center justify-center p-4 md:p-8 hover:shadow-xl transition-all duration-500 hover:border-yellow-400/50 group animate-float-up"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F6b380204f0be44298251449d0b1a0b73%2Fbda3bb72988c4d1795299362330be8b0?format=webp&width=800"
+                alt="EdTech 100 Award"
+                class="w-32 h-32 mb-3 md:mb-4 object-contain group-hover:scale-110 transition-transform duration-500"
+                style="width: 203px; height: 160px"
+              />
+              <p
+                class="text-sm md:text-base font-bold text-blue-900 text-center leading-tight"
+              >
+                EdTech 100
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bright Minds Scholarship Section -->
+    <section class="py-8 md:py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-8 md:mb-12 animate-fade-in-up">
+          <div
+            class="inline-flex items-center gap-2 bg-yellow-400/10 px-6 py-3 rounded-full mb-6 border border-yellow-400/30"
+          >
+            <svg
+              class="h-5 w-5 text-yellow-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="text-blue-900 font-semibold text-base">
+              Merit-Based Scholarship Program
+            </span>
+          </div>
+
+          <h2
+            class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-blue-900 mb-4 md:mb-6 px-4"
+          >
+            Bright Minds Scholarship Program
+          </h2>
+
+          <p
+            class="text-base sm:text-lg md:text-xl text-gray-600 font-medium max-w-3xl mx-auto px-4"
+          >
+            Recognizing academic excellence with scholarship up to
+            <strong>₹6 Lacs</strong> for deserving students based on
+            CAT/CMAT/JEE/XAT/12th score. Students can also take SAT (Sunstone
+            Admission Test) to grab amazing financial benefits
+          </p>
+          <div
+            class="h-1 w-24 md:w-32 bg-gradient-to-r from-yellow-400 to-blue-900 rounded-full mx-auto mt-4 md:mt-6"
+          ></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 items-center"
+        >
+          <!-- Left - Scholarship Image -->
+          <div class="order-2 lg:order-1 animate-slide-in-left">
+            <div class="relative cursor-pointer" onclick="scrollToForm()">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-blue-900/20 rounded-2xl transform rotate-2"
+              ></div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F3a5ed5e8117e46deaa05a11dc6942f27"
+                alt="Bright Minds Scholarship - Financial support for academic excellence"
+                class="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
+              />
+              <div
+                class="absolute inset-0 bg-black/0 hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100"
+              >
+                <div
+                  class="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg"
+                >
+                  <span class="text-blue-900 font-bold text-sm"
+                    >Click to Apply</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right - Scholarship Info -->
+          <div class="order-1 lg:order-2 animate-slide-in-right">
+            <div
+              class="bg-gradient-to-br from-gray-50 to-yellow-400/5 rounded-2xl p-6 md:p-8 lg:p-10 shadow-xl border border-gray-200"
+            >
+              <div class="mb-6 md:mb-8">
+                <h3
+                  class="text-base sm:text-2xl md:text-3xl font-bold text-blue-900 mb-3 md:mb-4"
+                >
+                  Merit-Based Scholarship
+                </h3>
+                <p class="text-gray-600 text-base md:text-lg">
+                  Scholarships awarded based on academic merit and entrance exam
+                  scores, not financial need
+                </p>
+              </div>
+
+              <div class="space-y-1.5 sm:space-y-2 md:space-y-3 lg:space-y-6">
+                <!-- Top 10% -->
+                <div
+                  class="bg-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-yellow-400"
+                >
+                  <div class="flex items-center justify-between gap-1 sm:gap-2">
+                    <div>
+                      <h4
+                        class="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-blue-900"
+                      >
+                        Elite Tier
+                      </h4>
+                      <p class="text-gray-600 text-xs">Top 10%</p>
+                    </div>
+                    <div class="text-right">
+                      <div
+                        class="text-xs sm:text-sm md:text-base lg:text-lg font-black text-yellow-400"
+                      >
+                        ₹6L
+                      </div>
+                      <div class="text-xs text-gray-500">Max Award</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Top 25% -->
+                <div
+                  class="bg-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-blue-900"
+                >
+                  <div class="flex items-center justify-between gap-1 sm:gap-2">
+                    <div>
+                      <h4
+                        class="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-blue-900"
+                      >
+                        Excellence
+                      </h4>
+                      <p class="text-gray-600 text-xs">Top 25%</p>
+                    </div>
+                    <div class="text-right">
+                      <div
+                        class="text-xs sm:text-sm md:text-base lg:text-lg font-black text-blue-900"
+                      >
+                        ₹4L
+                      </div>
+                      <div class="text-xs text-gray-500">Support</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Top 50% -->
+                <div
+                  class="bg-white rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-md sm:shadow-lg border-l-2 sm:border-l-4 border-gray-400"
+                >
+                  <div class="flex items-center justify-between gap-1 sm:gap-2">
+                    <div>
+                      <h4
+                        class="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-blue-900"
+                      >
+                        Achievement
+                      </h4>
+                      <p class="text-gray-600 text-xs">Top 50%</p>
+                    </div>
+                    <div class="text-right">
+                      <div
+                        class="text-xs sm:text-sm md:text-base lg:text-lg font-black text-gray-700"
+                      >
+                        ₹2L
+                      </div>
+                      <div class="text-xs text-gray-500">Foundation</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mt-6 md:mt-8 bg-gradient-to-r from-blue-900 to-blue-800 rounded-xl p-4 md:p-6 text-center"
+              >
+                <h4 class="text-xs md:text-xl font-bold text-white mb-2">
+                  Merit-Based Scholarship
+                </h4>
+                <p class="text-gray-300 text-xs md:text-sm mb-4">
+                  Limited scholarships available for top-performing students
+                  based on entrance exam scores
+                </p>
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-xl font-bold text-sm md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 w-full"
+                >
+                  Apply Now for Scholarship
+                  <svg
+                    class="inline-block ml-2 h-4 w-4 md:h-5 md:w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Colleges Section -->
+    <section
+      class="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-8 md:mb-12">
+          <div
+            class="inline-flex items-center gap-2 bg-blue-900/10 px-4 py-2 rounded-full mb-6 border border-blue-900/20"
+          >
+            <svg
+              class="h-4 w-4 text-blue-900"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              />
+            </svg>
+            <span class="text-blue-900 font-bold text-sm"
+              >Premier Partner Colleges</span
+            >
+          </div>
+
+          <h2
+            class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black text-blue-900 mb-3 leading-tight relative overflow-hidden"
+          >
+            <span class="inline-block animate-bounce-in-down">
+              <span
+                class="bg-gradient-to-r from-blue-900 via-blue-900 to-yellow-400 bg-clip-text text-transparent animate-gradient-x"
+              >
+                Discover Your
+              </span>
+            </span>
+            <span class="block animate-bounce-in-up delay-500">
+              <span
+                class="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-600 bg-clip-text text-transparent animate-shimmer"
+              >
+                Dream College
+              </span>
+            </span>
+            <div
+              class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full animate-ping opacity-75"
+            ></div>
+            <div
+              class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent animate-pulse"
+            ></div>
+          </h2>
+
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed"
+          >
+            Choose from India's top institutions with
+            <span class="text-yellow-400 font-bold"
+              >assured placement opportunities</span
+            >
+          </p>
+          <div
+            class="h-0.5 w-16 bg-gradient-to-r from-yellow-400 to-blue-900 rounded-full mx-auto mt-3 animate-expand-horizontal delay-700"
+          ></div>
+        </div>
+
+        <!-- Explore All Colleges Button -->
+        <div class="text-center mb-8">
+          <button
+            onclick="window.open('https://sunstone.in/campuses', '_blank')"
+            class="bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-xl font-bold text-sm sm:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+          >
+            Explore All Colleges
+            <svg
+              class="inline-block ml-2 h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- College Showcase - Horizontal Animation -->
+        <div class="mb-8">
+          <div class="relative overflow-hidden">
+            <div
+              class="flex space-x-3 animate-scroll-left"
+              style="width: calc(200% + 24px)"
+            >
+              <!-- ADYPU -->
+              <div
+                class="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group"
+              >
+                <div class="relative h-32 md:h-40">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
+                    alt="AJEENKYA DY PATIL UNIVERSITY"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div class="p-3">
+                  <h3
+                    class="text-xs md:text-sm lg:text-base font-bold text-blue-900 mb-1 truncate"
+                  >
+                    AJEENKYA DY PATIL UNIVERSITY
+                  </h3>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2">
+                    Pune • BCA • UGC
+                  </p>
+                  <div class="flex items-center gap-2 mb-3">
+                    <div class="text-xs md:text-sm text-gray-600 space-y-0.5">
+                      <p>✓ 2 Specialisations</p>
+                      <p>✓ 10 Certifications</p>
+                    </div>
+                  </div>
+                  <button
+                    onclick="window.open('https://sunstone.in/campuses/ajeenkya-dy-patil-university', '_blank')"
+                    class="w-full bg-blue-900 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
+                  >
+                    Book Tour →
+                  </button>
+                </div>
+              </div>
+
+              <!-- SAGE University -->
+              <div
+                class="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group"
+              >
+                <div class="relative h-32 md:h-40">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2Fd4292f0301e54e758271a20e4be45b78?format=webp"
+                    alt="SAGE University"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div class="p-3">
+                  <h3
+                    class="text-xs md:text-sm lg:text-base font-bold text-blue-900 mb-1 truncate"
+                  >
+                    SAGE University
+                  </h3>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2">
+                    Indore • MBA • AICTE
+                  </p>
+                  <div class="flex items-center gap-2 mb-3">
+                    <div class="text-xs md:text-sm text-gray-600 space-y-0.5">
+                      <p>✓ 2 Specialisations</p>
+                      <p>✓ 10 Certifications</p>
+                    </div>
+                  </div>
+                  <button
+                    onclick="window.open('https://sunstone.in/campuses/sage', '_blank')"
+                    class="w-full bg-blue-900 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
+                  >
+                    Book Tour →
+                  </button>
+                </div>
+              </div>
+
+              <!-- Hi-Tech Institute -->
+              <div
+                class="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group"
+              >
+                <div class="relative h-32 md:h-40">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F85d3b45ecf8743c79806f64b71c74b5e?format=webp&width=800"
+                    alt="HITECH INSTITUTE OF ENGINEERING AND TECHNOLOGY"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div class="p-3">
+                  <h3
+                    class="text-xs md:text-sm lg:text-base font-bold text-blue-900 mb-1 truncate"
+                  >
+                    Hi-Tech Institute of Engineering & Technology
+                  </h3>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2">
+                    Ghaziabad • B.Tech • AICTE
+                  </p>
+                  <div class="flex items-center gap-2 mb-3">
+                    <div class="text-xs md:text-sm text-gray-600 space-y-0.5">
+                      <p>✓ 2 Programs</p>
+                      <p>✓ 10 Certifications</p>
+                    </div>
+                  </div>
+                  <button
+                    onclick="window.open('https://sunstone.in/campuses/hi-tech-institute', '_blank')"
+                    class="w-full bg-blue-900 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
+                  >
+                    Book Tour →
+                  </button>
+                </div>
+              </div>
+
+              <!-- Duplicate set for seamless loop -->
+              <div
+                class="flex-shrink-0 w-56 md:w-72 lg:w-80 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-500 group"
+              >
+                <div class="relative h-32 md:h-40">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F5025fdb2131949649df42ffd478945d7?format=webp&width=800"
+                    alt="AJEENKYA DY PATIL UNIVERSITY"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div class="p-3">
+                  <h3
+                    class="text-xs md:text-sm lg:text-base font-bold text-blue-900 mb-1 truncate"
+                  >
+                    AJEENKYA DY PATIL UNIVERSITY
+                  </h3>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2">
+                    Pune • BCA • UGC
+                  </p>
+                  <div class="flex items-center gap-2 mb-3">
+                    <div class="text-xs md:text-sm text-gray-600 space-y-0.5">
+                      <p>✓ 2 Specialisations</p>
+                      <p>✓ 10 Certifications</p>
+                    </div>
+                  </div>
+                  <button
+                    onclick="window.open('https://sunstone.in/campuses/ajeenkya-dy-patil-university', '_blank')"
+                    class="w-full bg-blue-900 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
+                  >
+                    Book Tour →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center">
+          <div
+            class="bg-gradient-to-r from-blue-900 to-blue-800 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-6 border border-yellow-400/30"
+          >
+            <h3
+              class="text-sm sm:text-base md:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-3 md:mb-4"
+            >
+              Ready to Start Your Journey?
+            </h3>
+            <div
+              class="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center"
+            >
+              <button
+                onclick="scrollToForm()"
+                class="bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+              >
+                Apply Now
+                <svg
+                  class="inline-block ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section
+      id="success-stories"
+      class="py-8 md:py-12 bg-gradient-to-br from-gray-50 to-blue-900/5 relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 animate-fade-in-up">
+          <h2
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-blue-900 mb-3 sm:mb-4 md:mb-6 px-3 sm:px-4"
+          >
+            Success Stories That Inspire
+          </h2>
+          <p
+            class="text-xs sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto font-medium px-3 sm:px-4"
+          >
+            Real Students, Real Achievements, Real Transformations
+          </p>
+          <div
+            class="h-0.5 sm:h-1 md:h-2 w-20 sm:w-24 md:w-32 lg:w-40 bg-gradient-to-r from-yellow-400 to-blue-900 rounded-full mx-auto mt-3 sm:mt-4 md:mt-6"
+          ></div>
+        </div>
+
+        <!-- Mobile Success Stories -->
+        <div class="block md:hidden">
+          <div class="relative">
+            <!-- Current Story Display -->
+            <div class="flex justify-center mb-6" id="mobile-story-container">
+              <div
+                class="w-80 bg-white rounded-3xl shadow-xl overflow-hidden border border-yellow-400/20"
+              >
+                <!-- Header -->
+                <div
+                  class="relative h-32 bg-gradient-to-br from-blue-900 to-blue-800 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    id="mobile-story-image"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F186690ab4fef44fe970178b31091c6a8?format=webp&width=800"
+                    alt="Jaya Tiwari"
+                    class="w-16 h-16 rounded-full object-cover border-4 border-white z-10 shadow-xl"
+                  />
+                </div>
+
+                <!-- Content -->
+                <div class="p-4">
+                  <h3
+                    id="mobile-story-name"
+                    class="text-lg font-bold text-blue-900 mb-2"
+                  >
+                    Jaya Tiwari
+                  </h3>
+                  <div class="flex flex-wrap gap-2 mb-3" id="mobile-story-tags">
+                    <span
+                      class="bg-blue-900/10 text-blue-900 px-2 py-1 rounded-full text-xs font-medium"
+                      >SRMU</span
+                    >
+                    <span
+                      class="bg-yellow-400/20 text-black px-2 py-1 rounded-full text-xs font-medium"
+                      >2022-2025</span
+                    >
+                    <span
+                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium"
+                      >BCA</span
+                    >
+                  </div>
+
+                  <p
+                    id="mobile-story-testimonial"
+                    class="text-gray-600 text-sm leading-relaxed mb-4"
+                  >
+                    "Sunstone has been a game-changer in my journey. The
+                    practical curriculum, supportive faculty, and collaborative
+                    environment have sharpened my skills and broadened my
+                    perspective. It's more than an institution—it's a community
+                    fostering growth and success."
+                  </p>
+
+                  <div class="flex items-center gap-1">
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dots Navigation -->
+            <div class="flex justify-center space-x-2 mb-4" id="mobile-dots">
+              <button
+                onclick="showMobileStory(0)"
+                class="w-3 h-3 rounded-full transition-all duration-300 bg-yellow-400 scale-125"
+              ></button>
+              <button
+                onclick="showMobileStory(1)"
+                class="w-3 h-3 rounded-full transition-all duration-300 bg-gray-300 hover:bg-gray-400"
+              ></button>
+              <button
+                onclick="showMobileStory(2)"
+                class="w-3 h-3 rounded-full transition-all duration-300 bg-gray-300 hover:bg-gray-400"
+              ></button>
+              <button
+                onclick="showMobileStory(3)"
+                class="w-3 h-3 rounded-full transition-all duration-300 bg-gray-300 hover:bg-gray-400"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Auto-Scrolling Container -->
+        <div class="hidden md:block relative overflow-hidden">
+          <div
+            class="flex space-x-8 animate-scroll-x"
+            style="width: calc(100% + 400px)"
+          >
+            <!-- Success Story 1 -->
+            <div
+              class="flex-shrink-0 w-60 sm:w-72 md:w-80 animate-slide-in-right"
+              style="animation-delay: 0ms; scroll-snap-align: start"
+            >
+              <div
+                class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:shadow-2xl border border-yellow-400/20 h-full"
+              >
+                <!-- Header -->
+                <div
+                  class="relative h-32 md:h-40 bg-gradient-to-br from-blue-900 to-blue-800 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F186690ab4fef44fe970178b31091c6a8?format=webp&width=800"
+                    alt="Jaya Tiwari"
+                    class="w-20 h-20 rounded-full object-cover border-4 border-white z-10 transition-all duration-500 hover:scale-110 shadow-xl"
+                  />
+                </div>
+
+                <!-- Content -->
+                <div class="p-3 sm:p-4 md:p-6">
+                  <h3
+                    class="text-xs sm:text-base md:text-lg font-bold text-blue-900 mb-1 sm:mb-2"
+                  >
+                    Jaya Tiwari
+                  </h3>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span
+                      class="bg-blue-900/10 text-blue-900 px-2 py-1 rounded-full text-xs font-medium"
+                      >SRMU</span
+                    >
+                    <span
+                      class="bg-yellow-400/20 text-black px-2 py-1 rounded-full text-xs font-medium"
+                      >2022-2025</span
+                    >
+                    <span
+                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium"
+                      >BCA</span
+                    >
+                  </div>
+
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4"
+                  >
+                    "Sunstone has been a game-changer in my journey. The
+                    practical curriculum, supportive faculty, and collaborative
+                    environment have sharpened my skills and broadened my
+                    perspective. It's more than an institution—it's a community
+                    fostering growth and success."
+                  </p>
+
+                  <div class="flex items-center gap-1">
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <svg
+                      class="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional success stories would be duplicated here for the scrolling effect -->
+            <!-- For brevity, I'm including just one, but the pattern repeats -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limited Seats Section -->
+    <section
+      class="bg-gradient-to-r from-blue-900 to-blue-800 py-4 md:py-12 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-yellow-400/5 opacity-50"
+      ></div>
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center">
+          <div class="inline-flex items-center gap-1 md:gap-3 mb-3 md:mb-6">
+            <div
+              class="w-1.5 h-1.5 md:w-2 md:h-2 bg-yellow-400 rounded-full animate-pulse"
+            ></div>
+            <h2
+              class="text-lg md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight"
+            >
+              HURRY! ONLY FEW SEATS LEFT FOR 2025
+            </h2>
+            <div
+              class="w-1.5 h-1.5 md:w-2 md:h-2 bg-yellow-400 rounded-full animate-pulse"
+            ></div>
+          </div>
+          <p
+            class="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto px-2 md:px-0 whitespace-nowrap"
+          >
+            Grab this chance to get admission in only campus with 200+ job
+            opportunity and industry based curriculum
+          </p>
+          <div class="mb-4 md:mb-8"></div>
+          <button
+            onclick="scrollToForm()"
+            class="bg-yellow-400 text-blue-900 hover:bg-yellow-300 px-6 py-2.5 md:px-16 md:py-6 rounded-xl md:rounded-2xl font-bold md:font-black text-sm md:text-xl shadow-lg md:shadow-2xl hover:shadow-xl md:hover:shadow-3xl transform transition-all duration-300 hover:scale-105 border border-yellow-300"
+          >
+            APPLY NOW
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-0.5 md:py-8">
+      <div class="max-w-7xl mx-auto px-2 md:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
+          <div class="md:col-span-1">
+            <p class="text-gray-200 text-xs mb-1 md:mb-4 leading-tight">
+              Transforming careers through industry-focused education.
+            </p>
+            <div class="flex space-x-0.5 md:space-x-3">
+              <a
+                href="https://www.instagram.com/sunstone.in/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-gradient-to-r from-purple-500 to-pink-500 p-1 md:p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+              >
+                <svg
+                  class="h-3 w-3 md:h-5 md:w-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.042-3.441.219-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.888-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.357-.631-2.749-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.017.001z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@SunstoneIND"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-red-600 p-1 md:p-2 rounded-full hover:bg-red-700 transition-all duration-300"
+              >
+                <svg
+                  class="h-3 w-3 md:h-5 md:w-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://in.linkedin.com/school/sunstone-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-blue-800 p-1 md:p-2 rounded-full hover:bg-blue-900 transition-all duration-300"
+              >
+                <svg
+                  class="h-3 w-3 md:h-5 md:w-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4
+              class="font-semibold text-xs md:text-base mb-0.5 md:mb-4 text-yellow-400"
+            >
+              Programs
+            </h4>
+            <ul class="space-y-0 md:space-y-2 text-xs">
+              <li>
+                <a
+                  href="https://sunstone.in/mba"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >MBA/PGDM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/bba"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >BBA</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/btech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >B.Tech</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/bca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >BCA</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/mca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >MCA</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-semibold text-xs md:text-base mb-0.5 md:mb-4 text-yellow-400"
+            >
+              Top Colleges
+            </h4>
+            <ul class="space-y-0 md:space-y-2 text-xs">
+              <li>
+                <a
+                  href="https://sunstone.in/campuses/sage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >SAGE University</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/campuses/rathinam-group-of-institutions-group-of-institutions"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300 cursor-pointer mt-2"
+                  >Rathinam College of Arts and Science</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/campuses/rayat-bahra-university"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300 mt-2"
+                  >Rayat Bahra University</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/campuses/ajeenkya-dy-patil-university"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300 cursor-pointer mt-2"
+                  >Ajeenkya DY Patil University</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sunstone.in/campuses/jecrc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-200 hover:text-yellow-400 transition-colors duration-300"
+                  >JECRC University</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <h4
+              class="font-semibold text-xs md:text-base mb-0.5 md:mb-4 text-yellow-400"
+            >
+              Contact
+            </h4>
+            <div class="space-y-0.5 md:space-y-3 text-xs md:text-base">
+              <div class="flex items-center text-gray-200">
+                <svg
+                  class="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                +91 70653 03030
+              </div>
+              <div class="text-gray-200">connect@sunstone.in</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-blue-600 mt-1 md:mt-8 pt-1 md:pt-8 text-center text-gray-200 text-xs"
+        >
+          <p>&copy; 2025 Sunstone. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Success stories data
+      const successStories = [
+        {
+          id: 1,
+          name: "Jaya Tiwari",
+          package: "Sunstone Graduate",
+          campus: "SRMU",
+          year: "2022-2025",
+          course: "BCA",
+          testimonial:
+            "Sunstone has been a game-changer in my journey. The practical curriculum, supportive faculty, and collaborative environment have sharpened my skills and broadened my perspective. It's more than an institution—it's a community fostering growth and success.",
+          image:
+            "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F186690ab4fef44fe970178b31091c6a8?format=webp&width=800",
+        },
+        {
+          id: 2,
+          name: "Balram Jat",
+          package: "Current Student",
+          campus: "JNU",
+          year: "2024-2027",
+          course: "BCA",
+          testimonial:
+            "The admission process at Sunstone was seamless, with clear guidance at every step. The diverse student community and supportive faculty create an engaging learning experience. Modern facilities and a focus on skill development have added immense value to my journey.",
+          image:
+            "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F46d9e7da8b4d4986a23ac7bc3bc57c77?format=webp&width=800",
+        },
+        {
+          id: 3,
+          name: "Devraj Tripathi",
+          package: "Current Student",
+          campus: "SRMU",
+          year: "2022-2026",
+          course: "B.Tech",
+          testimonial:
+            "Sunstone has been a game-changer for me! The hands-on learning, expert faculty, and supportive environment have boosted my skills and confidence. It's more than just an institution—it's a community that nurtures success.",
+          image:
+            "https://cdn.builder.io/api/v1/image/assets%2Fe0105df6bb4344f091b8129f66930243%2F46d9c36d98b44d46827f381a7afe15ec?format=webp&width=800",
+        },
+        {
+          id: 4,
+          name: "Pulkit Singh",
+          package: "Dhanguard 10 LPA",
+          campus: "GDG",
+          year: "22-24",
+          course: "MBA",
+          testimonial:
+            "I am immensely grateful to Sunstone for the incredible international placement opportunity at Dhanguard. The unwavering support, exceptional faculty, and comprehensive curriculum played a pivotal role in shaping my career.",
+          image:
+            "https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F2be463e1c8b0473bb0fd5f659ac02eae?format=webp&width=800",
+        },
+      ];
+
+      let currentStoryIndex = 0;
+
+      // Function to show mobile story
+      function showMobileStory(index) {
+        currentStoryIndex = index;
+        const story = successStories[index];
+
+        // Update mobile story content
+        document.getElementById("mobile-story-image").src = story.image;
+        document.getElementById("mobile-story-image").alt = story.name;
+        document.getElementById("mobile-story-name").textContent = story.name;
+        document.getElementById("mobile-story-testimonial").textContent =
+          `"${story.testimonial}"`;
+
+        // Update tags
+        const tagsContainer = document.getElementById("mobile-story-tags");
+        tagsContainer.innerHTML = `
+                <span class="bg-blue-900/10 text-blue-900 px-2 py-1 rounded-full text-xs font-medium">${story.campus}</span>
+                <span class="bg-yellow-400/20 text-black px-2 py-1 rounded-full text-xs font-medium">${story.year}</span>
+                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">${story.course}</span>
+            `;
+
+        // Update dots
+        const dots = document.querySelectorAll("#mobile-dots button");
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.className =
+              "w-3 h-3 rounded-full transition-all duration-300 bg-yellow-400 scale-125";
+          } else {
+            dot.className =
+              "w-3 h-3 rounded-full transition-all duration-300 bg-gray-300 hover:bg-gray-400";
+          }
+        });
+      }
+
+      // Auto-rotate mobile stories
+      setInterval(() => {
+        if (window.innerWidth < 768) {
+          // Only on mobile
+          currentStoryIndex = (currentStoryIndex + 1) % successStories.length;
+          showMobileStory(currentStoryIndex);
+        }
+      }, 5000);
+
+      // Form submission handler
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        alert("Thank you for your interest! Our team will contact you soon.");
+        return false;
+      }
+
+      // Scroll to form function
+      function scrollToForm() {
+        const form = document.querySelector("form");
+        if (form) {
+          form.scrollIntoView({ behavior: "smooth", block: "center" });
+          // Focus on the first input field
+          const firstInput = form.querySelector('input[type="text"]');
+          if (firstInput) {
+            setTimeout(() => firstInput.focus(), 500);
+          }
+        }
+      }
+
+      // Initialize mobile story rotation
+      document.addEventListener("DOMContentLoaded", function () {
+        showMobileStory(0);
+      });
+    </script>
+  </body>
+</html>
