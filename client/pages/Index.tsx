@@ -2649,38 +2649,38 @@ export default function Index() {
             <div className="relative">
               {/* Current Story Display */}
               <div className="flex justify-center mb-6">
-                <div className="w-80 bg-sunstone-white rounded-3xl shadow-xl overflow-hidden border border-sunstone-gold/20">
-                  {/* Header */}
-                  <div className="relative h-32 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
-                    <img
-                      src={successStories[currentStoryIndex].image}
-                      alt={successStories[currentStoryIndex].name}
-                      className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
-                    />
+                <div className="w-80 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl shadow-xl overflow-hidden border border-sunstone-navy/20">
+                  {/* Profile Image */}
+                  <div className="flex justify-center pt-6 pb-4">
+                    <div className="relative">
+                      <img
+                        src={successStories[currentStoryIndex].image}
+                        alt={successStories[currentStoryIndex].name}
+                        className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
+                      />
+                    </div>
                   </div>
 
                   {/* Content */}
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                  <div className="px-4 pb-6 text-center">
+                    <h3 className="text-lg font-bold text-white mb-3">
                       {successStories[currentStoryIndex].name}
                     </h3>
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      <span className="bg-sunstone-navy/10 text-sunstone-navy px-2 py-1 rounded-full text-xs font-medium">
-                        {successStories[currentStoryIndex].campus}
-                      </span>
-                      <span className="bg-sunstone-gold/20 text-sunstone-black px-2 py-1 rounded-full text-xs font-medium">
+
+                    <div className="flex justify-center gap-2 mb-4">
+                      <span className="bg-white/90 text-sunstone-navy px-3 py-1 rounded-full text-xs font-bold">
                         {successStories[currentStoryIndex].year}
                       </span>
-                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
+                      <span className="bg-white/90 text-sunstone-navy px-3 py-1 rounded-full text-xs font-bold">
                         {successStories[currentStoryIndex].course}
                       </span>
                     </div>
 
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-white/90 text-sm leading-relaxed mb-4 px-2">
                       "{successStories[currentStoryIndex].testimonial}"
                     </p>
 
-                    <div className="flex items-center gap-1">
+                    <div className="flex justify-center gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
@@ -2709,53 +2709,49 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Desktop Auto-Scrolling Container */}
-          <div className="hidden md:block relative overflow-hidden">
-            <div
-              className="flex space-x-8 animate-scroll-x"
-              style={{ width: "calc(100% + 400px)" }}
-            >
-              {[...successStories, ...successStories].map((story, index) => (
+          {/* Desktop Grid Layout */}
+          <div className="hidden md:block">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {successStories.slice(0, 6).map((story, index) => (
                 <div
-                  key={`${story.id}-${index}`}
-                  className="flex-shrink-0 w-60 sm:w-72 md:w-80 animate-slide-in-right"
+                  key={story.id}
+                  className="animate-fade-in-up"
                   style={{
-                    animationDelay: `${index * 200}ms`,
-                    scrollSnapAlign: "start",
+                    animationDelay: `${index * 150}ms`,
                   }}
                 >
-                  <div className="bg-sunstone-white rounded-3xl shadow-xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:shadow-2xl border border-sunstone-gold/20 h-full">
-                    {/* Header */}
-                    <div className="relative h-32 md:h-40 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
-                      <img
-                        src={story.image}
-                        alt={story.name}
-                        className="w-20 h-20 rounded-full object-cover border-4 border-sunstone-white z-10 transition-all duration-500 hover:scale-110 shadow-xl"
-                      />
+                  <div className="bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl shadow-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-sunstone-navy/20 h-full">
+                    {/* Profile Image */}
+                    <div className="flex justify-center pt-6 pb-4">
+                      <div className="relative">
+                        <img
+                          src={story.image}
+                          alt={story.name}
+                          className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
+                        />
+                      </div>
                     </div>
 
                     {/* Content */}
-                    <div className="p-3 sm:p-4 md:p-6">
-                      <h3 className="text-xs sm:text-base md:text-lg font-bold text-sunstone-navy mb-1 sm:mb-2">
+                    <div className="px-6 pb-6 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">
                         {story.name}
                       </h3>
-                      <div className="flex flex-wrap gap-2 mb-3">
-                        <span className="bg-sunstone-navy/10 text-sunstone-navy px-2 py-1 rounded-full text-xs font-medium">
-                          {story.campus}
-                        </span>
-                        <span className="bg-sunstone-gold/20 text-sunstone-black px-2 py-1 rounded-full text-xs font-medium">
+
+                      <div className="flex justify-center gap-2 mb-4">
+                        <span className="bg-white/90 text-sunstone-navy px-3 py-1 rounded-full text-sm font-bold">
                           {story.year}
                         </span>
-                        <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
+                        <span className="bg-white/90 text-sunstone-navy px-3 py-1 rounded-full text-sm font-bold">
                           {story.course}
                         </span>
                       </div>
 
-                      <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
+                      <p className="text-white/90 text-sm leading-relaxed mb-4 px-2">
                         "{story.testimonial}"
                       </p>
 
-                      <div className="flex items-center gap-1">
+                      <div className="flex justify-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
