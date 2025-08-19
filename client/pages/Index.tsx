@@ -1123,15 +1123,22 @@ export default function Index() {
               Success Stories That Inspire
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              Discover how our students transformed their careers and achieved their dreams
+              Discover how our students transformed their careers and achieved
+              their dreams
             </p>
           </div>
 
           {/* Success Stories Carousel */}
           <div className="relative overflow-hidden">
-            <div className="flex space-x-6 animate-scroll-left" style={{ width: "calc(300% + 48px)" }}>
+            <div
+              className="flex space-x-6 animate-scroll-left"
+              style={{ width: "calc(300% + 48px)" }}
+            >
               {successStories.concat(successStories).map((story, index) => (
-                <div key={`${story.id}-${index}`} className="flex-shrink-0 w-80 bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <div
+                  key={`${story.id}-${index}`}
+                  className="flex-shrink-0 w-80 bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300"
+                >
                   <div className="bg-gradient-to-br from-blue-600 to-blue-800 h-32 relative">
                     <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
                       <img
@@ -1142,11 +1149,19 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="pt-12 pb-6 px-6 text-center">
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">{story.name}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
+                      {story.name}
+                    </h3>
                     <div className="flex items-center justify-center gap-2 mb-3">
-                      <span className="text-sm font-medium text-gray-500">{story.campus}</span>
-                      <span className="text-sm font-medium text-gray-500">{story.year}</span>
-                      <span className="text-sm font-medium text-gray-500">{story.course}</span>
+                      <span className="text-sm font-medium text-gray-500">
+                        {story.campus}
+                      </span>
+                      <span className="text-sm font-medium text-gray-500">
+                        {story.year}
+                      </span>
+                      <span className="text-sm font-medium text-gray-500">
+                        {story.course}
+                      </span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed mb-4 px-2">
                       {story.testimonial}
