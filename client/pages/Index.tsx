@@ -200,7 +200,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-sunstone-white font-sans">
+    <div className="min-h-screen bg-white font-sans">
       {/* Header */}
       <header className="bg-sunstone-white shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
