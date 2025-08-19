@@ -1114,6 +1114,60 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Success Stories Section */}
+      <section className="bg-gray-50 py-8 md:py-12 lg:py-16 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-sunstone-navy mb-4">
+              Success Stories That Inspire
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Discover how our students transformed their careers and achieved their dreams
+            </p>
+          </div>
+
+          {/* Success Stories Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex space-x-6 animate-scroll-left" style={{ width: "calc(300% + 48px)" }}>
+              {successStories.concat(successStories).map((story, index) => (
+                <div key={`${story.id}-${index}`} className="flex-shrink-0 w-80 bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-800 h-32 relative">
+                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
+                      <img
+                        src={story.image}
+                        alt={story.name}
+                        className="w-16 h-16 rounded-full border-4 border-white object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="pt-12 pb-6 px-6 text-center">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">{story.name}</h3>
+                    <div className="flex items-center justify-center gap-2 mb-3">
+                      <span className="text-sm font-medium text-gray-500">{story.campus}</span>
+                      <span className="text-sm font-medium text-gray-500">{story.year}</span>
+                      <span className="text-sm font-medium text-gray-500">{story.course}</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4 px-2">
+                      {story.testimonial}
+                    </p>
+                    <div className="flex justify-center">
+                      <div className="flex text-yellow-400">
+                        <Star className="w-4 h-4 fill-current" />
+                        <Star className="w-4 h-4 fill-current" />
+                        <Star className="w-4 h-4 fill-current" />
+                        <Star className="w-4 h-4 fill-current" />
+                        <Star className="w-4 h-4 fill-current" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="bg-sunstone-navy py-6 sm:py-8 md:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
