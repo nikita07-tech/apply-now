@@ -1,2333 +1,2770 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunstone - India's Most Trusted Education Platform</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
+
     <style>
-        /* CSS Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      /* CSS Reset and Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        :root {
-            /* Sunstone Color Palette */
-            --sunstone-navy: #22336a;
-            --sunstone-navy-dark: #1a2851;
-            --sunstone-navy-light: #2d4a7f;
-            --sunstone-gold: #c38935;
-            --sunstone-gold-light: #d4a147;
-            --sunstone-gold-dark: #b37d2a;
-            --sunstone-white: #ffffff;
-            --sunstone-black: #000000;
-            
-            /* Additional colors */
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-200: #e5e7eb;
-            --gray-300: #d1d5db;
-            --gray-400: #9ca3af;
-            --gray-500: #6b7280;
-            --gray-600: #4b5563;
-            --gray-700: #374151;
-            --gray-800: #1f2937;
-            --gray-900: #111827;
-        }
+      :root {
+        /* Sunstone Color Palette */
+        --sunstone-navy: #22336a;
+        --sunstone-navy-dark: #1a2851;
+        --sunstone-navy-light: #2d4a7f;
+        --sunstone-gold: #c38935;
+        --sunstone-gold-light: #d4a147;
+        --sunstone-gold-dark: #b37d2a;
+        --sunstone-white: #ffffff;
+        --sunstone-black: #000000;
 
-        body {
-            font-family: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
-            line-height: 1.5;
-            color: #111827;
-            background-color: #ffffff;
-        }
+        /* Additional colors */
+        --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-200: #e5e7eb;
+        --gray-300: #d1d5db;
+        --gray-400: #9ca3af;
+        --gray-500: #6b7280;
+        --gray-600: #4b5563;
+        --gray-700: #374151;
+        --gray-800: #1f2937;
+        --gray-900: #111827;
+      }
 
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
+      body {
+        font-family: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+        line-height: 1.5;
+        color: #111827;
+        background-color: #ffffff;
+      }
 
-        /* Header Styles */
-        .header {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
-            border-bottom: 1px solid var(--gray-200);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
 
+      /* Header Styles */
+      .header {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--gray-200);
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 3.5rem;
+        padding: 0 0.75rem;
+      }
+
+      .header-logo {
+        height: 1rem;
+        width: auto;
+        transition: all 0.5s ease;
+      }
+
+      .header-logo:hover {
+        transform: scale(1.1);
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-navy) 0%,
+          var(--sunstone-navy-dark) 100%
+        );
+        color: var(--sunstone-white);
+        padding: 1rem 0 4rem 0;
+        overflow: hidden;
+        position: relative;
+        min-height: 70vh;
+      }
+
+      .hero-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+      }
+
+      .hero-content {
+        text-align: center;
+        padding-top: 1rem;
+        animation: slideInLeft 1s ease-out;
+      }
+
+      .hero-title {
+        font-size: 1.125rem;
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+        animation: fadeInUp 1s ease-out;
+        line-height: 1.2;
+      }
+
+      .hero-subtitle {
+        color: var(--sunstone-gold);
+        display: block;
+        margin-top: 0.5rem;
+      }
+
+      .program-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.375rem;
+        margin: 0.75rem 0.25rem;
+        animation: fadeInUp 1s ease-out 0.2s both;
+      }
+
+      .program-tag {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+        backdrop-filter: blur(4px);
+        color: var(--sunstone-white);
+        padding: 0.375rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+        min-width: 0;
+        flex-shrink: 0;
+      }
+
+      .program-tag:hover {
+        transform: scale(1.05);
+      }
+
+      .hero-description {
+        font-size: 0.875rem;
+        margin-bottom: 0.75rem;
+        color: #e5e7eb;
+        animation: fadeInUp 1s ease-out 0.3s both;
+        font-weight: 500;
+        line-height: 1.6;
+        padding: 0 0.25rem;
+      }
+
+      .form-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 0.5rem;
+      }
+
+      .application-form {
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        padding: 0.75rem;
+        width: 100%;
+        max-width: 20rem;
+        border: 1px solid rgba(195, 137, 53, 0.2);
+      }
+
+      .form-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+      }
+
+      .form-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--sunstone-navy);
+      }
+
+      .help-button {
+        display: none;
+        align-items: center;
+        background: transparent;
+        border: none;
+        color: var(--sunstone-navy);
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.375rem;
+        font-size: 0.75rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .help-button:hover {
+        color: var(--sunstone-navy-dark);
+        background-color: rgba(195, 137, 53, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 0.625rem;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--sunstone-black);
+        margin-bottom: 0.375rem;
+      }
+
+      .form-input,
+      .form-select {
+        width: 100%;
+        padding: 0.625rem 0.75rem;
+        border: 2px solid var(--gray-300);
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--sunstone-black);
+        font-weight: 500;
+        background-color: var(--sunstone-white);
+        transition: all 0.3s ease;
+      }
+
+      .form-input:focus,
+      .form-select:focus {
+        outline: none;
+        ring: 2px solid var(--sunstone-gold);
+        border-color: var(--sunstone-gold);
+      }
+
+      .form-input::placeholder {
+        color: var(--gray-500);
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .checkbox {
+        margin-top: 0.25rem;
+        height: 1rem;
+        width: 1rem;
+        border: 2px solid var(--gray-300);
+        border-radius: 0.25rem;
+        accent-color: var(--sunstone-gold);
+      }
+
+      .checkbox-label {
+        font-size: 0.75rem;
+        color: var(--gray-500);
+        line-height: 1.4;
+        cursor: pointer;
+      }
+
+      .submit-button {
+        width: 100%;
+        background-color: var(--sunstone-navy);
+        color: var(--sunstone-white);
+        padding: 0.75rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .submit-button:hover {
+        background-color: var(--sunstone-navy-dark);
+      }
+
+      /* New Age Education Section */
+      .education-section {
+        position: relative;
+        background: linear-gradient(
+          135deg,
+          var(--gray-50) 0%,
+          white 50%,
+          rgba(195, 137, 53, 0.05) 100%
+        );
+        padding: 2rem 0 4rem 0;
+        overflow: hidden;
+      }
+
+      .background-elements {
+        position: absolute;
+        inset: 0;
+      }
+
+      .bg-element {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(48px);
+        animation: pulse 3s ease-in-out infinite;
+      }
+
+      .bg-element-1 {
+        top: 2.5rem;
+        left: 2.5rem;
+        width: 8rem;
+        height: 8rem;
+        background-color: rgba(195, 137, 53, 0.1);
+      }
+
+      .bg-element-2 {
+        bottom: 5rem;
+        right: 5rem;
+        width: 12rem;
+        height: 12rem;
+        background-color: rgba(34, 51, 106, 0.05);
+        animation-delay: 2s;
+      }
+
+      .bg-element-3 {
+        top: 50%;
+        left: 25%;
+        width: 6rem;
+        height: 6rem;
+        background-color: rgba(195, 137, 53, 0.05);
+        animation-delay: 4s;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: linear-gradient(
+          135deg,
+          rgba(34, 51, 106, 0.1) 0%,
+          rgba(195, 137, 53, 0.1) 100%
+        );
+        backdrop-filter: blur(4px);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(195, 137, 53, 0.2);
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .badge-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-gold) 0%,
+          var(--sunstone-gold-dark) 100%
+        );
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .badge-text {
+        color: var(--sunstone-navy);
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+
+      .section-title {
+        font-size: 1rem;
+        font-weight: 900;
+        color: var(--sunstone-navy);
+        margin-bottom: 1rem;
+        line-height: 1.4;
+        padding: 0 0.75rem;
+        text-align: center;
+      }
+
+      .title-gradient {
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-navy) 0%,
+          var(--sunstone-gold) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-description {
+        color: var(--gray-600);
+        font-size: 0.75rem;
+        font-weight: 500;
+        margin-top: 1rem;
+        display: block;
+        max-width: 64rem;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+      }
+
+      /* Feature Cards - Mobile Horizontal Scroll */
+      .features-mobile {
+        margin-top: 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-scroll {
+        display: flex;
+        gap: 1rem;
+        padding: 0 1rem;
+        width: calc(200% + 2rem);
+        animation: scrollRight 25s linear infinite;
+      }
+
+      .feature-card {
+        flex-shrink: 0;
+        width: 16rem;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        border: 1px solid rgba(34, 51, 106, 0.2);
+        transition: all 0.5s ease;
+        text-align: center;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .feature-card:hover {
+        border-color: rgba(34, 51, 106, 0.6);
+        transform: scale(1.05);
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto 1rem auto;
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-navy) 0%,
+          var(--sunstone-navy-dark) 100%
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform 0.5s ease;
+      }
+
+      .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+      }
+
+      .feature-title {
+        color: var(--sunstone-navy);
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .feature-subtitle {
+        color: var(--sunstone-navy);
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .feature-description {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        color: var(--sunstone-navy);
+      }
+
+      /* Desktop Feature Grid (Hidden on Mobile) */
+      .features-desktop {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: 3rem;
+        max-width: 96rem;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        align-items: start;
+        place-items: center;
+      }
+
+      /* Stats Section */
+      .stats-section {
+        background-color: var(--sunstone-navy);
+        padding: 1.5rem 0;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 0.75rem;
+      }
+
+      .stat-card {
+        text-align: center;
+        animation: scaleIn 0.6s ease-out;
+        background-color: rgba(34, 51, 106, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      .stat-value {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--sunstone-gold);
+        margin-bottom: 0.125rem;
+        transition: all 0.3s ease;
+      }
+
+      .stat-value:hover {
+        transform: scale(1.1);
+      }
+
+      .stat-label {
+        color: var(--sunstone-white);
+        font-size: 0.75rem;
+        line-height: 1.4;
+        opacity: 0.9;
+      }
+
+      /* Comparison Table Section */
+      .comparison-section {
+        padding: 2rem 0;
+        background-color: var(--gray-50);
+      }
+
+      .comparison-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .comparison-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--sunstone-navy);
+        margin-bottom: 0.75rem;
+        padding: 0 0.75rem;
+      }
+
+      .comparison-description {
+        font-size: 0.75rem;
+        color: var(--gray-600);
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 0 0.75rem;
+      }
+
+      .comparison-table-container {
+        background-color: var(--sunstone-white);
+        border-radius: 1rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        animation: fadeInUp 1s ease-out 0.3s both;
+        border: 4px solid var(--sunstone-navy-dark);
+      }
+
+      .comparison-table {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      .comparison-table table {
+        width: 100%;
+      }
+
+      .table-header {
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-navy) 0%,
+          var(--sunstone-navy-dark) 100%
+        );
+        color: var(--sunstone-white);
+      }
+
+      .table-header th {
+        padding: 0.5rem;
+        text-align: left;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      .table-header th:nth-child(2) {
+        background-color: rgba(195, 137, 53, 0.2);
+        text-align: center;
+      }
+
+      .table-header th:nth-child(3) {
+        text-align: center;
+      }
+
+      .table-row {
+        border-bottom: 1px solid var(--gray-200);
+        transition: all 0.3s ease;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .table-row:hover {
+        background-color: var(--gray-50);
+      }
+
+      .table-cell {
+        padding: 0.5rem;
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: var(--sunstone-black);
+      }
+
+      .table-cell:first-child {
+        background-color: var(--gray-50);
+      }
+
+      .table-cell:nth-child(2) {
+        text-align: center;
+        background-color: rgba(195, 137, 53, 0.1);
+        border-left: 2px solid var(--sunstone-gold);
+      }
+
+      .table-cell:nth-child(3) {
+        text-align: center;
+        background-color: var(--gray-100);
+        border-left: 2px solid var(--gray-400);
+      }
+
+      .cell-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+      }
+
+      .cell-icon {
+        height: 0.75rem;
+        width: 0.75rem;
+        flex-shrink: 0;
+      }
+
+      .cell-text {
+        color: var(--sunstone-black);
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 1.4;
+      }
+
+      .check-icon {
+        color: var(--sunstone-gold);
+      }
+
+      .x-icon {
+        color: var(--gray-500);
+      }
+
+      /* Impact Section */
+      .impact-section {
+        padding: 1.5rem 0 4rem 0;
+        background: linear-gradient(
+          135deg,
+          white 0%,
+          var(--gray-50) 50%,
+          rgba(195, 137, 53, 0.05) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .impact-header {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .excellence-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(
+          135deg,
+          rgba(195, 137, 53, 0.3) 0%,
+          rgba(195, 137, 53, 0.2) 100%
+        );
+        backdrop-filter: blur(4px);
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        margin-bottom: 0.75rem;
+        border: 1px solid rgba(195, 137, 53, 0.4);
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      .excellence-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var(--sunstone-gold);
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .excellence-text {
+        color: var(--sunstone-navy);
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+      }
+
+      .impact-title {
+        font-size: 1.25rem;
+        font-weight: 900;
+        color: var(--sunstone-navy);
+        margin-bottom: 0.75rem;
+        animation: shimmer 3s ease-in-out infinite;
+        line-height: 1.4;
+      }
+
+      .impact-subtitle {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: var(--sunstone-navy);
+        margin-bottom: 0.5rem;
+      }
+
+      .impact-description {
+        font-size: 0.75rem;
+        color: var(--gray-700);
+        line-height: 1.6;
+        display: none;
+      }
+
+      .decorative-line {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+      }
+
+      .line {
+        width: 5rem;
+        height: 0.125rem;
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-navy) 0%,
+          var(--sunstone-gold) 50%,
+          var(--sunstone-navy) 100%
+        );
+        margin: 0 auto;
+        border-radius: 9999px;
+        animation: expandHorizontal 2s ease-out;
+      }
+
+      .ranking-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        background-color: rgba(34, 51, 106, 0.1);
+        padding: 0.5rem 0.75rem;
+        border-radius: 9999px;
+      }
+
+      .ranking-text {
+        color: var(--sunstone-navy);
+        font-weight: 600;
+        font-size: 0.75rem;
+      }
+
+      /* Impact Statistics */
+      .impact-stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .impact-stat-card {
+        background: linear-gradient(
+          135deg,
+          white 0%,
+          rgba(195, 137, 53, 0.05) 100%
+        );
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+        text-align: center;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(195, 137, 53, 0.2);
+        transition: all 0.5s ease;
+      }
+
+      .impact-stat-card:hover {
+        border-color: rgba(195, 137, 53, 0.4);
+        transform: scale(1.05);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .stat-icon-container {
+        width: 2rem;
+        height: 2rem;
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-gold) 0%,
+          var(--sunstone-gold-dark) 100%
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 0.5rem auto;
+        transition: transform 0.5s ease;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .impact-stat-card:hover .stat-icon-container {
+        transform: scale(1.1);
+      }
+
+      .stat-number {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--gray-900);
+        margin-bottom: 0.25rem;
+      }
+
+      .stat-title {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: var(--sunstone-navy);
+        margin-bottom: 0.25rem;
+      }
+
+      .stat-description {
+        color: var(--gray-700);
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+        display: none;
+      }
+
+      .stat-badge {
+        display: inline-flex;
+        align-items: center;
+        background: linear-gradient(
+          135deg,
+          rgba(195, 137, 53, 0.2) 0%,
+          rgba(195, 137, 53, 0.1) 100%
+        );
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        border: 1px solid rgba(195, 137, 53, 0.3);
+        transition: transform 0.5s ease;
+      }
+
+      .impact-stat-card:hover .stat-badge {
+        transform: scale(1.1);
+      }
+
+      .badge-icon {
+        height: 0.75rem;
+        width: 0.75rem;
+        color: var(--sunstone-gold);
+        margin-right: 0.25rem;
+      }
+
+      .badge-text {
+        color: var(--sunstone-navy);
+        font-weight: 700;
+        font-size: 0.75rem;
+      }
+
+      /* Placement Program Statement */
+      .placement-statement {
+        text-align: center;
+      }
+
+      .statement-container {
+        background: linear-gradient(
+          135deg,
+          rgba(34, 51, 106, 0.1) 0%,
+          rgba(195, 137, 53, 0.1) 50%,
+          rgba(34, 51, 106, 0.1) 100%
+        );
+        border-radius: 0.75rem;
+        padding: 1rem;
+        border: 1px solid rgba(195, 137, 53, 0.3);
+        max-width: 80rem;
+        margin: 0 auto;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(4px);
+      }
+
+      .program-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        background-color: rgba(195, 137, 53, 0.2);
+        padding: 0.25rem 0.5rem;
+        border-radius: 9999px;
+        margin-bottom: 0.5rem;
+      }
+
+      .program-dot {
+        width: 0.375rem;
+        height: 0.375rem;
+        background-color: var(--sunstone-gold);
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .program-text {
+        color: var(--sunstone-navy);
+        font-weight: 700;
+        font-size: 0.75rem;
+      }
+
+      .statement-quote {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: var(--sunstone-navy);
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+      }
+
+      .statement-terms {
+        font-size: 0.75rem;
+        color: var(--gray-600);
+        margin-top: 0.5rem;
+        display: block;
+      }
+
+      .statement-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .divider-line {
+        width: 2rem;
+        height: 0.125rem;
+        background: linear-gradient(
+          135deg,
+          transparent 0%,
+          var(--sunstone-gold) 100%
+        );
+        border-radius: 9999px;
+      }
+
+      .divider-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var(--sunstone-gold);
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      /* Recruiters Section */
+      .recruiters-section {
+        padding: 2rem 0;
+        background-color: var(--gray-50);
+        overflow: hidden;
+      }
+
+      .recruiters-header {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .recruiters-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--sunstone-navy);
+        margin-bottom: 0.5rem;
+        padding: 0 0.75rem;
+      }
+
+      .recruiters-description {
+        font-size: 0.875rem;
+        color: var(--gray-600);
+        padding: 0 0.75rem;
+      }
+
+      .recruiters-line {
+        height: 0.125rem;
+        width: 4rem;
+        background: linear-gradient(
+          135deg,
+          var(--sunstone-gold) 0%,
+          var(--sunstone-navy) 100%
+        );
+        border-radius: 9999px;
+        margin: 0.75rem auto 0 auto;
+      }
+
+      /* Mobile Recruiters Scroll */
+      .recruiters-mobile {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .recruiters-scroll {
+        display: flex;
+        gap: 1rem;
+        animation: scrollRight 30s linear infinite;
+        width: calc(200% + 2rem);
+      }
+
+      .recruiter-logo {
+        flex-shrink: 0;
+        width: 5rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .recruiter-logo:hover {
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      .recruiter-logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      @keyframes scrollRight {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow:
+            0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        to {
+          box-shadow:
+            0 20px 25px -5px rgba(195, 137, 53, 0.1),
+            0 10px 10px -5px rgba(195, 137, 53, 0.04);
+        }
+      }
+
+      @keyframes shimmer {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+
+      @keyframes expandHorizontal {
+        from {
+          width: 0;
+        }
+        to {
+          width: 5rem;
+        }
+      }
+
+      /* Responsive Design */
+      @media (min-width: 640px) {
         .header-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            height: 3.5rem;
-            padding: 0 0.75rem;
+          height: 4rem;
+          padding: 0 1rem;
         }
 
         .header-logo {
-            height: 1rem;
-            width: auto;
-            transition: all 0.5s ease;
-        }
-
-        .header-logo:hover {
-            transform: scale(1.1);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--sunstone-navy) 0%, var(--sunstone-navy-dark) 100%);
-            color: var(--sunstone-white);
-            padding: 1rem 0 4rem 0;
-            overflow: hidden;
-            position: relative;
-            min-height: 70vh;
-        }
-
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            align-items: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .hero-content {
-            text-align: center;
-            padding-top: 1rem;
-            animation: slideInLeft 1s ease-out;
+          height: 1.25rem;
         }
 
         .hero-title {
-            font-size: 1.125rem;
-            font-weight: 900;
-            margin-bottom: 0.5rem;
-            animation: fadeInUp 1s ease-out;
-            line-height: 1.2;
-        }
-
-        .hero-subtitle {
-            color: var(--sunstone-gold);
-            display: block;
-            margin-top: 0.5rem;
-        }
-
-        .program-tags {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.375rem;
-            margin: 0.75rem 0.25rem;
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        .program-tag {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-            backdrop-filter: blur(4px);
-            color: var(--sunstone-white);
-            padding: 0.375rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-            min-width: 0;
-            flex-shrink: 0;
-        }
-
-        .program-tag:hover {
-            transform: scale(1.05);
+          font-size: 1.875rem;
+          margin-bottom: 1rem;
         }
 
         .hero-description {
-            font-size: 0.875rem;
-            margin-bottom: 0.75rem;
-            color: #e5e7eb;
-            animation: fadeInUp 1s ease-out 0.3s both;
-            font-weight: 500;
-            line-height: 1.6;
-            padding: 0 0.25rem;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
         }
 
-        .form-container {
-            display: flex;
-            justify-content: center;
-            padding: 0 0.5rem;
+        .program-tags {
+          gap: 0.75rem;
+          margin: 1.5rem 0.5rem;
+        }
+
+        .program-tag {
+          padding: 0.375rem 0.75rem;
+          font-size: 0.875rem;
         }
 
         .application-form {
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            padding: 0.75rem;
-            width: 100%;
-            max-width: 20rem;
-            border: 1px solid rgba(195, 137, 53, 0.2);
+          max-width: 24rem;
+          padding: 1rem;
+          border-radius: 0.75rem;
         }
 
         .form-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 0.75rem;
+          margin-bottom: 1rem;
         }
 
         .form-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--sunstone-navy);
+          font-size: 1.125rem;
         }
 
         .help-button {
-            display: none;
-            align-items: center;
-            background: transparent;
-            border: none;
-            color: var(--sunstone-navy);
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.375rem;
-            font-size: 0.75rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .help-button:hover {
-            color: var(--sunstone-navy-dark);
-            background-color: rgba(195, 137, 53, 0.1);
+          display: flex;
+          font-size: 0.875rem;
+          padding: 0.5rem;
         }
 
         .form-group {
-            margin-bottom: 0.625rem;
+          margin-bottom: 0.75rem;
         }
 
         .form-label {
-            display: block;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--sunstone-black);
-            margin-bottom: 0.375rem;
+          font-size: 0.875rem;
+          margin-bottom: 0.5rem;
         }
 
-        .form-input, .form-select {
-            width: 100%;
-            padding: 0.625rem 0.75rem;
-            border: 2px solid var(--gray-300);
-            border-radius: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--sunstone-black);
-            font-weight: 500;
-            background-color: var(--sunstone-white);
-            transition: all 0.3s ease;
-        }
-
-        .form-input:focus, .form-select:focus {
-            outline: none;
-            ring: 2px solid var(--sunstone-gold);
-            border-color: var(--sunstone-gold);
-        }
-
-        .form-input::placeholder {
-            color: var(--gray-500);
-        }
-
-        .checkbox-container {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .checkbox {
-            margin-top: 0.25rem;
-            height: 1rem;
-            width: 1rem;
-            border: 2px solid var(--gray-300);
-            border-radius: 0.25rem;
-            accent-color: var(--sunstone-gold);
-        }
-
-        .checkbox-label {
-            font-size: 0.75rem;
-            color: var(--gray-500);
-            line-height: 1.4;
-            cursor: pointer;
+        .form-input,
+        .form-select {
+          padding: 0.75rem 1rem;
+          font-size: 1rem;
         }
 
         .submit-button {
-            width: 100%;
-            background-color: var(--sunstone-navy);
-            color: var(--sunstone-white);
-            padding: 0.75rem;
-            font-size: 1rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .submit-button:hover {
-            background-color: var(--sunstone-navy-dark);
-        }
-
-        /* New Age Education Section */
-        .education-section {
-            position: relative;
-            background: linear-gradient(135deg, var(--gray-50) 0%, white 50%, rgba(195, 137, 53, 0.05) 100%);
-            padding: 2rem 0 4rem 0;
-            overflow: hidden;
-        }
-
-        .background-elements {
-            position: absolute;
-            inset: 0;
-        }
-
-        .bg-element {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(48px);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        .bg-element-1 {
-            top: 2.5rem;
-            left: 2.5rem;
-            width: 8rem;
-            height: 8rem;
-            background-color: rgba(195, 137, 53, 0.1);
-        }
-
-        .bg-element-2 {
-            bottom: 5rem;
-            right: 5rem;
-            width: 12rem;
-            height: 12rem;
-            background-color: rgba(34, 51, 106, 0.05);
-            animation-delay: 2s;
-        }
-
-        .bg-element-3 {
-            top: 50%;
-            left: 25%;
-            width: 6rem;
-            height: 6rem;
-            background-color: rgba(195, 137, 53, 0.05);
-            animation-delay: 4s;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            position: relative;
-            z-index: 10;
-        }
-
-        .header-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: linear-gradient(135deg, rgba(34, 51, 106, 0.1) 0%, rgba(195, 137, 53, 0.1) 100%);
-            backdrop-filter: blur(4px);
-            padding: 1rem 2rem;
-            border-radius: 1rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(195, 137, 53, 0.2);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-
-        .badge-icon {
-            width: 2.5rem;
-            height: 2.5rem;
-            background: linear-gradient(135deg, var(--sunstone-gold) 0%, var(--sunstone-gold-dark) 100%);
-            border-radius: 0.75rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .badge-text {
-            color: var(--sunstone-navy);
-            font-weight: 700;
-            font-size: 1.125rem;
-        }
-
-        .section-title {
-            font-size: 1rem;
-            font-weight: 900;
-            color: var(--sunstone-navy);
-            margin-bottom: 1rem;
-            line-height: 1.4;
-            padding: 0 0.75rem;
-            text-align: center;
-        }
-
-        .title-gradient {
-            background: linear-gradient(135deg, var(--sunstone-navy) 0%, var(--sunstone-gold) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .section-description {
-            color: var(--gray-600);
-            font-size: 0.75rem;
-            font-weight: 500;
-            margin-top: 1rem;
-            display: block;
-            max-width: 64rem;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.6;
-        }
-
-        /* Feature Cards - Mobile Horizontal Scroll */
-        .features-mobile {
-            margin-top: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .features-scroll {
-            display: flex;
-            gap: 1rem;
-            padding: 0 1rem;
-            width: calc(200% + 2rem);
-            animation: scrollRight 25s linear infinite;
-        }
-
-        .feature-card {
-            flex-shrink: 0;
-            width: 16rem;
-            background-color: white;
-            border-radius: 1rem;
-            padding: 1.5rem;
-            border: 1px solid rgba(34, 51, 106, 0.2);
-            transition: all 0.5s ease;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-
-        .feature-card:hover {
-            border-color: rgba(34, 51, 106, 0.6);
-            transform: scale(1.05);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-
-        .feature-icon {
-            width: 4rem;
-            height: 4rem;
-            margin: 0 auto 1rem auto;
-            background: linear-gradient(135deg, var(--sunstone-navy) 0%, var(--sunstone-navy-dark) 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.5s ease;
-        }
-
-        .feature-card:hover .feature-icon {
-            transform: scale(1.1);
-        }
-
-        .feature-title {
-            color: var(--sunstone-navy);
-            font-size: 1.125rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-subtitle {
-            color: var(--sunstone-navy);
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .feature-description {
-            font-size: 0.875rem;
-            margin-top: 0.5rem;
-            color: var(--sunstone-navy);
-        }
-
-        /* Desktop Feature Grid (Hidden on Mobile) */
-        .features-desktop {
-            display: none;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-top: 3rem;
-            max-width: 96rem;
-            margin-left: auto;
-            margin-right: auto;
-            justify-items: center;
-            align-items: start;
-            place-items: center;
-        }
-
-        /* Stats Section */
-        .stats-section {
-            background-color: var(--sunstone-navy);
-            padding: 1.5rem 0;
+          padding: 0.75rem;
+          font-size: 1.125rem;
+          border-radius: 0.75rem;
         }
 
         .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
-            padding: 0 0.75rem;
+          gap: 0.75rem;
+          padding: 0 1rem;
         }
 
         .stat-card {
-            text-align: center;
-            animation: scaleIn 0.6s ease-out;
-            background-color: rgba(34, 51, 106, 0.2);
-            border-radius: 0.5rem;
-            padding: 0.5rem;
+          border-radius: 0.75rem;
+          padding: 0.75rem;
         }
 
         .stat-value {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: var(--sunstone-gold);
-            margin-bottom: 0.125rem;
-            transition: all 0.3s ease;
-        }
-
-        .stat-value:hover {
-            transform: scale(1.1);
-        }
-
-        .stat-label {
-            color: var(--sunstone-white);
-            font-size: 0.75rem;
-            line-height: 1.4;
-            opacity: 0.9;
-        }
-
-        /* Comparison Table Section */
-        .comparison-section {
-            padding: 2rem 0;
-            background-color: var(--gray-50);
-        }
-
-        .comparison-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease-out;
+          font-size: 1rem;
+          margin-bottom: 0.25rem;
         }
 
         .comparison-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--sunstone-navy);
-            margin-bottom: 0.75rem;
-            padding: 0 0.75rem;
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
         }
 
         .comparison-description {
-            font-size: 0.75rem;
-            color: var(--gray-600);
-            max-width: 48rem;
-            margin: 0 auto;
-            padding: 0 0.75rem;
-        }
-
-        .comparison-table-container {
-            background-color: var(--sunstone-white);
-            border-radius: 1rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-            animation: fadeInUp 1s ease-out 0.3s both;
-            border: 4px solid var(--sunstone-navy-dark);
-        }
-
-        .comparison-table {
-            width: 100%;
-            overflow-x: auto;
-        }
-
-        .comparison-table table {
-            width: 100%;
-        }
-
-        .table-header {
-            background: linear-gradient(135deg, var(--sunstone-navy) 0%, var(--sunstone-navy-dark) 100%);
-            color: var(--sunstone-white);
+          font-size: 1rem;
         }
 
         .table-header th {
-            padding: 0.5rem;
-            text-align: left;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        .table-header th:nth-child(2) {
-            background-color: rgba(195, 137, 53, 0.2);
-            text-align: center;
-        }
-
-        .table-header th:nth-child(3) {
-            text-align: center;
-        }
-
-        .table-row {
-            border-bottom: 1px solid var(--gray-200);
-            transition: all 0.3s ease;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .table-row:hover {
-            background-color: var(--gray-50);
+          padding: 0.75rem 1rem;
+          font-size: 0.875rem;
         }
 
         .table-cell {
-            padding: 0.5rem;
-            font-weight: 600;
-            font-size: 0.75rem;
-            color: var(--sunstone-black);
-        }
-
-        .table-cell:first-child {
-            background-color: var(--gray-50);
-        }
-
-        .table-cell:nth-child(2) {
-            text-align: center;
-            background-color: rgba(195, 137, 53, 0.1);
-            border-left: 2px solid var(--sunstone-gold);
-        }
-
-        .table-cell:nth-child(3) {
-            text-align: center;
-            background-color: var(--gray-100);
-            border-left: 2px solid var(--gray-400);
-        }
-
-        .cell-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.25rem;
+          padding: 0.75rem 1rem;
+          font-size: 0.875rem;
         }
 
         .cell-icon {
-            height: 0.75rem;
-            width: 0.75rem;
-            flex-shrink: 0;
+          height: 1rem;
+          width: 1rem;
+          margin-right: 0.5rem;
         }
 
         .cell-text {
-            color: var(--sunstone-black);
-            font-weight: 500;
-            font-size: 0.75rem;
-            line-height: 1.4;
-        }
-
-        .check-icon {
-            color: var(--sunstone-gold);
-        }
-
-        .x-icon {
-            color: var(--gray-500);
-        }
-
-        /* Impact Section */
-        .impact-section {
-            padding: 1.5rem 0 4rem 0;
-            background: linear-gradient(135deg, white 0%, var(--gray-50) 50%, rgba(195, 137, 53, 0.05) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .impact-header {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .excellence-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, rgba(195, 137, 53, 0.3) 0%, rgba(195, 137, 53, 0.2) 100%);
-            backdrop-filter: blur(4px);
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            margin-bottom: 0.75rem;
-            border: 1px solid rgba(195, 137, 53, 0.4);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        .excellence-dot {
-            width: 0.5rem;
-            height: 0.5rem;
-            background-color: var(--sunstone-gold);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        .excellence-text {
-            color: var(--sunstone-navy);
-            font-weight: 700;
-            font-size: 0.875rem;
-            letter-spacing: 0.05em;
+          font-size: 0.875rem;
         }
 
         .impact-title {
-            font-size: 1.25rem;
-            font-weight: 900;
-            color: var(--sunstone-navy);
-            margin-bottom: 0.75rem;
-            animation: shimmer 3s ease-in-out infinite;
-            line-height: 1.4;
+          font-size: 1.5rem;
         }
 
-        .impact-subtitle {
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: var(--sunstone-navy);
-            margin-bottom: 0.5rem;
-        }
-
-        .impact-description {
-            font-size: 0.75rem;
-            color: var(--gray-700);
-            line-height: 1.6;
-            display: none;
-        }
-
-        .decorative-line {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 0.75rem;
-        }
-
-        .line {
-            width: 5rem;
-            height: 0.125rem;
-            background: linear-gradient(135deg, var(--sunstone-navy) 0%, var(--sunstone-gold) 50%, var(--sunstone-navy) 100%);
-            margin: 0 auto;
-            border-radius: 9999px;
-            animation: expandHorizontal 2s ease-out;
-        }
-
-        .ranking-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            background-color: rgba(34, 51, 106, 0.1);
-            padding: 0.5rem 0.75rem;
-            border-radius: 9999px;
-        }
-
-        .ranking-text {
-            color: var(--sunstone-navy);
-            font-weight: 600;
-            font-size: 0.75rem;
-        }
-
-        /* Impact Statistics */
-        .impact-stats {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .impact-stat-card {
-            background: linear-gradient(135deg, white 0%, rgba(195, 137, 53, 0.05) 100%);
-            border-radius: 0.5rem;
-            padding: 0.75rem;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            border: 1px solid rgba(195, 137, 53, 0.2);
-            transition: all 0.5s ease;
-        }
-
-        .impact-stat-card:hover {
-            border-color: rgba(195, 137, 53, 0.4);
-            transform: scale(1.05);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-
-        .stat-icon-container {
-            width: 2rem;
-            height: 2rem;
-            background: linear-gradient(135deg, var(--sunstone-gold) 0%, var(--sunstone-gold-dark) 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 0.5rem auto;
-            transition: transform 0.5s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-
-        .impact-stat-card:hover .stat-icon-container {
-            transform: scale(1.1);
-        }
-
-        .stat-number {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--gray-900);
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-title {
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: var(--sunstone-navy);
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-description {
-            color: var(--gray-700);
-            line-height: 1.6;
-            margin-bottom: 0.5rem;
-            font-size: 0.75rem;
-            display: none;
-        }
-
-        .stat-badge {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(135deg, rgba(195, 137, 53, 0.2) 0%, rgba(195, 137, 53, 0.1) 100%);
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            border: 1px solid rgba(195, 137, 53, 0.3);
-            transition: transform 0.5s ease;
-        }
-
-        .impact-stat-card:hover .stat-badge {
-            transform: scale(1.1);
-        }
-
-        .badge-icon {
-            height: 0.75rem;
-            width: 0.75rem;
-            color: var(--sunstone-gold);
-            margin-right: 0.25rem;
-        }
-
-        .badge-text {
-            color: var(--sunstone-navy);
-            font-weight: 700;
-            font-size: 0.75rem;
-        }
-
-        /* Placement Program Statement */
-        .placement-statement {
-            text-align: center;
-        }
-
-        .statement-container {
-            background: linear-gradient(135deg, rgba(34, 51, 106, 0.1) 0%, rgba(195, 137, 53, 0.1) 50%, rgba(34, 51, 106, 0.1) 100%);
-            border-radius: 0.75rem;
-            padding: 1rem;
-            border: 1px solid rgba(195, 137, 53, 0.3);
-            max-width: 80rem;
-            margin: 0 auto;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            backdrop-filter: blur(4px);
-        }
-
-        .program-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            background-color: rgba(195, 137, 53, 0.2);
-            padding: 0.25rem 0.5rem;
-            border-radius: 9999px;
-            margin-bottom: 0.5rem;
-        }
-
-        .program-dot {
-            width: 0.375rem;
-            height: 0.375rem;
-            background-color: var(--sunstone-gold);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        .program-text {
-            color: var(--sunstone-navy);
-            font-weight: 700;
-            font-size: 0.75rem;
-        }
-
-        .statement-quote {
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: var(--sunstone-navy);
-            line-height: 1.6;
-            margin-bottom: 0.75rem;
-        }
-
-        .statement-terms {
-            font-size: 0.75rem;
-            color: var(--gray-600);
-            margin-top: 0.5rem;
-            display: block;
-        }
-
-        .statement-divider {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .divider-line {
-            width: 2rem;
-            height: 0.125rem;
-            background: linear-gradient(135deg, transparent 0%, var(--sunstone-gold) 100%);
-            border-radius: 9999px;
-        }
-
-        .divider-dot {
-            width: 0.5rem;
-            height: 0.5rem;
-            background-color: var(--sunstone-gold);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        /* Recruiters Section */
-        .recruiters-section {
-            padding: 2rem 0;
-            background-color: var(--gray-50);
-            overflow: hidden;
-        }
-
-        .recruiters-header {
-            text-align: center;
-            margin-bottom: 1.5rem;
+        .excellence-text {
+          font-size: 1.125rem;
         }
 
         .recruiters-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--sunstone-navy);
-            margin-bottom: 0.5rem;
-            padding: 0 0.75rem;
+          font-size: 1.125rem;
         }
 
         .recruiters-description {
-            font-size: 0.875rem;
-            color: var(--gray-600);
-            padding: 0 0.75rem;
+          font-size: 1rem;
         }
 
         .recruiters-line {
-            height: 0.125rem;
-            width: 4rem;
-            background: linear-gradient(135deg, var(--sunstone-gold) 0%, var(--sunstone-navy) 100%);
-            border-radius: 9999px;
-            margin: 0.75rem auto 0 auto;
+          width: 5rem;
+          margin-top: 1rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header-container {
+          height: 5rem;
+          padding: 0 1.5rem;
         }
 
-        /* Mobile Recruiters Scroll */
-        .recruiters-mobile {
-            position: relative;
-            overflow: hidden;
+        .header-logo {
+          height: 1.5rem;
         }
 
-        .recruiters-scroll {
-            display: flex;
-            gap: 1rem;
-            animation: scrollRight 30s linear infinite;
-            width: calc(200% + 2rem);
+        .hero-title {
+          font-size: 2.25rem;
+          margin-bottom: 1.5rem;
         }
 
-        .recruiter-logo {
-            flex-shrink: 0;
-            width: 5rem;
-            height: 3rem;
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.5rem;
-            transition: box-shadow 0.3s ease;
+        .hero-description {
+          font-size: 1.125rem;
+          margin-bottom: 2rem;
         }
 
-        .recruiter-logo:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        .application-form {
+          max-width: 28rem;
+          padding: 1.5rem;
+          border-radius: 1rem;
         }
 
-        .recruiter-logo img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+        .form-title {
+          font-size: 1.25rem;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .form-header {
+          margin-bottom: 1.5rem;
         }
 
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
+        .form-group {
+          margin-bottom: 1rem;
         }
 
-        @keyframes scaleIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
+        .submit-button {
+          padding: 1rem;
+          font-size: 1.25rem;
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
+        .education-section {
+          padding: 3rem 0 4rem 0;
         }
 
-        @keyframes scrollRight {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+        .badge-text {
+          font-size: 1.25rem;
         }
 
-        @keyframes glow {
-            from {
-                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            }
-            to {
-                box-shadow: 0 20px 25px -5px rgba(195, 137, 53, 0.1), 0 10px 10px -5px rgba(195, 137, 53, 0.04);
-            }
+        .section-title {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
         }
 
-        @keyframes shimmer {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.8;
-            }
+        .section-description {
+          font-size: 1rem;
         }
 
-        @keyframes expandHorizontal {
-            from {
-                width: 0;
-            }
-            to {
-                width: 5rem;
-            }
+        .features-mobile {
+          display: block;
         }
 
-        /* Responsive Design */
-        @media (min-width: 640px) {
-            .header-container {
-                height: 4rem;
-                padding: 0 1rem;
-            }
-
-            .header-logo {
-                height: 1.25rem;
-            }
-
-            .hero-title {
-                font-size: 1.875rem;
-                margin-bottom: 1rem;
-            }
-
-            .hero-description {
-                font-size: 1rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .program-tags {
-                gap: 0.75rem;
-                margin: 1.5rem 0.5rem;
-            }
-
-            .program-tag {
-                padding: 0.375rem 0.75rem;
-                font-size: 0.875rem;
-            }
-
-            .application-form {
-                max-width: 24rem;
-                padding: 1rem;
-                border-radius: 0.75rem;
-            }
-
-            .form-header {
-                margin-bottom: 1rem;
-            }
-
-            .form-title {
-                font-size: 1.125rem;
-            }
-
-            .help-button {
-                display: flex;
-                font-size: 0.875rem;
-                padding: 0.5rem;
-            }
-
-            .form-group {
-                margin-bottom: 0.75rem;
-            }
-
-            .form-label {
-                font-size: 0.875rem;
-                margin-bottom: 0.5rem;
-            }
-
-            .form-input, .form-select {
-                padding: 0.75rem 1rem;
-                font-size: 1rem;
-            }
-
-            .submit-button {
-                padding: 0.75rem;
-                font-size: 1.125rem;
-                border-radius: 0.75rem;
-            }
-
-            .stats-grid {
-                gap: 0.75rem;
-                padding: 0 1rem;
-            }
-
-            .stat-card {
-                border-radius: 0.75rem;
-                padding: 0.75rem;
-            }
-
-            .stat-value {
-                font-size: 1rem;
-                margin-bottom: 0.25rem;
-            }
-
-            .comparison-title {
-                font-size: 1.25rem;
-                margin-bottom: 1rem;
-            }
-
-            .comparison-description {
-                font-size: 1rem;
-            }
-
-            .table-header th {
-                padding: 0.75rem 1rem;
-                font-size: 0.875rem;
-            }
-
-            .table-cell {
-                padding: 0.75rem 1rem;
-                font-size: 0.875rem;
-            }
-
-            .cell-icon {
-                height: 1rem;
-                width: 1rem;
-                margin-right: 0.5rem;
-            }
-
-            .cell-text {
-                font-size: 0.875rem;
-            }
-
-            .impact-title {
-                font-size: 1.5rem;
-            }
-
-            .excellence-text {
-                font-size: 1.125rem;
-            }
-
-            .recruiters-title {
-                font-size: 1.125rem;
-            }
-
-            .recruiters-description {
-                font-size: 1rem;
-            }
-
-            .recruiters-line {
-                width: 5rem;
-                margin-top: 1rem;
-            }
+        .features-desktop {
+          display: none;
         }
 
-        @media (min-width: 768px) {
-            .header-container {
-                height: 5rem;
-                padding: 0 1.5rem;
-            }
-
-            .header-logo {
-                height: 1.5rem;
-            }
-
-            .hero-title {
-                font-size: 2.25rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .hero-description {
-                font-size: 1.125rem;
-                margin-bottom: 2rem;
-            }
-
-            .application-form {
-                max-width: 28rem;
-                padding: 1.5rem;
-                border-radius: 1rem;
-            }
-
-            .form-title {
-                font-size: 1.25rem;
-            }
-
-            .form-header {
-                margin-bottom: 1.5rem;
-            }
-
-            .form-group {
-                margin-bottom: 1rem;
-            }
-
-            .submit-button {
-                padding: 1rem;
-                font-size: 1.25rem;
-            }
-
-            .education-section {
-                padding: 3rem 0 4rem 0;
-            }
-
-            .badge-text {
-                font-size: 1.25rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-                margin-bottom: 2rem;
-            }
-
-            .section-description {
-                font-size: 1rem;
-            }
-
-            .features-mobile {
-                display: block;
-            }
-
-            .features-desktop {
-                display: none;
-            }
-
-            .stats-section {
-                padding: 3rem 0;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 1rem;
-                padding: 0 1.5rem;
-            }
-
-            .stat-value {
-                font-size: 1.125rem;
-                margin-bottom: 0.5rem;
-            }
-
-            .comparison-section {
-                padding: 3rem 0;
-            }
-
-            .comparison-header {
-                margin-bottom: 3rem;
-            }
-
-            .comparison-title {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .comparison-description {
-                font-size: 1.125rem;
-            }
-
-            .table-header th {
-                padding: 1rem 1.5rem;
-                font-size: 1rem;
-            }
-
-            .table-cell {
-                padding: 1rem 1.5rem;
-                font-size: 1rem;
-            }
-
-            .cell-icon {
-                height: 1.25rem;
-                width: 1.25rem;
-            }
-
-            .cell-text {
-                font-size: 1rem;
-            }
-
-            .impact-section {
-                padding: 4rem 0;
-            }
-
-            .impact-header {
-                margin-bottom: 4rem;
-            }
-
-            .excellence-badge {
-                padding: 1rem 2rem;
-            }
-
-            .excellence-dot {
-                width: 0.75rem;
-                height: 0.75rem;
-            }
-
-            .excellence-text {
-                font-size: 1.125rem;
-            }
-
-            .impact-title {
-                font-size: 3.75rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .impact-subtitle {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .impact-description {
-                display: block;
-                font-size: 1.125rem;
-            }
-
-            .line {
-                width: 10rem;
-                height: 0.25rem;
-            }
-
-            .ranking-badge {
-                padding: 0.75rem 1.5rem;
-            }
-
-            .ranking-text {
-                font-size: 1rem;
-            }
-
-            .impact-stats {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
-                margin-bottom: 3rem;
-            }
-
-            .impact-stat-card {
-                border-radius: 1rem;
-                padding: 2rem;
-            }
-
-            .stat-icon-container {
-                width: 4.5rem;
-                height: 4.5rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 3.75rem;
-                margin-bottom: 1rem;
-            }
-
-            .stat-title {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .stat-description {
-                display: block;
-                font-size: 1rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .stat-badge {
-                padding: 0.75rem 1.5rem;
-            }
-
-            .badge-icon {
-                height: 1.25rem;
-                width: 1.25rem;
-                margin-right: 0.5rem;
-            }
-
-            .badge-text {
-                font-size: 0.875rem;
-            }
-
-            .statement-container {
-                border-radius: 1rem;
-                padding: 3rem;
-            }
-
-            .program-badge {
-                padding: 0.5rem 1rem;
-                margin-bottom: 1rem;
-            }
-
-            .program-dot {
-                width: 0.5rem;
-                height: 0.5rem;
-            }
-
-            .program-text {
-                font-size: 0.875rem;
-            }
-
-            .statement-quote {
-                font-size: 1.875rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .statement-terms {
-                font-size: 1rem;
-            }
-
-            .statement-divider {
-                gap: 1rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .divider-line {
-                width: 4rem;
-                height: 0.25rem;
-            }
-
-            .divider-dot {
-                width: 1rem;
-                height: 1rem;
-            }
-
-            .recruiters-section {
-                padding: 3rem 0;
-            }
-
-            .recruiters-header {
-                margin-bottom: 2.5rem;
-            }
-
-            .recruiters-title {
-                font-size: 1.25rem;
-                margin-bottom: 0.75rem;
-            }
-
-            .recruiters-description {
-                font-size: 1.125rem;
-            }
-
-            .recruiters-line {
-                width: 6rem;
-            }
+        .stats-section {
+          padding: 3rem 0;
         }
 
-        @media (min-width: 1024px) {
-            .hero-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 4rem;
-                align-items: center;
-            }
-
-            .hero-content {
-                text-align: left;
-                padding-top: 0;
-            }
-
-            .hero-title {
-                font-size: 3rem;
-            }
-
-            .program-tags {
-                justify-content: flex-start;
-                margin: 1.5rem 0;
-                padding: 0;
-            }
-
-            .hero-description {
-                font-size: 1.25rem;
-                padding: 0;
-            }
-
-            .form-container {
-                justify-content: flex-end;
-                padding: 0;
-            }
-
-            .application-form {
-                max-width: 32rem;
-                padding: 2rem;
-            }
-
-            .form-title {
-                font-size: 1.5rem;
-            }
-
-            .section-title {
-                font-size: 1.875rem;
-                padding: 0;
-            }
-
-            .features-mobile {
-                display: none;
-            }
-
-            .features-desktop {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-            }
-
-            .stats-grid {
-                gap: 1.5rem;
-                padding: 0 2rem;
-            }
-
-            .stat-value {
-                font-size: 1.25rem;
-            }
-
-            .comparison-title {
-                font-size: 1.875rem;
-            }
-
-            .impact-title {
-                font-size: 4.5rem;
-            }
-
-            .recruiters-line {
-                width: 8rem;
-            }
+        .stats-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1rem;
+          padding: 0 1.5rem;
         }
 
-        @media (min-width: 1280px) {
-            .hero-title {
-                font-size: 3.75rem;
-            }
-
-            .section-title {
-                font-size: 2.25rem;
-            }
-
-            .impact-title {
-                font-size: 4.5rem;
-            }
-
-            .stats-grid {
-                gap: 2rem;
-            }
-
-            .stat-value {
-                font-size: 1.5rem;
-            }
+        .stat-value {
+          font-size: 1.125rem;
+          margin-bottom: 0.5rem;
         }
+
+        .comparison-section {
+          padding: 3rem 0;
+        }
+
+        .comparison-header {
+          margin-bottom: 3rem;
+        }
+
+        .comparison-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .comparison-description {
+          font-size: 1.125rem;
+        }
+
+        .table-header th {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+
+        .table-cell {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+
+        .cell-icon {
+          height: 1.25rem;
+          width: 1.25rem;
+        }
+
+        .cell-text {
+          font-size: 1rem;
+        }
+
+        .impact-section {
+          padding: 4rem 0;
+        }
+
+        .impact-header {
+          margin-bottom: 4rem;
+        }
+
+        .excellence-badge {
+          padding: 1rem 2rem;
+        }
+
+        .excellence-dot {
+          width: 0.75rem;
+          height: 0.75rem;
+        }
+
+        .excellence-text {
+          font-size: 1.125rem;
+        }
+
+        .impact-title {
+          font-size: 3.75rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .impact-subtitle {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .impact-description {
+          display: block;
+          font-size: 1.125rem;
+        }
+
+        .line {
+          width: 10rem;
+          height: 0.25rem;
+        }
+
+        .ranking-badge {
+          padding: 0.75rem 1.5rem;
+        }
+
+        .ranking-text {
+          font-size: 1rem;
+        }
+
+        .impact-stats {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          margin-bottom: 3rem;
+        }
+
+        .impact-stat-card {
+          border-radius: 1rem;
+          padding: 2rem;
+        }
+
+        .stat-icon-container {
+          width: 4.5rem;
+          height: 4.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .stat-number {
+          font-size: 3.75rem;
+          margin-bottom: 1rem;
+        }
+
+        .stat-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .stat-description {
+          display: block;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .stat-badge {
+          padding: 0.75rem 1.5rem;
+        }
+
+        .badge-icon {
+          height: 1.25rem;
+          width: 1.25rem;
+          margin-right: 0.5rem;
+        }
+
+        .badge-text {
+          font-size: 0.875rem;
+        }
+
+        .statement-container {
+          border-radius: 1rem;
+          padding: 3rem;
+        }
+
+        .program-badge {
+          padding: 0.5rem 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .program-dot {
+          width: 0.5rem;
+          height: 0.5rem;
+        }
+
+        .program-text {
+          font-size: 0.875rem;
+        }
+
+        .statement-quote {
+          font-size: 1.875rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .statement-terms {
+          font-size: 1rem;
+        }
+
+        .statement-divider {
+          gap: 1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .divider-line {
+          width: 4rem;
+          height: 0.25rem;
+        }
+
+        .divider-dot {
+          width: 1rem;
+          height: 1rem;
+        }
+
+        .recruiters-section {
+          padding: 3rem 0;
+        }
+
+        .recruiters-header {
+          margin-bottom: 2.5rem;
+        }
+
+        .recruiters-title {
+          font-size: 1.25rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .recruiters-description {
+          font-size: 1.125rem;
+        }
+
+        .recruiters-line {
+          width: 6rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .hero-container {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 4rem;
+          align-items: center;
+        }
+
+        .hero-content {
+          text-align: left;
+          padding-top: 0;
+        }
+
+        .hero-title {
+          font-size: 3rem;
+        }
+
+        .program-tags {
+          justify-content: flex-start;
+          margin: 1.5rem 0;
+          padding: 0;
+        }
+
+        .hero-description {
+          font-size: 1.25rem;
+          padding: 0;
+        }
+
+        .form-container {
+          justify-content: flex-end;
+          padding: 0;
+        }
+
+        .application-form {
+          max-width: 32rem;
+          padding: 2rem;
+        }
+
+        .form-title {
+          font-size: 1.5rem;
+        }
+
+        .section-title {
+          font-size: 1.875rem;
+          padding: 0;
+        }
+
+        .features-mobile {
+          display: none;
+        }
+
+        .features-desktop {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+        }
+
+        .stats-grid {
+          gap: 1.5rem;
+          padding: 0 2rem;
+        }
+
+        .stat-value {
+          font-size: 1.25rem;
+        }
+
+        .comparison-title {
+          font-size: 1.875rem;
+        }
+
+        .impact-title {
+          font-size: 4.5rem;
+        }
+
+        .recruiters-line {
+          width: 8rem;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .hero-title {
+          font-size: 3.75rem;
+        }
+
+        .section-title {
+          font-size: 2.25rem;
+        }
+
+        .impact-title {
+          font-size: 4.5rem;
+        }
+
+        .stats-grid {
+          gap: 2rem;
+        }
+
+        .stat-value {
+          font-size: 1.5rem;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header-container">
-                <div style="display: flex; align-items: center;">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800" 
-                         alt="Sunstone" class="header-logo">
-                </div>
-            </div>
+      <div class="container">
+        <div class="header-container">
+          <div style="display: flex; align-items: center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe6da493dd54948398735dc4759779933%2Ff83e93f9590748d9b1f3c540b752d182?format=webp&width=800"
+              alt="Sunstone"
+              class="header-logo"
+            />
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-container">
-                <!-- Left Column - Hero Content -->
-                <div class="hero-content">
-                    <div style="margin-bottom: 1rem;">
-                        <h1 class="hero-title">
-                            <span style="display: block; color: var(--sunstone-white);">
-                                Shape Your Future With Confidence
-                            </span>
-                            <span class="hero-subtitle">
-                                India's Most Trusted Education Platform
-                            </span>
-                        </h1>
+      <div class="container">
+        <div class="hero-container">
+          <!-- Left Column - Hero Content -->
+          <div class="hero-content">
+            <div style="margin-bottom: 1rem">
+              <h1 class="hero-title">
+                <span style="display: block; color: var(--sunstone-white)">
+                  Shape Your Future With Confidence
+                </span>
+                <span class="hero-subtitle">
+                  India's Most Trusted Education Platform
+                </span>
+              </h1>
 
-                        <!-- Dynamic Course Showcase -->
-                        <div class="program-tags">
-                            <span class="program-tag">MBA・PGDM</span>
-                            <span class="program-tag">BBA・B.Com</span>
-                            <span class="program-tag">BCA・MCA</span>
-                            <span class="program-tag">BTECH</span>
-                            <span class="program-tag">B.Sc・M.Sc</span>
-                        </div>
-                        <div style="text-align: center; margin-top: 0.5rem;">
-                            <p style="font-size: 0.75rem; color: #e5e7eb; font-weight: 500;">
-                                Choose from 9 industry oriented Programs and others
-                            </p>
-                        </div>
-                    </div>
-
-                    <p class="hero-description">
-                        Get <span style="color: var(--sunstone-gold); font-weight: 700;">200+ assured placement opportunities</span> 
-                        with <span style="color: var(--sunstone-white); font-weight: 600;">Placement Opportunity Program</span>
-                    </p>
-                </div>
-
-                <!-- Right Column - Application Form -->
-                <div class="form-container">
-                    <div class="application-form">
-                        <div class="form-header">
-                            <h3 class="form-title">Apply Now</h3>
-                            <div style="display: flex; gap: 0.5rem;">
-                                <button class="help-button" onclick="window.open('tel:+918045681999', '_self')">
-                                    <i data-lucide="phone" style="height: 0.75rem; width: 0.75rem; margin-right: 0.125rem;"></i>
-                                    <span style="display: none;">Help</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <form id="applicationForm" onsubmit="handleFormSubmit(event)">
-                            <div class="form-group">
-                                <label class="form-label">Full Name*</label>
-                                <input type="text" class="form-input" placeholder="Enter your name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">I want to pursue*</label>
-                                <select class="form-select" required>
-                                    <option value="">Select Program</option>
-                                    <option value="mba">MBA</option>
-                                    <option value="pgdm">PGDM</option>
-                                    <option value="bba">BBA</option>
-                                    <option value="btech">B.Tech</option>
-                                    <option value="bcom">B.Com</option>
-                                    <option value="bca">BCA</option>
-                                    <option value="mca">MCA</option>
-                                    <option value="bsc">B.Sc</option>
-                                    <option value="msc">M.Sc</option>
-                                    <option value="others">Others</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Mobile Number*</label>
-                                <input type="tel" class="form-input" placeholder="Enter 10-digit mobile number" 
-                                       pattern="[0-9]{10}" maxlength="10" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Select State*</label>
-                                <select class="form-select" required>
-                                    <option value="">Select State</option>
-                                    <option value="andhra-pradesh">Andhra Pradesh</option>
-                                    <option value="arunachal-pradesh">Arunachal Pradesh</option>
-                                    <option value="assam">Assam</option>
-                                    <option value="bihar">Bihar</option>
-                                    <option value="chhattisgarh">Chhattisgarh</option>
-                                    <option value="goa">Goa</option>
-                                    <option value="gujarat">Gujarat</option>
-                                    <option value="haryana">Haryana</option>
-                                    <option value="himachal-pradesh">Himachal Pradesh</option>
-                                    <option value="jharkhand">Jharkhand</option>
-                                    <option value="karnataka">Karnataka</option>
-                                    <option value="kerala">Kerala</option>
-                                    <option value="madhya-pradesh">Madhya Pradesh</option>
-                                    <option value="maharashtra">Maharashtra</option>
-                                    <option value="manipur">Manipur</option>
-                                    <option value="meghalaya">Meghalaya</option>
-                                    <option value="mizoram">Mizoram</option>
-                                    <option value="nagaland">Nagaland</option>
-                                    <option value="odisha">Odisha</option>
-                                    <option value="punjab">Punjab</option>
-                                    <option value="rajasthan">Rajasthan</option>
-                                    <option value="sikkim">Sikkim</option>
-                                    <option value="tamil-nadu">Tamil Nadu</option>
-                                    <option value="telangana">Telangana</option>
-                                    <option value="tripura">Tripura</option>
-                                    <option value="uttar-pradesh">Uttar Pradesh</option>
-                                    <option value="uttarakhand">Uttarakhand</option>
-                                    <option value="west-bengal">West Bengal</option>
-                                    <option value="delhi">Delhi</option>
-                                    <option value="chandigarh">Chandigarh</option>
-                                    <option value="puducherry">Puducherry</option>
-                                    <option value="jammu-kashmir">Jammu & Kashmir</option>
-                                    <option value="ladakh">Ladakh</option>
-                                </select>
-                            </div>
-
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="termsCheckbox" class="checkbox" required>
-                                <label for="termsCheckbox" class="checkbox-label">
-                                    By clicking "Send OTP", I agree to the Terms & Conditions and Privacy Policy
-                                </label>
-                            </div>
-
-                            <button type="submit" class="submit-button">Send OTP</button>
-                        </form>
-                    </div>
-                </div>
+              <!-- Dynamic Course Showcase -->
+              <div class="program-tags">
+                <span class="program-tag">MBA・PGDM</span>
+                <span class="program-tag">BBA・B.Com</span>
+                <span class="program-tag">BCA・MCA</span>
+                <span class="program-tag">BTECH</span>
+                <span class="program-tag">B.Sc・M.Sc</span>
+              </div>
+              <div style="text-align: center; margin-top: 0.5rem">
+                <p style="font-size: 0.75rem; color: #e5e7eb; font-weight: 500">
+                  Choose from 9 industry oriented Programs and others
+                </p>
+              </div>
             </div>
+
+            <p class="hero-description">
+              Get
+              <span style="color: var(--sunstone-gold); font-weight: 700"
+                >200+ assured placement opportunities</span
+              >
+              with
+              <span style="color: var(--sunstone-white); font-weight: 600"
+                >Placement Opportunity Program</span
+              >
+            </p>
+          </div>
+
+          <!-- Right Column - Application Form -->
+          <div class="form-container">
+            <div class="application-form">
+              <div class="form-header">
+                <h3 class="form-title">Apply Now</h3>
+                <div style="display: flex; gap: 0.5rem">
+                  <button
+                    class="help-button"
+                    onclick="window.open('tel:+918045681999', '_self')"
+                  >
+                    <i
+                      data-lucide="phone"
+                      style="
+                        height: 0.75rem;
+                        width: 0.75rem;
+                        margin-right: 0.125rem;
+                      "
+                    ></i>
+                    <span style="display: none">Help</span>
+                  </button>
+                </div>
+              </div>
+
+              <form id="applicationForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                  <label class="form-label">Full Name*</label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">I want to pursue*</label>
+                  <select class="form-select" required>
+                    <option value="">Select Program</option>
+                    <option value="mba">MBA</option>
+                    <option value="pgdm">PGDM</option>
+                    <option value="bba">BBA</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="bca">BCA</option>
+                    <option value="mca">MCA</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="msc">M.Sc</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Mobile Number*</label>
+                  <input
+                    type="tel"
+                    class="form-input"
+                    placeholder="Enter 10-digit mobile number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Select State*</label>
+                  <select class="form-select" required>
+                    <option value="">Select State</option>
+                    <option value="andhra-pradesh">Andhra Pradesh</option>
+                    <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chhattisgarh">Chhattisgarh</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal-pradesh">Himachal Pradesh</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="madhya-pradesh">Madhya Pradesh</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="manipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="nagaland">Nagaland</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamil-nadu">Tamil Nadu</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="uttar-pradesh">Uttar Pradesh</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                    <option value="west-bengal">West Bengal</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="puducherry">Puducherry</option>
+                    <option value="jammu-kashmir">Jammu & Kashmir</option>
+                    <option value="ladakh">Ladakh</option>
+                  </select>
+                </div>
+
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="termsCheckbox"
+                    class="checkbox"
+                    required
+                  />
+                  <label for="termsCheckbox" class="checkbox-label">
+                    By clicking "Send OTP", I agree to the Terms & Conditions
+                    and Privacy Policy
+                  </label>
+                </div>
+
+                <button type="submit" class="submit-button">Send OTP</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- New Age Education Section -->
     <section class="education-section">
-        <!-- Background Elements -->
-        <div class="background-elements">
-            <div class="bg-element bg-element-1"></div>
-            <div class="bg-element bg-element-2"></div>
-            <div class="bg-element bg-element-3"></div>
-        </div>
+      <!-- Background Elements -->
+      <div class="background-elements">
+        <div class="bg-element bg-element-1"></div>
+        <div class="bg-element bg-element-2"></div>
+        <div class="bg-element bg-element-3"></div>
+      </div>
 
-        <div class="container" style="position: relative; z-index: 10;">
-            <!-- Header Section -->
-            <div class="section-header">
-                <div class="header-badge">
-                    <div class="badge-icon">
-                        <i data-lucide="zap" style="width: 1.5rem; height: 1.5rem; color: white;"></i>
-                    </div>
-                    <span class="badge-text">Experience New Age Education</span>
-                </div>
-
-                <div style="text-align: center;">
-                    <h2 class="section-title">
-                        <span class="title-gradient">
-                            Revolutionizing Higher Education for Tomorrow's Leaders
-                        </span>
-                        <br><br>
-                        <span class="section-description">
-                            Transform your career with industry-integrated programs designed by corporate leaders, 
-                            featuring cutting-edge curriculum, practical learning experiences, and assured placement support.
-                        </span>
-
-                        <!-- Desktop Grid Layout -->
-                        <div class="features-desktop">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i data-lucide="zap" style="width: 2rem; height: 2rem; color: white;"></i>
-                                </div>
-                                <h3 class="feature-title">Future Ready</h3>
-                                <p class="feature-subtitle">Learning</p>
-                                <p class="feature-description">Skills and knowledge needed for tomorrow's careers</p>
-                            </div>
-
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i data-lucide="building" style="width: 2rem; height: 2rem; color: white;"></i>
-                                </div>
-                                <h3 class="feature-title">Corporate Leaders</h3>
-                                <p class="feature-subtitle">Turned Educators</p>
-                                <p class="feature-description">Learn from corporate leaders with real work experience</p>
-                            </div>
-
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i data-lucide="lightbulb" style="width: 2rem; height: 2rem; color: white;"></i>
-                                </div>
-                                <h3 class="feature-title">Start Your</h3>
-                                <p class="feature-subtitle">Own Business</p>
-                                <p class="feature-description">Get help and support to start your business idea</p>
-                            </div>
-
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i data-lucide="monitor" style="width: 2rem; height: 2rem; color: white;"></i>
-                                </div>
-                                <h3 class="feature-title">Modern</h3>
-                                <p class="feature-subtitle">Learning Tools</p>
-                                <p class="feature-description">Use latest technology and software for better learning</p>
-                            </div>
-
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i data-lucide="book-open" style="width: 2rem; height: 2rem; color: white;"></i>
-                                </div>
-                                <h3 class="feature-title">Industry</h3>
-                                <p class="feature-subtitle">Visits & Projects</p>
-                                <p class="feature-description">Visit real companies and work on real world projects</p>
-                            </div>
-                        </div>
-
-                        <!-- Mobile Horizontal Scrolling -->
-                        <div class="features-mobile">
-                            <div class="features-scroll">
-                                <!-- First set -->
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="zap" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Future Ready</h3>
-                                    <p class="feature-subtitle">Learning</p>
-                                    <p class="feature-description">Skills and knowledge needed for tomorrow's careers</p>
-                                </div>
-
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="building" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Corporate Leaders</h3>
-                                    <p class="feature-subtitle">Turned Educators</p>
-                                    <p class="feature-description">Learn from corporate leaders with real work experience</p>
-                                </div>
-
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="lightbulb" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Start Your</h3>
-                                    <p class="feature-subtitle">Own Business</p>
-                                    <p class="feature-description">Get help and support to start your business idea</p>
-                                </div>
-
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="monitor" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Modern</h3>
-                                    <p class="feature-subtitle">Learning Tools</p>
-                                    <p class="feature-description">Use latest technology and software for better learning</p>
-                                </div>
-
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="book-open" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Industry</h3>
-                                    <p class="feature-subtitle">Visits & Projects</p>
-                                    <p class="feature-description">Visit real companies and work on real world projects</p>
-                                </div>
-
-                                <!-- Duplicate set for seamless loop -->
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="zap" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Future Ready</h3>
-                                    <p class="feature-subtitle">Learning</p>
-                                    <p class="feature-description">Skills and knowledge needed for tomorrow's careers</p>
-                                </div>
-
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="building" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Corporate Leaders</h3>
-                                    <p class="feature-subtitle">Turned Educators</p>
-                                    <p class="feature-description">Learn from corporate leaders with real work experience</p>
-                                </div>
-
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i data-lucide="lightbulb" style="width: 2rem; height: 2rem; color: white;"></i>
-                                    </div>
-                                    <h3 class="feature-title">Start Your</h3>
-                                    <p class="feature-subtitle">Own Business</p>
-                                    <p class="feature-description">Get help and support to start your business idea</p>
-                                </div>
-                            </div>
-                        </div>
-                    </h2>
-                </div>
+      <div class="container" style="position: relative; z-index: 10">
+        <!-- Header Section -->
+        <div class="section-header">
+          <div class="header-badge">
+            <div class="badge-icon">
+              <i
+                data-lucide="zap"
+                style="width: 1.5rem; height: 1.5rem; color: white"
+              ></i>
             </div>
+            <span class="badge-text">Experience New Age Education</span>
+          </div>
+
+          <div style="text-align: center">
+            <h2 class="section-title">
+              <span class="title-gradient">
+                Revolutionizing Higher Education for Tomorrow's Leaders
+              </span>
+              <br /><br />
+              <span class="section-description">
+                Transform your career with industry-integrated programs designed
+                by corporate leaders, featuring cutting-edge curriculum,
+                practical learning experiences, and assured placement support.
+              </span>
+
+              <!-- Desktop Grid Layout -->
+              <div class="features-desktop">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i
+                      data-lucide="zap"
+                      style="width: 2rem; height: 2rem; color: white"
+                    ></i>
+                  </div>
+                  <h3 class="feature-title">Future Ready</h3>
+                  <p class="feature-subtitle">Learning</p>
+                  <p class="feature-description">
+                    Skills and knowledge needed for tomorrow's careers
+                  </p>
+                </div>
+
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i
+                      data-lucide="building"
+                      style="width: 2rem; height: 2rem; color: white"
+                    ></i>
+                  </div>
+                  <h3 class="feature-title">Corporate Leaders</h3>
+                  <p class="feature-subtitle">Turned Educators</p>
+                  <p class="feature-description">
+                    Learn from corporate leaders with real work experience
+                  </p>
+                </div>
+
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i
+                      data-lucide="lightbulb"
+                      style="width: 2rem; height: 2rem; color: white"
+                    ></i>
+                  </div>
+                  <h3 class="feature-title">Start Your</h3>
+                  <p class="feature-subtitle">Own Business</p>
+                  <p class="feature-description">
+                    Get help and support to start your business idea
+                  </p>
+                </div>
+
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i
+                      data-lucide="monitor"
+                      style="width: 2rem; height: 2rem; color: white"
+                    ></i>
+                  </div>
+                  <h3 class="feature-title">Modern</h3>
+                  <p class="feature-subtitle">Learning Tools</p>
+                  <p class="feature-description">
+                    Use latest technology and software for better learning
+                  </p>
+                </div>
+
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i
+                      data-lucide="book-open"
+                      style="width: 2rem; height: 2rem; color: white"
+                    ></i>
+                  </div>
+                  <h3 class="feature-title">Industry</h3>
+                  <p class="feature-subtitle">Visits & Projects</p>
+                  <p class="feature-description">
+                    Visit real companies and work on real world projects
+                  </p>
+                </div>
+              </div>
+
+              <!-- Mobile Horizontal Scrolling -->
+              <div class="features-mobile">
+                <div class="features-scroll">
+                  <!-- First set -->
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="zap"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Future Ready</h3>
+                    <p class="feature-subtitle">Learning</p>
+                    <p class="feature-description">
+                      Skills and knowledge needed for tomorrow's careers
+                    </p>
+                  </div>
+
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="building"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Corporate Leaders</h3>
+                    <p class="feature-subtitle">Turned Educators</p>
+                    <p class="feature-description">
+                      Learn from corporate leaders with real work experience
+                    </p>
+                  </div>
+
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="lightbulb"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Start Your</h3>
+                    <p class="feature-subtitle">Own Business</p>
+                    <p class="feature-description">
+                      Get help and support to start your business idea
+                    </p>
+                  </div>
+
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="monitor"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Modern</h3>
+                    <p class="feature-subtitle">Learning Tools</p>
+                    <p class="feature-description">
+                      Use latest technology and software for better learning
+                    </p>
+                  </div>
+
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="book-open"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Industry</h3>
+                    <p class="feature-subtitle">Visits & Projects</p>
+                    <p class="feature-description">
+                      Visit real companies and work on real world projects
+                    </p>
+                  </div>
+
+                  <!-- Duplicate set for seamless loop -->
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="zap"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Future Ready</h3>
+                    <p class="feature-subtitle">Learning</p>
+                    <p class="feature-description">
+                      Skills and knowledge needed for tomorrow's careers
+                    </p>
+                  </div>
+
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="building"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Corporate Leaders</h3>
+                    <p class="feature-subtitle">Turned Educators</p>
+                    <p class="feature-description">
+                      Learn from corporate leaders with real work experience
+                    </p>
+                  </div>
+
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i
+                        data-lucide="lightbulb"
+                        style="width: 2rem; height: 2rem; color: white"
+                      ></i>
+                    </div>
+                    <h3 class="feature-title">Start Your</h3>
+                    <p class="feature-subtitle">Own Business</p>
+                    <p class="feature-description">
+                      Get help and support to start your business idea
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </h2>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Stats Section -->
     <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card" style="animation-delay: 0ms;">
-                    <div class="stat-value">26 LPA</div>
-                    <div class="stat-label">Highest Package</div>
-                </div>
-                <div class="stat-card" style="animation-delay: 100ms;">
-                    <div class="stat-value">4.6 LPA</div>
-                    <div class="stat-label">Average package</div>
-                </div>
-                <div class="stat-card" style="animation-delay: 200ms;">
-                    <div class="stat-value">5000+</div>
-                    <div class="stat-label">Students Placed</div>
-                </div>
-                <div class="stat-card" style="animation-delay: 300ms;">
-                    <div class="stat-value">1200+</div>
-                    <div class="stat-label">Total Recruiters</div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" style="animation-delay: 0ms">
+            <div class="stat-value">26 LPA</div>
+            <div class="stat-label">Highest Package</div>
+          </div>
+          <div class="stat-card" style="animation-delay: 100ms">
+            <div class="stat-value">4.6 LPA</div>
+            <div class="stat-label">Average package</div>
+          </div>
+          <div class="stat-card" style="animation-delay: 200ms">
+            <div class="stat-value">5000+</div>
+            <div class="stat-label">Students Placed</div>
+          </div>
+          <div class="stat-card" style="animation-delay: 300ms">
+            <div class="stat-value">1200+</div>
+            <div class="stat-label">Total Recruiters</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Comparison Table Section -->
     <section class="comparison-section">
-        <div class="container">
-            <div class="comparison-header">
-                <h2 class="comparison-title">Why Sunstone Powered Programs Stand Out?</h2>
-                <p class="comparison-description">See how our programs compare with traditional colleges</p>
-            </div>
-
-            <div class="comparison-table-container">
-                <div class="comparison-table">
-                    <table>
-                        <thead class="table-header">
-                            <tr>
-                                <th>Key Offerings</th>
-                                <th>Sunstone-Powered Programs</th>
-                                <th>Other Colleges</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-row" style="animation-delay: 100ms;">
-                                <td class="table-cell">Specializations</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">5 Advanced New-Age Specializations</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">Limited Or No Specialization Choices</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 200ms;">
-                                <td class="table-cell">Industry Exposure</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">6+ Months Of Industry Internships</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">Minimal Or No Internship Opportunities</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 300ms;">
-                                <td class="table-cell">Hands-On Learning</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">3+ Capstone Projects (1 Every Year)</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">Projects With Minimal Industry Use</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 400ms;">
-                                <td class="table-cell">Expert Sessions</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">70+ Sessions By Industry Leaders & Top Faculty</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">Few Or No Sessions With Industry Experts</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 500ms;">
-                                <td class="table-cell">Certifications</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">10 In-Demand Certifications</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">Limited Or No Certification Options</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 600ms;">
-                                <td class="table-cell">Placement Readiness</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">180+ Hours Of Mock GD/PI Training</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">Basic Or No Placement Preparation</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 700ms;">
-                                <td class="table-cell">Career Boost</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">Build A Job-Ready Portfolio</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">No Structured Portfolio Development</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="table-row" style="animation-delay: 800ms;">
-                                <td class="table-cell">Placement Reports</td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="check-circle" class="cell-icon check-icon"></i>
-                                        <span class="cell-text">Audited & Verified By B2K Analytics - Official Auditor For IIM Ahmedabad</span>
-                                    </div>
-                                </td>
-                                <td class="table-cell">
-                                    <div class="cell-content">
-                                        <i data-lucide="x-circle" class="cell-icon x-icon"></i>
-                                        <span class="cell-text">No Official Auditor For Placement Reports</span>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+      <div class="container">
+        <div class="comparison-header">
+          <h2 class="comparison-title">
+            Why Sunstone Powered Programs Stand Out?
+          </h2>
+          <p class="comparison-description">
+            See how our programs compare with traditional colleges
+          </p>
         </div>
+
+        <div class="comparison-table-container">
+          <div class="comparison-table">
+            <table>
+              <thead class="table-header">
+                <tr>
+                  <th>Key Offerings</th>
+                  <th>Sunstone-Powered Programs</th>
+                  <th>Other Colleges</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row" style="animation-delay: 100ms">
+                  <td class="table-cell">Specializations</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text"
+                        >5 Advanced New-Age Specializations</span
+                      >
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >Limited Or No Specialization Choices</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 200ms">
+                  <td class="table-cell">Industry Exposure</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text"
+                        >6+ Months Of Industry Internships</span
+                      >
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >Minimal Or No Internship Opportunities</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 300ms">
+                  <td class="table-cell">Hands-On Learning</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text"
+                        >3+ Capstone Projects (1 Every Year)</span
+                      >
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >Projects With Minimal Industry Use</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 400ms">
+                  <td class="table-cell">Expert Sessions</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text"
+                        >70+ Sessions By Industry Leaders & Top Faculty</span
+                      >
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >Few Or No Sessions With Industry Experts</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 500ms">
+                  <td class="table-cell">Certifications</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text">10 In-Demand Certifications</span>
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >Limited Or No Certification Options</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 600ms">
+                  <td class="table-cell">Placement Readiness</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text"
+                        >180+ Hours Of Mock GD/PI Training</span
+                      >
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >Basic Or No Placement Preparation</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 700ms">
+                  <td class="table-cell">Career Boost</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text">Build A Job-Ready Portfolio</span>
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >No Structured Portfolio Development</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-row" style="animation-delay: 800ms">
+                  <td class="table-cell">Placement Reports</td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i
+                        data-lucide="check-circle"
+                        class="cell-icon check-icon"
+                      ></i>
+                      <span class="cell-text"
+                        >Audited & Verified By B2K Analytics - Official Auditor
+                        For IIM Ahmedabad</span
+                      >
+                    </div>
+                  </td>
+                  <td class="table-cell">
+                    <div class="cell-content">
+                      <i data-lucide="x-circle" class="cell-icon x-icon"></i>
+                      <span class="cell-text"
+                        >No Official Auditor For Placement Reports</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Our Impact in Numbers Section -->
     <section class="impact-section">
-        <!-- Subtle background elements -->
-        <div style="position: absolute; inset: 0;">
-            <div style="position: absolute; top: 5rem; right: 5rem; width: 16rem; height: 16rem; background: rgba(195, 137, 53, 0.1); border-radius: 50%; filter: blur(48px); animation: pulse 3s ease-in-out infinite;"></div>
-            <div style="position: absolute; bottom: 5rem; left: 5rem; width: 12rem; height: 12rem; background: rgba(34, 51, 106, 0.05); border-radius: 50%; filter: blur(32px); animation: pulse 3s ease-in-out infinite; animation-delay: 2s;"></div>
+      <!-- Subtle background elements -->
+      <div style="position: absolute; inset: 0">
+        <div
+          style="
+            position: absolute;
+            top: 5rem;
+            right: 5rem;
+            width: 16rem;
+            height: 16rem;
+            background: rgba(195, 137, 53, 0.1);
+            border-radius: 50%;
+            filter: blur(48px);
+            animation: pulse 3s ease-in-out infinite;
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            bottom: 5rem;
+            left: 5rem;
+            width: 12rem;
+            height: 12rem;
+            background: rgba(34, 51, 106, 0.05);
+            border-radius: 50%;
+            filter: blur(32px);
+            animation: pulse 3s ease-in-out infinite;
+            animation-delay: 2s;
+          "
+        ></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 10">
+        <!-- Epic Header with Sunstone Praise -->
+        <div class="impact-header">
+          <div class="excellence-badge">
+            <div class="excellence-dot"></div>
+            <span class="excellence-text">🏆 SUNSTONE EXCELLENCE PROVEN</span>
+            <div class="excellence-dot" style="animation-delay: 0.5s"></div>
+          </div>
+
+          <h2 class="impact-title">Our Impact Speaks for Itself</h2>
+
+          <div style="max-width: 64rem; margin: 0 auto 1rem auto">
+            <p class="impact-subtitle">
+              Sunstone: Where Excellence Meets Opportunity
+            </p>
+            <p class="impact-description">
+              <span style="color: var(--sunstone-gold); font-weight: 600"
+                >Witness the Sunstone difference</span
+              >
+              - our previous batch results showcase why we're India's most
+              trusted education platform. These extraordinary achievements
+              reflect our unwavering commitment to
+              <span style="color: var(--sunstone-navy); font-weight: 600"
+                >transforming lives through world-class education</span
+              >.
+            </p>
+          </div>
+
+          <div class="decorative-line">
+            <div class="line"></div>
+          </div>
+
+          <div class="ranking-badge">
+            <i
+              data-lucide="star"
+              style="
+                height: 0.75rem;
+                width: 0.75rem;
+                color: var(--sunstone-gold);
+                animation: pulse 2s ease-in-out infinite;
+              "
+            ></i>
+            <span class="ranking-text"
+              >Consistently Ranked #1 in Student Outcomes</span
+            >
+          </div>
         </div>
 
-        <div class="container" style="position: relative; z-index: 10;">
-            <!-- Epic Header with Sunstone Praise -->
-            <div class="impact-header">
-                <div class="excellence-badge">
-                    <div class="excellence-dot"></div>
-                    <span class="excellence-text">🏆 SUNSTONE EXCELLENCE PROVEN</span>
-                    <div class="excellence-dot" style="animation-delay: 0.5s;"></div>
-                </div>
-
-                <h2 class="impact-title">Our Impact Speaks for Itself</h2>
-
-                <div style="max-width: 64rem; margin: 0 auto 1rem auto;">
-                    <p class="impact-subtitle">Sunstone: Where Excellence Meets Opportunity</p>
-                    <p class="impact-description">
-                        <span style="color: var(--sunstone-gold); font-weight: 600;">Witness the Sunstone difference</span> 
-                        - our previous batch results showcase why we're India's most trusted education platform. 
-                        These extraordinary achievements reflect our unwavering commitment to 
-                        <span style="color: var(--sunstone-navy); font-weight: 600;">transforming lives through world-class education</span>.
-                    </p>
-                </div>
-
-                <div class="decorative-line">
-                    <div class="line"></div>
-                </div>
-
-                <div class="ranking-badge">
-                    <i data-lucide="star" style="height: 0.75rem; width: 0.75rem; color: var(--sunstone-gold); animation: pulse 2s ease-in-out infinite;"></i>
-                    <span class="ranking-text">Consistently Ranked #1 in Student Outcomes</span>
-                </div>
+        <!-- Enhanced Statistics with Sunstone Praise -->
+        <div class="impact-stats">
+          <!-- Stat 1: Offers from Top Recruiters -->
+          <div class="impact-stat-card">
+            <div class="stat-icon-container">
+              <i
+                data-lucide="trending-up"
+                style="height: 1rem; width: 1rem; color: white"
+              ></i>
             </div>
 
-            <!-- Enhanced Statistics with Sunstone Praise -->
-            <div class="impact-stats">
-                <!-- Stat 1: Offers from Top Recruiters -->
-                <div class="impact-stat-card">
-                    <div class="stat-icon-container">
-                        <i data-lucide="trending-up" style="height: 1rem; width: 1rem; color: white;"></i>
-                    </div>
+            <div class="stat-number">1170+</div>
 
-                    <div class="stat-number">1170+</div>
+            <h3 class="stat-title">Offers from Top Recruiters</h3>
 
-                    <h3 class="stat-title">Offers from Top Recruiters</h3>
+            <p class="stat-description">
+              <span style="color: var(--sunstone-gold); font-weight: 600"
+                >Sunstone's unmatched industry reputation</span
+              >
+              attracts leading companies like Google, Microsoft, and Amazon. Our
+              graduates are the
+              <span style="font-weight: 600">first choice</span> for top
+              recruiters across every major industry.
+            </p>
 
-                    <p class="stat-description">
-                        <span style="color: var(--sunstone-gold); font-weight: 600;">Sunstone's unmatched industry reputation</span> 
-                        attracts leading companies like Google, Microsoft, and Amazon. Our graduates are the 
-                        <span style="font-weight: 600;">first choice</span> for top recruiters across every major industry.
-                    </p>
+            <div class="stat-badge">
+              <i data-lucide="award" class="badge-icon"></i>
+              <span class="badge-text">Industry's Most Trusted</span>
+            </div>
+          </div>
 
-                    <div class="stat-badge">
-                        <i data-lucide="award" class="badge-icon"></i>
-                        <span class="badge-text">Industry's Most Trusted</span>
-                    </div>
-                </div>
-
-                <!-- Stat 2: Unique Job Opportunities -->
-                <div class="impact-stat-card" style="background: linear-gradient(135deg, white 0%, rgba(34, 51, 106, 0.05) 100%); border-color: rgba(34, 51, 106, 0.2);">
-                    <div class="stat-icon-container" style="background: linear-gradient(135deg, var(--sunstone-navy) 0%, var(--sunstone-navy-dark) 100%);">
-                        <i data-lucide="users" style="height: 1rem; width: 1rem; color: white;"></i>
-                    </div>
-
-                    <div class="stat-number">1020+</div>
-
-                    <h3 class="stat-title">Unique Job Opportunities</h3>
-
-                    <p class="stat-description">
-                        <span style="color: var(--sunstone-gold); font-weight: 600;">Sunstone's extensive network</span> 
-                        spans from cutting-edge startups to Fortune 500 giants. Our 
-                        <span style="font-weight: 600;">exclusive partnerships</span> 
-                        create unprecedented career pathways across 15+ high-growth sectors.
-                    </p>
-
-                    <div class="stat-badge" style="background: linear-gradient(135deg, rgba(34, 51, 106, 0.2) 0%, rgba(34, 51, 106, 0.1) 100%); border-color: rgba(34, 51, 106, 0.3);">
-                        <i data-lucide="graduation-cap" style="height: 0.75rem; width: 0.75rem; color: var(--sunstone-navy); margin-right: 0.25rem;"></i>
-                        <span style="color: var(--sunstone-navy); font-weight: 700; font-size: 0.75rem;">Unmatched Network</span>
-                    </div>
-                </div>
-
-                <!-- Stat 3: Students with Multiple Offers -->
-                <div class="impact-stat-card">
-                    <div class="stat-icon-container">
-                        <i data-lucide="star" style="height: 1rem; width: 1rem; color: white;"></i>
-                    </div>
-
-                    <div class="stat-number">302+</div>
-
-                    <h3 class="stat-title">Students with 2+ Job Offers</h3>
-
-                    <p class="stat-description">
-                        <span style="color: var(--sunstone-gold); font-weight: 600;">The ultimate testament to Sunstone's excellence</span> 
-                        - our students don't just find jobs, they have the 
-                        <span style="font-weight: 600;">luxury of choice</span>. This is what happens when world-class education meets industry demand.
-                    </p>
-
-                    <div class="stat-badge">
-                        <i data-lucide="check-circle" class="badge-icon"></i>
-                        <span class="badge-text">Premium Choice</span>
-                    </div>
-                </div>
+          <!-- Stat 2: Unique Job Opportunities -->
+          <div
+            class="impact-stat-card"
+            style="
+              background: linear-gradient(
+                135deg,
+                white 0%,
+                rgba(34, 51, 106, 0.05) 100%
+              );
+              border-color: rgba(34, 51, 106, 0.2);
+            "
+          >
+            <div
+              class="stat-icon-container"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  var(--sunstone-navy) 0%,
+                  var(--sunstone-navy-dark) 100%
+                );
+              "
+            >
+              <i
+                data-lucide="users"
+                style="height: 1rem; width: 1rem; color: white"
+              ></i>
             </div>
 
-            <!-- Sunstone Excellence Statement -->
-            <div class="placement-statement">
-                <div class="statement-container">
-                    <div style="margin-bottom: 0.75rem;">
-                        <div class="program-badge">
-                            <div class="program-dot"></div>
-                            <span class="program-text">PLACEMENT OPPORTUNITY PROGRAM</span>
-                        </div>
-                    </div>
+            <div class="stat-number">1020+</div>
 
-                    <blockquote class="statement-quote">
-                        "200+ Assured Placement Opportunities or, Get Your 1st Year Tuition-Fee Back*"
-                        <br>
-                        <span class="statement-terms">*Terms and Conditions Applied</span>
-                    </blockquote>
+            <h3 class="stat-title">Unique Job Opportunities</h3>
 
-                    <div class="statement-divider">
-                        <div class="divider-line"></div>
-                        <div class="divider-dot"></div>
-                        <div class="divider-line" style="background: linear-gradient(135deg, var(--sunstone-gold) 0%, transparent 100%);"></div>
-                    </div>
-                </div>
+            <p class="stat-description">
+              <span style="color: var(--sunstone-gold); font-weight: 600"
+                >Sunstone's extensive network</span
+              >
+              spans from cutting-edge startups to Fortune 500 giants. Our
+              <span style="font-weight: 600">exclusive partnerships</span>
+              create unprecedented career pathways across 15+ high-growth
+              sectors.
+            </p>
+
+            <div
+              class="stat-badge"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(34, 51, 106, 0.2) 0%,
+                  rgba(34, 51, 106, 0.1) 100%
+                );
+                border-color: rgba(34, 51, 106, 0.3);
+              "
+            >
+              <i
+                data-lucide="graduation-cap"
+                style="
+                  height: 0.75rem;
+                  width: 0.75rem;
+                  color: var(--sunstone-navy);
+                  margin-right: 0.25rem;
+                "
+              ></i>
+              <span
+                style="
+                  color: var(--sunstone-navy);
+                  font-weight: 700;
+                  font-size: 0.75rem;
+                "
+                >Unmatched Network</span
+              >
             </div>
+          </div>
+
+          <!-- Stat 3: Students with Multiple Offers -->
+          <div class="impact-stat-card">
+            <div class="stat-icon-container">
+              <i
+                data-lucide="star"
+                style="height: 1rem; width: 1rem; color: white"
+              ></i>
+            </div>
+
+            <div class="stat-number">302+</div>
+
+            <h3 class="stat-title">Students with 2+ Job Offers</h3>
+
+            <p class="stat-description">
+              <span style="color: var(--sunstone-gold); font-weight: 600"
+                >The ultimate testament to Sunstone's excellence</span
+              >
+              - our students don't just find jobs, they have the
+              <span style="font-weight: 600">luxury of choice</span>. This is
+              what happens when world-class education meets industry demand.
+            </p>
+
+            <div class="stat-badge">
+              <i data-lucide="check-circle" class="badge-icon"></i>
+              <span class="badge-text">Premium Choice</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Sunstone Excellence Statement -->
+        <div class="placement-statement">
+          <div class="statement-container">
+            <div style="margin-bottom: 0.75rem">
+              <div class="program-badge">
+                <div class="program-dot"></div>
+                <span class="program-text">PLACEMENT OPPORTUNITY PROGRAM</span>
+              </div>
+            </div>
+
+            <blockquote class="statement-quote">
+              "200+ Assured Placement Opportunities or, Get Your 1st Year
+              Tuition-Fee Back*"
+              <br />
+              <span class="statement-terms">*Terms and Conditions Applied</span>
+            </blockquote>
+
+            <div class="statement-divider">
+              <div class="divider-line"></div>
+              <div class="divider-dot"></div>
+              <div
+                class="divider-line"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    var(--sunstone-gold) 0%,
+                    transparent 100%
+                  );
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Top Recruiters Section -->
     <section class="recruiters-section">
-        <div class="container">
-            <div class="recruiters-header">
-                <h2 class="recruiters-title">Top Recruiters</h2>
-                <p class="recruiters-description">Leading companies that trust our graduates</p>
-                <div class="recruiters-line"></div>
-            </div>
-
-            <!-- Mobile Horizontal Animation View -->
-            <div class="recruiters-mobile">
-                <div class="recruiters-scroll">
-                    <!-- First set -->
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800" 
-                             alt="Kotak Mahindra Bank">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800" 
-                             alt="Bosch">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800" 
-                             alt="HCL">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800" 
-                             alt="TCS">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800" 
-                             alt="Paytm">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800" 
-                             alt="Genpact">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F98e68749b7514575bcde3a52e7dcc9f4?format=webp&width=800" 
-                             alt="Bajaj Finserv">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5f2464ab689d49b8bbbed84a4bbfbe52?format=webp&width=800" 
-                             alt="ANZ">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F59d0017fa3d9416ab3ce0ee614d4fe71?format=webp&width=800" 
-                             alt="Hero">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F210f3f50118b4d20be1ff7b265c9424c?format=webp&width=800" 
-                             alt="Airtel">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F13cf02d6a8e6484fa30a7ecff760a9de?format=webp&width=800" 
-                             alt="Axis Bank">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Feea877b831d64075ba17371c561ddec4?format=webp&width=800" 
-                             alt="Patanjali">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F162ca9865d3744d28e438d1ce3f1691d?format=webp&width=800" 
-                             alt="ICICI Bank">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F9338b89a92ee45f8bbc610ff8d572e1d?format=webp&width=800" 
-                             alt="Blinkit">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F83fe33e7331d4b708f19f11192a028fb?format=webp&width=800" 
-                             alt="Coca Cola">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefe1bcf105594d46af5b7848b2454d14?format=webp&width=800" 
-                             alt="Swiggy">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F047b89f49e6f401ba2be9779a2891e0c?format=webp&width=800" 
-                             alt="Zomato">
-                    </div>
-
-                    <!-- Duplicate set for seamless loop -->
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800" 
-                             alt="Kotak Mahindra Bank">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800" 
-                             alt="Bosch">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800" 
-                             alt="HCL">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800" 
-                             alt="TCS">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800" 
-                             alt="Paytm">
-                    </div>
-                    <div class="recruiter-logo">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800" 
-                             alt="Genpact">
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="recruiters-header">
+          <h2 class="recruiters-title">Top Recruiters</h2>
+          <p class="recruiters-description">
+            Leading companies that trust our graduates
+          </p>
+          <div class="recruiters-line"></div>
         </div>
+
+        <!-- Mobile Horizontal Animation View -->
+        <div class="recruiters-mobile">
+          <div class="recruiters-scroll">
+            <!-- First set -->
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                alt="Kotak Mahindra Bank"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                alt="Bosch"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                alt="HCL"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                alt="TCS"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                alt="Paytm"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                alt="Genpact"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F98e68749b7514575bcde3a52e7dcc9f4?format=webp&width=800"
+                alt="Bajaj Finserv"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5f2464ab689d49b8bbbed84a4bbfbe52?format=webp&width=800"
+                alt="ANZ"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F59d0017fa3d9416ab3ce0ee614d4fe71?format=webp&width=800"
+                alt="Hero"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F210f3f50118b4d20be1ff7b265c9424c?format=webp&width=800"
+                alt="Airtel"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F13cf02d6a8e6484fa30a7ecff760a9de?format=webp&width=800"
+                alt="Axis Bank"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Feea877b831d64075ba17371c561ddec4?format=webp&width=800"
+                alt="Patanjali"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F162ca9865d3744d28e438d1ce3f1691d?format=webp&width=800"
+                alt="ICICI Bank"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F9338b89a92ee45f8bbc610ff8d572e1d?format=webp&width=800"
+                alt="Blinkit"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F05c684834e29442981626bcf1f7ee2bb%2F83fe33e7331d4b708f19f11192a028fb?format=webp&width=800"
+                alt="Coca Cola"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2Fefe1bcf105594d46af5b7848b2454d14?format=webp&width=800"
+                alt="Swiggy"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fc829e2ce31e947e3879e99ad255b523e%2F047b89f49e6f401ba2be9779a2891e0c?format=webp&width=800"
+                alt="Zomato"
+              />
+            </div>
+
+            <!-- Duplicate set for seamless loop -->
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fb057e287196f49d3859e0a43390d7c70?format=webp&width=800"
+                alt="Kotak Mahindra Bank"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Fa65ffc8f933a429a83506ef5c99c00cf?format=webp&width=800"
+                alt="Bosch"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F6ab16fa8f4da436294218cc798d0ffb4?format=webp&width=800"
+                alt="HCL"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F8b23cfcaa25b45aca6ca60e26ffeee9d?format=webp&width=800"
+                alt="TCS"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2Faf2a7e3239fb4ee8b5da22b3633d1f21?format=webp&width=800"
+                alt="Paytm"
+              />
+            </div>
+            <div class="recruiter-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F7d21049135914cccb56913f42d147819%2F5792fa3c5f2b42ef973ec27ccd8922f1?format=webp&width=800"
+                alt="Genpact"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+      // Initialize Lucide icons
+      lucide.createIcons();
 
-        // Form submission handler
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            alert('Thank you for your interest! Our team will contact you soon.');
-        }
+      // Form submission handler
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        alert("Thank you for your interest! Our team will contact you soon.");
+      }
 
-        // Animation trigger on scroll (optional enhancement)
-        function observeElements() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            }, { threshold: 0.1 });
+      // Animation trigger on scroll (optional enhancement)
+      function observeElements() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+              }
+            });
+          },
+          { threshold: 0.1 },
+        );
 
-            // Observe elements with animation classes
-            const animatedElements = document.querySelectorAll('.animate-on-scroll');
-            animatedElements.forEach(el => observer.observe(el));
-        }
+        // Observe elements with animation classes
+        const animatedElements =
+          document.querySelectorAll(".animate-on-scroll");
+        animatedElements.forEach((el) => observer.observe(el));
+      }
 
-        // Initialize when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            observeElements();
-        });
+      // Initialize when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        observeElements();
+      });
     </script>
-</body>
+  </body>
 </html>
