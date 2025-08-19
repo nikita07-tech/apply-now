@@ -727,7 +727,7 @@ export default function Index() {
                     <p className="text-sunstone-navy text-base font-semibold">
                       Learning
                     </p>
-                    <p className="text-gray-600 text-sm mt-2">
+                    <p className="text-sm mt-2" style={{ color: "#22336a" }}>
                       Skills and knowledge needed for tomorrow's careers
                     </p>
                   </div>
@@ -757,7 +757,7 @@ export default function Index() {
                     <p className="text-sunstone-navy text-base font-semibold">
                       Turned Educators
                     </p>
-                    <p className="text-gray-600 text-sm mt-2">
+                    <p className="text-sm mt-2" style={{ color: "#22336a" }}>
                       Learn from corporate leaders with real work experience
                     </p>
                   </div>
@@ -787,7 +787,7 @@ export default function Index() {
                     <p className="text-sunstone-navy text-base font-semibold">
                       Own Business
                     </p>
-                    <p className="text-gray-600 text-sm mt-2">
+                    <p className="text-sm mt-2" style={{ color: "#22336a" }}>
                       Get help and support to start your business idea
                     </p>
                   </div>
@@ -817,7 +817,7 @@ export default function Index() {
                     <p className="text-sunstone-navy text-base font-semibold">
                       Learning Tools
                     </p>
-                    <p className="text-gray-600 text-sm mt-2">
+                    <p className="text-sm mt-2" style={{ color: "#22336a" }}>
                       Use latest technology and software for better learning
                     </p>
                   </div>
@@ -847,7 +847,7 @@ export default function Index() {
                     <p className="text-sunstone-navy text-base font-semibold">
                       Visits & Projects
                     </p>
-                    <p className="text-gray-600 text-sm mt-2">
+                    <p className="text-sm mt-2" style={{ color: "#22336a" }}>
                       Visit real companies and work on real world projects
                     </p>
                   </div>
@@ -883,7 +883,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Learning
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Skills and knowledge needed for tomorrow's careers
                         </p>
                       </div>
@@ -911,7 +914,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Turned Educators
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Learn from corporate leaders with real work experience
                         </p>
                       </div>
@@ -939,7 +945,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Own Business
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Get help and support to start your business idea
                         </p>
                       </div>
@@ -967,7 +976,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Learning Tools
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Use latest technology and software for better learning
                         </p>
                       </div>
@@ -995,7 +1007,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Visits & Projects
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Visit real companies and work on real world projects
                         </p>
                       </div>
@@ -1023,7 +1038,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Learning
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Skills and knowledge needed for tomorrow's careers
                         </p>
                       </div>
@@ -1050,7 +1068,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Turned Educators
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Learn from corporate leaders with real work experience
                         </p>
                       </div>
@@ -1077,7 +1098,10 @@ export default function Index() {
                         <p className="text-sunstone-navy text-base font-semibold">
                           Own Business
                         </p>
-                        <p className="text-gray-600 text-sm mt-2">
+                        <p
+                          className="text-sm mt-2"
+                          style={{ color: "#22336a" }}
+                        >
                           Get help and support to start your business idea
                         </p>
                       </div>
@@ -2334,7 +2358,7 @@ export default function Index() {
                       Vivekananda Global University
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-2">
-                      <p>Jaipur • B.Tech • UGC</p>
+                      <p>Jaipur ��� B.Tech • UGC</p>
                     </p>
                     <div className="flex items-center gap-2 mb-3">
                       <div className="text-xs md:text-sm text-gray-600 space-y-0.5">
