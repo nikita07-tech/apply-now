@@ -2,6 +2,16 @@ import { CheckCircle, XCircle, Zap, Users, Building, BookOpen, Award, Lightbulb,
 
 const comparisonData = [
   {
+    feature: "Specializations",
+    sunstone: "5 Advanced New-Age Specializations",
+    others: "Limited Or No Specialization Choices",
+  },
+  {
+    feature: "Industry Exposure",
+    sunstone: "6+ Months Of Industry Internships",
+    others: "Minimal Or No Internship Opportunities",
+  },
+  {
     feature: "Hands-On Learning",
     sunstone: "3+ Capstone Projects (1 Every Year)",
     others: "Projects With Minimal Industry Use",
