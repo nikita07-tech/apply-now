@@ -2649,38 +2649,38 @@ export default function Index() {
             <div className="relative">
               {/* Current Story Display */}
               <div className="flex justify-center mb-6">
-                <div className="w-80 bg-sunstone-white rounded-3xl shadow-xl overflow-hidden border border-sunstone-gold/20">
-                  {/* Header */}
-                  <div className="relative h-32 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark flex items-center justify-center overflow-hidden">
-                    <img
-                      src={successStories[currentStoryIndex].image}
-                      alt={successStories[currentStoryIndex].name}
-                      className="w-16 h-16 rounded-full object-cover border-4 border-sunstone-white z-10 shadow-xl"
-                    />
+                <div className="w-80 bg-gradient-to-br from-sunstone-navy to-sunstone-navy-dark rounded-3xl shadow-xl overflow-hidden border border-sunstone-navy/20">
+                  {/* Profile Image */}
+                  <div className="flex justify-center pt-6 pb-4">
+                    <div className="relative">
+                      <img
+                        src={successStories[currentStoryIndex].image}
+                        alt={successStories[currentStoryIndex].name}
+                        className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
+                      />
+                    </div>
                   </div>
 
                   {/* Content */}
-                  <div className="p-4">
-                    <h3 className="text-lg font-bold text-sunstone-navy mb-2">
+                  <div className="px-4 pb-6 text-center">
+                    <h3 className="text-lg font-bold text-white mb-3">
                       {successStories[currentStoryIndex].name}
                     </h3>
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      <span className="bg-sunstone-navy/10 text-sunstone-navy px-2 py-1 rounded-full text-xs font-medium">
-                        {successStories[currentStoryIndex].campus}
-                      </span>
-                      <span className="bg-sunstone-gold/20 text-sunstone-black px-2 py-1 rounded-full text-xs font-medium">
+
+                    <div className="flex justify-center gap-2 mb-4">
+                      <span className="bg-white/90 text-sunstone-navy px-3 py-1 rounded-full text-xs font-bold">
                         {successStories[currentStoryIndex].year}
                       </span>
-                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
+                      <span className="bg-white/90 text-sunstone-navy px-3 py-1 rounded-full text-xs font-bold">
                         {successStories[currentStoryIndex].course}
                       </span>
                     </div>
 
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-white/90 text-sm leading-relaxed mb-4 px-2">
                       "{successStories[currentStoryIndex].testimonial}"
                     </p>
 
-                    <div className="flex items-center gap-1">
+                    <div className="flex justify-center gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
