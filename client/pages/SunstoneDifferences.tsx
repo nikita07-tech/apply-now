@@ -2,44 +2,34 @@ import { CheckCircle, XCircle, Zap, Users, Building, BookOpen, Award, Lightbulb,
 
 const comparisonData = [
   {
-    feature: "Specializations",
-    sunstone: "5 Advanced New-Age Specializations",
-    others: "Limited Or No Specialization Choices",
+    feature: "Hands-On Learning",
+    sunstone: "3+ Capstone Projects (1 Every Year)",
+    others: "Projects With Minimal Industry Use",
   },
   {
-    feature: "Industry Exposure",
-    sunstone: "6+ Months Of Industry Internships",
-    others: "Minimal Or No Internship Opportunities",
+    feature: "Expert Sessions",
+    sunstone: "70+ Sessions By Industry Leaders & Top Faculty",
+    others: "Few Or No Sessions With Industry Experts",
   },
   {
-    feature: "Placement Support",
-    sunstone: "200+ Assured Placement Opportunities",
-    others: "Limited Placement Assistance",
+    feature: "Certifications",
+    sunstone: "10 In-Demand Certifications",
+    others: "Limited Or No Certification Options",
   },
   {
-    feature: "Learning Methodology",
-    sunstone: "Project-Based & Experiential Learning",
-    others: "Traditional Theoretical Learning",
+    feature: "Placement Readiness",
+    sunstone: "180+ Hours Of Mock GD/PI Training",
+    others: "Basic Or No Placement Preparation",
   },
   {
-    feature: "Faculty",
-    sunstone: "Corporate Leaders Turned Educators",
-    others: "Academic Faculty Only",
+    feature: "Career Boost",
+    sunstone: "Build A Job-Ready Portfolio",
+    others: "No Structured Portfolio Development",
   },
   {
-    feature: "Skill Development",
-    sunstone: "10+ Industry Certifications & Skills",
-    others: "Basic Course Curriculum Only",
-  },
-  {
-    feature: "Technology Integration",
-    sunstone: "AI-Powered Learning Platform",
-    others: "Traditional Teaching Methods",
-  },
-  {
-    feature: "Entrepreneurship Support",
-    sunstone: "Incubation Center & Startup Support",
-    others: "No Entrepreneurship Ecosystem",
+    feature: "Placement Reports",
+    sunstone: "Audited & Verified By B2K Analytics - Official Auditor For IIM Ahmedabad",
+    others: "No Official Auditor For Placement Reports",
   },
 ];
 
