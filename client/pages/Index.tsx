@@ -81,7 +81,6 @@ export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showApplyForm, setShowApplyForm] = useState(false);
   const [currentAwardIndex, setCurrentAwardIndex] = useState(0);
-  const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
 
   const awards = [
     {
