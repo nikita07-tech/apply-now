@@ -21,7 +21,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-
 const stats = [
   { value: "26 LPA", label: "Highest Package", color: "text-sunstone-gold" },
   { value: "4.6 LPA", label: "Average package", color: "text-sunstone-gold" },
@@ -1038,7 +1037,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
 
       {/* Stats Section */}
       <section className="bg-sunstone-navy py-6 sm:py-8 md:py-12 lg:py-16">
@@ -2553,7 +2551,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
 
       {/* Limited Seats Section */}
       <section className="bg-gradient-to-r from-sunstone-navy to-sunstone-navy-dark py-4 md:py-12 relative overflow-hidden">
