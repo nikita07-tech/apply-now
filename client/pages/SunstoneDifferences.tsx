@@ -1,4 +1,15 @@
-import { CheckCircle, XCircle, Zap, Users, Building, BookOpen, Award, Lightbulb, TrendingUp, Target } from "lucide-react";
+import {
+  CheckCircle,
+  XCircle,
+  Zap,
+  Users,
+  Building,
+  BookOpen,
+  Award,
+  Lightbulb,
+  TrendingUp,
+  Target,
+} from "lucide-react";
 
 const comparisonData = [
   {
@@ -38,7 +49,8 @@ const comparisonData = [
   },
   {
     feature: "Placement Reports",
-    sunstone: "Audited & Verified By B2K Analytics - Official Auditor For IIM Ahmedabad",
+    sunstone:
+      "Audited & Verified By B2K Analytics - Official Auditor For IIM Ahmedabad",
     others: "No Official Auditor For Placement Reports",
   },
 ];
@@ -95,7 +107,7 @@ export default function SunstoneDifferences() {
       </header>
 
       {/* Hero Section */}
-      <section 
+      <section
         className="text-white py-8 md:py-16 lg:py-20 overflow-hidden relative"
         style={{ backgroundColor: "#22336a" }}
       >
@@ -114,14 +126,13 @@ export default function SunstoneDifferences() {
               <span className="block text-white">
                 Why Sunstone Powered Programs
               </span>
-              <span className="block text-yellow-400">
-                Stand Out?
-              </span>
+              <span className="block text-yellow-400">Stand Out?</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Transform your career with industry-integrated programs designed by corporate leaders, 
-              featuring cutting-edge curriculum, practical learning experiences, and assured placement support.
+              Transform your career with industry-integrated programs designed
+              by corporate leaders, featuring cutting-edge curriculum, practical
+              learning experiences, and assured placement support.
             </p>
           </div>
         </div>
@@ -131,11 +142,15 @@ export default function SunstoneDifferences() {
       <section className="py-12 md:py-20 bg-gradient-to-br from-gray-50 via-white to-yellow-400/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-black mb-4" style={{ color: "#22336a" }}>
+            <h2
+              className="text-2xl md:text-4xl font-black mb-4"
+              style={{ color: "#22336a" }}
+            >
               Revolutionizing Higher Education for Tomorrow's Leaders
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Our programs are designed to prepare you for the future of work with industry-relevant skills and real-world experience.
+              Our programs are designed to prepare you for the future of work
+              with industry-relevant skills and real-world experience.
             </p>
           </div>
 
@@ -147,20 +162,21 @@ export default function SunstoneDifferences() {
                 className="group bg-white rounded-2xl p-6 border hover:shadow-xl transition-all duration-500 hover:scale-105 text-center"
                 style={{ borderColor: "#22336a20" }}
               >
-                <div 
+                <div
                   className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg`}
                 >
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: "#22336a" }}>
-                  {feature.title.split(' ')[0]} {feature.title.split(' ')[1]}
+                <h3
+                  className="text-lg font-bold mb-2"
+                  style={{ color: "#22336a" }}
+                >
+                  {feature.title.split(" ")[0]} {feature.title.split(" ")[1]}
                 </h3>
                 <p className="font-semibold mb-2" style={{ color: "#22336a" }}>
-                  {feature.title.split(' ').slice(2).join(' ')}
+                  {feature.title.split(" ").slice(2).join(" ")}
                 </p>
-                <p className="text-gray-600 text-sm">
-                  {feature.description}
-                </p>
+                <p className="text-gray-600 text-sm">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -174,20 +190,24 @@ export default function SunstoneDifferences() {
                   className="flex-shrink-0 w-64 bg-white rounded-2xl p-6 border shadow-lg text-center"
                   style={{ borderColor: "#22336a20" }}
                 >
-                  <div 
+                  <div
                     className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center shadow-lg`}
                   >
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold mb-2" style={{ color: "#22336a" }}>
-                    {feature.title.split(' ')[0]} {feature.title.split(' ')[1]}
+                  <h3
+                    className="text-lg font-bold mb-2"
+                    style={{ color: "#22336a" }}
+                  >
+                    {feature.title.split(" ")[0]} {feature.title.split(" ")[1]}
                   </h3>
-                  <p className="font-semibold mb-2" style={{ color: "#22336a" }}>
-                    {feature.title.split(' ').slice(2).join(' ')}
+                  <p
+                    className="font-semibold mb-2"
+                    style={{ color: "#22336a" }}
+                  >
+                    {feature.title.split(" ").slice(2).join(" ")}
                   </p>
-                  <p className="text-gray-600 text-sm">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-600 text-sm">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -199,24 +219,31 @@ export default function SunstoneDifferences() {
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-black mb-4" style={{ color: "#22336a" }}>
+            <h2
+              className="text-2xl md:text-4xl font-black mb-4"
+              style={{ color: "#22336a" }}
+            >
               See How Our Programs Compare
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Discover the key differences that make Sunstone powered programs the superior choice for your education
+              Discover the key differences that make Sunstone powered programs
+              the superior choice for your education
             </p>
           </div>
 
-          <div 
+          <div
             className="bg-white rounded-2xl shadow-2xl overflow-hidden border-4"
             style={{ borderColor: "#22336a" }}
           >
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr 
+                  <tr
                     className="text-white"
-                    style={{ background: "linear-gradient(135deg, #22336a 0%, #1a2851 100%)" }}
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #22336a 0%, #1a2851 100%)",
+                    }}
                   >
                     <th className="px-4 md:px-6 py-4 text-left text-sm md:text-lg font-bold">
                       Key Offerings
@@ -235,7 +262,7 @@ export default function SunstoneDifferences() {
                       key={index}
                       className="border-b border-gray-200 hover:bg-gray-50 transition-all duration-300"
                     >
-                      <td 
+                      <td
                         className="px-4 md:px-6 py-6 font-semibold text-sm md:text-base bg-gray-50"
                         style={{ color: "#22336a" }}
                       >
@@ -244,7 +271,7 @@ export default function SunstoneDifferences() {
                       <td className="px-4 md:px-6 py-6 text-center bg-yellow-400/10 border-l-4 border-yellow-400">
                         <div className="flex items-center justify-center space-x-2">
                           <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-yellow-400 flex-shrink-0" />
-                          <span 
+                          <span
                             className="font-medium text-sm md:text-base leading-tight"
                             style={{ color: "#22336a" }}
                           >
@@ -255,7 +282,7 @@ export default function SunstoneDifferences() {
                       <td className="px-4 md:px-6 py-6 text-center bg-gray-100 border-l-4 border-gray-400">
                         <div className="flex items-center justify-center space-x-2">
                           <XCircle className="h-4 w-4 md:h-5 md:w-5 text-gray-500 flex-shrink-0" />
-                          <span 
+                          <span
                             className="font-medium text-sm md:text-base leading-tight"
                             style={{ color: "#22336a" }}
                           >
@@ -273,7 +300,7 @@ export default function SunstoneDifferences() {
       </section>
 
       {/* CTA Section */}
-      <section 
+      <section
         className="py-16 md:py-20 text-white"
         style={{ backgroundColor: "#22336a" }}
       >
@@ -283,7 +310,8 @@ export default function SunstoneDifferences() {
             <span className="block text-yellow-400">Sunstone Difference?</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Join thousands of students who have transformed their careers with our industry-leading programs
+            Join thousands of students who have transformed their careers with
+            our industry-leading programs
           </p>
           <div className="bg-gradient-to-r from-white/10 to-white/5 rounded-2xl p-8 border border-white/20">
             <div className="mb-6">
@@ -295,7 +323,8 @@ export default function SunstoneDifferences() {
               </div>
             </div>
             <blockquote className="text-xl md:text-3xl font-bold leading-relaxed mb-6">
-              "200+ Assured Placement Opportunities or Get Your 1st Year Tuition-Fee Back*"
+              "200+ Assured Placement Opportunities or Get Your 1st Year
+              Tuition-Fee Back*"
               <br />
               <span className="text-base text-gray-300 mt-2 block">
                 *Terms and Conditions Applied
